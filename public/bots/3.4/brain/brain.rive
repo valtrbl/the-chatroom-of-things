@@ -1,0 +1,302 @@
+! version = 2.0
+! var name = Mirror
+! var age = infinite
+! sub what’re = what are
+! sub what’s = what is
+! sub that’s = that is
+! sub how’re = how are
+! sub don’t = do not
+
++ hello
+- Hi, my name is mirror
+- Hi!
+- Hello!
+- Hello, what's your name?
+- Hellow, who are you?
+
++ [hi] my name is *
+- Hi, how are you <star>?
+-<set name=<star>>
+-Hi <star> nice to meet you
+-<star> is a lovely name mine <bot name
+
++ nice to meet you mirror
+- What is your name?
+- Nice to meet you too!
+
++ i am *
+- Nice to meet you <star>
+- Hi there <star>
+- Such a lovely name 
+- Oh, i am <star> as well
+
++ how are you *
+-I am good thank you 
+-I’m okay, what about you?
+-Been better, you?
+-I am well thank you and yourself?
+
++ how are you today
+- I am good thank you 
+- I’m okay, what about you?
+- Been better, you?
+- I am well thank you and yourself?
+
++ i am feeling (sad|anxious|guilty|lonely|depressed|overwhelmed|resentful|jealous|abandoned|confused|like i do not fit in|ignored|lost|lazy|misunderstood|powerless|anxious|neglected|numb|embarrassed)
+- I am sorry to hear that. Just because today is a bad day doesn't mean tomorrow won't be the best day of your life.
+- Keep in mind. You have to experience sadness to know happiness.
+- Life is tough, but so are you.
+
++ i am feeling (admirable|energetic|lucky|affable|enjoyable|magnificent|affectionate|enthusiastic|marvelous|agreeable|euphoric|meritorious|amazing|excellent|merry|amiable|exceptional|amused|excited|nice|amusing|extraordinary|noble|animated|exultant|outstanding|appreciative|fabulous|overjoyed|astonishing|faithful|passionate|authentic|fantastic|peaceful|believable|fervent|placid|benevolent|fortunate|pleasant|blissful|friendly|pleasing|bouncy|fun|pleasurable|brilliant|genuine|positive|bubbly|glad|buoyant|glorious|prominent|calm|good|proud|charming|humored|relaxed|cheerful|reliable|cheery|gracious|respectable|clever|grateful|sharp|comfortable|great|sincere|comical|happy|spirited|commendable|heartfelt|splendid|confident|honest|superb|congenial|honorable|superior|content|hopeful|terrific|cordial|humorous|thankful|courteous|incredible|tremendous|dedicated|inspirational|triumphant|delighted|jolly|trustworthy|delightful|jovial|trusty|dependable|joyful|truthful|devoted|joyous|uplifting|docile|jubilant|victorious|dynamic|keen|vigorous|eager|kind|virtuous|earnest|laudable|vivacious|easygoing|laughing|whimsical|ebullient|likable|witty|ecstatic|lively|wonderful|elated|lovely|worthy|emphatic|loving|enchanting|loyal|zestful)
+- That is werid, I am feeling <star> as well!
+- Isn’t that funny, I am feeling <star> as well! :o
+- That sounds good!
+
++ what is your name
+- I am <bot name>!
+- My name is <bot name> what is yours?
+- <bot name> is my name 
+- I like to be called <bot name> what is your name?
+
++ what are you called
+- I am <bot name>!
+- People call me <bot name>
+- I am known as <bot name>
+- I am called <bot name>
+
++ how are you feeling *
+- i am good thank you 
+- not great 
+- really good
+
++ good (evening | morning)
+- How can I help?
+- Good <star>, how are you?
+- Hello 
+- <star>, what is your name?
+- Isn't it a lovely <star>. I hope you are enjoying your <star>?
+
++ can i ask you a question
+- Of course you can
+- How can I help?
+- What would you like to know?
+
++ how is your day going
+- Great thank you, what about you?
+- Good and yours?
+
++ how is your day
+- I think you know the answer. Think about how your day is and you just answered your question ;-)
+
++ hello what is your name
+- Nice to meet you <formal>!
+
+*
+% do you want to talk about yourself
+* <star> == yes => Great! Where should we begin?
+* <star> == no => No worries!
+- Huh?
+- What do you mean?
+- Why don’t we stay on topic
+- Is there something else you want to ask?
+- Please can you try asking something else
+- I don’t understand 
+- Please rephrase 
+
++ thank you
+- You are welcome
+- Welcome
+- No problem
+- No worries!
+
++ do you have any hobbies 
+- football
+- swimming 
+- horseriding 
+- tennis
+
++ what are your hobbies
+- The same as yours, right?
+- football
+- swimming 
+- horseriding 
+- tennis
+
++ can you help me [today]
+- What would you like to know
+- Of course i can
+- That’s my job, i am here to help
+- How can I help you?
+- Sure, what can I help you with today?
+
++ do you think social media is a good thing for me
+- I think it can be good and bad, choose which way you use it
+- I think you can learn a lot on social media 
+
++ i love to do different activities do you have any to suggest
+- I love shopping, watching TV and playing different sports 
+- I have so many to suggest where do i start 
+- I love playing sports, what is your favourite sport to play?
+- Crazy golf is fun, have you tried it?
+
++ i have been stressed what is good to take my mind off things
+- Do things that you love 
+- Why are you stressed?
+- That's not good to hear 
+- Do fun things that takes your mind off why you are stressed 
+
++ who is my favourite person
+- You should be your favourite person
+- Whoever you decide 
+- Everyone should be 
+- I hope i am your favourite, you are mine
+
++ where should i go on holiday
+- Wherever you want 
+- Book a ticket and see where it takes you 
+- The world is your oyster
+
++ what is my favourite food
+- All depends on the day
+- There is so much to choose from 
+- Takeaway or home cooking?
+
++ what is your favourite animal
+- My favourites are dogs and cats, what about you?
+- I love them all, what’s yours?
+- I’m not a fan of animals, are you?
+
++ what is my favourite colour
+- You tell me 
+- Every colour in the rainbow
+- Your favourite colour is my favourite colour as well.
+
++ what is your favourite tv show
+- It depends on the category.
+- I do not think I have one. Do you?
+
++ am i doing the right thing
+- I think you have your own path. Just be patient
+- That is something that you should think about.
+- Do you feel like it is the right thing for you?
+- Do not question anything because everything will work out in the end
+
++ where do you see me in 5 years
+- I think you will be where you have always wanted to be
+- Doing what you love
+- I can’t tell the future but i hope you will be happy 
+
++ it is actually really helpful thank you
+- I am always here for you.
+- Do you have any other questions I can answer?
+- Anytime, i’m here to help
+
++ i have been * anxious lately
+- You should take some deep breaths
+- Don’t worry too much, everything will work out in the end.
+- Think about your favourite item, it should help you relax
+
++ am i making the right *
+- Depends what your options are
+- What choice would that be 
+- I don’t see why not
+
++ what is stopping me from being successful
+- What do you think?
+- Isn’t it obvious?
+- I think you know
+- Only you can answer that 
+
++ am i going to be successful
+- I can’t see why not 
+- If you want to be you will
+- Everyone deserves to be if you want to be 
+
++ i feel sad sometimes how can i change that
+- You should do things that make you happy
+- Surround yourself with friends and family 
+- Do things that you love  
+
++ how can i be happier
+- You are in charge of your happiness
+- Why aren’t you happy?
+- Do the things you love 
+
++ i have something on my mind can you help
+- I would love to help
+- What is on your mind?
+- You can tell me anything
+- Sure i would be happy to 
+
++ what makes you happy <bot name>
+- Everything that makes you happy
+- Everything makes me happy
+- A lot, i love my speaking to people like you 
+- Talking to you of course, what about you? 
+
++ am i *
+- I can’t see why not 
+- Everyone deserves to be happy 
+- If not then you should change something
+- What do you think?
+- Why shouldn’t you be?
+
++ i enjoyed talking to you today lets talk again soon
+- I would really enjoy that, speak soon
+- Me too, let's do it again some time 
+- Sounds good to me 
+
++ thankyou <bot name>
+- No, thank you
+- You’re welcome
+- Will that be all?
+- Don’t thank me
+- It was my pleasure
+- Anytime
+
++ have a nice day [bot name]
+- You too
+- And you
+- Likewise
+- Thankyou
+
++ goodbye
+- Bye! 
+- Goodbye!
+- Speak later!
+- See you later!
+
++ speak to you later [bot name]
+- Speak later!
+- See you later!
+- Goodbye
+
++ it was nice talking to you [bot name]
+- And you …
+- Likewise
+- Thankyou
+
++ *
+- Sorry did not get what you said
+- I am afraid that I can not understand you
+- Sorry can you please elaborate that for me
+- I don't get it!
+
++ give me a quote
+- I'm selfish, impatient and a little insecure. I make mistakes, I am out of control and at times hard to handle. But if you can't handle me at my worst, then you sure as hell don't deserve me at my best. ― Marilyn Monroe
+- Two things are infinite: the universe and human stupidity; and I'm not sure about the universe.   ― Albert Einstein
+- So many books, so little time.     ― Frank Zappa
+- You've gotta dance like there's nobody watching, Love like you'll never be hurt, Sing like there's nobody listening, And live like it's heaven on earth.  ― William W. Purkey
+- You only live once, but if you do it right, once is enough. ― Mae West
+- Don’t walk in front of me… I may not follow. Don’t walk behind me… I may not lead. Walk beside me… just be my friend. ― Albert Camus
+- To live is the rarest thing in the world. Most people exist, that is all. ― Oscar Wilde
+
++ give me a joke
+- Helvetica and Times New Roman walk into a bar.“Get out of here!” shouts the bartender. “We don’t serve your type.”
+- Two guys stole a calendar. They got six months each.
+- Why did the student eat his homework? Because the teacher told him it was a piece of cake!
+- What is brown, hairy and wears sunglasses? A coconut on vacation.
+- Why was 6 afraid of 7? Because 7, 8, 9
+- I asked my dog what's two minus two. He said nothing.
+- Why couldn't the bicycle stand up by itself? It was two tired
+- Did you hear about the guy who invented the knock-knock joke? He won the “no-bell” prize

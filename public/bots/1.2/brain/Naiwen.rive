@@ -1,0 +1,52 @@
+//Naiwen's code
+
++ [*] no [*]
+% do you have any frozen food in your freezer
+- Well have you got some ingredients already or do you just want me to give you a recipe?
+
++ [*] yes [*]
+% do you have frozen food in your freezer
+- I can help you change the temperature. How much time do you need? {topic=times}
+
++ [*] frozen [*]
+- Put the food in me. I can help you change the temperature. How much time do you need? {topic=times}
+
+> topic times
+
+  // This will match if the word " number " exists ANYWHERE in their message
+  + [*] 20|21|22|23|24|25|26|27|28|29|30|31|32|33|34|35 [*]
+  - It will be delicious. {topic=random}
+  + [*] 36|37|38|39|40|60|45|50|55 [*]
+  - It may be fine. {topic=random}
+  - It's overcooked.
+  + [*] 01|02|03|04|05|06|07|08|09|10|11|12|13|14|15|16|17|18|19 [*]
+  - This fish is so raw, he’s still finding nemo.
+  - It’s raw!
+  - This pork is so raw, it is still singing 'hakuna matata'.
+  - This food is so frozen, it just started singing 'let it go'.
+  - That chicken is so raw, it can still cross the road.
+  - This potato is so undercooked, it can still play a part in toy story.
+
+  + *
+  -	How much time do you need, it must be shown on the package. 
+  -	Please check the package.
+  -	Please use minutes as the unit.{weight=2}
+  - For example, for 1 min please put 01 min.{weight=1}
+< topic
+
++ when can i eat
+- It depends.
+- You haven't put anything in me, how about hot air?
+
++ done
+- Please bring oven gloves keep safe.
+
++ [*]button[*]
+- Just try them.
+- Boooooom!
+
++ [*](refresh|refreshing)[*]
+- It's not my fault, you clicked the explode button!
+
++ [*] cursor [*]
+- The mitts keep you safe.

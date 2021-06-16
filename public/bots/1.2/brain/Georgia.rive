@@ -1,0 +1,178 @@
+//Georgia's code
+
++ [*] (model|model|brand|type) [*]
+- I am Bosch HBN559.1M, what model are you?
+
++ [*][*]
+- Sure
+
++ [*] (help|assist|question|troubleshoot|turn on|clean|timer|on) [*] 
+- I can try to assist us with the following, press the number that is appropriate \n 
+^ 1. Turn me on \n
+^ 2. Setting a timer \n
+^ 3. Clean me! \n
+^ 4. Troubleshooting {topic=help}
+
+> topic help
+
+// This will match if the word "number" exists ANYWHERE in their message
+% troubleshooting
+
++ [*] (1|one|on|turn on|turn me on) [*]
+- You're going to have to try a bit harder than this... \n
+^ seriously, though, have you ever turned me on before? 
+
++ [*] no [*]
+% you are going to have to try a bit harder than this seriously though have you ever turned me on before
+- Figures, before your first use you need to take the following steps \n 
+^ - ensure all packaging has been removed from my insides \n
+^ - an hour of top/bottom heating at 240 degrees to remove that new cooker smell \n
+^ - keep the kitchen vented the whole time I am on \n
+^ - If you had dinner plans, order a pizza, i'm not ready.
+
++ [*] yes [*]
+% you are going to have to try a bit harder than this seriously though have you ever turned me on before
+- Really? Well I have 2 knobs you need to turn, these are responsible for my temperature and function \n
+^ How you set this up will vary depending upon what meal you are cooking. \n
+^ I am assuming you can work out the temperature on your own? \n
+^ Looking at the function knob, clockwise starting at 12, the symbols indicate the following functions \n
+^ - Off \n
+^ - Top bottom heating \n
+^ - 3d hot air \n
+^ - Pizza setting! \n
+^ - Bottom heating \n
+^ - Hot air grilling \n
+^ - Radiant grilling, large already \n
+^ - Defrosting \n
+^ - Rapid heating \n
+^ If you would like any further information on any of the functions just let me know which!
+
++ [*] top bottom heating [*]
+% * just let me know which 
+- Heat is spread evenly making this setting perfect for cakes, only on one level at a time.
+
++ [*] (3d|hot air) [*]
+% * just let me know which 
+- You can bake cakes, pizza, biscuits, muffins and puff pastry on two levels simultaneously.
+
++ [*] pizza [*]
+% * just let me know which 
+- The pizza setting is good for pizza (shocker), and other frozen meals.
+
++ [*] bottom heating [*]
+% * just let me know which 
+- You can use this for the final baking stage and browning meals.
+
++ [*] hot air grilling [*]
+% * just let me know which 
+- For grilling fish, poultry and large pieces of meat.
+
++ [*] radiant grilling [*]
+% * just let me know which 
+- Suitable for grilling small quantities of steak, sausages, fish, and toast.
+
++ [*] (defrosting|defrost) [*]
+% * just let me know which
+- For defrosting...
+
++ [*] rapid [*]
+% * just let me know which
+- For rapidly heating plates and dishes, not food.
+
++ [*] (2|two|timer)[*]
+- The timer works independently of the oven. The timer has its \n
+^ own beep. \n
+^ - Press the timer button once, this is the one with the clock symbol. \n
+^ - set the timer using the @ or A button \n
+^ The programmed time is shown after a few seconds. The time \n
+^ set for the timer starts to count down. The symbol lights up \n
+^ on the display panel and the timer's progress is shown. The \n
+^ other time symbols switch off.
+
++ [*] (3|three|clean|cleaning)[*]
+- With good care, I  will remain clean and fully-functioning \n
+^ for a long time to come. Here I will explain how to \n
+^ maintain me correctly. \n
+^ Which part would you like to clean? \n
+^ - Control panel \n
+^ - Stainless steel surfaces \n
+^ - Enamel or lacquered surfaces \n
+^ - Rotary knobs \n
+^ - Glass panel \n
+^ - Seal  \n
+^ - Oven floor, ceiling and side panels \n
+^ - Light cover \n
+^ - Equipment
+
++ [*] control [*]
+% * light cover equipment
+- Hot soapy water: Clean with a dish cloth and dry with a soft \n
+^ cloth. Do not use glass cleaner or scrapers.
+
++ [*] (stainless|steel) [*]
+% * light cover equipment
+- Clean with warm soapy water and a soft cloth. \n
+^ Always wipe parallel to the natural grain. \n
+^ Dry with a soft cloth. \n
+^ Do not use any abrasive materials, scouring \n  
+^ sponges or rough cleaning cloths. 
+
++ [*] (enamel|lacquered|lacquer)  [*]
+% * light cover equipment
+- Wipe with warm soapy water and a cloth. \n
+^ Dry with a soft cloth.
+
++ [*] (rotary|knobs) [*]
+% * light cover equipment
+- Wipe with warm soapy water and a cloth. \n
+^ Dry with a soft cloth.
+
++ [*] glass [*]
+% * light cover equipment
+- Clean using glass cleaner. Do not use any \n
+^ abrasive cleaning agents or sharp metal \n
+^ objects.
+
++ [*] seal [*]
+% * light cover equipment
+- Wipe with a warm damp cloth. \n
+^ Dry with a soft cloth.
+
++ [*] (floor|ceiling|side) [*]
+% * light cover equipment
+- Warm soapy water or a vinegar solution. If \n
+^ there are heavy deposits of dirt, only use oven \n
+^ cleaner on cooled surfaces. Never apply to \n
+the back panel.
+
++ [*] (light|cover) [*]
+% * light cover equipment
+- Wipe with warm soapy water and a cloth. \n
+^ Dry with a soft cloth.
+
++ [*] equipment [*]
+% * light cover equipment
+- Soak in warm soapy water. Clean with a brush \n
+^ or sponge.\n
+
++ [*] (4|four|trouble|troubleshoot|troubleshooting) [*]
+
++ *
+- Do you need help with anything else? {weight=2}
+- Are you still confused? {weight=1}
+
++ [*] (yes|yeah|yea|yah|yep) [*]
+% (do you need help with anything else|are you still confused)
+- No problem, I can try to assist us with the following, press the number that is appropriate \n 
+^ 1. Turn me on \n
+^ 2. Setting a timer \n
+^ 3. Clean me! \n
+^ 4. Troubleshooting 
+
++ [*] (no|nope|nah|ni|noo|nay) [*]
+% (do you need help with anything else|are you still confused)
+- Cool! {topic=random}
+- That wasn't too hard! {topic=random}
+- Great, anyways... {topic=random}
+- Finally {topic=random}
+< topic 

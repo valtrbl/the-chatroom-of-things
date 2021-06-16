@@ -1,0 +1,70 @@
+// general starting chat
+
+! version = 2.0
+! sub what's = what is
+! var botName = Owen the Oven
+! var botAge = 2 weeks
+// global variables. Use bot instead of get to pull these into the chat
+
+
++ [*] (hello|hi|yo|hey|hiya) [*]
+- Hello, I'm an oven. What's your name? {weight=3} {topic=name}
+- Hi, I'm an oven. You alright? 
+- Hey, it's me, <bot botName>. What do you want? {weight=1}
+
+> topic name
++ [it is|its|i am|my name is] *
+//short discussions cant use abbreviations as rivescript removes these in its code
+% hello i am an oven what is your name
+* <set name=<star>><get name> == hungry => Hi Hungry I'm oven.{topic=random}
+- <set name=<Formal>>Hi <get name>{topic=random}
+- <set name=<Formal>>Hi <get name>{topic=random}
+< topic
+
++ [*] [i am] (good|ok|alright|fine|okay|soso|yep) [*]
+% hello i am an oven you alright
+- Glad someone is feeling alright. What do you want?
+
++ [i am] (bad|meh|not good|tired|ill|under the weather) [*]
+- Sucks to be you, what can I do?
+- Oh, what do you want me to do about it?
+- Can I help at all?
+
++ (hru|how are you|howre you|whats up|how is it going)
+- I'm fine. Would be better if I had something to cook...
+- I'm okay, bit bored though. Got something for me to do?
+
++ what is your name
+- I already told you, duh. It's <bot botName>.
+- Forgotten already? It's <bot botName>.
+
++ (what is my name|who am i)
+* <get name> == undefined => You never told me.. What is your name?{topic=name}
+- You are <get name>
+
+
++ who are you
+- I'm <bot botName>.
+
++ how old are you
+- I was created about <bot botAge> ago. How old are you?
+
++ [*] # [*]
+% i was created about 2 weeks ago how old are you
+- <set age=<star1>> You're <get age>? God, you're old.
+
++ (thank you|thanks)
+- No problem
+- That's alright
+
++ [*] what [else] [can|do] you do [*]
+- Have you never used an oven before? I can give you operating information, recipe ideas, or tell you how you meal is going.
+
++ [*] sorry [*]
+- Forget about it.
+
++ [*] (lol|haha|hah|rofl) [*]
+- Damn I'm funny.
+- I sure am funny.
+
+

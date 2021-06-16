@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  @apply antialiased;
+}
+
+:root {
+  --grid-size: 3rem;
+  --cyan: #05c3db;
+  --red: #fb2d05;
+  --black: #1d1d1b;
+}
+
+body {
+  background-size: var(--grid-size, 20px) var(--grid-size, 20px);
+  background-image: linear-gradient(to right, grey 1px, transparent 1px),
+    linear-gradient(to bottom, grey 1px, transparent 1px);
+}
+
+.scrollbar::-webkit-scrollbar {
+  width: calc(var(--grid-size) / 2);
+}
+
+.scrollbar::-webkit-scrollbar-track {
+  background: white;
+  border-left: 2px var(--cyan) solid;
+  border-right: 2px var(--cyan) solid;
+}
+
+.scrollbar::-webkit-scrollbar-thumb {
+  background-color: var(--red);
+  border: 2px var(--cyan) solid;
+}
+
+@media (min-width: 768px) {
+  .scrollbar::-webkit-scrollbar {
+    width: var(--grid-size);
+  }
+}
+
+.\$tab {
+  @apply text-xl transition-colors border-2 border-b-0 pb-4 pt-5 px-6 border-$cyan rounded-t-2xl bg-white w-36 text-center hover:bg-$cyan hover:text-white cursor-pointer;
+}
+
+.\$active {
+  @apply bg-$cyan text-white;
+}

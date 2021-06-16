@@ -1,0 +1,207 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;800&display=swap");
+
+* {
+  font-family: "roc grotesc", sans-serif, arial;
+  font-size: 12pt;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image:url(/images/mask.gif),
+  url(/images/Purple-15.png),
+  url(/images/K\ -13.png),
+  url(/images/s-12.png),
+  url(/images/Letter\ A\ -11.png),
+  url(/images/Letter\ M-10.png),
+  url(/images/Mask\ icon\ uncut\ -04.png),
+  url(/images/Mask\ icon\ uncut\ -01.png),
+  url(/images/Mask\ icon\ cut-02.png), 
+  url(/images/Scissors-07.png), 
+  url(/images/Bird\ yellow\ -09.png),
+  url(/images/Mask\ icon\ -06.png),
+  url(/images/Mask\ uncut\ -08.png),
+  url(/images/Mask\ icon\ -01.png),
+  url(/images/Mask\ icon\ -04.png),
+  url(/images/ezgif.com-gif-maker\ \(1\).gif);
+
+  background-repeat:no-repeat,
+  no-repeat,
+  no-repeat,
+  no-repeat,
+  no-repeat,
+  no-repeat,
+  no-repeat,
+  no-repeat,
+  no-repeat,
+  no-repeat,
+  no-repeat,
+  no-repeat,
+  no-repeat, 
+  no-repeat,
+  no-repeat,
+  repeat;
+
+
+  background-size:110px 110px,
+  90px 90px,
+  130px 130px,
+  100px 100px,
+  100px 100px,
+  110px 110px,
+  100px 100px,
+  100px 100px,
+  130px 130px,
+  100px 100px,
+  400px 400px,
+  180px 180px,
+  120px 120px,
+  100px 100px,
+  100px 100px,
+  1500px 1000px;
+
+  background-position:top +700 right 10%,
+  top +520 left 8%,
+  top +1250 right 20%,
+  top +1225 left 6%,
+  top +150 right 26%,
+  top +200 left 17%,
+  top +350 right 28%,
+  top +450 right 2%,
+  top +800 right 14%,
+  top +50px right 15%,
+  top +750px left 20%, 
+  top +450px left 20%, 
+  top +200px right 11%,
+  top +40px left 15%,
+  top +300px left 5%,
+  center;
+background-attachment:scroll,
+  scroll,
+  scroll,
+  scroll,
+  fixed,
+  fixed,
+  scroll,
+  fixed,
+  scroll,
+  fixed,
+  scroll,
+  fixed,
+  scroll,
+  fixed,
+  fixed,
+  scroll;
+
+}
+
+.title {
+  font-family: "chicago", sans-serif, arial;
+  height: 5vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.title h1 {
+  letter-spacing: 0.75px;
+  color: rgb(255, 255, 0);
+  font-size: 16pt;
+}
+
+.wrapper {
+  height: 95vh;
+}
+
+.chat {
+  background: 255,255,0.5;
+  box-shadow: 255,255,0.5;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 20px 0px 20px;
+  border-radius: 10px;
+}
+
+.messages {
+  flex: 1 0 auto;
+}
+
+.messages div {
+  max-width: 60%;
+  width: fit-content;
+  display: block;
+  margin: 5px;
+  padding: 10px;
+  border-radius: 7px;
+  white-space: pre-line;
+}
+
+.messages div a {
+  color: 255,255,0.5;
+}
+
+.messages div a:hover {
+  color: rgb(15, 97, 151);
+}
+
+.messages .bot {
+  text-align: left;
+  margin-right: auto;
+  background: rgb(15, 97, 151);
+  color: rgb(255, 255, 255);
+}
+
+.messages img {
+  width: 100%;
+}
+
+.messages .self {
+  text-align: right;
+  margin-right: 20px;
+  margin-left: auto;
+  background: white;
+  border: 1px solid rgb(255, 255, 255);
+  color: rgb(15, 97, 151);
+}
+
+.actions {
+  flex-shrink: 0;
+  width: 100%;
+  position: sticky;
+  bottom: -1px;
+  padding: 10px 0px 20px;
+  background: 255,255,0.5;
+}
+
+.actions input {
+  height: 30px;
+  display: block;
+  width: 100%;
+  outline: 0;
+  border-top: 0px;
+  border-right: 0px;
+  border-bottom: 2px solid black;
+  border-left: 0px;
+}
+
+input:focus {
+  border-bottom: 2px solid rgb(255, 255, 255);
+}
+
+@media all and (min-width: 720px) {
+  .wrapper {
+    width: 40vw;
+    height: 90vh;
+    margin: 0 auto 2.5vh;
+  }
+}
+
+@media all and (min-width: 1280px) {
+  .wrapper {
+    width: 27.5vw;
+  }
+  .title {
+    height: 7.5vh;
+  }
+}

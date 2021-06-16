@@ -1,0 +1,124 @@
+@import url("https://fonts.google.com/specimen/VT323#standard-styles");
+
+* {
+  font-family: VT323 ;
+  font-size: 15pt;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-size: 100%;
+  background-image: url("/images/background.jpg");
+  align-items: center;
+}
+
+.title {
+  height: 5vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 247px;
+}
+
+.title h1 {
+  color: rgb(0, 0, 0);
+}
+
+.wrapper {
+  height: 95vh;
+}
+
+.chat {
+  background: #131413;
+  box-shadow: 0px 0px 0px blueviolet;
+  overflow: scroll;
+  height: 65%;
+  display: flex;
+  flex-direction: column;
+  padding: 0px 0px 0px 0px;
+  border-radius: 5px; 
+  position: relative;
+  top: 80px;
+  right: 178px;
+  bottom: 0px;
+  width:750px;
+}
+
+.messages {
+  flex: 1 0 auto;
+}
+
+.messages div {
+  max-width: 60%;
+  width: fit-content;
+  display: block;
+  margin: 5px;
+  padding: 10px;
+  border-radius: 7px;
+  white-space: pre-line;
+}
+
+.messages div a {
+  color: white;
+}
+
+.messages div a:hover {
+  color: #131413;
+}
+
+.messages .bot {
+  text-align: left;
+  margin-right: auto;
+  background:#131413;
+  color:rgb(43, 226, 52);
+}
+
+.messages .self {
+  text-align: right;
+  margin-right: 20px;
+  margin-left: auto;
+  background: #131413;
+  color:white;
+}
+
+.actions {
+  flex-shrink: 0;
+  width: 100%;
+  position: sticky;
+  bottom: 0px;
+  padding: 10px 0px 0px;
+  background: #131413;
+}
+
+.actions input {
+  height: 30px;
+  display: block;
+  width: 100%;
+  outline: 0;
+  border-top: 0px;
+  border-right: 0px;
+  border-bottom: 0px solid black;
+  border-left: 0px;
+}
+
+input:focus {
+  border-bottom: 2px solid#131413;
+}
+
+@media all and (min-width: 720px) {
+  .wrapper {
+    width: 40vw;
+    height: 60vh;
+    margin: 0 auto 2.5vh;
+  }
+}
+
+@media all and (min-width: 1280px) {
+  .wrapper {
+    width: 27.5vw;
+  }
+  .title {
+    height: 7.5vh;
+  }
+}

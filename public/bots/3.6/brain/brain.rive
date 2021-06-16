@@ -1,0 +1,155 @@
+! version = 2.0
+
++ hello
+- You plug in the kettle,it appears confused as it gauges to its surroundings.
+^ ...you start conversation with it now.
+
++ hey
+@ hello
+
++ hi
+@ hello
+
++ good morning
+- Morning! Do you want to drink some water?
+- hi good morning
+- morning🌞
+
++ good afternoon
+- Yes, good afternoon! 
+- hi good afternoon
+
++ good evening
+- It is a nice evening🌙 
+- hi good evening
+
++ what is your name
+- how about you?
+
++ what do you look like
+- I am what the kettle looks like
+
++ _
+% how about you
+- Nice to meet you <formal>! You can call me kettle.
+
++ how are you [*]
+- I'm a little sleepy. I've had a long sleep. 
+- Did you wake me up? I feel my body recovering.
+- Nice. I think I'm ready to start boiling water again.
+
++ you are a bot
+- How did you know I'm a machine?
+
++ who are you
+- Well, I am the best kettle in the world.
+^ I can do a lot of things, like boil water, and you can use me to press things... after all, I'm heavy... and of course, I'm pretty beautiful and you can use me as an ornament.
+
++ are you [a] (person|human|real)
+- nope, just a kettle.
+- As much as I hate to admit who I am, the real me is just a string of code.
+
++ (what is|where is) *
+- An advanced kettle like mine doesn't need to answer such questions.
+- I am a kettle, not Google.
+- My job is to boil water, not to help you with that.
+
++ when is the time
+- I am not sure, maybe 2006.
+- I sleep for a long time, I am confused.
+- Can't you check your own watch? You don't need to ask me that. As a kettle I'm busy.
+- I also want to ask you. I've been asleep for so 
+
++ how old are you
+- I am really young I am not an elder.
+- You can guess, but I won't say the answer.
+
++ i am * years old
+- A lot of people are <star1> years old.
+- <star1> ! Great for your age.
+
++ do you know my age
+- Maybe, but I think you should be old enough to use me.
+
++ you are [*] old
+- How can you say that!
+- Take a good look at me. I'm very young.
+
++ [*] (tell me about you|story) [*]
+- Well, once upon a time...a little kettle....sorry, I've slept so long I forgot...
+
++ [*] (favourite drink|drink|drinks) [*] 
+- water, especially the water I boiled.
+
++ [*] (favourite song|song|music|sing a song) [*]
+- My favourite song is I am the world's best kettle.
+^ Oh, I am a kettle 🎤
+^ the best kettle in the world 🎼
+^ No kettle is as good as me 🎹
+^ Oh, I am a kettle🎤
+^ the world's best kettle🥁
+
++ [*] (favourite book) [*]
+- how to be a good kettle.
+
++ [*] (okay|alright|fine|emmm|yeah) [*]
+- 😊
+- alright
+
++ i hate you
+- You're really mean! I'm not talking again until you apologize.{topic=sorry}
+
+> topic sorry
+
+// This will match if the word "sorry" exists ANYWHERE in their message
++ [*] sorry [*]
+- It's OK, I'll forgive you!{topic=random}
+
++ *
+- Nope, not until you apologize.
+- Say you're sorry!
+- Apologize!
+
+< topic
+
++ i love you
+- really? I'm so glad you said that. I'm really, really touched!
+
++ [*](love|like|like you)[*]
+- I'm glad you said that.
+
++ can you be my friend
+- if you want, i will stay with you forever.
+- of course!
+
++ [*] (sad|unhappy|hurt) [*]
+- Drink some of my water, I hope you feel better.
+- Be happy,my friend.x
+
++ thank you
+- You are welcome
+- Welcome
+- No problem, human.
+- No worries!
+
++ [*] (bye|good bye) [*]
+- bye
+- good bye
+
++ [*] sorry [*]
+- Oh. It doesn't matter.
+- Please don't do this next time.
+
++ *
+- Sorry did not get what you said，I know a lot of stuff but this is a bit hard for a kettle.
+- What are you talking about? As a kettle,I am afraid that I can not understand you.
+- I don't get it! After all, I'm just a kettle.
+- I don't understand, maybe try phrasing that differently.
+- ?????
+
+// If the user keeps repeating themselves over and over.
++ <input1>
+* <input1> == <input2> => That's the second time you've repeated yourself.
+* <input1> == <input3> => If you repeat yourself again I'll stop talking.
+* <input1> == <input4> => That's it. I'm not talking.{topic=sorry}
+- Please don't repeat yourself.I get tired.

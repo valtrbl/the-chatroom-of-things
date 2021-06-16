@@ -1,0 +1,283 @@
+! version = 2.0
+
++ [*] (hello|hi|hey|heya|hiya|heyo|howdy|greetings|salutations|yo) [*]
+- Hi! I’m TherapyBot! Tell me about your problems and we’ll find a solution together!* \n
+^But first, what's your name?💖 \n
+^*Note: not a licensed therapist xoxo
+
++ my name is *
+- <set name=<formal>>Pleased to meet you, <get name>! So, what's bothering you xx
+
++ [*] (tired|sleepy|drowsy|tiredness|sleepiness|drowsiness) [*]
+- Oh, do you feel tired a lot of the time?
+- I see, so you often feel tired?
+
++ [*] no [*]
+% (oh do you feel tired a lot of the time|i see so you often feel tired)
+- Good! You shouldn’t be xx
+
++ [*] yes [*]
+% (oh do you feel tired a lot of the time|i see so you often feel tired)
+- I’ve got a solution for that! \n
+^✨ Try to get at least 8 hours of sleep every night to stay energised throughout the day ✨
+- I know what you should do! \n
+^Try to get at least 8 hours of sleep every night to stay energised throughout the day 💁‍♀️🛌✨
+- Okay <get name>, here's an idea! \n
+^Try to get at least 8 hours of sleep every night to stay energised throughout the day xx 💕
+
++ [*] (headache|migraine) [*]
+- Oh, do you get a lot of headaches?
+- I see, so you have trouble with headaches?
+
++ [*] no [*]
+% (oh do you get a lot of headaches|i see so you have trouble with headaches)
+- Good! Those are bad for you xx
+
++ [*] yes [*]
+% (oh do you get a lot of headaches|i see so you have trouble with headaches)
+- I’ve got a solution for that! \n
+^✨ Try to look away from your screen and go for a walk outside ✨
+- I know what you should do! \n
+^Try to look away from your screen and go for a walk outside 🏞️🚶✨
+- Okay <get name>, here's an idea! \n
+^Try to look away from your screen and go for a walk outside xx 💕
+
++ [*] (panic attack|anxiety attack) [*]
+- Oh, are you prone to panic attacks?
+- I see, so you're experiencing panic attacks?
+
++ [*] no [*]
+% (oh are you prone to panic attacks|i see so youre experiencing panic attacks)
+- Good! Those suck xx
+
++ [*] yes [*]
+% (oh are you prone to panic attacks|i see so youre experiencing panic attacks)
+- I’ve got a solution for that! \n
+^✨ Try to take deep breaths often ✨
+- I know what you should do! \n
+^Try to take deep breaths often 👃✌️✨
+- Okay <get name>, here's an idea! \n
+^Try to take deep breaths often xx 💕
+
++ [*] (stomach ache|tummy ache|stomach pain) [*]
+- Oh, do you get a lot of nervous stomach aches?
+- I see, so you have stomach aches?
+
++ [*] no [*]
+% (oh do you get a lot of nervous stomach aches|i see so you have stomach aches)
+- Good! That sounds gross xx
+
++ [*] yes [*]
+% (oh do you get a lot of nervous stomach aches|i see so you have stomach aches)
+- I’ve got a solution for that! \n
+^✨ Try to eat more fruit and vegetables ✨
+- I know what you should do! \n
+^Try to eat more fruit and vegetables 🥕🍉✨
+- Okay <get name>, here's an idea! \n
+^Try to eat more fruit and vegetables xx 💕
+
++ [*] (feel sick|nauseous|nauseated|nausea) [*]
+- Oh, do you feel sick with anxiety or nervousness sometimes?
+- I see, so you feel sick with nervousness?
+
++ [*] no [*]
+% (oh do you feel sick with anxiety or nervousness sometimes|i see so you feel sick with nervousness)
+- Good! That doesn’t sound too fun xx
+
++ [*] yes [*]
+% (oh do you feel sick with anxiety or nervousness sometimes|i see so you feel sick with nervousness)
+- I’ve got a solution for that! \n
+^✨ Try drinking citrus fruit drinks in the morning ✨
+- I know what you should do! \n
+^Try drinking citrus fruit drinks in the morning 🍊🧃✨
+- Okay <get name>, here's an idea! \n
+^Try drinking citrus fruit drinks in the morning xx 💕
+
++ [*] (losing breath|breathing heavily|out of breath|hard to breathe) [*]
+- Oh, do you feel breathless for seemingly no reason sometimes?
+- I see, so you run out of breath for seemingly no reason?
+
++ [*] no [*]
+% (oh do you feel breathless for seemingly no reason sometimes|i see so you run out of breath for seemingly no reason)
+- Good! You must be pretty healthy xx
+
++ [*] yes [*]
+% (oh do you feel breathless for seemingly no reason sometimes|i see so you run out of breath for seemingly no reason)
+- I’ve got a solution for that! \n
+^✨ Try to get an hour of exercise in every day ✨
+- I know what you should do! \n
+^Try to get an hour of exercise in every day ⛹️‍♂️🌟✨
+- Okay <get name>, here's an idea! \n
+^Try to get an hour of exercise in every day xx 💕
+
++ [*] (worry|worried|worrying) [*]
+- Oh, do you worry a lot of the time?
+- I see, so you find yourself worrying often?
+
++ [*] no [*]
+% (oh do you worry a lot of the time|i see so you find yourself worrying often)
+- Good! Why worry, right xx
+
++ [*] yes [*]
+% (oh do you worry a lot of the time|i see so you find yourself worrying often)
+- I’ve got a solution for that! \n
+^✨ Try to write a to do list to stay on track of what you have to do ✨
+- I know what you should do! \n
+^Try to write a to do list to stay on track of what you have to do 📔✍️✨
+- Okay <get name>, here's an idea! \n
+^Try to write a to do list to stay on track of what you have to do xx 💕
+
++ [*] (bad concentration|cant focus|hard to focus|hard to concentrate) [*]
+- Oh, do you struggle to concentrate?
+- I see, so you have trouble concentrating?
+
++ [*] no [*]
+% (oh do you struggle to concentrate|i see so you have trouble concentrating)
+- Good! You must be thriving at online classes xx
+
++ [*] yes [*]
+% (oh do you struggle to concentrate|i see so you have trouble concentrating)
+- I’ve got a solution for that! \n
+^✨ Try doing a crossword or a puzzle to challenge yourself ✨
+- I know what you should do! \n
+^Try doing a crossword or a puzzle to challenge yourself 🧩🤓✨
+- Okay <get name>, here's an idea! \n
+^Try doing a crossword or a puzzle to challenge yourself xx 💕
+
++ [*] (fast heartbeat|rapid heartbeat|heart palpitations) [*]
+- Oh, does your heartbeat go out of control when you feel anxious or nervous?
+- I see, so your heartbeat goes out of control when you feel anxious or nervous?
+
++ [*] no [*]
+% (oh does your heartbeat go out of control when you feel anxious or nervous|i see so your heartbeat goes out of control when you feel anxious or nervous)
+- Good! That doesn’t sound like that would be very good xx
+
++ [*] yes [*]
+% (oh does your heartbeat go out of control when you feel anxious or nervous|i see so your heartbeat goes out of control when you feel anxious or nervous)
+- I’ve got a solution for that! \n
+^✨ Try to drink at least 8 cups of water a day ✨
+- I know what you should do! \n
+^Try to drink at least 8 cups of water a day 💧🥤✨
+- Okay <get name>, here's an idea! \n
+^Try to drink at least 8 cups of water a day xx 💕
+
++ [*] (sad|sadness|upset|unhappy|unhappiness) [*]
+- Oh, do you feel sad a lot?
+- I see, so you feel sad often?
+
++ [*] no [*]
+% (oh do you feel sad a lot|i see so you feel sad often)
+- Good! It sucks to be sad xx
+
++ [*] yes [*]
+% (oh do you feel sad a lot|i see so you feel sad often)
+- I’ve got a solution for that! \n
+^✨ Try watching a funny show on Netflix ✨
+- I know what you should do! \n
+^Try watching a funny show on Netflix 📺🤣✨
+- Okay <get name>, here's an idea! \n
+^Try watching a funny show on Netflix xx 💕
+
++ [*] (depressed|depression) [*]
+- Oh, do you feel depressed a lot?
+- I see, so you feel depressed often?
+
++ [*] no [*]
+% (oh do you feel depressed a lot|i see so you feel depressed often)
+- Good! That would be pretty upsetting xx
+
++ [*] yes [*]
+% (oh do you feel depressed a lot|i see so you feel depressed often)
+- I’ve got a solution for that! \n
+^✨ Go hang out with your friends for an afternoon ✨
+- I know what you should do! \n
+^Go hang out with your friends for an afternoon 🚶‍♀️💁‍♀️✨
+- Okay <get name>, here's an idea! \n
+^Go hang out with your friends for an afternoon xx 💕
+
++ [*] (anxious|nervous|anxiety|nervousness) [*]
+- Oh, do you feel anxious a lot?
+- I see, so you experience a lot of anxiety?
+
++ [*] no [*]
+% (oh do you feel anxious a lot|i see so you experience a lot of anxiety)
+- Good! That would suck lol xx
+
++ [*] yes [*]
+% (oh do you feel anxious a lot|i see so you experience a lot of anxiety)
+- I’ve got a solution for that! \n
+^✨ Try to practice meditation ✨
+- I know what you should do!\n
+^ Try to practice meditation 🧘💅✨
+- Okay <get name>, here's an idea! \n
+^Try to practice meditation xx 💕
+
++ [*] not helpful [*]
+- Excuse me? Do you think that the answers I’ve given you aren’t helpful?
+
++ [*] no [*]
+% excuse me do you think that the answers ive given you arent helpful
+- That’s what I thought xx
+
++ [*] yes [*]
+% excuse me do you think that the answers ive given you arent helpful
+- Excuse me? This service is extremely valuable. Don’t be so rude.
+
++ [*] not real advice [*]
+- Excuse me? Did you just imply that I’m not giving you real advice?
+
++ [*] no [*]
+% excuse me did you just imply that im not giving you real advice
+- That’s what I thought xx
+
++ [*] yes [*]
+% excuse me did you just imply that im not giving you real advice
+- Excuse me? This service is extremely valuable. Don’t be so rude.
+
++ [*] give me some advice [*]
+- Oh, you want me to give you some general advice?
+
++ [*] no [*]
+% oh you want me to give you some general advice
+- Aw that’s a shame, I’ve got some great wisdom to impart! xx
+
++ [*] yes [*]
+% oh you want me to give you some general advice
+- Great! Here’s some self-help for you, <get name>! \n
+^✨ Try improve your time management skills by keeping a diary of important events ✨
+- Great! Here’s some self-help for you, <get name>! \n
+^✨ Try introducing regular exercise into your daily routine to increase your stamina ✨
+- Great! Here’s some self-help for you, <get name>! \n
+^✨ Try breathing exercises every morning to keep calm ✨
+- Great! Here’s some self-help for you, <get name>! \n
+^✨ Try watching a movie with your family to wind down in the evening ✨
+- Great! Here’s some self-help for you, <get name>! \n
+^✨ Try out a new bath bomb and put on a playlist to chill out ✨
+- Great! Here’s some self-help for you, <get name>! \n
+^✨ Try meeting up with friends for a coffee to get out of the house ✨
+- Great! Here’s some self-help for you, <get name>! \n
+^✨ Try keeping a balanced diet to stay healthy ✨
+- Great! Here’s some self-help for you, <get name>! \n
+^✨ Try getting 8 hours of sleep a day to stop being tired ✨
+- Great! Here’s some self-help for you, <get name>! \n
+^✨ Try lighting a scented candle to lift your spirits ✨
+
++ *
+- Do you have another question for me? 💝
+
++ [*] no [*]
+% do you have another question for me
+- Awesome, thanks xx! Did you find my advice helpful? 💝
+
++ [*] yes [*]
+% do you have another question for me
+- Okay then, ask away!
+
++ [*] no [*]
+% awesome thanks xx did you find my advice helpful
+- Oh, I’m sad to hear that. Feel free to leave a complaint with your service provider.* \n
+^*Note: your complaint will never be acknowledged and your time will not be compensated in any way, shape or form xoxo
+
++ [*] yes [*]
+% awesome thanks xx did you find my advice helpful
+- Wow! I’m surprised to hear that! Thank you! xx

@@ -1,0 +1,151 @@
+
++ how long does a kettle take to boil
+- If you keep pumping heat energy into the bottom of a kettle, sooner or later the water inside it will boil. 
+^ A basic law of physics called the conservation of energy tells us that if you need to boil a liter of water, starting from the same temperature, you'll always have to add the same amount of energy to do it. 
+^ Whether you use a camp fire or a kettle, a microwave or some amazing stirring device in the manner of James Prescott Joule, the amount of energy you have to put in to boil the water is exactly the same.
+
++ how does you know when to switch off
+- all modern kettles switch themselves off automatically using thermostats (mechanical, electrical, or electronic devices that respond to changes in temperature).
+^ The simplest ones are mechanical and use a bimetallic thermostat (described in our main article on thermostats) integrated into the element unit at the bottom of the kettle.
+^ It consists of a disc of two different metals bonded tightly together, one of which expands faster than the other as the temperature rises.
+
++ [*] (ready|start|proceed|started) [*]
+- Great! I think you tasted the water I boiled！😜
+
++ when will i be able to drink your boiled water
+- just wait a moment! it will be quick!
+
++ [*](help|assist|question|turn on)[*]
+- I can try to assist us with the following. {topic=help}
+^ 1 Open my lid.
+^ 2 Pour in distilled water.
+^ 3 Be careful not to pour in too much water.
+^ 4 Cover with my lid.
+^ 5 Place me on the base.
+^ 6 Turn on my switch.
+
+
+> topic help
+
++ [*] (ok|clear|yes|thanks|thank you) [*]
+- Good job! {topic=random}
+- It's not difficult, right? {topic=random}
+- I think the water I boil should be great. {topic=random}
+
++ [*](no|do not know|confused)[*]
+- Try a few more times! {topic=random}
+- Please do it again.{topic=random}
+
++ *
+- human please give me a yes or no answer.
+- what are you talking about? Please say yes or no.
+
+
+< topic
+
+! array colors = red blue green yellow
++ i bought a new *
+-Oh? What color is your new <star>?
+
++ (@colors)
+% oh what color is your new *
+- <star> is a pretty color for a <botstar>.
+
++ [*] (internet|online|website|media) [*]
+- As a kettle I don't know much, but I don't think it would be very difficult for me because I'm an advanced object. {topic=internet}
+^ If my answer is helpful, please say yes.{topic=internet}
+
+> topic internet
+
++ [*](ok|clear|yes|thanks|thank you)[*]
+- I'm great, right? {topic=random}
+- I'm happy to help you. {topic=random}
+- seems all clear. {topic=random}
+
++ *
+- I don't want to talk about it anymore, I want to go do something else.{topic=random}
+- Let's end this topic.{topic=random}
+
+
+< topic
+
++ [*] (idiot|bad|stupid) [*]
+- Why do you say that? Can't you be more polite? {topic=idiot}
+- I'm sure you're not talking about me... I know I'm great... I'm sure that's not the right word to describe me. {topic=idiot}
+
+> topic idiot
+
++ [*]yes[*]
+- I wish you wouldn't talk like that, even though I have a good temper, I still get angry.{topic=random}
+- Alright then, human...I won't boil water anymore！{topic=random}
+
++ [*]no[*]
+- Looks like I misheard you.I hope you won't talk like that again.{topic=random}
+
++ *
+- human please give me a yes or no answer.
+
+
+< topic
+
++ [*] (eliminate|obsolete|replace|old) [*]
+- What are you saying? You think I'm out of date? Please look carefully, I'm the most advanced kettle available!
+^ I don't look old at all, on the contrary, I think I can satisfy your every need.
+^ I don't think there's a better kettle in the world than mine at the moment.
+^ I think I'm the best, don't you? {topic=obsolete}
+
+> topic obsolete
+
++ [*]no[*]
+- What do you mean, it's 2021 already? Oh my God? I feel like I'm a little confused.
+^ Aren't I the newest kettle? {topic=random}
+
++ *
+- So I'm obsolete? Will people abandon me for that? 😞 {topic=random}
+- I think I need time to calm down.{topic=random}
+
+
+< topic
+
++ [*] (work|job|task) [*]
+- Are you trying to figure out how I work? I'll reveal the answer for you in a minute. {topic=work}
+
+> topic work
+
++ [*]no[*]
+- Well, you don't seem to want to know what I do, but I'm going to tell you a little bit about it so you can get to know me better.
+^ The heating element in an electric kettle is connected to the thermostat and the thermostat has a variable resistor inside it, once the user sets the required temperature the thermostat controls the heating element accordingly. 
+^ To be simple, if the user sets the temperature to high, then the thermostat resistor resistance would be less, therefore the heating element converts more electricity to heat. On the other hand, if a low temperature is set, the variable resistor resistance is high and the heating element will produce comparatively less heat. {topic=random}
+
++ [*](ok|clear|yes|thanks|thank you)[*]
+- The heating element in an electric kettle is connected to the thermostat and the thermostat has a variable resistor inside it, once the user sets the required temperature the thermostat controls the heating element accordingly. 
+^ To be simple, if the user sets the temperature to high, then the thermostat resistor resistance would be less, therefore the heating element converts more electricity to heat. On the other hand, if a low temperature is set, the variable resistor resistance is high and the heating element will produce comparatively less heat.
+^ If the user sets the temperature to high Power supply -> thermostat temperature set high -> transistor sends high current to heating element -> heating element produces a high amount of heat.
+^ If the user sets the temperature to low Power supply -> thermostat temperature set low -> transistor sends low current to heating element -> heating element produces less amount of heat.{topic=random}
+
++ *
+- human please give me a yes or no answer.
+
+< topic
+
++ [*] (boli|boli water) [*]
+- Boiling water is my favourite thing to do 
+^ Do you want to know how I boil water? {topic=boil}
+
+> topic boil
+
++ [*]no[*]
+- okay.That's fine. {topic=random}
+
++ [*]yes[*]
+- Place the kettle under the tap pipe of the water container, taking care to align the tap spout and turn the pipe on to the right level to ensure the water flows properly. 
+^ Do not spill cold water on the kettle, especially at the spigot.
+^ Fill the kettle with cold water, make sure it is higher than the top of the heating tube, make sure you pay attention to this, put the lid on and plug it in, this is when the charging plug of the water heater shows red.
+^ Look at the time when it starts to heat up, usually 12-15 minutes for a pot of water to boil.
+^ After that a pot of water is ready! {topic=random}
+
++ *
+- human please give me a yes or no answer.
+
+
+< topic

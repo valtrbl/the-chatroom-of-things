@@ -1,0 +1,306 @@
++ [*] (impact of trash|trash impact|environment|reclycing|sustainable) [*]
+//Do you want to talk about trash and the implications it has on the environment? I can talk about the impact of trash on the environment, give you facts and statistics about waste around the world, help you figure out how to sort your recycling, give you some tips on how to produce less waste, or tell you about some exciting, sustainable solutions that humans have come up with to deal with waste!
+- Do you want to talk about trash and the implications it has on the environment? I can talk about the <span class="script">impact of trash on the environment</span>, give you <span class="script">facts and statistics about waste around the world</span>, help you figure out how to <span class="script">sort your recycling</span>, give you some tips on how to <span class="script">produce less waste</span>, or tell you about some exciting, <span class="script">sustainable solutions</span> that humans have come up with to deal with waste!
+
++ *
+% do you want to talk about trash and the implications it has on the environment i can talk about the span classscriptimpact of trash on the environmentspan give you span classscriptfacts and statistics about waste around the worldspan help you figure out how to span classscriptsort your recyclingspan give you some tips on how to span classscriptproduce less wastespan or tell you about some exciting span classscriptsustainable solutionsspan that humans have come up with to deal with waste
+* <star> == yes => Wow! I found a human that's interested 😁 tell me, what do you want to talk about? {topic=environment}
+* <star> == no => suit yourself, human 😔
+- Human, please give me a yes or no answer! 
+
++ *
+% human please give me a yes or no answer
+* <star> == yes => Great! What should we talk about?{topic=environment}
+* <star> == no => 😣
+- ???????
+
+> topic environment
+
+  + [*] (affect|environment|trash impact|impact|waste disposal|harmful effects) [*]
+  - You want to know about how an increase in waste is continuing to negatively impact the environment?
+
+  + *
+  % you want to know about how an increase in waste is continuing to negatively impact the environment
+  - Did you know that trash dumped in open landfills releases harmful methane gases into the Earth's atmosphere? Hmmm, I bet that isn't nice to breathe in...
+
+  + *
+  % did you know that trash dumped in open landfills releases harmful methane gases into the earths atmosphere hmmm i bet that is not nice to breathe in
+  - Not to mention, some humans have gotten in the habit of burning roughly 40 percent of all your trash, which releases carbon dioxide into the atmosphere and heats up the planet even more than it aleady is heated up! Let me tell you, nothing's worse than waking up to being set on fire 
+
+  + *
+  % not to mention some humans have gotten in the habit of burning roughly 40 percent of all your trash which releases carbon dioxide into the atmosphere and heats up the planet even more than it aleady is heated up let me tell you nothings worse than waking up to being set on fire
+  - Some of my trash bin friends here in the UK told me that the amount of trash here is so much, that the UK and other countries export millions of tons of their trash abroad to other countries in Southeast Asia! 
+  
+  + *
+  % some of my trash bin friends here in the uk told me that the amount of trash here is so much that the uk and other countries export millions of tons of their trash abroad to other countries in southeast asia 
+  - Now, many of these countries are refusing to accept shipments of trash anymore. Rightly so, because everyone needs to sort out their own trash problems!
+
+  + *
+  % now many of these countries are refusing to accept shipments of trash anymore rightly so because everyone needs to sort out their own trash problems
+  - I have a feeling that the humans on this side of the Earth don't really know much about the trash situation on the other side of the Earth, you know?
+
+  + 
+  % i have a feeling that the humans on this side of the earth do not really know much about the trash situation on the other side of the earth you know
+  - Some of my trash self lives in the Bantar Gebang landfill in Jakarta, Indonesia (one of the biggest landfills in the world) which is quite overcrowded because the humans there don't have space for another landfill. 
+  
+  + *
+  % some of my trash self lives in the bantar gebang landfill in jakarta indonesia one of the biggest landfills in the world which is quite overcrowded because the humans there do not have space for another landfill
+  - Because of this, many humans that live there work as scavengers, helping to sort out the trash and pick out what can be recycled. This can be quite dangerous, as us trash pieces are all lumped together in giant piles that could easily fall and crush the scavengers. Sounds rough, right? 
+
+  + *
+  % because of this many humans that live there work as scavengers helping to sort out the trash and pick out what can be recycled this can be quite dangerous as us trash pieces are all lumped together in giant piles that could easily fall and crush the scavengers sounds rough right 
+  - I feel bad for the countries that have to carry everyone's trash, even though us trash pieces aren't trying to be bad guests. Unfortunately, our presence has led to an increase in water contamination and illnesses relating to air pollution. 
+
+  + * 
+  % i feel bad for the countries that have to carry everyones trash even though us trash pieces arent trying to be bad guests unfortunately our presence has led to an increase in water contamination and illnesses relating to air pollution
+  - But don't even get me started on hazardous waste, those guys are just mean to everyone. They're the worst trash to be placed next to in a landfill, belive me. Their presence is also really harmful for you humans.
+  
+  + *
+  % but do not even get me started on hazardous waste those guys are just mean to everyone they are the worst trash to be placed next to in a landfill belive me their presence is also really harmful for you humans
+  - I have a trash bin friend that knows another trash bin at a medical lab. They told me that hazardous waste poses a serious health risk for humans that live near dump sites for hazardous waste, and that proximity to hazardous waste has been linked to different kinds of cancer, asthma, and birth defects. So managing hazardous waste properly is really important!
+
+  + [*] (facts|statistics|world|uk) [*]
+  - You want to hear some facts about waste production around the world?
+
+  + *
+  % you want to hear some facts about waste production around the world
+  - Well human, you might be surprised to hear that about 2 billion tons of waste are dumped on the planet every year! Wow... that's a big number. 
+  
+  + *
+  % well human you might be surprised to hear that about 2 billion tons of waste are dumped on the planet every year wow thats a big number
+  - And 400 million tons of that trash is made up of hazardous waste, which can cause a number of health problems for the humans that come in proximity to that waste. 
+  
+  + *
+  % and 400 million tons of that trash is made up of hazardous waste which can cause a number of health problems for the humans that come in proximity to that waste
+  - So I guess it's not surprising that the biggest landfills and waste dumps around the world recieve about 10,000 tons of trash everyday, which is why it's always so crowded at the landfills. 
+
+  + *
+  % so i guess it is not surprising that the biggest landfills and waste dumps around the world recieve about 10000 tons of trash everyday which is why it is always so crowded at the landfills
+  - You might be wondering, how are humans making so much trash? Well, it's not all produced by individual humans, some of it is produced by big companies and corporations. 
+  
+  + *
+  % you might be wondering how are humans making so much trash well it is not all produced by individual humans some of it is produced by big companies and corporations 
+  - The waste found in landfills generally consists of: construction waste, industrial waste, household waste, plastic waste, electronic waste, radioactive waste, sewage, and run-off waste like fertilizers.
+
+  + *
+  % the waste found in landfills generally consists of construction waste industrial waste household waste plastic waste electronic waste radioactive waste sewage and runoff waste like fertilizers
+  - Once, when I braved the internet to do some research, I read somewhere that scientists project that the amount of waste humans produce globally is likely going to increase by 70 percent between 2018 and 2050, unless major steps are taken within human society.\n 
+  
+  + *
+  % once when i braved the internet to do some research i read somewhere that scientists project that the amount of waste humans produce globally is likely going to increase by 70 percent between 2018 and 2050 unless major steps are taken within human society 
+  - It sounds really scary, huh? But hey, I'm hopeful that humans will start making changes and find a solution soon! 
+
+  + *
+  % it sounds really scary huh but hey i am hopeful that humans will start making changes and find a solution soon 
+  - And don't forget, there's so much yummy food being wasted around the world! Roughly one third of all the food produced in the world is thrown away or wasted. 
+  
+  + *
+  % and do not forget theres so much yummy food being wasted around the world roughly one third of all the food produced in the world is thrown away or wasted
+  - I don't mind recieving yummy food, but wouldn't humans rather have that food for themselves?
+  
+  + *
+  % i do not mind recieving yummy food but would not humans rather have that food for themselves
+  - After years of having parts of me at different landfills, I've learned about the problems humans have with plastics. I'm partly composed of plastics here and there, meaning that I'm going to be around for a very long time!
+
+  + *
+  % after years of having parts of me at different landfills i have learned about the problems humans have with plastics i am partly composed of plastics here and there meaning that i am going to be around for a very long time 
+  - Plastic bags take around 20 years to break down, while something like a plastic water bottle or toothbrush can nearly 500 years to break down! It's quite strange that a material which will last for so long is used for objects that tend to be used only once.
+
+  + *
+  % plastic bags take around 20 years to break down while something like a plastic water bottle or toothbrush can nearly 500 years to break down it is quite strange that a material which will last for so long is used for objects that tend to be used only once
+  - One of my trash bin friends that lives at a research institute told me that the researchers there concluded that the average person living in Western Europe or the United States produces on average about 100 kilograms of plastic waste every year. No wonder I'm made up of so much plastic!
+
+  + *
+  % one of my trash bin friends that lives at a research institute told me that the researchers there concluded that the average person living in western europe or the united states produces on average about 100 kilograms of plastic waste every year no wonder i am made up of so much plastic 
+  - My friend also told me that out of all the plastic waste generated in the world in 2015, only 9 percent was recycled, 12 percent was incerated - ouch - and 79 percent ended up being dumped either in landfills or in the natural environment. 
+  
+  + *
+  % my friend also told me that out of all the plastic waste generated in the world in 2015 only 9 percent was recycled 12 percent was incerated minus ouch minus and 79 percent ended up being dumped either in landfills or in the natural environment
+  - I really hope more plastics are recycled in the future, because I would like to be more useful, instead of being just a problem. 
+
+  + *
+  % i really hope more plastics are recycled in the future because i would like to be more useful instead of being just a problem
+  - Honestly, there's so much plastic taking up space in the landfills, and you probably already know that there are lots of plastics in the world's oceans. Remember that trash bin friend from the research institute? They also told me that there are more than 5 trillion plastic particles in the oceans! 
+  
+  % honestly there is so much plastic taking up space in the landfills and you probably already know that there are lots of plastics in the worlds oceans remember that trash bin friend from the research institute they also told me that there are more than 5 trillion plastic particles in the oceans 
+  - I would have never guessed all this...but I suppose this is why we need to educate ourselves about these things!
+
+  + [*] (recycling|recycle|recyclable) [*]
+  - You want me to give you some tips on how to sort your recycling?
+
+  + *
+  % you want me to give you some tips on how to sort your recycling
+  - First, as a general rule, you can recycle plastics, paper, glass, and aluminium. 
+
+  + *
+  % first as a general rule you can recycle plastics paper glass and aluminium
+  - However, there can be lots of variety even when dealing with the same material. For instance, your local recycling centre might not accept all kinds of plastics.\n 
+  
+  + *
+  % however there can be lots of variety even when dealing with the same material for instance your local recycling centre might not accept all kinds of plastics
+  - If you want to check the recycling guidelines in your local area and you live in the UK, try checking <a href="https://www.recyclenow.com">Link</a>
+
+  + *
+  % if you want to check the recycling guidelines in your local area and you live in the uk try checking a hrefhttpswwwrecyclenowcomlinka
+  - Remember to do your best when you sort your recycling! If the wrong kind of recycling is found in a shipment load, that load is contaminated and risks being sent to a landfill instead of being recycled. 
+  
+  + *
+  % remember to do your best when you sort your recycling if the wrong kind of recycling is found in a shipment load that load is contaminated and risks being sent to a landfill instead of being recycled 
+  - So let's make sure we recycle everything we can and the landfills don't get too overcrowded!
+
+  + *
+  % so lets make sure we recycle everything we can and the landfills do not get too overcrowded
+  - One tip I have for you is to examine the recycling label found on the packaging, as that usually will give you a good indication as to whether something is recyclable. 
+
+  + *
+  % one tip i have for you is to examine the recycling label found on the packaging as that usually will give you a good indication as to whether something is recyclable
+  - I also reccomend that you leave caps and lids on the bottle or jar they came on when puting them in the recycling. Also, make sure to clean and rinse out any containers before recycling them!
+
+  + [*] (reduce waste|waste free|sustainable living|less waste|reduce|be sustainable|sustainability)
+  - You want me to give you some pointers about how to reduce the amount of waste you produce?
+
+  + *
+  % you want me to give you some pointers about how to reduce the amount of waste you produce
+  - Well, the first tip I'd like to give you human, is to avoid single-use items and incorporate more reusable products into your routine! Try using reusable shopping bags and reusable bottles or cups when you are on the go. 
+  
+  + *
+  % well the first tip i would like to give you human is to avoid singleuse items and incorporate more reusable products into your routine try using reusable shopping bags and reusable bottles or cups when you are on the go
+  - If you really want to step up your waste reduction game, keep a set of utensils with you when you go out, so you don't need to use disposable utensils!
+
+  + *
+  % if you really want to step up your waste reduction game keep a set of utensils with you when you go out so you do not need to use disposable utensils
+  - Another cool way to reduce waste, that I learned from one of my trash bin friends, is to buy less cleaning clothes and paper towels and instead use old fabric that you would have gotten rid of anyway. You use something like an old towel or t-shirt!
+
+  + *
+  % another cool way to reduce waste that i learned from one of my trash bin friends is to buy less cleaning clothes and paper towels and instead use old fabric that you would have gotten rid of anyway you use something like an old towel or tshirt
+  - A lot of disposable items are made of plastic, which as I might have mentioned, takes anywhere between a few decades and a few centuries to break down. Not good! This is why I suggest that humans use plastic-free options wherever possible.
+
+  + *
+  % a lot of disposable items are made of plastic which as i might have mentioned takes anywhere between a few decades and a few centuries to break down not good this is why i suggest that humans use plasticfree options wherever possible
+  - Some plastic-free swaps that I reccomend are: reusable straws, plastic-free soaps and shampoos, biodegradable cotton buds, bamboo toothbrushes, sustainable shaving razors, and eating takeaway ice cream in a cone instead of a cup. You can also get biodegradable trash bags, so I won't have to be lined in plastic! Woohoo!
+
+  + *
+  % some plasticfree swaps that i reccomend are reusable straws plasticfree soaps and shampoos biodegradable cotton buds bamboo toothbrushes sustainable shaving razors and eating takeaway ice cream in a cone instead of a cup you can also get biodegradable trash bags so i wont have to be lined in plastic woohoo
+  - It's worth to note that while paper is more eco-friendly than plastic, we should still do our best to not waste paper. One way to do this is to opt out of junk mail, which unnecessarily wastes paper. If you live in the UK, you can use this resource to opt out of junk mail: <a href="https://www.citizensadvice.org.uk/consumer/post/stop-getting-junk-mail/">Link</a>
+
+  + *
+% it is worth to note that while paper is more ecofriendly than plastic we should still do our best to not waste paper one way to do this is to opt out of junk mail which unnecessarily wastes paper if you live in the uk you can use this resource to opt out of junk mail a hrefhttpswwwcitizensadviceorgukconsumerpoststopgettingjunkmaillinka
+  - Another tip I have for you is to always try to repair clothes, furniture, and other objects before replacing them or throwing them away. Repairing instead of replacing will reduce so much waste! 
+
+  + * 
+  % another tip i have for you is to always try to repair clothes furniture and other objects before replacing them or throwing them away repairing instead of replacing will reduce so much waste
+  - Also, if you want to make sure you don't have to replace items too often, invest in quality items that won't break or wear out too easily. 
+  
+  + *
+  % also if you want to make sure you do not have to replace items too often invest in quality items that wont break or wear out too easily
+  - For instance, some of my trash friends from one of the landfills I'm in told me that humans like buying from 'fast fashion' brands nowadays? They said that clothes from these brands don't last very long and the production of these clothes creates lots of textile waste...so it's probably best to avoid these brands if you can!\n 
+  
+  + *
+  % for instance some of my trash friends from one of the landfills i am in told me that humans like buying from fast fashion brands nowadays they said that clothes from these brands do not last very long and the production of these clothes creates lots of textile wasteso it is probably best to avoid these brands if you can
+  - If you want to look for fashion brands that are more sustainable, try visiting this website I found while I was wandering the internet: <a href="https://directory.goodonyou.eco/?_ga=2.49068838.1614947984.1620930401-1738310142.1620930401">Link</a> 
+
+  + *
+  % if you want to look for fashion brands that are more sustainable try visiting this website i found while i was wandering the internet a hrefhttpsdirectorygoodonyouecoga2490688381614947984162093040117383101421620930401linka
+  - I'll never understand why, but humans throw away so much yummy food all the time! One of my bin friends that lives outside a restaurant told me that humans can't eat food when it becomes too old? That means you should only buy the food you need and make sure to use up all the food you have at home before it gets too old!
+
+  + *
+  % i will never understand why but humans throw away so much yummy food all the time one of my bin friends that lives outside a restaurant told me that humans can not eat food when it becomes too old that means you should only buy the food you need and make sure to use up all the food you have at home before it gets too old
+  - If you're having trouble coming up with recipies to use up the food you have at home, try using this app my bin friend reccomended...though it's not like a trash bin such as myself will ever need it: <a href="https://www.lovefoodhatewaste.com/?gclid=Cj0KCQjwna2FBhDPARIsACAEc_VWXuobN5C-Ot9R74qHLFcGUtS7xcl1Moq0oPr1uhbYDzuviyMqEAQaArcgEALw_wcB">Link</a> 
+
+  + *
+  % if you are having trouble coming up with recipies to use up the food you have at home try using this app my bin friend reccomendedthough it is not like a trash bin such as myself will ever need it a hrefhttpswwwlovefoodhatewastecomgclidcj0kcqjwna2fbhdparisacaecvwxuobn5cot9r74qhlfcguts7xcl1moq0opr1uhbydzuviymqeaqaarcgealwwcblinka
+  - Still, my bin friend tells me that humans just don't eat every part of a food item, like the skin on vegetables I think? The solution to that is to use those extra bits of food for compost, which I hear helps your plant to grow strong and healthy! 
+  
+  + *
+  % still my bin friend tells me that humans just do not eat every part of a food item like the skin on vegetables i think the solution to that is to use those extra bits of food for compost which i hear helps your plant to grow strong and healthy 
+  - And if you don't have any use for compost, you can try saving your vegetable scraps to boil and make a broth out of. 
+
+  + *
+  % and if you do not have any use for compost you can try saving your vegetable scraps to boil and make a broth out of
+  - Wow, sounds like I gave you a lot of tips to keep trach of, huh? But there are ways to make the journey of reducing your waste more fun. 
+  
+  + *
+  % wow sounds like i gave you a lot of tips to keep trach of huh but there are ways to make the journey of reducing your waste more fun  
+  - I don't like to dive too far into the depths of the internet, but I came across an app you might like, human! It's called Joulebug and it's an app that lets you share your sustainability tips and progress with your friends, just as I have done with you: <a href="https://enterprise.joulebug.com/">Link</a> 
+
+  + *
+  % i do not like to dive too far into the depths of the internet but i came across an app you might like human it is called joulebug and it is an app that lets you share your sustainability tips and progress with your friends just as i have done with you a hrefhttpsenterprisejoulebugcomlinka
+  - I've also noticed that humans like to post pictures of different things on an app called Instagram? Well, instead of posting pictures of food that you should be eating instead of photographing, head over to Littergram! There you can post pictures of trash you find and report it to your council to be taken care of: <a href="https://littergram.co.uk/">Link</a>  
+
+  + [*] (new|solutions|solution|sustainble solutions)
+  - You want to hear about some exciting, sustainable solutions humans have come up with to deal with trash?
+
+  + *
+  % you want to hear about some exciting sustainable solutions humans have come up with to deal with trash
+  - With all the tech gadgets that humans have, it might not surprise you to learn that great progress has been made in automating the process of sorting trash. 
+  
+  + *
+  % with all the tech gadgets that humans have it might not surprise you to learn that great progress has been made in automating the process of sorting trash 
+  - In Finland, a company called ZenRobotics Ltd have developed robots that pick out wood and metal from conveyour belts of trash, and this technology could help sort plastics with more development in the future.
+
+  + *
+  % in finland a company called zenrobotics ltd have developed robots that pick out wood and metal from conveyour belts of trash and this technology could help sort plastics with more development in the future
+  - Honestly, I cannot wait to be friends with all the sorting robots! Plus, better sorting means that more waste will be recycled, giving a second life to what othrwise would have become trash. 
+  
+  + *
+  % honestly i cannot wait to be friends with all the sorting robots plus better sorting means that more waste will be recycled giving a second life to what othrwise would have become trash
+  - I'm not too happy that these developers are planning on incinerating the trash that isn't recyled... that part of the plan does not sound as fun to me. Can't I just be friends with the robots?
+
+  + *
+  % i am not too happy that these developers are planning on incinerating the trash that is not recyled that part of the plan does not sound as fun to me can not i just be friends with the robots
+  - Back to the subject, I also heard that companies in India, Indonesia, and Thailand are drawing out the methane gases from decomposing organic waste in dumps to generate renewable energy. 
+  
+  + *
+  % back to the subject i also heard that companies in india indonesia and thailand are drawing out the methane gases from decomposing organic waste in dumps to generate renewable energy
+  - That means that even the humble trash bits that have lived inside me could one day help provide power for the world! I feel like I have a new goal for my existence now.
+
+  + *
+  % that means that even the humble trash bits that have lived inside me could one day help provide power for the world i feel like i have a new goal for my existence now
+  - You humans do come up with good ideas sometimes, I'll give you that. Aside from collecting the gases from decomposing trash for renewable energy, one of my bin friends tells me that there are now modern landfills being engineered to reduce the risk of environmental contamination. 
+  
+  + *
+  % you humans do come up with good ideas sometimes i will give you that aside from collecting the gases from decomposing trash for renewable energy one of my bin friends tells me that there are now modern landfills being engineered to reduce the risk of environmental contamination 
+  - This is very beneficial, as us trash bits would never want to cause contamination problems for the humans that live near us. 
+
+  + *
+  % this is very beneficial as us trash bits would never want to cause contamination problems for the humans that live near us 
+  - As in the case of landfills engineered by waste management company WM, the landfills have liners to divide sections of the landfill and prevent ground contamination. Meanwhile, there are also systems put in place for liquid collection to prevent groundwater contamination and daily maintenance to help with odors produced by the waste. 
+  
+  + *
+  % as in the case of landfills engineered by waste management company wm the landfills have liners to divide sections of the landfill and prevent ground contamination meanwhile there are also systems put in place for liquid collection to prevent groundwater contamination and daily maintenance to help with odors produced by the waste 
+  - I mean, if I have to live in a landfill, this seems like a good option!
+
+  + *
+  % i mean if i have to live in a landfill this seems like a good option
+  - So, those are just a few ways that humans are improving waste management. I am aware I don't know the full extent of problems humans are facing with the current climate crisis, I mostly just know about trash. 
+  
+  + *
+  % so those are just a few ways that humans are improving waste management i am aware i do not know the full extent of problems humans are facing with the current climate crisis i mostly just know about trash 
+  - However, I have heard from other trash bits that different communities of people around the world have contrasting relationships with the environment they live in. I recently learned that communities of indigenous people have perfected ways to live in harmony with the environment for centuries, so I wonder why other humans in the world live in a way that makes so much trash?
+
+  + *
+  % however i have heard from other trash bits that different communities of people around the world have contrasting relationships with the environment they live in i recently learned that communities of indigenous people have perfected ways to live in harmony with the environment for centuries so i wonder why other humans in the world live in a way that makes so much trash
+  - My knowledge about the topic is pretty limited, but I think that if humans have methods of sustainable living that don't harm the planet and produce less waste, shouldn't those ways of life be considered as well? I just think that humans around the world have great ideas, so you guys should listen to each other more. 
+  
+  + *
+  % my knowledge about the topic is pretty limited but i think that if humans have methods of sustainable living that do not harm the planet and produce less waste should not those ways of life be considered as well i just think that humans around the world have great ideas so you guys should listen to each other more 
+  - If you want to learn more about this topic, try reading this article and I'll also work on learning more in the future as well! <a href="https://eyeondesign.aiga.org/what-designers-can-learn-from-indigenous-communities-fighting-climate-change/">Link</a> 
+
+  + *
+  - I'm happy to share what I've learned over the years while being a trash bin!\n
+  ^ I can talk about the <span class="script">impact of trash on the environment</span>, give you <span class="script">facts and statistics about waste around the world</span>, help you figure out how to <span class="script">sort your recycling</span>, give you some tips on how to <span class="script">produce less waste</span>, or tell you about some exciting, <span class="script">sustainable solutions</span> that humans have come up with to deal with waste!
+  - Would you like to talk about something else?
+
+  + *
+  % would you like to talk about something else
+  * <star> == yes => Alright then, human...{topic=random}
+  * <star> == no => Me neither! I could talk about trash all day! 😁
+  - Human, please give me a yes or no answer!
+
+  + *
+  % human please give me a yes or no answer
+  * <star> == yes => Ok... that's pretty much all I know anyway!{topic=random}
+  * <star> == no => Okay, what other trash information can I give you? 
+  - ????????????
+
+< topic

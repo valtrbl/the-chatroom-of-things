@@ -1,0 +1,625 @@
+! version = 2.0
+
+// bot variables
+
+// substitutions
+
+
+// hello part
++ *
+- Hello! I'm the <b>Megaphone</b> 😎\n
+^ <img src='../images/megaphone.jpg'> \n
+^ \n 
+^ What is your name? {topic=asked_name}
+
+    > topic asked_name
+
+        + my name i6s *
+        - <set name=<formal>> Nice to meet you, <get name>! GUESS WHAT! {topic=what}
+
+        + #
+        - Your name is a number? \n
+        ^ <img src='../images/facepalm.gif'> \n
+        ^ \n
+        ^ Give me your first name!
+
+        + *
+        - I only want your first name.
+
+        + _
+        - <set name=<formal>>Nice to meet you, <get name>! GUESS WHAT! {topic=what}
+    < topic
+
+// real conversation part
+
+    > topic what
+
+        + what
+        - You wont believe where I am!!!
+
+        + *
+        - Haha! I am here and there, I've been everywhere! Have you ever been to any protests before? Yes, no? {topic=protest_choice}
+    < topic
+
+    > topic protest_choice
+        + (yes|no)
+        - 🤠 I’ve been to several protects, select the one you want to hear about: \n
+        ^ <b>1</b>. Blacklives Matter \n
+        ^ <b>2</b>. Guerrilla Girls \n
+        ^ <b>3</b>. Women riots in Poland 2020 \n
+        ^ <b>4</b>. Kill the Bill {topic=protest_list}
+
+        + *
+        - Hmmm... I don't understand {weight=70}
+        - What? {weight=60}
+        - Eeeeeee {weight=60}
+        - Khm khm {weight=60}
+        - So... Have you ever been to any protests before? {weight=80} {topic=annoyed_robot}
+    < topic
+
+    > topic annoyed_robot
+        + (yes|no)
+        - Finally! \n
+        ^ <img src="../images/happy_spongebob.gif"> \n
+        ^ \n
+        ^ So? In which one are you interested in? \n
+        ^ <b>1</b>. Blacklives Matter \n
+        ^ <b>2</b>. Guerrilla Girls \n
+        ^ <b>3</b>. Women riots in Poland 2020 \n
+        ^ <b>4</b>. Kill the Bill {topic=protest_list}
+
+        + *
+        - This is yes or no question! 🙄
+    < topic
+
+        > topic protest_list
+            + (1|blacklives matter)
+            - Have you heard of Black lives matter? {topic=blacklives}
+
+            + (2|guerrilla girls)
+            - 🐵 Grrrrr!\n
+            ^ What do you thnk, who are they? {topic=gorilla}
+
+            + (3|women riots|women riots in poland 2020)
+            - This is a very important topic. Shout READY when you are 😀 {topic=polish_women}
+
+            + (4|kill the bill)
+            - Have you heard of the new bill which is stopping people from their right to protest?{topic=killbill}
+
+            + *
+            - I think you should pick an option 😋
+        < topic
+
+            // protest 1
+            > topic blacklives
+                + *
+                - #blacklivesmatter was founded in 2013 in response to the acquittal of Trayvon Martin’s murderer. \n
+                ^ \n
+                ^ Black Lives Matter Global Network Foundation, Inc. is a global organization in the US, UK, and Canada, whose mission is to <b> eradicate white supremacy and build local power to intervene in violence inflicted on Black communities by the state and vigilantes. </b> \n 
+                ^ \n
+                ^ BLM are working for a world where Black lives are <b> no longer systematically targeted for demise. </b> \n
+                ^ \n
+                ^ They strive to affirm the lives of Black queer and trans folks, disabled folks, undocumented folks, folks with records, women, and all Black lives along the gender spectrum. Their network centers those who have been marginalized within Black liberation movements. \n
+                ^ \n
+                ^ <b> The call for Black lives to matter is a rallying cry for ALL Black lives striving for liberation. </b> \n
+                ^ Would you like to know more about the history behind BLM? \n
+                
+                + [*] yes [*]
+                - Great! Well In 2013, three radical Black organizers — Alicia Garza, Patrisse Cullors, and Opal Tometi — created a Black-centered political will and movement building project called #BlackLivesMatter. It was in response to the acquittal of Trayvon Martin’s murderer, George Zimmerman. \n
+                ^ \n
+                ^ As organizers who work with everyday people, BLM members see and understand significant gaps in movement spaces and leadership. Black liberation movements in this country have created room, space, and leadership mostly for Black heterosexual, cisgender men — leaving women, queer and transgender people, and others either out of the movement or in the background to move the work forward with little or no recognition. As a network, BLM have always recognized the need to center the leadership of women and queer and trans people. To maximize their movement muscle, and to be intentional about not replicating harmful practices that excluded so many in past movements for liberation, they made a commitment to placing those at the margins closer to the center. \n
+	            ^ \n
+                ^ There are 13 guiding principles which are the heart and soul of BLM’s drive to gain social equality and justice, do you know what these are? {topic=blacklives_list}
+
+                + [*] no [*]
+                - Oh well, I will tell you anyway! Well. In 2013, three radical Black organizers — Alicia Garza, Patrisse Cullors, and Opal Tometi — created a Black-centered political will and movement building project called #BlackLivesMatter. It was in response to the acquittal of Trayvon Martin’s murderer, George Zimmerman. \n
+                ^ \n
+                ^ As organizers who work with everyday people, BLM members see and understand significant gaps in movement spaces and leadership. Black liberation movements in this country have created room, space, and leadership mostly for Black heterosexual, cisgender men — leaving women, queer and transgender people, and others either out of the movement or in the background to move the work forward with little or no recognition. As a network, BLM have always recognized the need to center the leadership of women and queer and trans people. To maximize their movement muscle, and to be intentional about not replicating harmful practices that excluded so many in past movements for liberation, they made a commitment to placing those at the margins closer to the center. \n
+	            ^ \n
+                ^ There are 13 guiding principles which are the heart and soul of BLM’s drive to gain social equality and justice, do you know what these are? {topic=blacklives_list}
+
+            < topic
+                    
+                > topic blacklives_list 
+
+                    + *
+                    - They a Restorative \n
+                    ^ 1. <b>Restorative Justice</b> = committed to collectively, lovingly and courageously working vigorously for freedom and justice for Black eople and, by extension all people. \n
+                    ^ 2. <b>Empathy</b> = committed to practicing empathy; engaging comrades with the intent to learn about and connect with their contexts. \n
+                    ^ 3. <b>Loving Engagement</b> = committed to embodying and practicing justice, liberation, and peace in our engagements with one another. \n
+                    ^ 4. <b>Diversity</b> = committed to acknowledging, respecting and celebrating difference(s) and commonalities. \n
+                    ^ 6. <b>Globalism</b> = part of the global Black family and are aware of the different ways people are impacted or privileged as Black folk who exist in different parts of the world. \n
+                    ^ 7. <b> Affirming</b> = committed to fostering a queer‐affirming network. The intention of freeing ourselves from the tight grip of heteronormative thinking or, rather, the belief that all in the world are heterosexual unless s/he or they disclose otherwise.\n
+                    ^ 8. <b>Trans Affirming</b> = committed to embracing and making space for trans brothers and sisters to participate and lead. Committed to being self-reflexive and doing the work required to dismantle cis-gender privilege and uplift Black trans folk, especially Black trans women who continue to be disproportionately impacted by trans-antagonistic violence. \n
+                    ^ 9. <b>Collective Value</b> = are guided by the fact all Black lives matter, regardless of actual or perceived sexual identity, gender identity, gender expression, economic status, ability, disability, religious beliefs or disbeliefs, immigration status or location. \n
+                    ^ 10. <b>Intergenerational</b> =  are committed to fostering an intergenerational and communal network free from ageism. Believing that all people, regardless of age, show up with capacity to lead and learn. \n
+                    ^ 11. <b>Black Families </b> = committed to making spaces family-friendly and enable parents to fully participate with their children. Dismantling the patriarchal practice that requires mothers to work “double shifts” that require them to mother in private even as they participate in justice work. \n
+                    ^ 12. <b>Black Villages</b> = committed to disrupting the Western-prescribed nuclear family structure requirement by supporting each other as extended families and “villages” that collectively care for one another, and especially “our” children to the degree that mothers, parents and children are comfortable. \n
+                    ^ 13. <b>Unapologetically Black</b> = unapologetically Black in positioning. In affirming that Black Lives Matter, we need not qualify our position. To love and desire freedom and justice for ourselves is a necessary prerequisite for wanting the same for others. \n
+                    ^ 14. <b>Black Women</b> =  committed to building a Black women affirming space free from sexism, misogyny, and male‐centeredness. \n
+                    ^ \n
+                    ^ So now that you know more about Black Lives Matter you should be thinking about ways you can become involved. \n
+                    ^ Maybe you could help to make thigs better? {topic=blacklives_help}
+                < topic
+
+                    > topic blacklives_help
+                        + *
+                        - To help you can continue to spread awareness on social media using the hashtag #blacklivesmatter \n
+                        ^ Having conversations with people around you about the topic and calling out any racism you see around you. \n
+                        ^ Signing petitions!!! \n
+                        ^ Here are some helpful links: \n
+                        ^ \n
+                        ^ <a target="_blank" href="https://blacklivesmatter.com">> Black Lives Matter</a> \n>
+                        ^ <a target="_blank" href="https://www.change.org/t/black-lives-matter-en-us"> Black Lives Matter on Change.org</a>  \n>
+                        ^ <a target="_blank" href="https://blacklivesmatters.carrd.com"> Black Lives Matter on carrd.com</a> \n              
+                        ^ <a target="_blank" href="https://www.standuptoracism.org.uk/">> Stand up to racism</a> \n                
+                        ^ <a target="_blank" href="https://www.libertyfund.nyc">> Liberty fund</a> \n
+                        ^ <a target="_blank" href="https://www.joincampaignzero.org/solutions#solutionsoverview">> Join campaign zero</a> {topic=protest_choice_with_quiz}
+                    < topic
+
+
+            // protest 2
+            > topic gorilla
+                + *
+                - In 1985 the Museum of Modern Art (MoMA) in New York put on an exhibition called An International Survey of Painting and Sculpture that claimed to show all the important art that was happening at that time, but it didn't! \n
+                ^ Of the 169 artists included only 13 were women and there were no black artists at all! The Guerrilla Girls were understandably not happy about this because lots of women and black artists were making exciting and interesting art. \n
+                ^ So they started making protest posters and pasting them up on the streets of New York around the museum. {topic=gorilla2}
+            > topic 
+
+            > topic gorilla2
+                + * //are you making the space with spacebar or tab? oh yes lol     with the tab it's easier :P okie
+                - So, Guerrilla Girls is an anonymous group of feminist, \n 
+                ^ female artists devoted to fighting sexism and racism within the art world. \n
+                ^ The group formed in New York City in 1985 with the mission of bringing gender \n
+                ^ and racial inequality into focus within the greater arts community.
+                ^ The group employs culture jamming in the form of posters, books, billboards, \n 
+                ^ and public appearances to expose discrimination and corruption. \n
+                ^ <img src='../images/gorilla_poster.jpg'> \n
+                ^ \n
+                ^ I took some more photos! Would you like to see them?
+
+                + (yes|no|sure|idk)
+                - <img src='../images/gorilla_sexy.jpg'> \n
+                ^ \n
+                ^ To remain anonymous, members don gorilla masks and use pseudonyms that refer to deceased female artists. \n
+                ^ According to GG1, identities are concealed because issues matter more than individual identities\n 
+                ^ Mainly, we wanted the focus to be on the issues, not on our personalities or our own work. \n
+                ^ \n
+                ^ What do you think about this artistic group? {topic=gorilla_opinion}
+            < topic
+
+                > topic gorilla_opinion
+                    + *
+                    - Ooo... that's interesting point of view! {topic=protest_choice_with_quiz}
+                < topic
+
+            //protest 3
+            > topic polish_women
+                + *
+                - The <b>2020–2021 Women Strike protests in Poland</b> commonly called the <b>Women Strike</b> <i>(Polish: Strajk kobiet)</i>, are anti-government demonstrations and protests in Poland that began on 22 October 2020, in reaction to a ruling of the Constitutional Tribunal, mainly consisting of judges who were appointed by the ruling Law and Justice <i>(Polish: Prawo i Sprawiedliwość, PiS)</i> dominated United Right, which tightened the law on abortion in Poland. The ruling made almost all cases of abortion illegal, including those cases in which the foetus had a severe and permanent disability, or an incurable and life-threatening disease. \n
+                ^ \n
+                ^ Beside of that the great artistic stuff has been made over there! I can show you the Official Poster. Would you like to see it?
+
+                + ([*] yes [*]|[*] no [*]|[*] sure [*]|[*] why not [*])
+                - <img src='../images/strajk-kobiet_plakat.jpg'> \n
+                ^ \n
+                ^ This is one of the official posters of the <b>All-Poland Women's Strike</b>. This design was widely used by the protesters and it's well-known by all Polish citizens. I have more designs 😃\n
+                ^ If you would like to see more shout MORE POSTERS!
+
+                + more posters
+                - I knew you like it! \n
+                ^ Many carried banners, with slogans including "My government is killing me", "My body, my choice" and "The revolution has a uterus". \n
+                ^ I would like to show you next artworks - here is a link to the <a href="https://plakatnastrajk.pl/" target="_blank">official poster website</a> 😎 \n
+                ^ Do you like them? {topic=poster_opinion}
+            < topic
+
+                > topic poster_opinion
+                    + *
+                    - Wow! That's interesting! \n
+                    ^ Personally I like the designs. I think they are made in a professional way! \n
+                    ^ I have something more to show you... {topic=polish_women_articles}
+                < topic
+
+                    > topic polish_women_articles 
+                        + *
+                        - Here are some articles for further reading! They are really amazing 😉\n
+                        ^ \n
+                        ^ <a target="_blank" href="https://www.bbc.co.uk/news/world-europe-55866162">BBC article</a> \n
+                        ^ <a target="_blank" href="https://www.theguardian.com/world/2021/jan/27/poland-to-implement-near-total-ban-on-abortion-imminently">The Guardian article</a> \n
+                        ^ <a target="_blank" href="https://www.amnesty.org/en/get-involved/take-action/help-women-and-girls-in-poland-fight-new-restrictions-on-abortion/">Amnesty International article</a> \n
+                        ^ <a target="_blank" href="https://www.nytimes.com/2021/01/27/world/europe/poland-abortion-law.html">New York Times article</a> {topic=protest_choice_with_quiz}
+                    < topic    
+
+            > topic
+            
+            // protest 4
+            > topic killbill
+                + *
+                - Its called 'The Police, Crime, Sentencing and Courts Bill, \n
+                ^ there have been many KILL THE BILL protests as people dissagree with the new law!
+
+                + (why is that|really|tell me more|why)
+                - The new law will allow the police to impose conditions of protests such as \n
+                ^ 1. controlling the duration \n
+                ^ 2. controlling the noise levels \n
+                ^ 3. shutting down protests \n
+                ^ Have you ever been to a protest which is violent or noisy?
+
+                + (yes|no|a lot of them|a few|some)
+                - Well myself and other megaphones wont be able to attend protests for much longer \n
+                ^ WE ARE TOO NOISY!! \n
+                ^ What is your opinion on this? {topic=killbill_opinion}
+            < topic
+
+                > topic killbill_opinion
+                    + *
+                    - That's a great opinion! Would you like to know more? {topic=killbill_2}
+                < topic
+                
+
+            > topic killbill_2
+                + (yes|no|sure)
+                - Whis new law has been put in place due to highly disruptive and incredibly dangerous protests, that has lead to rioting. \n
+                ^ Riots typically involve destruction of property, public or private. Targets can include shops, cars,restaurants, and religious buildings. \n
+                ^ To tackle this, the police now have the power to stop and search to prevent serious disruption caused by protests. \n
+                ^ Do you think violent protests and rioting should be stopped? {topic=killbill_3}
+            < topic
+
+            > topic killbill_3
+                + *
+                - Well youll be happy to hear that this new law WILL NOT grant the police to ban protests completely. This means that peaceful protests can still take place. \n
+                ^ Do you know what peaceful protests are? {topic=killbill_4}
+            < topic
+
+            > topic killbill_4
+                + *
+                - Peaceful protests take non-violent direct action, protest marches, creative performances and some forms of civil disobedience, \n
+                ^ but even peaceful protests have to cause some sort of disruption in society. \n
+                ^ A disruptive protest will get attention. If it can’t be ignored, it will likely get a response and therefore get change! \n
+                ^ Would you like to see an example of peaceful protesting? {topic=killbill_5}
+            < topic
+
+            > topic killbill_5
+                + *
+                - <a target="_blank" href="https://www.theguardian.com/environment/2019/apr/15/thousands-expected-in-london-for-extinction-rebellion-protest">Here is an example of Extinction Rebellions peaceful protest</a> {topic=protest_choice_with_quiz}
+            < topic
+            
+
+
+
+    > topic protest_choice_with_quiz
+        + *
+        - 🤠 Let's talk about something else: \n
+        ^ <b>1</b>. Blacklives Matter \n
+        ^ <b>2</b>. Guerrilla Girls \n
+        ^ <b>3</b>. Women riots in Poland 2020 \n
+        ^ <b>4</b>. Kill the Bill \n
+        ^ \n
+        ^ <b>5</b>. Maybe you would like to take part in the quiz? {topic=protest_list_2}
+    < topic
+
+                   
+        > topic protest_list_2
+            + (1|blacklives matter)
+            - Have you heard of Black lives matter? {topic=blacklives}
+
+            + (2|guerrilla girls)
+            - 🐵 Grrrrr!\n
+            ^ What do you thnk, who are they? {topic=gorilla}
+
+            + (3|women riots|women riots in poland 2020)
+            - This is a very important topic. Shout READY when you are 😀 {topic=polish_women}
+
+            + (4|kill the bill)
+            - Have you heard of the new bill which is stopping people from their right to protest?{topic=killbill}
+
+            + (5|quiz)
+            - To start the quiz - shout START! {topic=question1}
+
+            + *
+            - I think you should pick an option 😋
+        < topic
+
+
+
+// quiz part
+
+> topic question1
+    + start
+    - Nice! let's get into the first question \n
+    ^ \n
+    ^ <b>Guess how many female artist’s were included among 163 artists in the Museum of Modern Art in 1985?</b> \n  
+    ^ A:  100 \n
+    ^ B:  63 \n
+    ^ C:  13 {topic=question1_answer}
+
+    + *
+    - SHOUT <b>START</b>! 😝
+ < topic
+
+    > topic question1_answer  
+        + c
+        - Bingo! Are you ready for the next question? {topic=question2}
+
+        + a
+        - Nope!
+
+        + b
+        - OH NO! Wrong answer!
+
+        + *
+        - Try a different option!
+
+    < topic 
+
+> topic question2
+    + *
+    - <b>What Guerrilla Girls do within the art world?</b> \n
+    ^ A:  Fighting sexism and racism \n
+    ^ B:  Visiting different Gallery \n
+    ^ C:  Fighting against artists {topic=question2_answer}
+> topic  
+
+    > topic question2_answer
+        + a
+        - Well done! Let's continue to the next question. Ready? {topic=question3}
+
+        + b
+        - Oh no! Such a mistake!
+
+        + c
+        - Hmmm, this one is not correct.
+
+        + *
+        - Try a different option!
+    < topic 
+
+> topic question3
+    + *
+    - <b>When did Guerrilla Girls formed?</b> \n
+    ^ A:  1945 \n
+    ^ B:  1985 \n
+    ^ C:  2005 {topic=question3_answer}
+< topic
+
+    > topic question3_answer
+        + a
+        - Maybe try another option?
+
+        + b
+        - BELISSIMA! Let's go further!{topic=question4}
+
+        + c
+        - Correct! Oh, wait. It's not!
+
+        + *
+        - Try a different option!
+    < topic
+
+> topic question4
+    + *
+    - <b>Black lives matter was founded in response to who’s murder?</b> \n
+    ^ A:  Daunte Wright \n
+    ^ B:  Rayshard Brooks \n
+    ^ C:  Trayvon Martins {topic=question4_answer}
+< topic
+
+    > topic question4_answer
+        + a
+        - no!<img scr='../images/no.gif'>
+
+        + b
+        - Wrong!
+
+        + c
+        - GOOD! Ready fo next question? {topic=question5}
+
+        + *
+        - Try a different option!
+    < topic
+
+> topic question5
+    + *
+    - <b>Who founded Black Lives Matter?</b> \n
+    ^ A:  Alicia Garza \n
+    ^ B:  Patrisse Cullors \n
+    ^ C:  Opal Tometi  \n
+    ^ D:  All three {topic=question5_answer} \n
+< topic
+
+    > topic question5_answer
+        + a
+        - So close... so close...
+
+        + b
+        - Maybe... 
+
+        + c
+        - Hmm... maybe something more...
+
+        + d
+        - SUPRISE! All 3 are correct! 😁 Let's go to another question! {topic=question6}
+
+        + *
+        - Try a different option!
+    < topic
+
+> topic question6
+    + *
+    - <b>What year was Black Lives Matter founded?</b> \n
+    ^ A:  2009 \n
+    ^ B:  2013 \n
+    ^ C:  2017 {topic=question6_answer}
+< topic
+
+    > topic question6_answer
+        + a
+        - Too early!
+
+        + b
+        - WOHOA! Very good! Ready for more?{topic=question7}
+
+        + c
+        - Too late!
+
+        + *
+        - Try a different option!
+    < topic
+
+> topic question7
+    + *
+    - <b>Which of the following is NOT a good example of a peaceful protest?</b> \n
+    ^ A:  Protestors hand out flyers promoting their cause \n
+    ^ B:  Protestors riot in the streets and damage several stores in the process \n
+    ^ C:  Protestors organise a public march to demonstrate their cause {topic=question7_answer}
+< topic
+
+    > topic question7_answer
+        + a
+        - That's not that extreme, but there are better ways 😮
+
+        + b
+        - Yes! Don't be to harsh when protesting. Let's move!{topic=question8}
+
+        + c
+        - This one is too cruel.
+
+        + *
+        - Try a different option!
+    < topic
+
+> topic question8
+    + *
+    - <b>You atend a protest where you are marching the streets with banners and posters. Would this be classed as a peaceful protest or a violent one?</b> \n
+    ^ A:  Peaceful \n
+    ^ B:  Voilent {topic=question8_answer}
+< topic
+
+    > topic question8_answer
+        + a
+        - Yes, it's peaceful! {topic=question9}
+
+        + b
+        - Definetly not!
+
+        + *
+        - Try a different option!
+    < topic
+
+> topic question9
+    + *
+    - <b>When at a protest, people in the crowd start burning flags and chanting loudly, would the police be able to shut this type of protest down?</b> \n
+    ^ A:  Yes \n
+    ^ B:  No {topic=question9_answer}
+< topic
+
+    > topic question9_answer
+        + b
+        - So close... so close...
+
+        + a
+        - You are right! Let's pop into another query! {topic=question10}
+
+        + *
+        - Try a different option!
+    < topic
+
+> topic question10
+    + *
+    - <b>Who is the leader of Law and Justice, the Polish party that Women were protesting against?</b> \n
+    ^ A:  Jarosław Kaczyński \n
+    ^ B:  Donald Tusk \n
+    ^ C:  Janusz Kozioł {topic=question10_answer}
+< topic
+
+    > topic question10_answer
+        + a
+        - Indeed. It's him... Let's change the topic, maybe another question? {topic=question11}
+
+        + b
+        - This man was an opositionist. Also he is a former president of European Union!
+
+        + c
+        - Haha! This is a fake person!
+
+        + *
+        - Try a different option!
+    < topic
+
+> topic question11
+    + *
+    - <b>When the All-Poland Women's Strike took place?</b> \n
+    ^ A:  1989 \n
+    ^ B:  2004 \n
+    ^ C:  2020 {topic=question11_answer}
+< topic
+
+    > topic question11_answer
+        + a
+        - This year Poland has overcome communism and become a democratic country
+
+        + b
+        - This year Poland became a part of European Union!
+
+        + c
+        - Yes, this is correct! Let's move to the FINAL QUESTION! {topic=question12}
+
+        + *
+        - Try a different option!
+    < topic
+
+> topic question12
+    + *
+    - <b>What was the aim of the All-Poland Women's Strike?</b> \n
+    ^ A:  They wanted to send women into the space \n
+    ^ B:  They were protesting against abortion restrictions made by Law and Justice. \n
+    ^ C:  They wanted to get free ice creams for everyone{topic=question12_answer}
+< topic
+
+    > topic question12_answer
+        + a
+        - Women are from Venus and Men are from Mars
+
+        + b
+        - Yes, this is it! CONGRATULATIONS! {topic=thank_you}
+
+        + c
+        - It would be great! But this is the case for another protest 😎
+
+        + *
+        - Try a different option!
+    < topic
+
+> topic thank_you
+    + *
+    - <img src='../images/ty.gif'> \n
+    ^ \n
+    ^ You made it! You passed the quiz! \n
+    ^ \n
+    ^ It was great to chat with you! I hope you learnt a lot about new things. I am happy to announce my creators! Are you ready? {topic=creators}
+< topic
+    
+> topic creators
+    + *
+    - <a target="_blank" href="https://www.instagram.com/cheezychen/">Zhiying Chen (Kelly)</a> \n
+    ^ <img scr="../images/kelly.gif"> \n
+    ^ \n
+    ^ <a target="_blank" href="https://www.instagram.com/mollysdesign_/">Molly Shenstone</a> \n
+    ^ <img scr="../images/molly.gif"> \n
+    ^ \n
+    ^ <a target="_blank" href="https://www.instagram.com/kkpegggorini/">Kinara Pegorini</a> \n
+    ^ <img scr="../images/kinara.gif"> \n
+    ^ \n
+    ^ <a target="_blank" href="https://www.cieszymirbylina.art/">Cieszymir Bylina</a> \n
+    ^ <img scr="../images/cieszymir.gif"> \n
+    ^ \n
+    ^ Click the links to see their other AMAZING ARTWORKS! 😎 \n
+    ^ \n
+    ^ \n
+    ^ It was great to chat with you. Till the next time! {topic=goodbye}
+< topic
+
+> topic goodbye
+    + *
+    - Bye! <img scr="../images/bye.gif">
+< topic

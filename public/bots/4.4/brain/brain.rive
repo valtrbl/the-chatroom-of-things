@@ -1,0 +1,292 @@
+! version = 2.0
+
++ (hello|hi|hey)
+- Hello, I am a compass, and I give direction. What is your name?
+
++ *
+% hello i am a compass and i give direction what is your name
+- Nice to meet you <star>! What are your plans for today? 
+
++ * 
+- Ok! I can give you some suggestions. Do you want to stay at home?
+
++ [*] yes [*]
+- Okay, let me think of some ideas{topic=home}
+
+< topic home
+
++ ok
+- You could read a book
+- You could search for new music to listen to
+- You could clean
+- You could re-organise
+- You could watch a documentary
+- You could start a new boxset
+- You could bake a cake
+- You could start to learn a new language on DuoLingo
+- You could make cookies
+- You could play a video game
+- You could make popcorn and have a movie marathon
+- You could learn how to play chess 
+- You could teach yourself how to juggle
+- You could make a meal for you and your familu
+- You could start a new art piece
+- You could start writing a book or article
+- You could create a scrapbook
+- You could start a new hobby
+- You could complete a puzzle
+- You could try to train your pet
+- You could declutter your wardrobe
+- You could watch livestream/tours of other places
+- You could play card games
+- You could make cocktails
+- You could start working out
+
++ [*] idea [*]
+- You could read a book
+- You could search for new music to listen to
+- You could clean
+- You could re-organise
+- You could watch a documentary
+- You could start a new boxset
+- You could bake a cake
+- You could start to learn a new language on DuoLingo
+- You could make cookies
+- You could play a video game
+- You could make popcorn and have a movie marathon
+- You could learn how to play chess 
+- You could teach yourself how to juggle
+- You could make a meal for you and your family
+- You could start a new art piece
+- You could start writing a book or article
+- You could create a scrapbook
+- You could start a new hobby
+- You could complete a puzzle
+- You could try to train your pet
+- You could declutter your wardrobe
+- You could watch livestream/tours of other places
+- You could play card games
+- You could make cocktails
+- You could start working out
+
++ *
+% you could read a book
+- Some suggestions are: 1984 by George Orwell, The Kite Runner by Khaled Hosseini or To Kill a Mockingbird by Harper Lee
+
++ *
+% you could search for new music to listen to
+- Some songs I find motivational are 
+
++ *
+% you could clean
+- Start off by de-cluttering, then dust/polish any surfaces and finish by mopping or hoovering the floor
+
++ * 
+% you could reorganise
+- I'm sure you have a junk drawer or your wardrobe is overflowing
+
++ *
+% you could watch a documentary
+- Some documentaries I have found really informative are Seaspiracy, Greta Thunberg: A Year to Change the World or The True Cost 
+
++ *
+% you could start a new boxset
+- Breaking Bad, Game of Thrones or Peaky Blinders are all very good
+
++ *
+% you could bake a cake
+- This is a link to my lemon drizzle cake recipe: https://www.bbcgoodfood.com/recipes/lemon-drizzle-cake 
+
++ *
+% you could start a new language on duolingo
+- French is always a useful language, or Italian is also fun!
+
++ * 
+% you could make cookies
+- Who doesn't like chocolate chip cookies? https://www.bbcgoodfood.com/recipes/chewy-chocolate-chip-cookies 
+
++ *
+% you could play a video game
+- https://www.coolmathgames.com/0-fireboy-and-water-girl-in-the-forest-temple 
+
++ *
+% you could make popcorn and have a movie marathon
+- Some options are Pirates of the Caribbean, the Harry Potter films or James Bond
+
++ * 
+% you could learn how to play chess
+- The rules can be complicated, so here's a guide: https://www.instructables.com/Playing-Chess/ 
+
++ * 
+% you could teach yourself how to juggle
+- Here is a video to get you started: https://youtu.be/dCYDZDlcO6g 
+
++ * 
+% you could make a meal for you and your family
+- Gnocchi always seems fancy, try this recipe: https://www.bbcgoodfood.com/recipes/gnocchi-pancetta-spinach-parmesan-cream 
+
++ * 
+% you could start a new art piece
+- Try out a new medium, like spray paint!
+
++ * 
+% you could start writing a book or article
+- Have a look at the news headlines to inspire you.
+
++ *
+% you could create a scrapbook
+- You could make it about your friends or family
+
++ * 
+% you could start a new hobby
+- Activites like yoga are good for both your physical and mental health. Here is a good beginners class: https://youtu.be/v7AYKMP6rOE 
+
++ *
+% you could complete a puzzle
+- Did you know that completing puzzles uses both hemispheres of your brain? 
+
++ *
+% you could try to train your pet
+- This video has some fun examples! https://youtu.be/b5-vy2aL8bM 
+
++ * 
+% you could declutter your wardrobe
+- Start by matching up your socks!
+
++ *
+% you could watch livestreamtours of other places
+- Machu Pichu is incredible! https://www.youvisit.com/tour/machupicchu 
+
++ *
+% you could play card games
+- Sevens is fun for everyone, and is just as much down to luck as skill! https://www.wikihow.com/Play-Sevens-(Card-Game)
+
++ *
+% you could make cocktails
+- This website gives some good suggestions that are affordable! https://www.thespruceeats.com/cheap-drinks-to-make-at-home-759877 
+
++ *
+% you could start working out
+- The Couch to 5k initiative is really good! 
+
++ [*] thank you [*]
+- You're welcome{topic=random}
+
+ > topic
+
++ no
+- Alright, let me think of some ideas for you to go out and do!{topic=out}
+
+< topic out
+
++ *
+- You could go to the park
+- You could go to the cinema
+- You could go to an art exhibition
+- You could go shopping
+- You could explore a new area
+- You could go for some food & a catch up with a friend
+- You could go for a walk
+- You could go to the beach
+- You could go bowling 
+- You could go for drinks
+- You could go to a café
+- You could go for a run
+- You could go out and find somewhere nice to read a book
+- You could have a picnic
+- You could go out and take pictures
+- You could go out and play a sport
+
++ [*] idea [*]
+- You could go to the park
+- You could go to the cinema
+- You could go to an art exhibition
+- You could go shopping
+- You could explore a new area
+- You could go for some food & a catch up with a friend
+- You could go for a walk
+- You could go to the beach
+- You could go bowling
+- You could go for drinks
+- You could go to a café
+- You could go for a run
+- You could go out and find somewhere nice to read a book
+- You could have a picnic
+- You could go out and take pictures
+- You could go out and play a sport 
+
++ *
+% you could go to the park
+- Use this link and input your postcode to find your nearest park: https://www.gov.uk/find-your-local-park
+
++ * 
+% you could go to the cinema
+- Take a look at this website to see what's coming out: https://www.cineworld.co.uk/static/en/uk/blog/new-movie-release-dates-everything-you-need-to-know 
+
++ *
+% you could go to an art exhibition
+- There are plenty of galleries that have free entry. This link takes you to some options in London: https://theculturetrip.com/europe/united-kingdom/england/london/articles/the-8-best-free-art-galleries-in-london/ 
+
++ *
+% you could go shopping
+- It's important to be mindful of how much you consume, however it can be nice to treat yourself from time to time. If you don't want to indulge in something permanent, try going to a supermarket you've never visisted before and buy ingredients for a meal you've never had before.
+
++ *
+% you could explore a new area
+- There are lots of apps out there to help you get around, like citymapper! If you're based in London, this website offers suggestions for places to visit: https://handluggageonly.co.uk/2018/10/24/15-of-the-best-areas-in-london-you-have-to-visit/ 
+
++ *
+% you could go for some food a catch up with a friend
+- Maybe try reaching out to a friend you haven't spoken to in a while!
+
++ *
+% you could go for a walk
+- Did you know that walking for 10 miles every week would eliminate 500 pounds of carbon dioxide emissions a year?
+
++ * 
+% you could go to the beach 
+- This website gives some options that aren't too far out of London! https://www.oliverstravels.com/blog/beaches-near-london/
+
++ * 
+% you could go bowling
+- Did you know that the first indoor bowling lane opened in 1840 in New York?
+
++ *
+% you could go for drinks
+- In 2016 a pub audit showed that there were 3,615 pubs in London! 
+
++ *
+% you could go to a cafe
+- Lots of people take their work to cafe's as a change of scenery to help productivity.
+
++ *
+% you could go for a run
+- The Couch to 5k initiative is really helpful for beginners! 
+
++ *
+% you could go out and find somewhere nice to read a book
+- You could go to a cafe, or a park. This website helps you find your nearest park: https://www.gov.uk/find-your-local-park 
+
++ *
+% you could have a picnic
+- It doesn't have to take much planning! You can use leftovers or even stop by a takeaway!
+
++ *
+% you could go out and take pictures
+- London is notorious for both famous and secret hidden spots. This website gives 38 suggestions: https://www.londonxlondon.com/beautiful-places-in-london/ 
+
++ * 
+% you could go out and play a sport
+- Rounders, badminton or tennis are easy to pick up! 
+
++ [*] good [*]
+- You're welcome{topic=random}
+
+ > topic
+
++ [*] thank you [*]
+- No problem!
+
++ [*]
+- Sorry, I do not get what you said
+- I am afraid that I can not understand you

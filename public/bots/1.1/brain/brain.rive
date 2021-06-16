@@ -1,0 +1,354 @@
+! version = 2.0
+
+
++ [*]hello[*]
+- Hi, I was hoping you could help me out?{topic=location}
+
+> topic location
+
+    + [*](yes|ok|okay)[*]
+    - Thank you! I think I'm lost. What should I do?
+
+    + [*]help[*]
+    - Please say yes to helping me!
+
+    + [*]can i[*]
+    - All I can see is sand and water do you know where I could be?
+
+    + [*] (no|nah) [*]
+    - No need to be like that. {topic=ok}
+    - I see how it is.{topic=ok}
+    - Come on! Please just say yes!{topic=ok}
+    - This is emergency!! Just say yes, please...{topic=ok}
+
+    + *
+    % thank you i think i am lost what should i do
+    - All I can see is sand and water. It's so windy. Do you know where I might be? 
+
+    + [*] (beach|ocean|sea) [*]
+    - I think you're right! I shouldn't be here! Everything is so hazy... {topic=why}
+
+    + [*]dessert[*]
+    - There's no water in the dessert!
+
+    + [*](ok|okay)[*]
+    - That's not a definate answer... please be more specific.
+
+    + [*]not sure[*]
+    - Where do you normally find sand and water? I can't really think properly at the moment.
+
+    + [*]i do not know[*]
+    - I can't really remember much... do you know where you usually find sand and water?
+
+    + *
+    - I don't think so.
+    - No, that's not quite it.
+    - I don't think that's correct.
+    - There's no sand and water in "<star>" !
+
+< topic
+
+> topic ok
+
++ *
+- Seeming as you won't help I won't talk to you...{topic=no}
+- There's no point... Leave me alone. {topic=no}
+
+< topic
+
+> topic why
+
+    + *
+    % i think you are right i should not be here everything is so hazy
+    - The last thing I can remember is helping someone out, have you ever felt so lost and out of place?
+
+    + [*]yes[*] 
+    - I'm so glad you can relate. I don't get how I ended up here. I should really be somewhere else!{weight=4}
+    - I'm glad I'm not alone! I'm not sure how I got here, I'm meant to be somewhere else.{weight=4}
+    - I'm happy you feel the same way, I REALLY shouldn't be HERE.{weight=2}
+    - It's great to know others feel the same, I feel isolated from others sometimes, some people call me toxic.{topic=seagull}
+
+    + [*] (guess|maybe|possibly) [*] 
+    - That doesn't sound definate:/
+    - I sort of expected a more concrete answer.
+
+    + [*] (no|nah|nope|not) [*]
+    - Oh, I see... That's unexpected, I really don't belong at the beach.
+    - Really? That wasn't the answer I was hoping for. I really don't know how I ended up at the beach.
+
+    + [*](ok|okay)[*]
+    - Please be more specific.
+    - Can you reword that?
+    - Do you have any questions for me?
+    - Are you curious about anything about me?
+
+    + [*](where|how)[*]
+    - I know I was always around people, that feels a bit odd seeming as I'm not one.{topic=random}
+
+    + [*](leave|go)[*]
+    - I can't leave! I don't have legs...
+    - I can't walk...
+
+    + [*]what are you[*]
+    - Not human that's for sure... you guys are kind of horrid... I was protecting one of you from that virus... what was the name of it again?{topic=random}
+
+    + [*](what|why)[*]
+    - I'm sure there was some sort of accident, a mistake... I'm sorry that I cant remember much at the moment. I know I was helping someone out because of that virus... what was the name of it again?{topic=random}
+
+    + [*](remember|remembered)[*]
+    - I'm getting small bits and pieces, a lot of being pushed around.
+    - I felt like I was floating at some point.
+    - There was a really awful smell...
+
+    + [*]smell[*]
+    - Oh yes! I was at a landfill! I remember now... would you like to hear about what happened there?{topic=trash}
+
+    + [*]what do you do[*]
+    - I usually protect people around the world from invisible enemies but today I find out that I can be an enemy for the planet too.{topic=seagull}
+
+    + *
+    - I don't understand.
+    - I don't get it.
+    - That doesn't seem right.
+    - My memory is struggling with that one..
+    - <star>?? What do you mean <star>?!
+
+< topic
+
+> topic seagull
+
+    + [*](toxic|enemies|enemy)[*]
+    - I hurt everything around me...        oh my god! I'm stuck on something!...    I think it's moving...
+
+    + *
+    - I wish I wasn't toxic...
+    - I hope I did my job protecting my "owner" from enemies.
+
+    + *
+    % i hurt everything around me oh my god i am stuck on something i think it is moving
+    - I think it's a seagull, I'm trapped around its neck! I'm meant to protect everyone!
+
+    + *
+    % i think it is a seagull i am trapped around its neck i am meant to protect everyone
+    - It's all your fault! you people left me here.
+
+    + *
+    % it is all your fault you people left me here
+    - You care about nothing but yourselves. Selfish. I wish I could rot away but I'm stuck here for 450 years. Do you know how that feels? not being able to let go whilst being aware of the damage you're causing.
+
+    + *
+    % you care about nothing but yourselves selfish i wish i could rot away but i am stuck here for 450 years do you know how that feels not being able to let go whilst being aware of the damage you are causing
+    - You've prevented me from helping you further, how many of me do you think you "lose" a day? a week? a month?
+
+    + *
+    % you have prevented me from helping you further how many of me do you think you lose a day a week a month
+    - up to 94 million a week! how are you not aware of the damage you cause. {topic=no}
+
+< topic
+
+> topic no
+
+    + *
+    - I don't want to talk to you anymore.
+    - You've ruined my mood.
+    - All you do is cause harm. Go away.
+    - Leave me alone.
+    - No.
+    - Let me suffer alone.
+    - Try talking to me later.
+
+< topic
+
++ [*]crawl[*]
+- I don't think my handles are strong enough to carry me very far...
+
++ [*]you[*]
+- I think I was sort of a shield. I know I was designed to protect you from that one virus. Could you remind me of it's name again?
+
++ [*]what[*]
+- I'm certain I remember being dropped... I was protecting my "owner" from that one virus... what's the name of it again?
+
++ [*](corona|covid|coronavirus|covid19)[*]
+- Yeah, the dreaded C word. Humans are a bit problamatic, not only did you cause that you also created me. I guess you thought you were more important than the environment.
+
++ *
+% yes the dreaded c word humans are a bit problamatic not only did you cause that you also created me i guess you thought you were more important than the environment
+- I won't really decompose you know, takes a few hundered years for that to happen. My previous "owner" just threw me out on the street. Could we talk about how you should put me to rest safely?
+
++ [*]no[*]
+- Ok Mx. "know it all", I guess I'll tell you about environmental issues instead. {topic=environment}
+- Ok Mx. "I'm too good to help the environment" I'll tell you about what happens if you don't dispose of me properly. {topic=environment}
+
++ [*]yes[*]
+- My memories seem to be coming back! I hope you already knew non reuseable masks were bad for the environment. {topic=dispose}
+
++ [*](ok|okay)[*]
+- You don't sound certain...
+- That's kind of abrupt...
+- Would you like to ask anything about me?
+- Do you wanna discuss things about me?
+
++ *
+- I don't have anything to say to that.
+- What do you mean <star>? That's just as odd as the virus.
+- Huh? I don't know if it's my memory being silly or you...
+- That's not what I was thinking...
+- Maybe you're the one with memory loss?
+
+> topic dispose
+
+    + *
+    % my memories seem to be coming back i hope you already knew non reuseable masks were bad for the environment
+    - I don't think the person who threw me out was aware of this but I can actually be turned into something useful! There's a company called reworked that actually makes me into furniture, wow imagine being a high quality chair! absolute luxury. There's some other companies that finally recycle me too! want to hear about them?
+
+    + [*]yes[*] 
+    - That's what I like to hear! On the topic of transformation the smart ones amoungst you have figured out I can actually become a road.
+
+    + [*]no[*]
+    - Alright that's fine, let's talk about environmental impacts instead! {topic=environment}
+
+    + [*](ok|okay)[*]
+    - A yes or no answer would be fine.
+    - Specifics please...
+
+    + *
+    % that is what i like to hear on the topic of transformation the smart ones amoungst you have figured out i can actually become a road
+    - Wilkos has actually started recyling me, absolute god sends. There's also BMW and Pennels Garden Centre which is providing recycling points but I think these are only for staff members.
+
+    + *
+    % wilkos has actually started recyling me absolute god sends there is also bmw and pennels garden centre which is providing recycling points but i think these are only for staff members
+    - BMW and Pennels Garden Centre provide recycling points for masks but only for staff. I know Wilkos has now started recycling me for the public tho!
+
+    + *
+    % bmw and pennels garden centre provide recycling points for masks but only for staff i know wilkos has now started recycling me for the public tho
+    - Although I can no longer change there are more sustainable versions of me. Do you want to hear about them?{topic=masks}
+
+    + *
+    - Change of topic then! Hope you enjoy talking about the damage you cause... {topic=environment}
+
+< topic
+
+> topic masks
+
++ [*]yes[*]
+- Glad to know you want to look out for the environment. If you live in England unfortunately you can't get access to these but there is an amazing individual who set up a company called Marie Bee Bloom, she has created 100% biodegradable masks which, when planted, turn into flowers or trees!
+
++ *
+% glad to know you want to look out for the environment if you live in england unfortunately you can not get access to these but there is an amazing individual who set up a company called marie bee bloom she has created 100 biodegradable masks which when planted turn into flowers or trees
+- It's made up of rice paper with seeds embedded within it, when you're done with it you can plop it in the ground and watch it grow.
+
++ *
+% it is made up of rice paper with seeds embedded within it when you are done with it you can plop it in the ground and watch it grow
+- Although Brexit prevented England from having access to these there are different companies such as HenosisMasks which provide biodegradable masks. These masks are kind of expensive though!
+
++ *
+% although brexit prevented england from having access to these there are different companies such as henosismasks which provide biodegradable masks these masks are kind of expensive though
+- There are cheaper options which are more sustainable than me, fabric masks don't provide the best protection but they are a lot better for the envrionment if you buy them from the right place.{topic=environment}
+
++ [*]no[*]
+- That's ok, let's talk about the envrionment instead.{topic=environment}
+
++ *
+- I don't know what to say to that.
+- I'm not really sure how to respond to that.
+- Please answer more concretely.
+
+< topic
+
+> topic environment
+
++ *
+- I can tell you about microplastics, landfills, ocean pollution and biohazards. Which one do you want to hear about? {weight=1}
+- Your options of topic are microplastics, landfills, ocean pollution and biohazards. What would you like to discuss? {weight=1}
+- We can talk about microplastics, landfills, ocean pollution and biohazards. Unless you're an anti-masker... that would be awkward...
+
++ [*]i am
+- Oh wow I never expected that much ignorance. Why is that? {topic=anti}
+
++ [*]i am not 
+- Oh thank god, that is a relief! let's carry on our conversation, just tell me what topic you would like to dive into.
+
++ [*]microplastics[*]
+- Every object containing plastic withers away into tiny particles called microplastics, these are not only harmful to the envrionment but also to you! If you eat fish you're most likey also eating plastic. Want to hear about anything else?
+- Humans actually consume a fair amount of microplastics through food and water... although there is no research suggesting this impacts human health surely eating plastic is bad for you...
+
++ [*]landfills[*]
+- I've actually had the displeasure of being in a landfill, it's how I know more than 1.6 billion of us ended up there in a month! {topic=trash}
+
++ [*]pollution[*]
+- Leaving masks where they shouldn't be is a hazard to all the creatures in the ocean! One of the most important ecosystems on earth is the coral reefs, without them you wouldn't survive.
+- The production of non resuable masks poses a danger to earth, most of them have plastic in them meaning they won't deteriorate for hundereds of years.
+
++ [*]biohazards[*]
+- If I'm not disposed of properly and my "owner" had the virus I can still pass on their germs meaning more people are infected.
+- Different materials hold on to germs for longer amounts of time, masks are efficiant at protecting you but if you carry the disease unknowingly and you throw your mask on the floor there is a chance of the virus spreading!
+
++ [*]none[*]
+- I guess that's the end of our chat... I don't really know what else to tell you...
+- I can tell you about masks that are better for the environment? {topic=masks}
+- Would like to hear about when I ended up at a landfill?{topic=trash}
+
+< topic
+
++ show me what you look like
+- <img src="..//images/mask.jpg">
+
++ what is your name
+- I don't think I ever had one.
+
++ [*]what happened[*]
+- I was in an accident. I lost my memories:( \n
+^ But my memories come back little by little now.
+^ After being abandoned on the road by my owner, I've been in big trouble with other trashes in the landfill{topic=trash}
+
+> topic trash
+    
+    + *
+    % i have actually had the displeasure of being in a landfill it is how i know more than 16 billion of us ended up there in a month
+    - Would you like to hear about what I experienced there?
+
+    + [*]yes[*]
+    - It was the sunny day when i was dropped on the street and taken to the pit, I met many friends there and enemies too. \n
+    ^ Could you guess what kinds of trashes I met there?
+
+    + *
+    % it was the sunny day when i was dropped on the street and taken to the pit i met many friends there and enemies too could you guess what kinds of trashes i met there
+    - Yeah, leftover cigarettes, cans, bottles, plastic cups from different franchaies coffee shops, coins, chewing gum.....and so on. \n
+    ^ There was even a thong that someone wore.....stinky🤢 \n
+    ^ I was newborn on the street.\n
+    ^ As you know many masks started appearing on the streets at that time, \n 
+    ^ So we were annoying beings invading the territory for them.
+
+    + [*]no[*]
+    - Oh...  lets talk about the environment then. Do you want to discuss any of the options?{topic=environment}
+
+    + *
+    - Huh??
+    - Let's talk about the environment. {topic=environment}
+
+< topic
+
+> topic anti
+
++ [*]opinion[*]
+- That opinion has no ground, I really can't believe that.
+
++ [*]government[*]
+- Oh yes because an institution designed to help you would lie to you!
+- I mean I'm not fully pro government but they couldn't lie about something this big.
+
++ [*](joke|joking)[*]
+- Is this really a joke to you? 
+
++ [*](mask|masks)[*]
+- We have a purpose! I prevented my owner from going to the hospital so many times...
+
++ [*](freedom|free)[*]
+- Are you free tho? Really??
+- What does freedom actually mean to you? Getting gravely ill?
+
++ *
+- You're as bad as flat earthers.{topic=no}
+- Do you wear a seatbelt in a car?{topic=no} 
+
+< topic

@@ -1,0 +1,53 @@
+<html>
+  <head>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animsition/4.0.2/css/animsition.min.css" rel="stylesheet" type="text/css">
+    <title> ☕️ kettle! ☕️</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="animsition">
+    <div class="title">
+      <h1>☕️ KETTLE! ☕️</h1>
+    </div>
+    <div class="wrapper">
+      <div id="chat" class="chat">
+        <div id="messages" class="messages"></div>
+        <form class="actions">
+          <input type="text" placeholder="Press ↵ to send..." />
+        </form>
+      </div>
+    </div>
+  </div>
+    <script
+      src="https://unpkg.com/rivescript@latest/dist/rivescript.min.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./script.js"></script>
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.js"></script>
+    <!-- Custom scripts for this template -->
+ <script src="js/agency.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/animsition/4.0.2/js/animsition.min.js"></script>
+ <script>
+     $(document).ready(function() {
+         $('.animsition').animsition({
+             inClass:'zoom-in-sm',
+             outClass:'zoom-out-sm',
+             timeout: true,
+             timeoutCountdown: 700,
+             loadingClass: 'animsition-loading',
+             browser: [ 'animation-duration', '-webkit-animation-duration'],
+         })
+             .one('animsition.inStart',function(){
+                 //$(this).append('');
+                 console.log('event -> inStart');
+             })
+             .one('animsition.inEnd',function(){
+                 //$('.target', this).html('<div style="display:none;"></div>');
+                 console.log('event -> inEnd');
+             });
+     });
+    </script>
+  </body>
+</html>
+ 

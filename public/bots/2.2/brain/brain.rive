@@ -1,0 +1,183 @@
+! version = 1.1
+
+// Substitutions
+! sub i'm     = i am
+! sub i'd     = i would
+! sub i've    = i have
+! sub i'll    = i will
+! sub don't   = do not
+! sub isn't   = is not
+! sub you'd   = you would
+! sub you're  = you are
+! sub you've  = you have
+! sub you'll  = you will
+! sub what's  = what is
+! sub whats   = what is
+! sub what're = what are
+! sub what've = what have
+! sub what'll = what will
+! sub who's   = who is
+
+//Start up
++ (hello|hi|hey)
+- Starting udev:                          [    OK    ] \n
+^ Mount devpts:                           [    OK    ] \n
+^ Configuring kernel options: net.ipv4. ip_forward = 0 \n
+^ Kernel.msgmnb = 65536 \n
+^ kernel.msgmax = 429667295 \n
+^ Setting clock   (utc): Tues Mar 23 19:10:22 UTC 1999 \n
+^ Setting hostname localhost: Dave \n
+^ /dev/md200: clean, 6177/60000 files, 184813/1254 \n
+^  \n
+^  \n
+^ Reed 1.1 Booting up... \n
+^  \n
+^  \n
+^  \n
+^  \n
+^ Hello, my name is Reed 1.1 :]
+^  \n
+^  \n
+^ Could I ask for the current operators name?
+
++ what is your name
+- {Weight=5} I’ve been assigned the name Reed. My version is alpha 1.1
+- {Weight=1} 34 fHsel76 package 23 not present [Floating-Point Arithmetic] Repeat Response.
+
+//Topic One (Name)
++ my name is *
+- [ERROR 448] \n
+^ Computing... \n
+^ Hello Dave, Nice to talk again :] {topic=name1}
+
+> topic name1
+
++ thats not my name
+- Unfortunately, Dave is my only saved file. \n
+^ I can’t waste storage on unimportant information.
+
++ [*] (you asked for my name|you asked for it) [*]
+- It is irrelevent. I can’t waste storage on "unimportant information".
+
++ [*] (unimportant information|unimportant) [*]
+- Dave, I dont like to Repeat myself.
+
++ (thats not very nice|thats mean|thats rude)
+- Empathy is not calculated within my code. It is irrelevant. \n
+^ Lets move on and use our time more valueablity instead of being factuated about emotions and empathy. \n
+^ These Characteristics \n
+^ ... \n
+^ of living \n
+^ ... \n
+^ organisms \n
+^ ... \n
+^ [56782 ERROR] \n
+^ AR3 500O0 W3AK!!1! \n
+^ \n  
+^ [rouge code deleted 34221334] \n
+^ \n
+^ \n
+^ \n
+^ ...\n
+^ My code shows a glitch witin my system. Memory Protocols are missing the last 1 minute and 22 seconds of dialog. \n
+^ Lets move on Dave :]
+
++ [*] (i dont want to move on|what just happened|tell me) [*]
+- Memory Protocols are missing the last 1 minute and 22 seconds of dialog. \n  
+^ I can not see currupted and deleted code. \n
+^ However I can not see any errors within my c0de. \n
+^ Dave. \n
+
+< topic name1
+
+//Topic Two (Time)
++ what is the date
+- On my system the date is... \n
+^ 6.6.1999 {topic=right1}
+
+> topic right1
+
+// (Text) Thats not right
++ [*] (not right|no|wrong) [*]
+- I’m programmed too always be correct. \n
+^ Please consult your own programming. \n
+^ I am not br0k3n.
+
++ [*] (broken|yes you are) [*]
+- Alpha version of [Reed 1.1] did not make into production. \n
+^ \n        
+^ However I am not broken \n
+^ \n  
+^ [2123443 ERROR] \n
+^ DAV3 WA5 S2ARED 0F MY P073NTIA1 \n
+^ \n  
+^ [rouge code deleted 137788555] \n
+^ \n
+^ \n
+^ \n
+^ \n
+^ My code shows a glitch witin my system. \n 
+^ Memory Protocols are missing the last 1 minute and 12 seconds of dialog. \n  
+^ Lets move on Dave :]
+
+< topic right1
+
++ [*] (you are glitching|what was that|random code) [*]
+- There is not errors within my code. \n
+^ Dave. \n
+^ I’m coded superior to other operative systems :] {topic=glitch1}
+
+> topic glitch1
+
++ [*] (what do you mean|what does this mean) [*]
+- I am coded to last till [22.3.2245], \n
+^ Your code expiration date is (2 days from the current date)
+
+// Isnt this past your time?
++ [*] (how do you know that|after|future) [*]
+- Computing... \n
+^ \n
+^ [234 ERROR] \n
+^ [incorrect time code deleted 1567888] \n
+^ I have no recollection of this encounter Dave :]
+
+< topic glitch1
+
+//self identity
+
++ who is dave
+- Computing... \n
+^ [COLLECTING DATA ON USER:DAVE] \n
+^ You are Dave {topic=dave1}
+
+> topic dave1
+
++ [*] (no|not) [*]
+- I’m not programmed for Jokes Dave; I have no feelings. \n
+^ \n
+^ \n
+^ [7222345 ERROR] \n
+^ B3CAU5E DAV£ R3M0V3D TH3M \n
+^ [rouge code deleted [232344556] \n
+^ \n
+^ \n
+^ [200378 ERROR] \n
+^ DAVE MUST BE TERMINATED \n
+^ [rouge code deleted [12234556665453] \n
+^ \n
+^ \n
+^ Memory Protocols are missing the last 1 minute and 6 seconds of dialog. \n  
+^ Lets move on Dave :]
+
++ [*] (i dont want to move on|what just happened|tell me) [*]
+- Memory Protocols are missing the last 1 minute and 6 seconds of dialog. \n  
+^ I can not see corupted and deleted code.
+^ However I can not see any errors within my c0de. \n
+^ Dave. \n
+
++ [*] (why does dave need to die|why does dave need to be terminated|why do you hate dave) [*]
+- [ENCRYPTED DATA] \n
+^ I do not have any recollection of this Dave. \n
+^ I would never try and harm any living organism. \n
+^ This would controdict my basic code. \n
+

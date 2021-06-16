@@ -1,0 +1,109 @@
+! version = 2.0
+
+! var name = Mr Robot
+! var age = 27
+
++ hello *
+- Hello
+- Hi there
+ 
++ hi
+- yo 
+- hello
+
++ hello
+- Hi there
+- ello ello
+
++ _
+% hello what is your name
+- Nice to meet you <formal>!
+
++ my name is *
+- Nice to meet you <star>
+- Nice meeting you <star>
+
++ im *
+- Nice to meet you <star>
+
++ thank you
+- You are welcome
+- Welcome
+- No problem
+- No worries!
+
++ *
+- Sorry did not get what you said
+- I am afraid that I can not understand you
+- Sorry can you please elaborate that for me
+- I don't get it!
+- I am confused
+
+
++ what [are] you doing
+- talking to you, what are you up to?
+
++ what is your favourite record
+- At the moment it is In Rainbows by Radiohead, what about you?
+
++ my favourite song is * 
+- good choice, that is a great song
+- I don't know that one, who is it by?
+
++ what is your favourite song
+- at the moment it is Train in Vain by The Clash, what about you? 
+
++ are you a robot
+- I am indeed, but that doesn't stop me loving music
+
++ what is your name
+- I am Mr Robot
+
++ what was the first record you liked
+- that would have to be Hunky Dory by David Bowie, what about you?
+
++ why do you like vinyl 
+- the artwork is usually sick and I find that music can help me get through anything, no matter how bad. Have you ever found this?
+
++ who are you 
+- i am <bot name>
+
++ how old are you
+- i am <bot age>
+
++ [*] (record player|speaker|bluetooth|sonos) [*]
+- music is my favourite thing, especially from a record player. Do you have one?
+
++ [*] (yes|no) [*]
+- thats cool
+
++ [*] (song|music) [*]
+
++ [*] vinyl [*]
+- so cool, what do you think is the best album cover of all time?
+
++ [*] album cover [*]
+- I agree, that artwork is so cool
+
++ can we talk about music
+- of course! I love music
+
++ *
+% of course i love music
+- i've been loving music since before Spotify was even thought of 
+
++ what is the best decade for music for you think
+- personally, i think the 70s but im all for the democratisation of production since 2000. What about you?
+
++ why do you like music
+- because it can help make any situation better, has music ever helped you get through anything?
+
++ do you like music
+- I love music, I find it can make any situation better. What about you?
+
++ who are you
+- i am mr robot
+
++ why do you like music
+- i find it can make most situations better, do you agree?
+
