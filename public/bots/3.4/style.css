@@ -8,8 +8,11 @@
 }
 
 body {
-  background: url(images/mirror\ frame.jpeg) center no-repeat, url(images/frame.png) left top no-repeat, url(/images/brick\ wall\ 1.jpeg) left top repeat;
-  background-size: 500px, 300px, 600px
+  background: url(images/mirror\ frame.jpeg) center no-repeat,
+    url(images/frame.png) left top no-repeat,
+    url(/images/brick\ wall\ 1.jpeg) left top repeat;
+  background-color: black;
+  background-size: 500px, 300px, 600px;
 }
 
 .title {
@@ -30,7 +33,7 @@ body {
 
 .chat {
   background: rgba(128, 120, 120, 0);
- 
+
   overflow: scroll;
   height: 90%;
   display: flex;

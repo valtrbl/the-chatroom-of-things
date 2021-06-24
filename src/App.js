@@ -18,50 +18,94 @@ const EnterScreen = ({ setEntered }) => (
   </div>
 );
 
-const BotListView = ({ bot }) => (
-  <>
-    {bot.exists === true ? (
-      <a
-        className="flex py-4 items-center space-x-8 font-$roc hover:bg-gray-100 transition-colors group"
-        tabIndex={bot.id}
-        href={`/bots/${bot.id}`}
-        target="_blank"
-        rel="noreferrer"
-      >
-        <img
-          className="w-24 h-24 bg-cover transition-all text-xs"
-          src={`img/icons/${bot.id}.png`}
-          alt={`Icon for group ${bot.id}`}
-        />
-        <p>{bot.tagline.length > 0 ? bot.tagline : bot.name}</p>
-      </a>
-    ) : (
-      <div
-        className="flex py-4 items-center space-x-8 font-$roc transition-colors group opacity-50"
-        tabIndex={bot.id}
-      >
-        <img
-          className="w-24 h-24 bg-cover transition-all text-xs"
-          src={`img/icons/${bot.id}.png`}
-          alt={`Icon for group ${bot.id}`}
-        />
-        <p>{bot.tagline.length > 0 ? bot.tagline : bot.name}</p>
-      </div>
-    )}
-  </>
-);
+const addDefaultIcon = (ev) => {
+  ev.target.src = "img/icons/default.png";
+};
+
+const BotListView = ({ bot }) => {
+  return (
+    <>
+      {bot.exists === true ? (
+        <a
+          className="flex py-4 items-center space-x-8 font-$roc hover:bg-gray-100 transition-colors group"
+          tabIndex={bot.id}
+          href={`/bots/${bot.id}`}
+          target="_blank"
+          rel="noreferrer"
+        >
+          <img
+            className="w-24 h-24 bg-cover transition-all text-xs"
+            src={`img/icons/${bot.id}.png`}
+            alt={`Icon for group ${bot.id}`}
+            onError={addDefaultIcon}
+          />
+          <p>{bot.tagline.length > 0 ? bot.tagline : bot.name}</p>
+        </a>
+      ) : (
+        <div
+          className="flex py-4 items-center space-x-8 font-$roc transition-colors group opacity-50"
+          tabIndex={bot.id}
+        >
+          <img
+            className="w-24 h-24 bg-cover transition-all text-xs"
+            src={`img/icons/${bot.id}.png`}
+            alt={`Icon for group ${bot.id}`}
+            onError={addDefaultIcon}
+          />
+          <p>{bot.tagline.length > 0 ? bot.tagline : bot.name}</p>
+        </div>
+      )}
+    </>
+  );
+};
 
 const BotIndexView = ({ bot }) => (
   <div className="space-y-2 p-4">
-    <div
-      className="h-28 w-40 bg-gray-50 rounded-md bg-cover"
-      style={{ backgroundImage: `url(img/icons/${bot.id}.png)` }}
+    <img
+      onError={addDefaultIcon}
+      src={`img/icons/${bot.id}.png`}
+      alt={`Icon for group ${bot.id}`}
+      className="h-28 w-40 bg-gray-50 rounded-md object-scale-down"
     />
     <p>{bot.id}</p>
   </div>
 );
 
 const views = ["Home", "Index"];
+
+const icons = [
+  "1.1.png",
+  "1.2.png",
+  "1.4.png",
+  "1.5.png",
+  "2.5.png",
+  "3.6.png",
+  "4.1.png",
+  "4.5.png",
+  "4.6.png",
+];
+
+const Background = () => {
+  const [randomIcons, setRandomIcons] = useState(
+    icons.sort(() => Math.random() - Math.random()).slice(0, 5)
+  );
+  return (
+    <div className="fixed w-screen h-screen ">
+      {randomIcons.map((icon, index) => (
+        <img
+          key={index}
+          src={`/img/icons/${icon}`}
+          alt="icon"
+          className="w-48 h-48 fixed"
+          style={{
+            left: `calc(${Math.floor(Math.random() * 100)}vw - 12rem)`,
+            top: `calc(${Math.floor(Math.random() * 100)}vh - 12rem)`,
+          }}
+        />
+      ))}
+    </div>
+  );
+};
 
 const App = () => {
   const [bots, setBots] = useState();
@@ -176,7 +220,10 @@ const App = () => {
           </div>
         </div>
       ) : (
-        <EnterScreen setEntered={setEntered} />
+        <>
+          <Background />
+          <EnterScreen setEntered={setEntered} />
+        </>
       )}
     </>
   );

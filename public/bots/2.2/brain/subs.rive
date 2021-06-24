@@ -148,6 +148,11 @@
 ! sub (k)       = kissyface
 ! sub (f)       = rose
 ! sub (w)       = wilted rose
+! sub hi        = hello
+! sub hey       = hello
+! sub hiya      = hello
+! sub sup       = hello
+! sub yo        = hello
 
 // Person substitutions
 ! person i am    = you are

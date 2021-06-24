@@ -8,7 +8,7 @@
 // hello part
 + *
 - Hello! I'm the <b>Megaphone</b> 😎\n
-^ <img src='../images/megaphone.jpg'> \n
+^ <img src='./images/megaphone.jpg'> \n
 ^ \n 
 ^ What is your name? {topic=asked_name}
 
@@ -19,7 +19,7 @@
 
         + #
         - Your name is a number? \n
-        ^ <img src='../images/facepalm.gif'> \n
+        ^ <img src='./images/facepalm.gif'> \n
         ^ \n
         ^ Give me your first name!
 
@@ -60,7 +60,7 @@
     > topic annoyed_robot
         + (yes|no)
         - Finally! \n
-        ^ <img src="../images/happy_spongebob.gif"> \n
+        ^ <img src="./images/happy_spongebob.gif"> \n
         ^ \n
         ^ So? In which one are you interested in? \n
         ^ <b>1</b>. Blacklives Matter \n
@@ -174,12 +174,12 @@
                 ^ and racial inequality into focus within the greater arts community.
                 ^ The group employs culture jamming in the form of posters, books, billboards, \n 
                 ^ and public appearances to expose discrimination and corruption. \n
-                ^ <img src='../images/gorilla_poster.jpg'> \n
+                ^ <img src='./images/gorilla_poster.jpg'> \n
                 ^ \n
                 ^ I took some more photos! Would you like to see them?
 
                 + (yes|no|sure|idk)
-                - <img src='../images/gorilla_sexy.jpg'> \n
+                - <img src='./images/gorilla_sexy.jpg'> \n
                 ^ \n
                 ^ To remain anonymous, members don gorilla masks and use pseudonyms that refer to deceased female artists. \n
                 ^ According to GG1, identities are concealed because issues matter more than individual identities\n 
@@ -201,7 +201,7 @@
                 ^ Beside of that the great artistic stuff has been made over there! I can show you the Official Poster. Would you like to see it?
 
                 + ([*] yes [*]|[*] no [*]|[*] sure [*]|[*] why not [*])
-                - <img src='../images/strajk-kobiet_plakat.jpg'> \n
+                - <img src='./images/strajk-kobiet_plakat.jpg'> \n
                 ^ \n
                 ^ This is one of the official posters of the <b>All-Poland Women's Strike</b>. This design was widely used by the protesters and it's well-known by all Polish citizens. I have more designs 😃\n
                 ^ If you would like to see more shout MORE POSTERS!
@@ -406,7 +406,7 @@
 
     > topic question4_answer
         + a
-        - no!<img scr='../images/no.gif'>
+        - no!<img scr='./images/no.gif'>
 
         + b
         - Wrong!
@@ -592,7 +592,7 @@
 
 > topic thank_you
     + *
-    - <img src='../images/ty.gif'> \n
+    - <img src='./images/ty.gif'> \n
     ^ \n
     ^ You made it! You passed the quiz! \n
     ^ \n
@@ -602,16 +602,16 @@
 > topic creators
     + *
     - <a target="_blank" href="https://www.instagram.com/cheezychen/">Zhiying Chen (Kelly)</a> \n
-    ^ <img scr="../images/kelly.gif"> \n
+    ^ <img scr="./images/kelly.gif"> \n
     ^ \n
     ^ <a target="_blank" href="https://www.instagram.com/mollysdesign_/">Molly Shenstone</a> \n
-    ^ <img scr="../images/molly.gif"> \n
+    ^ <img scr="./images/molly.gif"> \n
     ^ \n
     ^ <a target="_blank" href="https://www.instagram.com/kkpegggorini/">Kinara Pegorini</a> \n
-    ^ <img scr="../images/kinara.gif"> \n
+    ^ <img scr="./images/kinara.gif"> \n
     ^ \n
     ^ <a target="_blank" href="https://www.cieszymirbylina.art/">Cieszymir Bylina</a> \n
-    ^ <img scr="../images/cieszymir.gif"> \n
+    ^ <img scr="./images/cieszymir.gif"> \n
     ^ \n
     ^ Click the links to see their other AMAZING ARTWORKS! 😎 \n
     ^ \n
@@ -621,5 +621,5 @@
 
 > topic goodbye
     + *
-    - Bye! <img scr="../images/bye.gif">
+    - Bye! <img scr="./images/bye.gif">
 < topic

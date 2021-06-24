@@ -24,7 +24,7 @@
 - <get name>. Or at least that's what you said.
 
 + (take a selfie|what do you look like|how do you look)
-- here...\n<img src="../images/penny.png">
+- here...\n<img src="./images/penny.png">
 
 + (who|what) are you
 - They call me CoinBot, I'm the distilled consciousness of 1p coin. Not sure why they thought I would make for riveting conversation.

@@ -1,13 +1,22 @@
 ! version = 2.0
 
 + hello
-- Hello! What is your name?
+- Hi what is your name? :-)
 
-+ hi
-- Hello! What is your name?
++ _
+% hello what is your name
+- Nice to meet you <formal>!
+
++ my name is *
+- Nice to meet you <star>
+- Nice meeting you <star>
 
 + [*] * [*]
-- Nice to meet you <star1>
+- Sorry did not get what you said 
+- I am afraid that I can not understand you 
+- Sorry can you please elaborate that for me 
+- I don't get it! 
+
 
 + [*] my name is * [*]
 - Nice to meet you <star1> my name is Bohdi the bench!

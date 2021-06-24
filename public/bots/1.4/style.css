@@ -1,7 +1,7 @@
 @import url("https://fonts.google.com/specimen/VT323#standard-styles");
 
 * {
-  font-family: VT323 ;
+  font-family: VT323;
   font-size: 15pt;
   margin: 0;
   box-sizing: border-box;
@@ -9,7 +9,7 @@
 
 body {
   background-size: 100%;
-  background-image: url("/images/background.jpg");
+  background-image: url("./images/background.jpg");
   align-items: center;
 }
 
@@ -37,12 +37,12 @@ body {
   display: flex;
   flex-direction: column;
   padding: 0px 0px 0px 0px;
-  border-radius: 5px; 
+  border-radius: 5px;
   position: relative;
   top: 80px;
   right: 178px;
   bottom: 0px;
-  width:750px;
+  width: 750px;
 }
 
 .messages {
@@ -70,8 +70,8 @@ body {
 .messages .bot {
   text-align: left;
   margin-right: auto;
-  background:#131413;
-  color:rgb(43, 226, 52);
+  background: #131413;
+  color: rgb(43, 226, 52);
 }
 
 .messages .self {
@@ -79,7 +79,7 @@ body {
   margin-right: 20px;
   margin-left: auto;
   background: #131413;
-  color:white;
+  color: white;
 }
 
 .actions {

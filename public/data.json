@@ -8,8 +8,8 @@
         "Hyein Kim",
         "Chiara Arrigo"
       ],
-      "name": "Abandoned Mask",
-      "tagline": "",
+      "name": "ABANDONED",
+      "tagline": "Let's talk about the environment!",
       "exists": true
     },
     {
@@ -63,13 +63,6 @@
       "exists": false
     },
     {
-      "id": "2.1",
-      "members": ["Joe Brown", "Patrick Stapleton", "Morgan Cartwright"],
-      "name": "",
-      "tagline": "",
-      "exists": false
-    },
-    {
       "id": "2.2",
       "members": [
         "Bingxuan Wang",
@@ -113,8 +106,8 @@
         "Jelly Sia",
         "Natasha Husain"
       ],
-      "name": "Unpredictable Traffic Light",
-      "tagline": "",
+      "name": "The Temperamental Traffic Light",
+      "tagline": "First things first. Have you ever jaywalked?",
       "exists": true
     },
     {
@@ -164,7 +157,7 @@
       "id": "3.4",
       "members": ["Thomas Firmin", "Denisa Gaspar", "Faye Clark"],
       "name": "Magic Mirror",
-      "tagline": "",
+      "tagline": "Hi, I’m mirror how can I help you today?",
       "exists": true
     },
     {
@@ -176,8 +169,8 @@
         "Jubilee Egbueri"
       ],
       "name": "Coin",
-      "tagline": "",
-      "exists": false
+      "tagline": "With the emergence of different forms of payment, the 'coin', an old form of payment, has gradually faded out of people's vision, but it carries a lot of history. Learn about coins through dialogue.",
+      "exists": true
     },
     {
       "id": "3.6",
@@ -200,7 +193,7 @@
         "Zhiying Chen"
       ],
       "name": "A megaphone",
-      "tagline": "",
+      "tagline": "Hello, I'm the Megaphone! I would like to tell you about my awsome riot adventures 😎",
       "exists": true
     },
     {
@@ -248,7 +241,7 @@
         "Shantel Leghari"
       ],
       "name": "Coin Bot",
-      "tagline": "",
+      "tagline": "My mental self is here; tethered to this chatroom. My physical self is probably down the side of a sofa somewhere.",
       "exists": true
     },
     {

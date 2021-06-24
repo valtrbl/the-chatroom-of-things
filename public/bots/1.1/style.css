@@ -1,98 +1,38 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;800&display=swap");
 
 * {
-  font-family: "roc grotesc", sans-serif, arial;
+  font-family: "roc grotesk", sans-serif, arial;
   font-size: 12pt;
   margin: 0;
   box-sizing: border-box;
 }
 
 body {
-  background-image:url(/images/mask.gif),
-  url(/images/Purple-15.png),
-  url(/images/K\ -13.png),
-  url(/images/s-12.png),
-  url(/images/Letter\ A\ -11.png),
-  url(/images/Letter\ M-10.png),
-  url(/images/Mask\ icon\ uncut\ -04.png),
-  url(/images/Mask\ icon\ uncut\ -01.png),
-  url(/images/Mask\ icon\ cut-02.png), 
-  url(/images/Scissors-07.png), 
-  url(/images/Bird\ yellow\ -09.png),
-  url(/images/Mask\ icon\ -06.png),
-  url(/images/Mask\ uncut\ -08.png),
-  url(/images/Mask\ icon\ -01.png),
-  url(/images/Mask\ icon\ -04.png),
-  url(/images/ezgif.com-gif-maker\ \(1\).gif);
+  background-image: url("./images/mask.gif"), url("./images/Purple-15.png"),
+    url("./images/K\ -13.png"), url("./images/s-12.png"),
+    url("./images/Letter\ A\ -11.png"), url("./images/Letter M-10.png"),
+    url("./images/Mask icon uncut -04.png"),
+    url("./images/Mask icon uncut -01.png"),
+    url("./images/Mask icon cut-02.png"), url("./images/Scissors-07.png"),
+    url("./images/Bird yellow -09.png"), url("./images/Mask icon -06.png"),
+    url("./images/Mask uncut -08.png"), url("./images/Mask icon -01.png"),
+    url("./images/Mask icon -04.png"),
+    url("./images/ezgif.com-gif-maker (1).gif");
 
-  background-repeat:no-repeat,
-  no-repeat,
-  no-repeat,
-  no-repeat,
-  no-repeat,
-  no-repeat,
-  no-repeat,
-  no-repeat,
-  no-repeat,
-  no-repeat,
-  no-repeat,
-  no-repeat,
-  no-repeat, 
-  no-repeat,
-  no-repeat,
-  repeat;
+  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat,
+    no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat,
+    no-repeat, no-repeat, no-repeat, repeat;
 
+  background-size: 110px 110px, 90px 90px, 130px 130px, 100px 100px, 100px 100px,
+    110px 110px, 100px 100px, 100px 100px, 130px 130px, 100px 100px, 400px 400px,
+    180px 180px, 120px 120px, 100px 100px, 100px 100px, 1500px 1000px;
 
-  background-size:110px 110px,
-  90px 90px,
-  130px 130px,
-  100px 100px,
-  100px 100px,
-  110px 110px,
-  100px 100px,
-  100px 100px,
-  130px 130px,
-  100px 100px,
-  400px 400px,
-  180px 180px,
-  120px 120px,
-  100px 100px,
-  100px 100px,
-  1500px 1000px;
+  background-position: 90% 700px, 8% 520, 80% 1250px, 6% 1225px, 74% 150px,
+    17% 200px, 72% 350, 98% 450px, 86% 800px, 15% 50px, 20% 750px, 20% 450px,
+    89% 200px, 85% 40px, 5% 300px, center;
 
-  background-position:top +700 right 10%,
-  top +520 left 8%,
-  top +1250 right 20%,
-  top +1225 left 6%,
-  top +150 right 26%,
-  top +200 left 17%,
-  top +350 right 28%,
-  top +450 right 2%,
-  top +800 right 14%,
-  top +50px right 15%,
-  top +750px left 20%, 
-  top +450px left 20%, 
-  top +200px right 11%,
-  top +40px left 15%,
-  top +300px left 5%,
-  center;
-background-attachment:scroll,
-  scroll,
-  scroll,
-  scroll,
-  fixed,
-  fixed,
-  scroll,
-  fixed,
-  scroll,
-  fixed,
-  scroll,
-  fixed,
-  scroll,
-  fixed,
-  fixed,
-  scroll;
-
+  background-attachment: scroll, scroll, scroll, scroll, fixed, fixed, scroll,
+    fixed, scroll, fixed, scroll, fixed, scroll, fixed, fixed, scroll;
 }
 
 .title {
@@ -114,8 +54,8 @@ background-attachment:scroll,
 }
 
 .chat {
-  background: 255,255,0.5;
-  box-shadow: 255,255,0.5;
+  background: 255, 255, 0.5;
+  box-shadow: 255, 255, 0.5;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -138,7 +78,7 @@ background-attachment:scroll,
 }
 
 .messages div a {
-  color: 255,255,0.5;
+  color: 255, 255, 0.5;
 }
 
 .messages div a:hover {
@@ -171,7 +111,7 @@ background-attachment:scroll,
   position: sticky;
   bottom: -1px;
   padding: 10px 0px 20px;
-  background: 255,255,0.5;
+  background: 255, 255, 0.5;
 }
 
 .actions input {

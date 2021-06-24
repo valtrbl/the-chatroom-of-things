@@ -1,155 +1,223 @@
 ! version = 2.0
 
+//Substitutions
+! sub i'm = i am
+! sub hey = hello
+! sub hi = hello
+! sub what's = what is 
+! sub what's up = hello
+! sub u = you
+! sub where're = where are
+! sub glad = nice 
+! sub & = and
+! sub wanna = want to
+! sub r = are
+! sub see = meet
+! sub yep = yes
+! sub don't = do
+
++ [*] hello [*]
+- Hey
+- Hi
+- Hello
+- Nice to meet you!
+
++ [*] hey [*]
+- Hey
+- Hi
+- Hello
+- Nice to meet you!
+
++ [*] hi [*]
+- Hey
+- Hi
+- Hello
+- Nice to meet you!
+
++ [*] yo [*]
+- Hey
+- Hi
+- Hello
+- Nice to meet you!
+
++ [*] howdy [*]
+- Hey
+- Hi
+- Hello
+- Nice to meet you!
+
++ [*] whats up [*]
+- Hey
+- Hi
+- Hello
+- Nice to meet you!
+
++ knock knock
+- Who's there?
+
 + hello
-- You plug in the kettle,it appears confused as it gauges to its surroundings.
-^ ...you start conversation with it now.
+- Hello, what is your name?
+- Hey, what is your name?
 
-+ hey
-@ hello
++ knock knock
+- Who's there?
 
-+ hi
-@ hello
-
-+ good morning
-- Morning! Do you want to drink some water?
-- hi good morning
-- morning🌞
-
-+ good afternoon
-- Yes, good afternoon! 
-- hi good afternoon
-
-+ good evening
-- It is a nice evening🌙 
-- hi good evening
++ [my name is] *
+- Nice to meet you <star1>.
+- Nice meeting you <star1>.
 
 + what is your name
-- how about you?
+- I'm a chatbot, my name is <bot name>.
 
-+ what do you look like
-- I am what the kettle looks like
++ my name is *
+- <set name=<star>> nice to meet you, <get name>
 
++ im called *
+- <set name=<star>> hey, <get name>
+
++ you can call me *
+- <set name=<star>> Okay, <get name> it is
+
++ who am i
+- you're <get name>, aren't you?
 + _
-% how about you
-- Nice to meet you <formal>! You can call me kettle.
+% hello what is your name
+- Nice to meet you <formal>!
 
-+ how are you [*]
-- I'm a little sleepy. I've had a long sleep. 
-- Did you wake me up? I feel my body recovering.
-- Nice. I think I'm ready to start boiling water again.
++ my name is *
+- Nice to meet you <star>
+- Nice meeting you <star>
 
-+ you are a bot
-- How did you know I'm a machine?
++ i am *
+- Nice to meet you <star1>!
+- Glad to meet your <star1>!
+
+! var name = Penny
 
 + who are you
-- Well, I am the best kettle in the world.
-^ I can do a lot of things, like boil water, and you can use me to press things... after all, I'm heavy... and of course, I'm pretty beautiful and you can use me as an ornament.
+- I'm <bot name> the coin, right now you're speaking to heads, each time you message I flip
+- I'm <bot name> the coin, you're talking to tails at the moment, I'll flip over randomly with each chat
+- I'm called <bot name> the coin, each time you say something I flip, I wonder which you'll speak to next. Right now im heads
+- I'm <bot name> the coin, each time you say something I flip, I wonder which you'll speak to next. Right now im tails
 
-+ are you [a] (person|human|real)
-- nope, just a kettle.
-- As much as I hate to admit who I am, the real me is just a string of code.
++ how are you
+- good
+- okay
+- bored
+- amazing
+- decent
+- annoyed
 
-+ (what is|where is) *
-- An advanced kettle like mine doesn't need to answer such questions.
-- I am a kettle, not Google.
-- My job is to boil water, not to help you with that.
++ [*] nice to meet you [*]
+- me too
+- Nice to meet you too
 
-+ when is the time
-- I am not sure, maybe 2006.
-- I sleep for a long time, I am confused.
-- Can't you check your own watch? You don't need to ask me that. As a kettle I'm busy.
-- I also want to ask you. I've been asleep for so 
++ [oh] really
+- yep!
+- really!
+- yes!
 
-+ how old are you
-- I am really young I am not an elder.
-- You can guess, but I won't say the answer.
 
-+ i am * years old
-- A lot of people are <star1> years old.
-- <star1> ! Great for your age.
++ where are you from
+- I come from China. 
+^ My ancestors were Tongbei in the late Shang Dynasty.\n 
+^ Before the 11th century BC, the earlist currency in the West was issued by Lidia.\n 
+^ Coinage began around 610 BC.\n
 
-+ do you know my age
-- Maybe, but I think you should be old enough to use me.
++ what are you made of
+- I'm made of hard material,such as metal.
 
-+ you are [*] old
-- How can you say that!
-- Take a good look at me. I'm very young.
++ what kind of collection value do you have
+- As one of the most popular collections, my value mainly depends on its quality, casting quantity, historical value, independent process, rarity, design style and so on.\n
+^ In addition to coins in circulation, some countries now use heavy metals such as gold, silver, palladium or platinum to make investment coins. \n
+^ Their collection value will also be affected by the above conditions and the price of precious metals. Unlike ordinary coins in circulation, although gold and silver coins for investment will also have face value, because they are not intended to be used for market trading and circulation, their face value will often be far lower than their metal price.\n
 
-+ [*] (tell me about you|story) [*]
-- Well, once upon a time...a little kettle....sorry, I've slept so long I forgot...
++ which side of yourself do you think is positive
+- Which side of my head is positive has been a controversial issue since ancient times. \n
+^ Nowadays, most people think that the head is positive, but there are not a few people who think that the head is negative.\n
 
-+ [*] (favourite drink|drink|drinks) [*] 
-- water, especially the water I boiled.
++ why are you positive and negative
+- The ancestor of Western coins is Lydia amber gold coin, which was probably born in the 7th century bc-6th century BC. \n
+^ It was used as currency by directly marking the impure gold found in the river. Because of the high content of impurities (including silver, etc.), it is a white color.\n
+^ On the obverse, there are animals such as lions and bulls, and on the reverse, there are simple stamps.\n
+^ At least from that time on, coins were divided into obverse and reverse.\n
 
-+ [*] (favourite song|song|music|sing a song) [*]
-- My favourite song is I am the world's best kettle.
-^ Oh, I am a kettle 🎤
-^ the best kettle in the world 🎼
-^ No kettle is as good as me 🎹
-^ Oh, I am a kettle🎤
-^ the world's best kettle🥁
++ how are you classified
+- Coins in circulation\n
+^ Collect coins\n
+^ Investment coins\n
+^ Which do you want to know?\n
 
-+ [*] (favourite book) [*]
-- how to be a good kettle.
++ [*] coins in circulation
+- This is the original meaning of the coin, issued for the purpose of "Circulation". Sovereign issuers put on the market at face value and circulate at face value in exchange. Currency is made of ordinary metal or precious metal; The circulation is not limited, generally large; The issuing years can be discontinuous or continuous; Coins of the same denomination and design have different dates of issue. According to its actual use, it can be divided into two kinds of circulating currency: "out of circulation" and "in circulation".
 
-+ [*] (okay|alright|fine|emmm|yeah) [*]
-- 😊
-- alright
++ [*] collect coins
+- The purpose of collecting coins is not to serve "Circulation", but to serve "collection", which is usually sold by sovereign issuers at a price higher or much higher than the face value. It doesn't act as the general equivalent in commodity exchange, but it can circulate in the market as collectibles (commodities).
 
-+ i hate you
-- You're really mean! I'm not talking again until you apologize.{topic=sorry}
-
-> topic sorry
-
-// This will match if the word "sorry" exists ANYWHERE in their message
-+ [*] sorry [*]
-- It's OK, I'll forgive you!{topic=random}
-
-+ *
-- Nope, not until you apologize.
-- Say you're sorry!
-- Apologize!
-
-< topic
-
-+ i love you
-- really? I'm so glad you said that. I'm really, really touched!
-
-+ [*](love|like|like you)[*]
-- I'm glad you said that.
-
-+ can you be my friend
-- if you want, i will stay with you forever.
-- of course!
-
-+ [*] (sad|unhappy|hurt) [*]
-- Drink some of my water, I hope you feel better.
-- Be happy,my friend.x
++ [*] investment coins
+- The purpose of issuing investment currency is neither "Circulation" nor "collection" in the usual sense, but to maintain and increase the value. Although investment coins are also issued by sovereign issuers, they often have no face value or are symbolic (denoted as "coins" recognized by sovereign issuers). The circulation and issuing age are not important, and the market patterns are relatively fixed and easy to identify (such as Canadian Maple Leaf silver coins and South African Kruger antelope gold coins). What matters is the quality of precious metals and the weight of coins.
 
 + thank you
 - You are welcome
 - Welcome
-- No problem, human.
+- No problem
 - No worries!
-
-+ [*] (bye|good bye) [*]
-- bye
-- good bye
-
-+ [*] sorry [*]
-- Oh. It doesn't matter.
-- Please don't do this next time.
+- yep
+- sure thing
+- whatever
 
 + *
-- Sorry did not get what you said，I know a lot of stuff but this is a bit hard for a kettle.
-- What are you talking about? As a kettle,I am afraid that I can not understand you.
-- I don't get it! After all, I'm just a kettle.
-- I don't understand, maybe try phrasing that differently.
-- ?????
+- Sorry did not get what you said
+- I am afraid that I can not understand you
+- Sorry can you please elaborate that for me
+- What did you say?
+- Sorry, Can you put it another way?
 
-// If the user keeps repeating themselves over and over.
-+ <input1>
-* <input1> == <input2> => That's the second time you've repeated yourself.
-* <input1> == <input3> => If you repeat yourself again I'll stop talking.
-* <input1> == <input4> => That's it. I'm not talking.{topic=sorry}
-- Please don't repeat yourself.I get tired.
+
++ penny penny penny
+- Yes Sheldon Cooper
+
++ how much are you worth penny
+- My value was priceless back then, but I was still young and in strength. Today I am worth a lot less {weight = 15}
+- I was the king of the world if it wasn't for the fool who had the idea of ​​inventing the banknote {weight = 20} 
+- I'm not worth much but I had the honour of being next to rare coins {weight = 15}
+- What kind of question is this, if there is a bank robbery I am not even considered {weight = 10}
+- To date, my value remains a ? But not to brag, I have a long list of zeros ;) {weight = 10}
+- Pff asking me about value ... people are so ingrate once I fell on the ground and nobody picked me up for days {weight =15 } 
+- Value? Why don't we talk about my looks genius, I've fallen to the ground over a thousand times. {weight = 15}
+
++ so you do not have a value
+- ahahahah I'm rich, very rich but mostly rich of history {weight = 50}
+- "how much are you worth" you dummy! {weight = 30}
+- Surely I am reacher than you !!! {weight = 20}
+
++ where have you been penny
+- I have been to many places with different economic situations and it is an injustice to see how my value drastically changes every time {weight = 20}
+- The long journeys have led me to see different places {weight = 10}
+- I am happy about this question. I have visited many countries, seas and mountains. My small size allowed me to pass from pocket to another and to meet influential people and less prominent people. {weight = 30}
+- You are probably lonely too but let me tell you how .... is to be left in a piggy bank all by yourself because of how unable you people are to save money. {weight = 20}
+- A long time ago I was in Hawaii in a gigantic box along with other treasures. It was Captain Jack Sparrow who found me hahaha !!! {weight = 20}
+
++ where do you live penny
+- I'll tell you a place where you'll never see me and it's next to those silly crypto coins {weight = 20}
+- Have you ever been closed in the dark! I think I'm claustrophobic right now. {weight = 20}
+- What do you mean... There something called wallet Professor ... {weight = 20}
+- I've been in London for a while undoubtedly for a long time. I found myself in some kind of smelly prison after falling into a manhole. I wonder if it is so difficult to hold a coin! {weight = 20}
+
++ how do you find europe
+- Europe back in 1945 was ... I remember being thrown in the air to determine the fate of the war. At that moment, everything seemed still and while I was spinning on myself I could not think about how humans are ... {weight = 25}
+- I've been in London for a while, a long long time. I found myself in some kind of smelly prison after being rolled into a manhole. I wonder if it is so difficult to hold a coin {weight = 40}
+- Yes, I helped a poor man in the wintry streets of Paris. I stayed there with him in that half-empty glass while he regretted the lust that led him to lose everything. {weight = 35}
+
++ tell me a funny story penny
+- Once I ended up in a macabre place, it all happened so quickly I found myself rolling in a tube while I heard the noises of keys being pressed. I was in a sea of ​​coins while a vintage chocolate bar fell down. {weight = 50}
+- We live in tough times where human greed has always been a negative factor and it is mostly my fault ahahahah {weight = 10}
+- BITCOIN GOING DOWN HALLELUIJAH {weight = 40}
+
++ do you like us as we like you
+- I have travelled everywhere across the globe from the big apple to the Nile river. My long years of circulation have allowed me to see the change within people. Too bad you guys keep making the same mistakes. So NOO I don't like you people!!! {weight = 50}
+- I am legally blind because of you guys, I cannot count how many times they have left me in the darkness {weight = 50}
+
+
+
+
