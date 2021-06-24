@@ -86,9 +86,9 @@ const icons = [
 ];
 
 const Background = () => {
-  const [randomIcons, setRandomIcons] = useState(
-    icons.sort(() => Math.random() - Math.random()).slice(0, 5)
-  );
+  const randomIcons = icons
+    .sort(() => Math.random() - Math.random())
+    .slice(0, 5);
   return (
     <div className="fixed w-screen h-screen ">
       {randomIcons.map((icon, index) => (
