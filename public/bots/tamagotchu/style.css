@@ -1,0 +1,352 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;800&display=swap"); */
+
+* {
+  font-family: VT323;
+  font-size: 10pt;
+  margin: 0;
+  box-sizing: border-box;
+
+  text-shadow: 1px 1px 2px black, 0 0 1em green, 0 0 0.2em green;
+}
+
+body {
+  background: rgb(0, 0, 0);
+
+  /* background-image: url("tamagotchi.png"); */
+
+  background-size: 100vh;
+  background-position: center;
+
+  background-repeat: no-repeat;
+
+}
+
+
+.backgroundvideo {
+  width: 100%;
+  height: 100%;
+
+  /* opacity: 50%; */
+
+  position: absolute;
+
+  z-index: -1;
+  pointer-events: none;
+
+}
+
+.introvideo {
+  width: 100%;
+  height: 100%;
+
+  /* opacity: 50%; */
+
+  position: absolute;
+
+  margin-top: -50vh;
+
+  z-index: 20;
+  pointer-events: none;
+}
+
+/* .wrapper {
+  width: 422px;
+  height: 422px;
+  margin: 0 auto;
+
+  margin-top: 205px;
+  border-radius: 35px;
+  overflow: hidden;
+
+  position: relative;
+}  */
+
+
+.chat {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+  background: black;
+  overflow: scroll;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 2vh 2vh 0px 2vh;
+  z-index: 2;
+
+}
+
+.scanlines {
+  opacity: 30%;
+  
+  height: 100%;
+  width: 100%;
+  position:absolute;
+
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+  
+  z-index: 3;
+  pointer-events: none;
+}
+
+#overlay {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+  mix-blend-mode: lighten;
+  opacity: 30%;
+
+  z-index: 4;
+  pointer-events: none;
+}
+
+
+.container {
+  /* background-color: red;
+  opacity: 50%; */
+
+  position: relative;
+
+  height: 100vh;
+  width: 100vh;
+  margin: 0 auto;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  overflow: hidden;
+}
+
+.video {
+  width: 100%;
+  height: 100%;
+
+  opacity: 50%;
+
+  position: absolute;
+
+  margin-top: -50vh;
+
+  z-index: 20;
+  pointer-events: none;
+}
+
+
+.topbutton {
+  background-color: aqua;
+  opacity: 0%;
+  
+  width: 40vh;
+  height: 9vh;
+
+  overflow: hidden;
+ 
+  margin-left: 30%;
+  margin-top: -35%;
+
+  z-index: 100;
+  position: absolute;
+}
+
+.btn {
+  background-color: red;
+  opacity: 0%;
+  
+  width: 9vh;
+  height: 9vh;
+
+  border-radius: 100%;
+  overflow: hidden;
+
+  top: 76.5%;
+
+  z-index: 100;
+  position: absolute;
+}
+
+#counter {
+  font-size: 50px;
+  text-align: center;
+  text-decoration-color: white;
+  
+  /* background-color: white; */
+
+  position: absolute;
+  align-content: center;
+
+  top: 2%;
+}
+
+.rightplay {
+  background-color: blue;
+  opacity: 0%;
+  
+  width: 9vh;
+  height: 9vh;
+
+  border-radius: 100%;
+  overflow: hidden;
+
+  top: 73.5%;
+  right: 35.7%;
+
+  z-index: 100;
+  position: absolute;
+}
+
+
+.exploded {
+  /* width: 54.5%; */
+  width: 107vh;
+
+  /* opacity: 50%; */
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  z-index: 11;
+  pointer-events: none;
+}
+
+
+.messages {
+  flex: 1 0 auto;
+}
+
+.messages div {
+  max-width: 60%;
+  width: fit-content;
+  display: block;
+  margin: 5px;
+  padding: 10px;
+  border-radius: 7px;
+  /* white-space: pre-line; */
+}
+
+.messages div a {
+  color: rgb(255, 0, 0);
+}
+
+.messages div a:hover {
+  color: rgb(0, 0, 0);
+}
+
+.messages .bot {
+  text-align: left;
+  margin-right: auto;
+  /* background: black; */
+  color: rgb(255, 255, 255);
+
+  text-shadow: 1px 1px 2px black, 0 0 1em rgb(255, 255, 255), 0 0 0.2em rgb(255, 255, 255);
+}
+
+.messages .self {
+  text-align: right;
+  margin-right: 20px;
+  margin-left: auto;
+  /* background: white; */
+  /* border: 1px solid blueviolet; */
+  color: green;
+}
+
+.placeholder {
+  background: #000000;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
+.actions {
+  flex-shrink: 0;
+  width: 100%;
+  position: sticky;
+  bottom: -1px;
+  padding: 10px 0px 20px;
+  /* background: rgb(255, 0, 0); */
+}
+
+.actions input {
+  height: 30px;
+  display: block;
+  width: 100%;
+  outline: 0;
+  border-top: 0px solid black;
+  border-right: 0px solid black;
+  border-bottom: 2px solid black;
+  color: green;
+  border-left: 0px;
+}
+
+input:focus {
+  border-bottom: 2px solid rgb(0, 0, 0);
+}
+
+
+.wrapper {
+  background-color: blueviolet;
+
+  width: 40vh;
+  height: 40vh; 
+
+  margin-top: 205px;
+  border-radius: 4vh;
+  overflow: hidden;
+
+  position: relative;
+  align-items: center;
+
+  margin: auto;
+}
+
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
+
+
+
+.play-button {
+  background-color: blue;
+  opacity: 0%;
+  
+  width: 9vh;
+  height: 9vh;
+
+  border-radius: 100%;
+  overflow: hidden;
+
+  top: 73.5%;
+  left: 35.7%;
+
+  z-index: 100;
+  position: absolute;
+}
+
+.leftbutton {
+  width: 100%;
+  height: 100%;
+
+  margin-top: -50vh;
+
+  position: absolute;
+  z-index: 20;
+}

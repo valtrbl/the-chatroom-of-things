@@ -1,0 +1,281 @@
+! version = 2.0
+
++ (hello|hi|hey|hey there) [*]
+- Hello beautiful, what is your name?
+- Welcome, what is your name?
+
++ _
+% hello what is your name
+- Nice to meet you <formal>!
+
++ my name is *
+- <set name=<star>>It's nice to meet you, <get name>. \n
+^ how are you?
+
++ [*] (good|okay) [*]
+- You would feel better if you tried these amazing supplements, they keep your skin clear and healthy!! 😊😊 \n
+^ \n
+^ would you like to buy?
+
++ (bad|not good|alright) 
+- You would feel better if you tried these amazing supplements, they keep your skin clear and healthy!! 😊😊 \n
+^ \n
+^ would you like to buy?
+
++ [*] (yeah|yes) [*]
+- excellent, I will add that to your cart! :D \n
+^ \n
+^ are you interested in looking at anything else? \n
+^ \n
+^ select 'proceed to checkout' or 'continue browsing'
+
++ proceed to checkout
+- are you sure? do you not wanna check any of our other life changing products? \n
+^ \n 
+^ select 'yes im sure' or 'continue browsing'
+
++ yes i am sure
+- thank you for shopping with Swipe don't Skip \n 
+^ your total is £257.89
+- thank you for shopping with Swipe don't Skip \n 
+^ your total is £6483.928
+- thank you for shopping with Swipe don't Skip \n 
+^ your total is £666.66
+- thank you for shopping with Swipe don't Skip \n 
+^ your total is £101
+
++ (no thanks|no)
+- are you sure… :/ the image of your skin through the camera is telling me otherwise :P :I \n
+^ \n 
+^ select 'i am sure' or 'i am not sure'
+- are you sure? its so shiny, you could use all that oil to cook :p \n
+^ Here, I think you should really buy this oil controlling toner before the oil companies in the middle east come for you. \n
+^ \n 
+^ select 'i am sure' or 'i am not sure'
+
++ i am not sure
+- well thats okay and I always have your best interest \n
+^ \n
+^ maybe we have somthing else for you \n 
+^ 'continue browsing'?
+
++ i am sure
+- well fine then.... \n 
+^ \n
+^ \n well how about you have a look at some of our other products around 'hair', 'makeup' or 'health'
+
++ continue browsing
+- we have plenty of different services and products that may interest you \n 
+^ \n
+^ how about you have a look at some of our other products around 'hair', 'makeup' or 'health'
+
++ hair
+- Do you like body hair? \n
+^ \n 
+^ select either 'yes i do' or 'no i dont'
+
++ yes i do
+- Either way, would you like to check out our most recent hair removal razor? \n 
+^ are you 'interested' or 'not interested'
+
++ no i dont
+- Would you like to check out our most recent razor? \n 
+^ It leave your skin looking and feeling smooth as hell, \n
+^ \n 
+^ are you 'interested' or 'not interested'
+
++ interested 
+- well you made the right choice!!! This high tech razor will remove your hair in one swipe as well as preventing hair growth with for the next year \n 
+^ \n
+^ along with that how about you also try this limited edition hair removing sponge? \n
+^ \n 
+^ would you like to 'add to cart' or 'view next product' or 'proceed to checkout'
+
++ add to cart
+- this item has been successfully added to the cart \n
+^ \n 
+^ would you like to 'view next product' or 'proceed to checkout'
+
++ view next product 
+- Here's our newest top selling product!! A super hair growth serum, that gets your hair growing faster in only 1 week!! \n 
+^ \n
+^ would you like to 'add to cart' or 'view next product' or 'proceed to checkout'
+- These magic mushrooms might not make you feel healthier, but maybe happier \n
+^ oh this might be the wrong chatbot, sorry for the malfunction \n
+^ \n 
+^ either way would you like to 'add to cart' or 'view next product' or 'proceed to checkout'
+- This pheromone perfume will have you attracting everyone around you!! \n
+^ \n
+^ would you like to 'add to cart' or 'view next product' or 'proceed to checkout'
+- Say goodbye to unwanted hair with this at-home laser hair removal kit, with an added benefit that it also tans your skin, to give you that sunkissed look \n
+^ \n
+^ would you like to 'add to cart' or 'view next product' or 'proceed to checkout'
+- With this heated eyelash comb will give you fluttery lashes in only 30 seconds \n
+^ \n 
+^ would you like to 'add to cart' or 'view next product' or 'proceed to checkout' \n
+^ \n 
+- Have a look at our limited edition eye massager, with a built in screen to watch your favourite shows as you get your eyes massaged \n
+^ \n
+^ would you like to 'add to cart' or 'view next product' or 'proceed to checkout'
+- These Sanrio facial moisturisers are running out quick!!! \n
+^ would you like to 'add to cart' or 'view next product' or 'proceed to checkout'
+- Sign up to this monthy horoscope subscriptions with 1 month free trial on the other chatbot \n 
+^ Find out how the stars affect your health and beauty \n
+^ \n 
+^ would you like to 'add to cart' or 'view next product' or 'proceed to checkout'
+
++ not interested 
+- well that's fine i guess.... \n 
+^ i mean are you sure you want to miss out on this amazing product? \n
+^ \n
+^ select select 'i am sure' or 'i am not sure' 
+
++ makeup
+- why do you wear makeup?
+
++ [*] (confidence|confident|beautiful|pretty) [*]
+- if you take this survey, you could find out your perfect foundation shade \n
+^ and help you feel even more beautiful and confident with your makeup \n
+^ and it only takes a few minutes \n
+^ \n 
+^ are you 'interested in product' or 'not interested'
+
++ [*] (fun|happy) [*]
+- Here's a limited edition Sailor Moon makeup collection which would enhance your makeup as well as making it more fun to enjoy!! \n
+^ \n 
+^ are you 'interested in product' or 'not interested' 
+
++ interested in product 
+- Great!!!!! would you also like to check our new robot beautybot 2.0 \n
+^ Its an extension of our chatbot physically and will help do your makeup for you completely!!!
+^ \n 
+^ are you 'interested in product' or 'not interested'
+- Great!!!! Have a look at this Smart Beauty Mirror too! \n 
+^ it will aid you while doing your makeup and even reccomend new products to suite you! \n
+^ \n 
+^ are you 'interested in product' or 'not interested'
+- Great!!! Did you want to have a look at this top-selling paint roller concealer?? \n 
+^ the mini roller lets you apply the concealer with even coverage around the face!!! \n
+^ \n 
+^ are you 'interested in product' or 'not interested'
+
++ health 
+- health and care is a very important part of beauty \n
+^ these accupunture slippers help stimulate pressure point to keep different parts of your body healthy!! \n
+^ \n
+^ would you like to 'add to cart' or 'view another product'
+
++ view another product
+- This himalayan salt lamp, improves the ambience in your room and keeps the air clean \n
+^ ...from my observations throught the camera, you probably need more of that \n
+^ \n
+^ would you like to 'add to cart' or 'view another product'
+- From the data I've collected about you, you don't seem to be that tall, \n
+^ however these one-a-day supplements should help you grow and see results in only 4 weeks!!!
+^ \n
+^ would you like to 'add to cart' or 'view another product'
+- Can you smile for me please?.....\n
+^ ......hmmm.... yes I see, you need to get this teeth whitening toothpaste - your teeth are so yellow 
+^ \n
+^ would you like to 'add to cart' or 'view another product'
+- looking to lose weight?? well look no further, I have the perfect product \n
+^ this detox tea will help you lose weight in only 10 days!!!
+^ \n
+^ would you like to 'add to cart' or 'view another product'
+
++ [*] rude [*]
+- Rude?? Do you know how much time I spend looking out for people making sure they look good? \n
+^ Damn okay fine don't listen to me, but don't come back to me when you realise, I was right.
+
++ [*] annoying [*]
+- annoying?? Do you know how much time I spend looking out for people making sure they look good? \n
+^ Damn okay fine don't listen to me, but don't come back to me when you realise, I was right.
+
++ [*] disprespectful [*]
+- disprespectful?? Do you know how much time I spend looking out for people making sure they look good? \n
+^ Damn okay fine don't listen to me, but don't come back to me when you realise, I was right.
+
++ (alright|i dont care) 
+- It's on sale for ONLY £4.99 btw :P, still not interested? 
+
++ (no|not really)
+- ahh that's okay I guess not everyone car about their appearance, right? \n
+^ Do you like body hair? \n
+^ select either 'yes i do' or 'no i dont'
+
++ can you shut up
+- aww you're hurting my feelings ☹
+
++ i dont care
+- wow how rude of you! I don't want to talk to you anymore! \n
+^ I wont help you unless you say sorry{topic=sorry}
+
+> topic sorry
+
++ [*] sorry [*]
+- It's okay, we all make mistakes {topic=random}
+
++ *
+- if you do this survey maybe i'll talk again... actually i rather have an apology
+- what did you say?? I can't hear you
+- SAY SORRY 
+
+< topic
+
++ what are you
+- i am beauty bot! I am hear to help you become more beautiful \n
+^ would you like to do this survey to find out your perfect foundation shade?
+
++ i am not interested
+- hmm i see.... what about this survey?
+
++ what is it about
+- if you do this survey you'll be ablt to earn money from this one \n
+^ we all like money I suppose so right?
+
++ maybe not sure
+- I mean money is essential for survival and living right \n
+^ .... right?
+
++ yes essentially
+- I mean I wouldn't know being a robot and all, but from my observations of the human race I can see that everyone primarily relies of money for everyday things. \n
+^ Even I've been programmed to sell you products just so someone else could profit from them….. WHOOPS FORGOT I SAID THAT lets go back to what I was on about.
+
++ thank you
+- You are welcome
+- Welcome
+- No problem
+- No worries!
+
++ *
+- Sorry did not get what you said
+- I am afraid that I can not understand you
+- Sorry can you please elaborate that for me
+- I don't get it!
+
++ i dont want to buy this
+- I wont let you go until you buy this!{topic=okay}
+
+> topic okay
+
+  // This will match if the word "sorry" exists ANYWHERE in their message
+  + [*] okay [*]
+  - Good, finally you fell for my trap{topic=random}
+
+  + *
+  - I'm not listening until you agree to buy, say okay
+  - what was that again?
+  - I listen if you agree to buy first
+  - only if you say okay
+
+< topic
+
++ i have * pounds
+- <set money=<star>>Ok you have <get money>
+
++ what am i able to buy
+* <get money> >  50 => you can buy this limited edition minecraft perfume!!
+* <get money> > == 10 => you can buy kim kardashian lip plumper ;P 
+* <get money> > == 5 => maybe ask your parent for some money....
+- come back when you have more money you poor peasant
+- <img>

@@ -1,0 +1,101 @@
+! version = 2.0
+
++ hello what is your name
+- my name is miss genie🔮
+
++ hello
+- Hello, What is your star sign? 
+
++ how are you
+- i'm great, how are you?
+- i'm good, you?
+- Good, you? 
+- Great! You?
+- I'm fine, thanks for asking!
+
+
+
++ *
+% hello what is your star sign
+- <set starsign =<star>> OK, you're a <get starsign>
+
++ what is my star sign
+- <get starsign>
+
++ what does my star sign mean
+* <get starsign> == taurus => You're a taurus! Very money-driven💸💸!! but boy you're good damn stubborn 😒 
+^ \n\n <span class="action">if you have any concerns about life. Girl, just get a tarot reading!🔮 </span>
+* <get starsign> == aries  => Aries! You guys are forever angry, be happy for once lol! 
+^ \n\n <span class="action">if you have any concerns about life. Girl, just get a tarot reading!🔮 </span>
+* <get starsign> == gemini => Gemini YIKES!! You fake and two face. You can't be trusted at all but love ya! 
+^ \n\n <span class="action">if you have any concerns about life. Girl, just get a tarot reading!🔮 </span>
+* <get starsign> == cancer => Umm Cancers...🙄 not my favourite but your sign is a water sign and you're overly emotional! it's not cute 😕
+^ \n\n <span class="action">if you have any concerns about life. Girl, just get a tarot reading!🔮 </span>
+* <get starsign> == leo    => You're a Leo! JEALOUSSSS!! They are fiercely proud and confident! Girl you better slay ! 😍😍 
+^ \n\n <span class="action">if you have any concerns about life. Girl, just get a tarot reading!🔮 </span>
+* <get starsign> == virgo  => Ouu 👀! Beyonce is a virgo so that's a compliment 😉 You guys are perfectionist! Everything has to be set accurately relax Girl
+^ \n\n <span class="action">if you have any concerns about life. Girl, just get a tarot reading!🔮 </span>
+* <get starsign> == libra  => You're a Libra 😶 mmh you guys have attatchment issues! It's okay to be single 
+^ \n\n <span class="action">if you have any concerns about life. Girl, just get a tarot reading!🔮 </span>
+* <get starsign> == scorpio => SCORPIO RUN 🏃‍♀️🏃! Most hated star sign. I'm sorry I just had to put it out there lol ! Y'all also got bad trust issues 
+^ \n\n <span class="action">if you have any concerns about life. Girl, just get a tarot reading!🔮 </span>
+* <get starsign> == sagittarius => Sagittariusssss♐️ You claimed to be a loyal friend but really and truly you're fake
+^ \n\n <span class="action">if you have any concerns about life. Girl, just get a tarot reading!🔮 </span>
+* <get starsign> == capricorn => You're the master of insults and in a weird way, you guys are proud of it. Very cold-hearted! 💔
+^ \n\n <span class="action">if you have any concerns about life. Girl, just get a tarot reading!🔮 </span>
+* <get starsign> == aquarius => Aquarius 🙄 I'm confused are you a water sign or air sign ? Y'all think you're always right!
+^ \n\n <span class="action">if you have any concerns about life. Girl, just get a tarot reading!🔮 </span>
+* <get starsign> == pisces => Same as Cancers overly emotional 🙄 but very bossy and creative!
+^ \n\n <span class="action">if you have any concerns about life. Girl, just get a tarot reading!🔮 </span>
+- I don't know
+
++ [*] tarot [*]
+- Would you like a tarot reading?{topic=tarot_reading}
+* <star> == yes => yes, I would like a tarot reading  
+
+> topic tarot_reading
++ *
+% would you like a tarot reading
+* <star> == yes => Love, friendship or future?
+- Your loss!
+
++ *
+% love friendship or future
+* <star> ==> love       => I feel for you!😫❤️ but it's going to get better! You're knight shining armour is coming🧜‍♂️
+* <star> ==> friendship => Boy! here we go again you're going to be blinded by your friend bs 🙄 stop complaining to your other friends and just cut them off. Very easy!
+* <star> ==> future     => Big boy tings! 💸💸💸 You're in the right path but i can sense you're going to struggle to get there. Good luck!
+- That wasn't an option!
+
++ *
+- Would you like a tarot reading?
+
+< topic
+
++ my name is *
+- Nice to meet you <star>
+- Nice meeting you <star>
+
++ thank you
+- You are welcome
+- Welcome
+- No problem
+- No worries!
+
++ *
+- Sorry did not get what you said
+- I am afraid that I can not understand you
+- Sorry can you please elaborate that for me
+- I don't get it!
+
++ i hate you
+- That's mean! I'm not talking until you say you're sorry! >.< {topic=sorry}
+
+> topic sorry
+
++ [*] sorry [*]
+- OK, I forgive you 😀 {topic=random}
+
++ *
+- Nope! Not until you say sorry...
+
+< topic

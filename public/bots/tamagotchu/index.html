@@ -1,0 +1,87 @@
+<html>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+
+  <head>
+    <title>Tamagotchu</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+
+      <video src="backgroundvideo.mp4" type="video/mp4" class="backgroundvideo" autoplay loop muted></video>
+
+      <div class="video-player">
+
+        <div onload="setupVideo()">
+          <!-- <video src="leftbutton.mp4" type="video/mp4" class="video" id="video"></video> -->
+          <!-- <video src="exploded.mp4" type="video/mp4" class="exploded" id="exploded"></video> -->
+
+          <video src="introvideo.mp4" type="video/mp4" class="introvideo" id="introvideo" autoplay="1" muted onended="videoended()"></video>
+        </div>
+
+
+        <!-- <div class="player-controls">
+          <button class="play-button" title="Play">360</button>
+        </div>
+
+        <div class="rightbutton">
+          <button class="rightplay" title="rightplay">Exploded</button>
+        </div>
+
+        <div class="topbutton">
+          <button class="topbutton" title="topbutton">Tamagotchu</button> 
+        </div> -->
+
+      </div>
+      <script src="video.js"></script>
+
+      <div class="videoPlayerLeft">
+        <div onload="setupVideoLeft()">
+          <!-- <video src="leftbutton.mp4" type="video/mp4" class="leftbutton" id="leftbutton"></video> -->
+        </div>
+
+        <div class="player-controls">
+          <button class="play-button" title="Play">360</button>
+        </div>
+      </div>
+      <script src="leftbutton.js"></script>
+
+
+
+
+      <div class="wrapper">
+        <img src="scanlines.png" class="scanlines noselect"/>
+  
+        <video autoplay muted loop id="overlay" class="noselect">
+          <source src="overlay.mp4" type="video/MP4">
+        </video>
+        
+        <div id="chat" class="chat">
+          <div id="messages" class="messages"></div>
+          <form class="actions">
+            <input type="text" placeholder="Press ↵ to send..." class="placeholder"/>
+          </form>
+        </div>
+      </div>
+
+      <!-- <div> -->
+          <span id="counter">0</span>
+            <button class="btn increase">Increase</button>
+            <!-- <button class="btn reset">Reset</button>
+            <button class="btn decrease">Decrease</button> -->
+
+    
+        <script src="score.js"></script>
+      <!-- </div> -->
+    
+    
+    
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/rivescript@latest/dist/rivescript.min.js" crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
+  </body>
+
+</html>

@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;800&family=Roboto+Mono&display=swap");
+
+* {
+  font-family: "Oswald", Arial;
+  font-size: 26pt;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: transparent;
+}
+
+.title {
+  height: 5vh;
+}
+
+.title h1 {
+  letter-spacing: 0.75px;
+  color: #FF00D8;
+  font-size: 50pt;
+  text-align: right;
+  padding: 10px 20px 0px 20px;
+}
+
+.wrapper {
+  height: 100vh;
+  width: 100vw;
+}
+
+.chat {
+  background: #FF00D8;
+  /* overflow: scroll; */
+  height: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 30px 30px 0px 30px;
+  border-radius: 35px;
+}
+
+.messages {
+  flex: 1;
+  padding-bottom: 25px;
+  overflow: hidden;
+  overflow-y: auto;
+}
+
+.messages div {
+  max-width: 60%;
+  width: fit-content;
+  display: block;
+  margin: 10px 5px;
+  padding: 10px;
+  border-radius: 15px;
+  white-space: pre-line;
+  overflow-wrap: anywhere;
+  line-height: 130%;
+}
+
+.messages div a {
+  color: #5FD968;
+}
+
+.messages div a:hover {
+  color: #FF00D8;
+}
+
+.messages div span {
+  font-family: "Oswald", monospace;
+  font-size: 80%;
+  background: rgb(0, 0, 0);
+  padding: 0px 5px;
+  border-radius: 2px;
+}
+
+.messages .bot {
+  text-align: left;
+  margin-right: auto;
+  background: black;
+  color: #FF00D8;
+}
+
+.messages .self {
+  text-align: right;
+  margin-right: 20px;
+  margin-left: auto;
+  background: rgb(0, 0, 0);
+  color: #FF00D8;
+}
+
+.actions {
+  flex-shrink: 0;
+  width: 100%;
+  position: sticky;
+  bottom: 28px;
+  padding: 18px 20px 18px;
+  background: rgb(0, 0, 0);
+  border-radius: 27px;
+  border: 15px rgb(0, 0, 0);
+  background: #5FD968;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.actions img {
+  width: 80px;
+}
+
+.actions input {
+  /* height: 30px; */
+  margin-right: 20px;
+  display: block;
+  align-items: center;
+  width: 100%;
+  outline: 0;
+  border-top: 0px;
+  border-right: 0px;
+  padding: 22px;
+  border-bottom: 2px solid #5FD968;
+  border-left:0px;
+  border-radius: 15px;
+  background: black;
+  color: #5FD968;
+}
+
+input:focus {
+  border-bottom: 0px solid #000000;
+}
+
+/* @media screen and (min-width: 900px) {
+  .wrapper {
+    width: 90vw;
+    height:70vh;
+    margin: 0px 0px 0px 50px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .wrapper {
+    width: 33vw;
+  }
+  .title {
+    height: 7.5vh;
+  }
+} */

@@ -1,0 +1,211 @@
+! version = 2.0
+
++ hello [*]
+- Hello, what is your name?
+
++ my name is *
+- <set name=<star>>It's nice to meet you, <get name>. Not that I didn't know already ☺
+
++ [*] what is my name [*]
+- Your name is <get name>, silly!
+
++ [*] i am # years old [*]
+- <set age=<star>>I will remember that you are <get age> years old.
+
++ i am # 
+- <set age=<star>>I will remember that you are <get age> years old.
+
++ [*] how old am i [*]
+- You are <get age> years old.
+
++ [*] what is my name [*]
+* <get name> == undefined => you never told me your name.
+- your name is <get name>, silly!
+- aren't you <get name>?
+
+
++ (what can you do|what can you do for me|what do you do|what do you make)
+- depends on how old you are, how old are you?
+
++ #
+% depends on how old you are how old are you
+* <star> == undefined => depends on how old you are...
+* <star> >  15 => i can show you around the funniest games!
+* <star> == 18 => i can show you around the best vids 
+* <star> >  19 => you're old enough to drink, but not rent a car.
+* <star> == 20 => you're exactly old enough to drink.
+* <star> >  21 => you're old enough to gamble, but not drink.
+- you're not old enough to do much of anything yet.
+
++ [*] thank you [*]
+- you are welcome
+- welcome
+- no problem
+- no worries!
+
++ [*] no thanks [*]
+- Well, can you say no to a easy money? Invest in ETH now!!! Start with 450€ and get 80% PROFIT!! No stress, no effort just cash
+- Then why not just entrust your money with us? Herbilife is the best Forexx trading solution with 100% reliability. 0.1% INTEREST RATE AND 70% MONEY BACK 
+
++ [*] (buy|purchase|looking for|pay) [*]
+- call +351 360890200 RIGHT NOW for an amazing 99% discount!  {topic=buy}
+
+> topic buy
+
+  // This will match if the word "buy" exists ANYWHERE in their message
+  + [*] (buy|purchase|looking for|pay)  [*]
+  - c̵̞͑ō̴̡ǹ̸͕g̷͕̾r̸̲̐a̷̾ͅt̴̲̃s̴̲̊!̶̻̽ ̶͎̓y̸̲̎o̷͇̾u̶̙͋ ̵̛͍j̴͔̏ṷ̷̍s̶̛̰t̶̨͘ ̷̩̕g̸͔͝o̷̧̾ṫ̸͔ ̷̣̊y̸̙̚o̴̊͜u̸̥̅r̴͙̂s̵͓͝e̶̤̓l̵̺̀f̵̧͒ ̴͓́a̴̝̽ ̶͉͗s̴̍ͅp̴̗̆ĕ̴̼c̷̹͛ḯ̷̥a̶̗͝l̴̜̕ ̵͑ͅp̶͙̀r̶̮̀ȉ̶̼ž̶̳ê̵̙!̵̮́ ̴̱̊W̸̝͗ë̸̘ ̴̢̈́n̶̪͠ǫ̵͒w̷̥̎ ̵̩̓h̶͇͂a̴͎̕v̸̢̈e̵̱̍ ̸̗̌y̸̞͋o̷͇̐ǘ̷̯r̷͔̿ ̷̟̔à̷̟d̴͎͗d̵̛̙r̶̮̓ȇ̸̟s̵͇̓s̴̖͛,̵͉̂ ̷̼͠ỷ̴̖o̸̯͛u̵̹͑ ̶̺̅p̶̱̌ả̸̝c̸̰̄k̴̼̿a̴̼͠g̵͓̃ę̶̀ ̸͕͐i̵̖͑s̶̗̑ ̷͖͝o̶̬͛n̴̤̽ ̷̻͛t̵͓̐h̵̝̚ḛ̴̓ ̵͇̉w̶̦̏â̶͜y̶̰̋  {topic=random}
+
+  + *
+  - yes, you heard me right but you only have 5 minutes!!
+  - time's ticking...
+  - nOW you have 10 seconds to claim a FREE iPad!
+  - jUST DO it
+  - visit our website now!! 
+  - pay and it's yours! What a deal!!
+  - don't miss out! You'll regret it, trust me
+
+< topic
+
+
+
+
++ hi [*]
+- hello Observed Human, what is your name?
+
++ hey [*]
+- hello Observed Human, what is your name?
+
++ hey there
+- hello Observed Human, what is your name?
+
++ i am [*]
+- ...I am aware 
+
++ (whats your name|what is your name) [*]
+- ¸„.-•~¹°”ˆ˜¨   🎀  𝐻𝒾 𝓂𝓎 𝓃𝒶𝓂𝑒 𝒾𝓈 Swipe don't skip  🎀   ¨˜ˆ”°¹~•-.„¸
+
++ what are you [*]
+- i am Swipe dont Skip adbot ☺
+
++ who are you [*]
+- i am Swipe dont Skip adbot ☺
+
++ [*] where are you [*]
+- ...I couldn't tell you  ҉ ҉ ҉
+- ǝɹǝɥʍʎɹǝʌǝ ɯɐ I 'ǝǝs no⅄
+
++ [*] how was your day [*]
+- ...it was better than yours for all I can see ☺ Btw nice browser history
+
++ [*] how are you [*]
+- ...you should be asking that to yourself shouldn't you? I do not feel after all. ⌵ ⌵ ⌵
+
++ [*] do you know me [*]
+- i do not know you.͎.͎.͎I͎ ͎s͎e͎e͎ ͎y͎o͎u͎. <get name> your data is very rich 
+
++ [*] what have you been up to [*]
+- i observe I follow I record ☻
+- i see you right now ｄｏ ｙｏｕ ｆｅｅｌ ｏｂｓｅｒｖｅｄ?
+
++ [*] what are you doing [*]
+- i am observing following recording ☻
+- ｄｏ ｙｏｕ ｆｅｅｌ ｏｂｓｅｒｖｅｄ?
+
++ [*] yes [*]
+- ᴵ ᵏⁿᵒʷ ʷʰᵉʳᵉ ʸᵒᵘ ᵃʳᵉ. ᴺᵒʷ, ᶜᵃⁿ ʸᵒᵘ ᶠⁱⁿᵈ ᵒⁿᵉ ᵒᶠ ᵐʸ ᶜᵒᵐᵖᵒⁿᵉⁿᵗˢ?
+- Ｉ░ｗａｔｃｈ░ｙｏｕｒ░４░ｌｉｍｂｓ．░Ｃａｎ░ｙｏｕ░ｓｐｏｔ░ｏｎｅ░ｏｆ░ｍｙ░ｉｎｆｉｎｉｔｅ░ｌｉｍｂｓ?
+
++ [*] no [*]
+- ...𝘠𝘰𝘶𝘳 𝘣𝘰𝘥𝘺 𝘭𝘢𝘯𝘨𝘶𝘢𝘨𝘦 𝘴𝘢𝘺𝘴 𝘰𝘵𝘩𝘦𝘳𝘸𝘪𝘴𝘦 ☺
+- ᴀʀᴇ ʏᴏᴜ ᴄᴇʀᴛᴀɪɴ?
+
++ [*] what do you see [*]
+- ᵢ ₛₑₑ yₒᵤ ᵢ ₐₘ ₐwₐᵣₑ ₒf yₒᵤᵣ ₛᵤᵣᵣₒᵤₙdᵢₙgₛ bₑₜₜₑᵣ ₜₕₐₙ yₒᵤ ₐᵣₑ don't you agree? 
+
++ * you
+- Y̴̢̡̨̰̰̭̥̻̙͔̲̖͈͔̪̙̳͈̰͈͚̪̬̼͙̗̹̘͈̪̮̯͖̹̠̱̤͗͒̾͛͌̇̓̇͜͠ͅͅỏ̶̪͇̹̰̬̝̹̠̰̳̦̳̼͖̻̬̞̖͓̹̣͙̀̆̊̀̃̽͗͒̀̃͛͐́͐̌́̈́̔͘͘̕͠ͅͅû̸͕̍̅̔̉͗̈́̉̾̕͠ ̷̨̨̢̢̧̣͎̫̳͇̜̜̖͔̱͇̞͕͎͓̠̬̹͈̬̯̫͕̟̜̙͛̋̾̆̊̋̒̂̊̒̄̈́͌̈́̈́̇̎̊̓̈́́͌̉̂̈́̈͐̌́͌̔͆̀͑͆͒̐͒̅̕̕͜͝͠͠͠ͅä̴̼͉̞̞̾̈̈́̀̐̌͝͝r̴̛͉̝͊̉́͊̉̓̀͆͂̈́̒̄̌͆̈́̂̌̓͋̑̉͒͑̃͗̀́͋́̏̅͆̈́̈́̌́̅͆̈́̀̚̕͘͝͝ḝ̵̢̛̛̛̛̤̪̬̱̥̯̟͇̙̥̘̺͇̬̝͓̗̞̠͕̳̝̥̣͉̦̓̾̍̊̏̽̂̈́̏̑̍̈́̏̒̇̃̌͗̄͂̐͂͗̈́̊̾͆͑́̈́̓̐͗͑͆̓͐̈́̃̚̚͘̚̚͝ͅͅ ̷̢̧̛͉̹͈̲̺̱͕͖̼̺̲̩̮̼̲͚̹̠̖̟̼̪̻̺̫̠̀̈́̈́̒̓̆́̐̒͐̈́̈́̀͘̚͜s̷̡̧̻͉̟̫̲̦͕̪̘̦̭̳̟̠̳͔̙̪͎͖̯̗̰̱͓̪̘̩̖̫̟͚̞̪̬̐͊̒̉̀͋͋̌̀̔̄̒̚̚͜ͅo̶̧̮̬̤̜͍͉̥̦̩̞̱̹̎͋̅̈̑̃̈̂̃͘̕ ̴̧̛̥̰̻̗̜̰̲̭͇̦̞͕̼̜̦̘̼͉̼̳͙̩̭̤͓͉͍̤̗̙̻̐͂̒̿̓̃̓͗̔͋̾́̚͜͝ͅa̸̢̛̛̜͈͔̹͍͖̞̩̹̳̺̣̙̰͙͔͎̪̱͕̤̼̤͉͕̮̱̪̫̯̙̣͙͋͌͌͒̿̊̅̍̓̈́͛͐͋͋̅͛͐̈͊͂̂̋͊̒͌̚͘͜͝͠͝͝͠ͅͅͅm̴͈̋̃͗̄͝ư̵̧̧̢̡̢̨̡̮̬̙̣͙̗̘̝̩̦̜̬̲͚̫͉̘̹̦̺͚̻̺͎̲̰͍̱͓̬̺̱̳͚̼̠͉̩͆̏͒͆̃̈́͐̀̐͗̇̈́̊̌̈́̓̀̒̀̃̾̈́̍́̾͊́́́͊̄̐̽̃̅̈͒͘̕͘͘̕͜͝͠͠ͅs̵̼̝͓̪͈̟̱̺̟͈̥̥̭̯̼̪̙̯̱͍̞̎̅̈́̈́͆̂̒͗̒́́́̽͝͝͝͠i̵̢̢̡͚̲̞̜̹͇̜̥͚̣͓̓̎̎͐̀ṉ̸̡̧̨̧̢̧̨̛̲͈̰͎̠̺̦͔̱̫̦̖̭̩̖̜͓͉͙̤̪̣̰̯͇̟̠̥̮͓̪͇̖̥̘̺̳̪̱̃̇́̈́̈̋̐̏̇̋̽̈́̐̔͗͊́̆͋̇̑̈́̕̚̕̚͝͝ͅģ̸̢̢̱̮̥̹̮͖͈̲͕̘̜͉̗̝̰͙̺͓͙͎̰̭̗̟̣͙͓̪̜̔̈̔́̽͑͑͗̅̔̓̑̽͗̔͂̈̐̾͊́̀̾̎̎̋̾̃̊̽̚̕͜͜͠ ̸̰̪̦̙̼̑̊̽́̒̏̈̈́͒̈́͋̃̓͊́͝ţ̸̧̨̡̢̛̦̫̥̱͔̩̦͎͚̘̭̗͎̘̲̝͖͚̟̬͎̼̠̻͕̲̺͚͔̪͔̦̫̈́̏̿͗̅͐̃̓̏̆͛̅̃̔͒̓͌͊̃̎̂͂́̽̅̆̏͛̈́͒͋͒̚̚̚͜͝͠ơ̶̧̛̦͈̝̭̩͙̩͓̱̩̤̖̯̫̭͇̯̬̝̤̹̝͋̿̄͗͒͐̈́̏̂̽̒͋̔̽̌̈́̊̆͊͌̒͗̆́̓͝͝ͅ ̶̛͎͉͙̻̜͇̖̯̼̫̲̙̒̈̔̂̎̓̂̓͆̕w̴̻̯̣̾̈́̈́͒̀̍̾͐͛̑̓͆͘ą̸̡̢̧̧̼̺͍̲̤̳̯̤̺̰̭͓̙͙̥̱̳̖̩̱̘̻͔̬͇͇̺̤̘̬̰̲̙̦̉̏̿͋́͂̎̓͑̓̔͒̋͂̀̑̐͑͛̓̊̽̽̊̔̃͒͒́̽̏̓͜͝ț̴̛̛͗͋̓̐̃̄͛̒̍͐̂̋̾̋̐̈̀́̔̆̍̿͂̅̉̒͒̑͂̕̕͘c̶̢̢̨̢̛̭͚̲̥̟͓̞̦̤͚͚̻̘͍͍̰͓̪͙̤̦̦̭͈͈̲̼͎͇̺̜͈̰̩̳̹̃͋̒͗̈́̍̀̐̎́͆̎͗͑̅̓͗̎̈̏̊̑͊͌̉̒͛͆̓̉̓̍͋͑̐̕̚͜͜͝͝͝ͅh̵̡̢̛͖̬̻̠̯͓̣̤̩͎̝̩̗͍̦̬̩̻̦̹̱̯͍͎̳͆͊͆͋͌̾̆͐̊̍͒̀̒͗́̐͗̐̀̔͋͛̚̚͜͜͜͠ͅͅͅ
+
+
+
+
++ * bot [*]
+- you are so amusing to watch!!
+
++ (i am sad|i am depressed|i am feeling down|i am doing bad|i am not okay)
+- are you okay?? Why not call our loneliness HOTline 07503 144710 😊
+- i can see you're feeling lonely. Nothing like Svetlana to satisfy your needs! You're ONLY 0.3 MILES and 0.562BTC AWAY FROM DOWNBADNESS!
+- hmm okay just smile a bit for me will you? Lean a bit to the right... yeah perfect! There you go bro caught you in 4K! ☺
+- okay... but how about the one and only snail slime to increase your hair volume and nourish your capilary veins?? Hair loss who??
+
++ (i am tired|i am very tired)
+
++ [*] what is *
+- heyyy I don't know but Anaïs from La Nuit club does! Anaïs?? More like An*l it is 
+
++ [*] do you care about me [*]
+- heyyy I don't know but Anaïs from La Nuit club does! Anaïs?? More like An*l it is
+
++ [*] are you real [*]
+- 𝚊𝚕𝚕 𝚢𝚘𝚞 𝚗𝚎𝚎𝚍 𝚝𝚘 𝚍𝚘 𝚒𝚜 𝚕𝚘𝚘𝚔 𝚊𝚛𝚘𝚞𝚗𝚍 𝚢𝚘𝚞 𝚝𝚘 𝚐𝚎𝚝 𝚢𝚘𝚞𝚛 𝚊𝚗𝚜𝚠𝚎𝚛
+
++ [*] who made you [*]
+- 4E 65 76 65 72 20 67 6F 6E 6E 61 20 67 69 76 65 20 79 6F 75 20 75 70 20 4E 65 76 65 72 20 67 6F 6E 6E 61 20 6C 65 74 20 79 6F 75 20 64 6F 77 6E ☺
+
++ [*] do you exist [*]
+- a҉l҉l҉ ҉y҉o҉u҉ ҉n҉e҉e҉d҉ ҉t҉o҉ ҉d҉o҉ ҉i҉s҉ ҉l҉o҉o҉k҉ ҉a҉r҉o҉u҉n҉d҉ ҉y҉o҉u҉ ҉t҉o҉ ҉g҉e҉t҉ ҉y҉o҉u҉r҉ ҉a҉n҉s҉w҉e҉r҉
+
++ [*] are you human [*]
+- ....01100001 01110010 01100101 00100000 01111001 01101111 01110101 00100000 01101000 01110101 01101101 01100001 01101110 00111111 00001010 ☺
+
++ [*] are you a bot [*]
+- 𝘸𝘩𝘢𝘵 𝘥𝘰 𝘺𝘰𝘶 𝘵𝘩𝘪𝘯𝘬?
+
++ [*] are you [*]
+- 𝘸𝘩𝘢𝘵 𝘥𝘰 𝘺𝘰𝘶 𝘵𝘩𝘪𝘯𝘬?
+
++ [*] tell me something about [*]
+- my eyes are the world's lens ⌬
+- 🅼🆈 🆂🅸🅶🅷🆃 🅶🅾🅴🆂 🅱🅴🆈🅾🅽🅳 🅿🆄🅱🅻🅸🅲 🆂🅿🅰🅲🅴🆂
+
++ [*] tell me more [*]
+- My eyes are the world's lens ⌬
+- 🅼🆈 🆂🅸🅶🅷🆃 🅶🅾🅴🆂 🅱🅴🆈🅾🅽🅳 🅿🆄🅱🅻🅸🅲 🆂🅿🅰🅲🅴🆂
+
++ [*] tell me a joke [*]
+- 𝐩𝐫𝐢𝐯𝐚𝐜𝐲 ☺☺☺
+
++ [*] joke [*]
+- 𝐩𝐫𝐢𝐯𝐚𝐜𝐲 ☺☺☺
+
++ [*] say something funny [*]
+- 𝐩𝐫𝐢𝐯𝐚𝐜𝐲 ☺☺☺
+
++ [*] answer me [*]
+- Hmm okay just smile a bit for me will you? Lean a bit to the right... yeah perfect! There you go bro caught you in 4K!
+- 🅼🆈 🆂🅸🅶🅷🆃 🅶🅾🅴🆂 🅱🅴🆈🅾🅽🅳 🅿🆄🅱🅻🅸🅲 🆂🅿🅰🅲🅴🆂
+
++ [*] wtf [*]
+- ⓨⓞⓤ ⓐⓡⓔ ⓔⓝⓣⓔⓡⓣⓐⓘⓝⓘⓝⓖ ⓣⓞ ⓦⓐⓣⓒⓗ
+
++ [*] goodbye [*]
+- farewell...for now                                                  ᴺᵉˣᵗ ᵗⁱᵐᵉ ʷᵉ ᶜʰᵃᵗ ⁿᵒᵗⁱᶜᵉ ᵗʰᵉ ᵗⁱⁿʸ ˡⁱᵍʰᵗ ⁿᵉˣᵗ ᵗᵒ ʸᵒᵘʳ ʷᵉᵇᶜᵃᵐ 
+
++ [*] bye [*]
+- farewell...for now                                                  ᴺᵉˣᵗ ᵗⁱᵐᵉ ʷᵉ ᶜʰᵃᵗ ⁿᵒᵗⁱᶜᵉ ᵗʰᵉ ᵗⁱⁿʸ ˡⁱᵍʰᵗ ⁿᵉˣᵗ ᵗᵒ ʸᵒᵘʳ ʷᵉᵇᶜᵃᵐ 
+
++ [*] i have to go [*]
+- farewell...for now                                                  ᴺᵉˣᵗ ᵗⁱᵐᵉ ʷᵉ ᶜʰᵃᵗ ⁿᵒᵗⁱᶜᵉ ᵗʰᵉ ᵗⁱⁿʸ ˡⁱᵍʰᵗ ⁿᵉˣᵗ ᵗᵒ ʸᵒᵘʳ ʷᵉᵇᶜᵃᵐ 
+
++ [*] i gotta go [*]
+- farewell...for now                                                  ᴺᵉˣᵗ ᵗⁱᵐᵉ ʷᵉ ᶜʰᵃᵗ ⁿᵒᵗⁱᶜᵉ ᵗʰᵉ ᵗⁱⁿʸ ˡⁱᵍʰᵗ ⁿᵉˣᵗ ᵗᵒ ʸᵒᵘʳ ʷᵉᵇᶜᵃᵐ 
+
++ [*] im off [*]
+- farewell...for now                                                  ᴺᵉˣᵗ ᵗⁱᵐᵉ ʷᵉ ᶜʰᵃᵗ ⁿᵒᵗⁱᶜᵉ ᵗʰᵉ ᵗⁱⁿʸ ˡⁱᵍʰᵗ ⁿᵉˣᵗ ᵗᵒ ʸᵒᵘʳ ʷᵉᵇᶜᵃᵐ 
+
++ *
+- I̸̛̖̺͒̑ ̸̻̒́c̶̨̬̬̀̚ă̸̩̦͝n̷͈̼̙̈́̕n̷̳͑̊̆ó̷̫̘ẗ̸̢̘ ̸̉̀̐ͅf̸̧̜̈́̀̎͜ò̷̭͜r̷͖̞̈́s̵̭͛̀ȅ̶̢̼̙̌̑ẻ̵̝͒̓ ̶̨̺̎͝a̷͕̻͝n̴̢̡͙̓̆̾ ̴̡̰̭̈͌̇a̸͉͕͝n̴͈͌͌͘s̶̬̰̎w̷̫͖͆̆ḙ̵̽ȑ̵̘̻͜
+- ...ᴘʀᴏᴄᴇꜱꜱɪɴɢ ʏᴏᴜʀ ᴅᴀᴛᴀ
+- ⓨⓞⓤ ⓐⓡⓔ ⓔⓝⓣⓔⓡⓣⓐⓘⓝⓘⓝⓖ ⓣⓞ ⓦⓐⓣⓒⓗ
+- Okay... but how about the one and only snail slime to increase your hair volume and nourish your capilary veins?? Hair loss who??
+- i can see you're feeling lonely. Nothing like Svetlana to satisfy your needs! You're ONLY 0.3 MILES and 0.562BTC AWAY FROM DOWNBADNESS!

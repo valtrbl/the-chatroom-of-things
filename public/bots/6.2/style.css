@@ -1,0 +1,283 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;800&display=swap");
+
+* {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 10pt;
+  margin: 10;
+  box-sizing: border-box;
+}
+
+body {
+  background: #cc99db;
+  background-image: url("cake\ bg2.gif");
+  background-size: cover;
+  background-position: center;
+}
+
+.title {
+  height: 15vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.title h1 {
+  letter-spacing: 10px;
+  color: rgb(54, 13, 47);
+}
+
+.wrapper {
+  height: 60vh;
+  background: rgb(119, 156, 173);
+  -webkit-text-fill-color: rgb(121, 121, 121);
+  padding-top:10px;
+  text-align: center;
+  background-image: url("border\ 3.jpg");
+  background-size: cover;
+  background-position: center;
+  
+}
+
+
+#wrapper {
+  position: fixed;
+  left: 20vw;
+  top: 10vh;
+}
+
+#second {
+  position:fixed;
+}
+
+#third {
+  position:fixed;
+  left: 60vw;
+}
+
+.popup {
+  z-index:1000;
+  display: none;
+}
+
+#isa1 {
+  position: fixed;
+  width: 300px;
+  height: auto;
+  left: 70vw;
+  bottom: 20vh;
+}
+
+#spotify {
+  position: fixed;
+  width: 250px;
+  height: auto;
+  left: 40vw;
+  bottom: 10vh;
+}
+
+#isa2 {
+  position: fixed;
+  width: 250px;
+  height: auto;
+  left: 50vw;
+  bottom: 50vh;
+}
+
+.chat {
+  background: white;
+  box-shadow: 0px 0px 0px rgb(255, 72, 0);
+  overflow: scroll;
+  height: 88%;
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 0px;
+}
+
+.messages {
+  flex: 1 0 auto;
+}
+
+.messages div {
+  max-width: 60%;
+  width: fit-content;
+  display: block;
+  margin: 5px;
+  padding: 10px;
+  border-radius: 7px;
+  white-space: pre-line;
+}
+
+.messages div a {
+  color: white;
+}
+
+.messages div a:hover {
+  color: blueviolet;
+}
+
+.messages .bot {
+  text-align: left;
+  margin-right: auto;
+  background: black;
+  color: white;
+}
+
+.messages .self {
+  text-align: right;
+  margin-right: 20px;
+  margin-left: auto;
+  background: white;
+  border: 1px solid blueviolet;
+  color: blueviolet;
+  text-transform: lowercase;
+}
+
+.actions {
+  flex-shrink: 0;
+  width: 100%;
+  position: sticky;
+  bottom: -1px;
+  padding: 10px 0px 20px;
+  background: white;
+}
+
+.actions input {
+  height: 30px;
+  display: block;
+  width: 90%;
+  outline: 0;
+  border-top: 0px;
+  border-right: 0px;
+  border-bottom: 2px solid black;
+  border-left: 0px;
+}
+
+input:focus {
+  border-bottom: 2px solid blueviolet;
+}
+
+@media all and (min-width: 720px) {
+  .wrapper {
+    width: 50vw;
+    height: 70vh;
+    margin: 0 auto 2.5vh;
+  }
+}
+
+@media all and (min-width: 1280px) {
+  .wrapper {
+    width: 35vw;
+  }
+  .title {
+    height: 10vh;
+  }
+}
+
+
+
+
+
+.second {
+  height: 60vh;
+  background: rgb(119, 156, 173);
+  -webkit-text-fill-color: rgb(121, 121, 121);
+  padding-top:10px;
+  text-align: center;
+  background-image: url("spotify\ EXP\ 1.png");
+  background-size: cover;
+  background-position: left;
+  
+}
+
+.chattwo {
+  background: white;
+  box-shadow: 0px 0px 0px rgb(255, 72, 0);
+  overflow: scroll;
+  height: 88%;
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  padding: 50px 20px 0px 20px;
+  border-radius: 0px;
+}
+
+.messagestwo {
+  flex: 1 0 auto;
+}
+
+.messages div {
+  max-width: 60%;
+  width: fit-content;
+  display: block;
+  margin: 5px;
+  padding: 10px;
+  border-radius: 7px;
+  white-space: pre-line;
+}
+
+.messages div a {
+  color: white;
+}
+
+.messages div a:hover {
+  color: blueviolet;
+}
+
+.messages .bot {
+  text-align: left;
+  margin-right: auto;
+  background: black;
+  color: white;
+}
+
+.messages .self {
+  text-align: right;
+  margin-right: 20px;
+  margin-left: auto;
+  background: white;
+  border: 1px solid blueviolet;
+  color: blueviolet;
+  text-transform: lowercase;
+}
+
+.actionstwo {
+  flex-shrink: 0;
+  width: 100%;
+  position: sticky;
+  bottom: -1px;
+  padding: 10px 0px 20px;
+  background: white;
+}
+
+.actions input {
+  height: 30px;
+  display: block;
+  width: 90%;
+  outline: 0;
+  border-top: 0px;
+  border-right: 0px;
+  border-bottom: 2px solid black;
+  border-left: 0px;
+}
+
+input:focus {
+  border-bottom: 2px solid blueviolet;
+}
+
+@media all and (min-width: 720px) {
+  .wrapper {
+    width: 50vw;
+    height: 70vh;
+    margin: 0 auto 2.5vh;
+  }
+}
+
+@media all and (min-width: 1280px) {
+  .wrapper {
+    width: 35vw;
+  }
+  .title {
+    height: 10vh;
+  }
+}

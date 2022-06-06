@@ -264,6 +264,34 @@
       "name": "Nostalgic Vinyl",
       "tagline": "",
       "exists": true
+    },
+    {
+      "id": "musebot",
+      "members": ["Justin Lin", "Zetong Chen"],
+      "name": "Musebot",
+      "tagline": "",
+      "exists": true
+    },
+    {
+      "id": "tamagotchu",
+      "members": ["Eddie Cranmer", "Kwesi Roberts-Sackey"],
+      "name": "Tamagotchu",
+      "tagline": "",
+      "exists": true
+    },
+    {
+      "id": "6.1",
+      "members": ["Lily McCardle"],
+      "name": "Doorbot",
+      "tagline": "",
+      "exists": true
+    },
+    {
+      "id": "6.2",
+      "members": ["Lily McCardle"],
+      "name": "Swipe Don't Skip",
+      "tagline": "",
+      "exists": true
     }
   ]
 }
