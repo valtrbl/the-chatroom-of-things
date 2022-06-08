@@ -320,6 +320,13 @@
       "name": "Swipe Don't Skip",
       "tagline": "",
       "exists": true
+    },
+    {
+      "id": "6.3",
+      "members": [""],
+      "name": "Smart Recycling Bin",
+      "tagline": "",
+      "exists": true
     }
   ]
 }

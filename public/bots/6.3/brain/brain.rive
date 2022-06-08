@@ -1,0 +1,557 @@
+
+! version = 2.0
+
+> begin
+
+// If we don't know their name, set the new_user topic and continue.
++ request
+* <get met> == undefined => <set met=true>{topic=new_user}{ok}
+- {ok}
+
+< begin
+
+
+
+> topic new_user
+
++ *
+- Hello!👋 I am <bot name> \n
+^ What is your name?{topic=asked_name}
+
+< topic
+
+
+
+> topic asked_name
+
++ #
+- Your name is a number? LOL
+
++ *
+- I only want your first name 😁
+
++ _
+- <set name=<formal>>Nice to meet you, <get name>!\n
+^ \n
+^ I'm here to show you how recycling ♻️ \n 
+^ benefits the environment through \n
+^ some quizzes and statistics about \n
+^ its influence on the planet. 🌍 \n
+^ \n
+^ Would you like to go straight to \n
+^ the quizzes 1️⃣ or statistics? 2️⃣ {topic=picker}
+
+< topic
+
+
+
+> topic picker
+
++ #
+% nice to meet you *im here to show you how recycling benefits the environment through some quizzes and statistics about its influence on the planet would you like to go straight to the quizzes 1 or statistics 2
+* <star> == 1 => OK, quizzes it is!{topic=1}
+* <star> == 2 => OK, statistics it is!{topic=2}
+- You need to answer 1 or 2!
+
++ *
+% would you like to talk quizzes 1 or stats 2
+* <star> == 1 => OK, quizzes it is!{topic=1}
+* <star> == 2 => OK, statistics it is!{topic=2}
+- You need to answer 1 or 2!
+
++ *
+- Would you like to talk quizzes 1️⃣ or stats 2️⃣?
+
+< topic
+
+
+
+> topic 1
+
++ *
+% ok quizzes it is
+- Good choice! Here is your first question: \n
+^ \n
+^ How many millions of tonnes of paper \n
+^ are recycled in the UK each year? \n\n
+^ <span style="text-decoration: underline">Please just answer with a number</span>\n\n
+^ (Clue) The answer is 2 digits long!
+
++ #
+% good choice here is your first question how many millions of tonnes of paper are recycled in the uk each year span styletextdecoration underlineplease just answer with a numberspanclue the answer is 2 digits long
+* <star> == 10 => That's right!{topic=again}
+* <star> < 10 => A little bit more!
+* <star> > 10 => A little bit less!
+- Way off!
+
++ *
+- Answer with a number
+
++ *
+% answer with a number
+* <star> == 10 => That's right!{topic=again}
+* <star> < 10 => A little bit more!
+* <star> > 10 => A little bit less!
+- Answer with a number
+
++ *
+% a little bit more
+* <star> == 10 => That's right!{topic=again}
+* <star> < 10 => A little bit more!
+* <star> > 10 => A little bit less!
+- Answer with a number
+
++ *
+% a little bit less
+* <star> == 10 => That's right!{topic=again}
+* <star> < 10 => A little bit more!
+* <star> > 10 => A little bit less!
+- Answer with a number
+
++ [*] question [*]
+- Would you like to hear the question again?
+
++ *
+% would you like to hear the question again
+- How many millions of tonnes of paper \n
+^ are recycled in the UK each year? \n\n
+^ <span style="text-decoration: underline">Please just answer with one number</span>
+
+< topic
+
+
+
+> topic 2
+
++ *
+% ok statistics it is
+- That is a good choice!\n
+^ \n
+^ Did you know that it takes up to\n
+^ 500 years for plastic to fully \n
+^ decompose?🤯
+
++ *
+- Would you like to complete another quiz 1️⃣\n
+^ or jump to a fact 2️⃣?{topic=picker_2}
+
+< topic 
+
+
+
+> topic again
+
++ * 
+% thats right
+- Would you like to complete another quiz 1️⃣\n
+^ or jump to a fact 2️⃣?{topic=picker_2}
+
+< topic
+
+
+
+> topic picker_2
+
++ #
+% would you like to complete another quiz 1or jump to a fact 2
+* <star> == 1 => Nice! Let's do another quiz!{topic=quiz2}
+* <star> == 2 => Cool! let's jump straight to a fact!{topic=fact2}
+- You need to answer 1 or 2
+
++ *
+- you need to answer 1 or 2
+* <star> == 1 => Nice! Let's do another quiz!{topic=quiz2}
+* <star> == 2 => Cool! let's jump straight to a fact!{topic=fact2}
+- You need to answer 1 or 2
+
+< topic
+
+
+
+> topic quiz2
+
++ *
+% nice lets do another quiz
+- How many trees does it take to\n 
+^ make one tonne of paper?\n\n
+^ <span style="text-decoration: underline">Please just answer with one number</span>\n\n
+^ (Clue) The answer is 2 digits long!
+
++ #
+% how many trees does it take tomake one tonne of paperspan styletextdecoration underlineplease just answer with one numberspanclue the answer is 2 digits long
+* <star> == 24 => Right answer!{topic=again2}
+* <star> < 24 => A little bit more!
+* <star> > 24 => A little bit less!
+- Way off!
+
++ *
+- Answer with a number
+
++ *
+% answer with a number
+* <star> == 24 => Right answer!{topic=again2}
+* <star> < 24 => A little bit more!
+* <star> > 24 => A little bit less!
+- Answer with a number
+
++ *
+% a little bit more
+* <star> == 24 => Right answer!{topic=again2}
+* <star> < 24 => A little bit more!
+* <star> > 24 => A little bit less!
+- Answer with a number
+
++ *
+% a little bit less
+* <star> == 24 => Right answer!{topic=again2}
+* <star> < 24 => A little bit more!
+* <star> > 24 => A little bit less!
+- Answer with a number
+
++ [*] question [*]
+- Would you like to hear the question again?
+
++ *
+% would you like to hear the question again
+- How many trees does it take to\n 
+^ make one tonne of paper?\n\n
+^ <span style="text-decoration: underline">Please just answer with one number</span>
+
+< topic
+
+
+
+> topic again2
+
++ * 
+% right answer
+- Would you like to complete another quiz 1️⃣\n
+^ or jump to a fact 2️⃣?{topic=picker_3}
+
+< topic
+
+
+
+> topic fact2
+
++ *
+% cool lets jump straight to a fact
+- Did you know we throw away 1.4 million \n 
+^ untouched bananas every day?🤯
+
++ *
+- Would you like to complete another quiz 1️⃣\n
+^ or jump to another fact 2️⃣?{topic=picker_3}
+
+< topic
+
+
+
+> topic picker_3
+
++ #
+% would you like to complete another quiz 1or jump to another fact 2
+* <star> == 1 => Nice! Let's do another quiz!{topic=quiz3}
+* <star> == 2 => Cool! let's jump straight to a fact!{topic=fact3}
+- You need to answer 1 or 2
+
++ *
+- you need to answer 1 or 2
+* <star> == 1 => Nice! Let's do another quiz!{topic=quiz3}
+* <star> == 2 => Cool! let's jump straight to a fact!{topic=fact3}
+- You need to answer 1 or 2
+
+< topic
+
+
+
+> topic quiz3
+
++ *
+% nice lets do another quiz
+- How many trees are saved by \n
+^ recycling a tonne of paper?\n\n
+^ (Clue) The answer is 2 digits long!
++ #
+% how many trees are saved by recycling a tonne of paperclue the answer is 2 digits long
+* <star> == 17 => Right answer!{topic=again3}
+* <star> < 17 => A little bit more!
+* <star> > 17 => A little bit less!
+- Way off!
+
++ *
+- Answer with a number
+
++ *
+% answer with a number
+* <star> == 17 => Right answer!{topic=again3}
+* <star> < 17 => A little bit more!
+* <star> > 17 => A little bit less!
+- Answer with a number
+
++ *
+% a little bit more
+* <star> == 17 => Right answer!{topic=again3}
+* <star> < 17 => A little bit more!
+* <star> > 17 => A little bit less!
+- Answer with a number
+
++ *
+% a little bit less
+* <star> == 17 => Right answer!{topic=again3}
+* <star> < 17 => A little bit more!
+* <star> > 17 => A little bit less!
+- Answer with a number
+
++ [*] question [*]
+- Would you like to hear the question again?
+
++ *
+% would you like to hear the question again
+- How many trees are saved by \n
+^ recycling a tonne of paper?
+< topic
+
+
+
+> topic again3
+
++ * 
+% right answer
+- Would you like to complete another quiz 1️⃣\n
+^ or jump to a fact 2️⃣?{topic=picker_4}
+
+< topic
+
+
+
+
+> topic fact3
+
++ *
+% cool lets jump straight to a fact
+- Did you know Americans throw away enough \n
+^ trash in an average year to circle the \n 
+^ Earth 24 TIMES?! 🤯
++ *
+- Would you like to complete another quiz 1️⃣\n
+^ or jump to another fact 2️⃣?{topic=picker_4}
+
+< topic
+
+
+
+
+> topic picker_4
+
++ #
+% would you like to complete another quiz 1or jump to another fact 2 
+* <star> == 1 => Nice! Let's do another quiz!{topic=quiz4}
+* <star> == 2 => Cool! let's jump straight to a fact!{topic=fact4}
+- You need to answer 1 or 2
+
++ *
+- you need to answer 1 or 2
+* <star> == 1 => Nice! Let's do another quiz!{topic=quiz4}
+* <star> == 2 => Cool! let's jump straight to a fact!{topic=fact4}
+- You need to answer 1 or 2
+
+< topic
+
+
+
+
+> topic quiz4
+
++ *
+% nice lets do another quiz
+- Worldwide, how many billions of trees \n
+^ are cut down each year to make paper?\n\n
+^ (Clue) The answer is 1 digit long!
+
++ #
+% worldwide how many billions of trees are cut down each year to make paperclue the answer is 1 digit long
+* <star> == 4 => Right answer!{topic=again4}
+* <star> < 4 => A little bit more!
+* <star> > 4 => A little bit less!
+- Way off!
+
++ *
+- Answer with a number
+
++ *
+% answer with a number
+* <star> == 4 => Right answer!{topic=again4}
+* <star> < 4 => A little bit more!
+* <star> > 4 => A little bit less!
+- Answer with a number
+
++ *
+% a little bit more
+* <star> == 4 => Right answer!{topic=again4}
+* <star> < 4 => A little bit more!
+* <star> > 4 => A little bit less!
+- Answer with a number
+
++ *
+% a little bit less
+* <star> == 4 => Right answer!{topic=again4}
+* <star> < 4 => A little bit more!
+* <star> > 4 => A little bit less!
+- Answer with a number
+
++ [*] question [*]
+- Would you like to hear the question again?
+
++ *
+% would you like to hear the question again
+- Worldwide, how many billions of trees \n
+^ are cut down each year to make paper?
+
+< topic
+
+
+
+> topic again4
+
++ * 
+% right answer
+- Would you like to complete another quiz 1️⃣\n
+^ or jump to a fact 2️⃣?{topic=picker_5}
+
+< topic
+
+
+
+
+> topic fact4 
+
++ *
+% cool lets jump straight to a fact
+- Did you know the United States throws out the amount \n
+^ of office paper it would take to build a 3.6 metres wall \n
+^ from Los Angeles to New York city (4496 km)?🤯
++ *
+- Would you like to complete another quiz 1️⃣\n
+^ or jump to another fact 2️⃣?{topic=picker_5}
+
+< topic
+
+
+
+
+> topic picker_5
+
++ #
+% would you like to complete another quiz 1or jump to another fact 2 
+* <star> == 1 => Nice! Let's do another quiz!{topic=quiz5}
+* <star> == 2 => Cool! let's jump straight to a fact!{topic=fact5}
+- You need to answer 1 or 2
+
++ *
+- you need to answer 1 or 2
+* <star> == 1 => Nice! Let's do another quiz!{topic=quiz5}
+* <star> == 2 => Cool! let's jump straight to a fact!{topic=fact5}
+- You need to answer 1 or 2
+
+< topic
+
+
+
+
+> topic quiz5
+
++ *
+% nice lets do another quiz
+- How many litres of water it takes \n 
+^ to make just one sheet of A4 paper?\n\n
+^ (Clue) The answer is 2 digits long!
+
++ #
+% how many litres of water it takes to make just one sheet of a4 paperclue the answer is 2 digits long
+* <star> == 10 => Right answer!{topic=again5}
+* <star> < 10 => A little bit more!
+* <star> > 10 => A little bit less!
+- Way off!
+
++ *
+- Answer with a number
+
++ *
+% answer with a number
+* <star> == 10 => Right answer!{topic=again5}
+* <star> < 10 => A little bit more!
+* <star> > 10 => A little bit less!
+- Answer with a number
+
++ *
+% a little bit more
+* <star> == 10 => Right answer!{topic=again5}
+* <star> < 10 => A little bit more!
+* <star> > 10 => A little bit less!
+- Answer with a number
+
++ *
+% a little bit less
+* <star> == 10 => Right answer!{topic=again5}
+* <star> < 10 => A little bit more!
+* <star> > 10 => A little bit less!
+- Answer with a number
+
++ [*] question [*]
+- Would you like to hear the question again?
+
++ *
+% would you like to hear the question again
+- How many litres of water it takes \n 
+^ to make just one sheet of A4 paper?
+
+< topic
+
+
+
+> topic again4
+
++ * 
+% right answer
+- Would you like to complete another quiz 1️⃣\n
+^ or jump to a fact 2️⃣?{topic=picker_5}
+
+< topic
+
+
+
+
+> topic fact5
+
++ *
+% cool lets jump straight to a fact
+- Did you know 8 million tonnes of the world's plastics end up in our oceans each year, creating a garbage patch three times the size of France.?🤯
++ *
+- Unfortunately, I have to keep helping other people recycle! \n
+^ You can start over and choose a different path!{topic=bye}
+
+< topic
+
+
+
+> topic again5
+
++ * 
+% right answer
+- Unfortunately, I have to keep helping other people recycle! \n
+^ You can start over and choose a different path!{topic=bye}
+
+< topic
+
+
+
+> topic bye
+
++ *
+% unfortunately i have to keep helping other people recycle you can start over and choose a different path
+- It was a pleasure meeting you <get name>!\n
+^ Have a nice day!\n\n
+^ <span style="text-decoration: underline">Please refresh the page</span>
+
+< topic
