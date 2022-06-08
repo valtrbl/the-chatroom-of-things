@@ -1,0 +1,38 @@
+<html>
+  <head>
+    <title>Ready to Confess?</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body class="cursor" onclick="play()">
+    <audio id="audio">
+      <source src="Housefly Sound Effect.mp3" type="audio/mpeg" />
+      <source src="Housefly Sound Effect.ogg" type="audio/ogg" />
+      <p>
+        Your browser doesn't support HTML5 audio. Here is a
+        <a href="Housefly Sound Effect.mp3">link to the audio</a> instead.
+      </p>
+    </audio>
+    <div class="title">
+      <h1>Fly On The Wall</h1>
+    </div>
+    <div class="wrapper">
+      <div id="chat" class="chat">
+        <div id="messages" class="messages"></div>
+        <form class="actions">
+          <input type="text" placeholder="Press ↵ to send..." />
+        </form>
+      </div>
+    </div>
+    <script
+      src="https://unpkg.com/rivescript@latest/dist/rivescript.min.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./script.js"></script>
+    <script>
+      function play() {
+        var audio = document.getElementById("audio");
+        audio.play();
+      }
+    </script>
+  </body>
+</html>

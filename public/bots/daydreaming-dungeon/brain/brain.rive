@@ -1,0 +1,505 @@
+//TRUE START
++ (hi|hello|sup|whats up|hey)
+- Welcome, worthy traveller. Who are you?\n
+^ \n
+^ <span class="action">(Say either "im an elf" or "im a goblin")</span> {topic=chrslc}
+- Ye dare converse with me? Who are you again?\n
+^ \n
+^ <span class="action">(Say either "im an elf" or "im a goblin")</span> {topic=chrslc}
+- A fellow like you should be careful around these parts. Say, who even are you?\n
+^ \n
+^ <span class="action">(Say either "im an elf" or "im a goblin"</span>) {topic=chrslc}
+
+//AFTER DEATH START
+> topic died
+
++ *
+- Greetings again, traveller. Who will you be this time?\n
+^ \n
+^ <span class="action">(Say either "im an elf" or "im a goblin")</span> {topic=chrslc}
+- Ye dare converse with me again? Have you been here before?\n
+^ \n
+^ <span class="action">(Say either "im an elf" or "im a goblin")</span> {topic=chrslc}
+- A fellow like you should be careful around these parts. Say, who are you this time?\n
+^ \n
+^ <span class="action">(Say either "im an elf" or "im a goblin"</span>) {topic=chrslc}
+
+< topic
+
+//USER WINS
+> topic wins
+
++ *
+- I see your thirst for adventure has yet to be quenched. Who will you be this time?\n
+^ \n
+^ <span class="action">(Say either "im an elf" or "im a goblin")</span> {topic=chrslc}
+- Mighty traveller, ye dare converse with me? Who are you again?\n
+^ \n
+^ <span class="action">(Say either "im an elf" or "im a goblin")</span> {topic=chrslc}
+- Well done on your success! Say, who are you this time?\n
+^ \n
+^ <span class="action">(Say either "im an elf" or "im a goblin"</span>) {topic=chrslc}
+
+< topic
+
+//CHARACTER SELECTION
+> topic chrslc
+
++ [*] elf [*]
+- I see. Ah yes, I remember now. Your name is Xuna. As of now, you're stuck in this cell of yours. You're tired. You're sharp aren't you? I can feel your thirst for escape. Look around, your cell has beautiful stone walls and a torch, nothing else. What will you do?\n 
+^ \n
+^ <span class="action">(Say either "check the stones" or "use the torch")</span> {topic=escape}
+
++ [*] goblin [*]
+- OH! I remember now... yes.. you were brought in a only a few weeks ago, and now you're stuck in this cell of yours. You wish to escape... I can sense it from here. Look around, all you have are the stone walls and a torch to keep you company. What do you plan on doing?\n 
+^ \n
+^ <span class="action">(Say either "check the stones" or "use the torch")</span> {topic=escape}
+
++ *
+- AHA! You must pick an option my fellow. You're in my chambers.
+- I ask of you nicely, Who are you? Time is limited... 
+- Hm. Please tell me who you are, chap.
+- My apologies for forgetting... You are...?
+- Much awaits you, chap. Please, tell me who you are.
+- I can't seem to remember who you are... Please tell me.
+- Did you happen to create an error? I'll forgive you a few times...
+- Time waits for no one... Who are you...?
+
+< topic
+
+> topic escape
+
++ [*] stones [*]
+- Ye check the stones. Hark! Some of them come loose! You push them and a section of the wall becomes rubble. In front of you are stairs. How will you go down the stairs?\n
+^ \n
+^ <span class="action">(Say either "stealthily" or "run down")</span> {topic=stairs}
+
++ [*] torch [*]
+- Ye grab the flame torch from the wall. You head toward the cell bars, and notice the flimsy lock that's keeping you in. You decide to hold the torch up to the lock, and after some time, it gives way and melts. How bizarre.\n
+^ \n
+^ You walk from thou cell quietly and see two paths. Dare I say... a tough choice.\n 
+^ \n
+^ <span class="action">(Say either "go left" or"go right")</span> {topic=meltlock}
+
++ *
+- AHA! You must pick an option my fellow. You're in my chambers.
+- I ask of you nicely, pick an option. Time is limited...
+- You're stuck here. Do you not wish to be free once more? 
+- Hm. Please pick an option, chap.
+- Much awaits you, chap. Pick an option!
+- Did you happen to create an error? I'll forgive you a few times...
+- ... Ye hear that? That silence will keep you company 'til death. I'd pick an option if I were you...
+
+< topic
+
+
+
+// MELTING LOCK PATH WAYS START HERE: 
+> topic meltlock
+
++ [*] left [*]
+- You walk down the path on the left. You hear a few foot steps from the other side, but they sound fainter and fainter. Be wary, traveller. You continue your way down the corridor. Soon, you end up at two more paths. One seems to have light emitting from it, the other seems to be in total darkness.\n
+^ \n
+^ <span class="action">(Say either "light path" or "dark path")</span> {topic=lightordark}
+
++ [*] right [*]
+- A fine choice, fellow. You decide to walk down the path on the right. Unlucky. The warden is there on guard, he spots you and stops you immediately. Do you wish to fight him?\n
+^ \n
+^ <span class="action">(Say either "yes" or "no")</span> {topic=wardenchoice}
+
++ *
+- AHA AHA AHA! You must pick an option my fellow.
+- I ask of you nicely, pick an option. Time is limited...
+- You're stuck here. Do you not wish to be alive again once more? 
+- Hm. Please pick an option, chap.
+- Much awaits you, chap. Pick an option!
+- Did you happen to create an error? I'll forgive you a few times...
+- ...I'd pick an option if I were you...
+
+< topic
+
+> topic wardenchoice
+
++ yes
+- You decide to fight the warden! You spot a torch and a rusty sword on either side of you. The waren is unarmed but is growing angrier by the second. How should you attack?\n
+^ \n
+^ <span class="action">(Say either "use the sword" or "use the torch")</span> {topic=wardenchoice}
+
++ no
+- You don't put up a fight. The warden pick syou up and tosses you back into your cell, replacing the lock with another one he had at hand.\n
+^ \n
+^ I can feel your thirst for escape. Look around, your cell has beautiful stone walls and a torch, nothing else. What will you do\n
+^ \n
+^ <span class="action">(Say either "check the stones" or "use the torch")</span> {topic=escape}
+
++ *
+- AHA! You must pick an option my fellow. You're in my chambers.
+- I ask of you nicely, pick an option. Time is limited...
+- You're stuck here. Do you not wish for freedom once more? 
+- Hm. Please pick an option, chap.
+- Much awaits you, chap. Pick an option!
+- Did you happen to create an error? I'll forgive you a few times...
+- Time waits for no one... I'd pick an option if I were you...
+
+< topic
+
+> topic wardenchoice
+
++ [*] sword [*]
+- A part of the sword chips as you pick it up. You ignore it and go in for an attack, aiming straight for the warden's chest. The sword crumbles on impact. At this point, the warden is so angry that he picks you up by the head and smashes your skull in using the walls. You end up dying from your injuries.\n
+^ \n
+^ <span class="action">(Say anything to restart)</span> {topic=died}
+
++ [*] torch [*]
+- Swiftly, you pick up the torch on the wall and throw it at the warden. He immediately catches alight and runs around, unable to put out the flames. He faints from his injuries and you quickly make your way past his unconscious body.\n
+^ \n
+^ You continue your way down the corridor. Soon, you end up at two more paths. One seems to have light emitting from it, the other seems to be in total darkness.\n
+^ \n
+^ <span class="action">(Say either "light path" or "dark path")</span> {topic=lightordark}
+
++ *
+- AHA! You must pick an option my fellow. You're in my chambers.
+- I ask of you nicely, pick an option. Time is limited...
+- You're stuck here. Do you not wish for freedom once more? 
+- Hm. Please pick an option, chap.
+- Much awaits you, chap. Pick an option!
+- Did you happen to create an error? I'll forgive you a few times...
+- Time waits for no one... I'd pick an option if I were you...
+
+< topic
+
+> topic lightordark
+
++ [*] light [*]
+- A firefly whizzes past you abruptly. You walk down and... would ye look at that. There's more of them on the walls. An entrance of some sort appears and you walk in. A grand library is illuminated by the fireflies on this side. How mysterious. Oh.. what's that in the middle?\n
+^ \n
+^ <span class="action">(Say either "snoop around" or "walk to middle")</span> {topic=libpathpick}
+
++ [*] dark [*]
+- Interesting choice. You go down the dark path way and... you see yourself standing there. Want to talk to it?\n
+^ \n
+^ <span class="action">(Say either "yes" or "no")</span> {topic=shapeshifter}
+
++ *
+- AHA! You must pick an option my fellow. You're in my chambers.
+- I ask of you nicely, pick an option. Time is limited...
+- You're stuck here. Do you not wish for freedom once more? 
+- Hm. Please pick an option, chap.
+- Much awaits you, chap. Pick an option!
+- Did you happen to create an error? I'll forgive you a few times...
+- Time waits for no one... I'd pick an option if I were you...
+
+< topic
+
+> topic shapeshifter
+
++ yes
+- "Hello, do I look familiar to you?", the clone says in your voice. "I wish to escape, just like you. I'm sure we'll get along just fine!", it exclaims happily. Do you wish to trust it?\n
+^ \n
+^ <span class="action">(Say either "yes" or "no")</span> {topic=shpshftrtrust}
+
++ no
+- You walk past it. The shapeshifter gets annoyed by the fact you ignored it but stays put. You keep walking down and end up noticing you're in a library now. It's quite dark on this side for some reason. Do you wish to stay where you are or venture on?\n
+^ \n
+^ <span class="action">(Say either "walk to middle" or "stay in dark")</span> {topic=libpathpick}
+
++ *
+- AHA! You must pick an option my fellow. You're in my chambers.
+- I ask of you nicely, pick an option. Time is limited...
+- You're stuck here. Do you not wish for freedom once more? 
+- Hm. Please pick an option, chap.
+- Much awaits you, chap. Pick an option!
+- Did you happen to create an error? I'll forgive you a few times...
+- Time waits for no one... I'd pick an option if I were you...
+
+< topic
+
+> topic shpshftrtrust
+
++ yes
+- Just as you think you've made a new friend and go to keep walking... "HAHAHAHA! FOOL!" It turns out it was a shapeshifter with ill intent. You've made the mistake of having your back towards him and you get stabbed in the back multiple times.\n
+^ \n
+^ Long after your passing, the shapeshifter continues to be 'you' and manages to escape. Since you were such a notable citizen, people recognise you and help you find your way back home. You family thinks you have finally returned and they live happily.\n
+^ \n
+^ <span class="action">(Say anything to restart)</span> {topic=died}
+
++ no
+- You walk past it. Again. The shapeshifter gets annoyed further by the fact you ignored it but stays put. Do you wish to stay where you are or venture on?\n
+^ \n
+^ <span class="action">(Say either "walk to middle" or "stay in dark")</span> {topic=libpathpick}
+
++ *
+- AHA! You must pick an option my fellow. You're in my chambers.
+- I ask of you nicely, pick an option. Time is limited...
+- You're stuck here. Do you not wish for freedom once more? 
+- Hm. Please pick an option, chap.
+- Much awaits you, chap. Pick an option!
+- Did you happen to create an error? I'll forgive you a few times...
+- Time waits for no one... I'd pick an option if I were you...
+
+< topic
+
+> topic libpathpick
+
++ [*] snoop [*]
+- You snoop around the shelves of the library. Traveller, isn't this quite a sight? A particular book catches your eye. Do you wish to check it out?\n
+^ \n
+^ <span class="action">(Say either "yes" or "no")</span> {topic=susbook}
+
++ [*] middle [*]
+- Hark! A spellbook left open on a pedestal. Oh traveller, what's this? you can read what it says? How odd. Maybe you should hold it to read it better.\n
+^ \n
+^ <span class="action">(Say either "hold book" or "leave it alone")</span> {topic=spellbook}
+
++ [*] stay [*]
+- You stay where you are. Wondering what to do next. The shapeshifter from earlier comes back, goes from being a cat back into looking like you again. "Changed your mind?". Care to interact with it?\n
+^ \n
+^ <span class="action">(Say either "yes" or "no")</span> {topic=shapeshifter}
+
++ *
+- AHA! You must pick an option my fellow. You're in my chambers.
+- I ask of you nicely, pick an option. Time is limited...
+- You're stuck here. Do you not wish for freedom once more? 
+- Hm. Please pick an option, chap.
+- Much awaits you, chap. Pick an option!
+- Did you happen to create an error? I'll forgive you a few times...
+- Time waits for no one... I'd pick an option if I were you...
+
+< topic
+
+> topic susbook
+
++ yes
+- You go to pick up the book, but it doesn't come out. CLANK! Ouch that was loud.. What's this? The shelves seem to have revealed a hidden passage way. You enter.\n
+^ \n
+^ At the foot of the passage you see a winding staircase up. Is that light at the top? You start walking up and the higher you get, you notice the exit in sight. Fie! You seem tired after that climb. But you make it to the top. You're free once more!\n
+^ \n
+^ <span class="action">(WELL DONE! Say anything to restart)</span> {topic=wins}
+
++ no
+- You continue snooping and wind up in the middle of the library. A beautifully presented spellbook on a pedestal is open in front of you and you seem to be able to read the text. You go to read it... Will you hold the book to read better?\n
+^ \n
+^ <span class="action">(Say either "hold book" or "leave it alone")</span> {topic=spellbook}
+
++ *
+- AHA! You must pick an option my fellow. You're in my chambers.
+- I ask of you nicely, pick an option. Time is limited...
+- You're stuck here. Do you not wish for freedom once more? 
+- Hm. Please pick an option, chap.
+- Much awaits you, chap. Pick an option!
+- Did you happen to create an error? I'll forgive you a few times...
+- Time waits for no one... I'd pick an option if I were you...
+
+< topic
+
+> topic spellbook
+
++ [*] leave [*]
+- The words on the page flow right out of your mouth. The letters lift of the page and circle you. Suddenly, you notice yourself at the top of some stairs. How mysterious, traveller! How do you choose to go down them?\n
+^ \n
+^ <span class="action">(Say either "stealthily" or "run down")</span> {topic=stairs}
+
++ [*] hold [*]
+- You hold the book and read it carefully. Did the writing change? Perhaps the book felt disrespected... An apparition appears and tells you your family will be cursed for the rest of their lives. The curse itself was unspecified. After it disappears, you fall to the ground and fall into an eternal rest.\n
+^ \n
+^ <span class="action">(Say anything to restart)</span> {topic=died}
+
++ *
+- AHA! You must pick an option my fellow. You're in my chambers.
+- I ask of you nicely, pick an option. Time is limited...
+- You're stuck here. Do you not wish for freedom once more? 
+- Hm. Please pick an option, chap.
+- Much awaits you, chap. Pick an option!
+- Did you happen to create an error? I'll forgive you a few times...
+- Time waits for no one... I'd pick an option if I were you...
+
+< topic
+
+// LOOSE STONE PATH WAYS START HERE:
+> topic stairs 
+
++ stealthily
+- Ye walk down at a humble pace. A loud clunk echos the empty stairs but you contiue. Once you reach the end, you see a figure. Is that a siren?\n
+^ \n
+^ <span class="action">(Say "continue")</span> {topic=sirens}
+
++ [*] run [*]
+- Oh my.. You run down the stairs. Ye hastily journey down and hear a loud clunck . Caves and water are the only thing you see... or so you thought. There's a figure up ahead. Care to approach them?\n 
+^ \n
+^ <span class="action">(Say either "yes" or "no")</span> {topic=bats}
+
++ *
+- AHA! You must pick an option my fellow. You're in my chambers.
+- I ask of you nicely, pick an option. Time is limited...
+- You're stuck here. Do you not wish for freedom once more? 
+- Hm. Please pick an option, chap.
+- Much awaits you, chap. Pick an option!
+- Did you happen to create an error? I'll forgive you a few times...
+- Time waits for no one... I'd pick an option if I were you...
+
+< topic
+
+> topic bats 
+
++ yes
+- Before ye could even think, large bats swoop down and eat ye from a triggered booby trap. You have died.\n 
+^ \n
+^ <span class="action">(Say anything to restart)</span> {topic=died}
+
++ no
+- Before ye could even think, large bats that were triggered from a step on the stairs swoop down and eat ye. You have died.\n 
+^ \n
+^ <span class="action">(Say anything to restart)</span> {topic=died}
+
++ *
+- AHA! You must pick an option my fellow. You're in my chambers.
+- I ask of you nicely, pick an option. Time is limited...
+- You're stuck here. Do you not wish for freedom once more? 
+- Hm. Please pick an option, chap.
+- Much awaits you, chap. Pick an option!
+- Did you happen to create an error? I'll forgive you a few times...
+- Time waits for no one... I'd pick an option if I were you...
+
+< topic
+
+> topic sirens
+
++ continue
+- The siren converses with us. It says something dangerous is about to happen and that she will help. Do you decide to trust the siren?\n
+^ \n
+^ <span class="action">(Say either "yes" or "no")</span> {topic=flood}
+
++ *
+- AHA! You must pick an option my fellow. You're in my chambers.
+- I ask of you nicely, pick an option. Time is limited...
+- You're stuck here. Do you not wish for freedom once more? 
+- Hm. Please pick an option, chap.
+- Much awaits you, chap. Pick an option!
+- Did you happen to create an error? I'll forgive you a few times...
+- Time waits for no one... I'd pick an option if I were you...
+
+< topic
+
+> topic flood
+
++ yes
+- Water begins gushing into the chamber you're standing in. You panic, but the water shows no sign of stopping. The siren tells you not to worry and to hold your breath. She grabs onto your arm, and pushes you through an unopened hatch deep underwater.\n
+^ \n
+^ <span class="action">(Say "continue")</span> {topic=waterfall}
+
++ no
+- You hear the sound of water. The chamber you're standing in slowly begins to submerge under the water. You cry out for help but the sirens are no where to be seen. You cant figure a way out and end up drowning.\n
+^ \n
+^ <span class="action">(Say anything to restart)</span> {topic=died}
+
++ *
+- AHA! You must pick an option my fellow. You're in my chambers.
+- I ask of you nicely, pick an option. Time is limited...
+- You're stuck here. Do you not wish for freedom once more? 
+- Hm. Please pick an option, chap.
+- Much awaits you, chap. Pick an option!
+- Did you happen to create an error? I'll forgive you a few times...
+- Time waits for no one... I'd pick an option if I were you...
+
+< topic
+
+> topic waterfall
+
++ continue
+- The hatch seemed to be connected to a waterfall. You somehow survive the fall and end up sat down in a pool. You can see two clear paths in front of you now. It seems like up ahead theres an entrance, but theres also a stream making its way through the ground. A tough choice for you to make. Which way will you go?\n
+^ \n
+^ <span class="action">(Say either "walk to entrance" or "follow stream")</span> {topic=caveorstream}
+
++ *
+- AHA! You must pick an option my fellow. You're in my chambers.
+- I ask of you nicely, pick an option. Time is limited...
+- You're stuck here. Do you not wish for freedom once more? 
+- Hm. Please pick an option, chap.
+- Much awaits you, chap. Pick an option!
+- Did you happen to create an error? I'll forgive you a few times...
+- Time waits for no one... I'd pick an option if I were you...
+
+< topic
+
+> topic caveorstream
+
++ [*] entrance [*]
+- You get out of the water and head to the entrance that caught your eye. As you're walking down, you see light at the end. Closer and closer, and then you end up realising it's a pirate shipwreck. There's holes in the roof above the ship. The sun's rays glisten in the water. You look at it in awe. Are you finally going to be able to escape?\n
+^ \n
+^ <span class="action">(Say either "enter shipwreck" or "climb boat")</span> {topic=pirateship}
+
++ [*] stream [*]
+- You stay in the shallow water and follow the stream. It gets narrower and narrower. Hark! The place around you starts to rumble and you realise the place is starting to cave in. Your arm gets stuck as you try to turn around. What should you do?\n
+^ \n
+^ <span class="action">(Say either "cut arm off" or "stay stuck")</span> {topic=streamdeath}
+
++ *
+- AHA! You must pick an option my fellow. You're in my chambers.
+- I ask of you nicely, pick an option. Time is limited...
+- You're stuck here. Do you not wish for freedom once more? 
+- Hm. Please pick an option, chap.
+- Much awaits you, chap. Pick an option!
+- Did you happen to create an error? I'll forgive you a few times...
+- Time waits for no one... I'd pick an option if I were you...
+
+< topic
+
+> topic streamdeath
+
++ [*] arm [*]
+- You find a sharp rock and try to severing your arm off. The pain you feel is imense but you manage to do it successfully. You try to run back and go towards the entrance with you barely missing rocks falling from aboove... or so you thought. A heavy boulder strikes you. A quick death.\n
+^ \n
+^ <span class="action">(Say anything to restart)</span> {topic=died}
+
++ [*] stuck [*]
+- You decide to remain stuck. The rocks fall around you and your body gets beaten severely. You get beaten so badly that you end up dying from your injuries.\n
+^ \n
+^ <span class="action">(Say anything to restart)</span> {topic=died}
+
+< topic
+
+> topic pirateship
+
++ [*] enter [*]
+- You go into the wreck. After stepping in, you notice a badly damaged lifeboat to your left and a treasure chest to your right.\n
+^ \n
+^ <span class="action">(Say either "fix lifeboat" or "loot")</span> {topic=pirateshipenter}
+
++ [*] climb [*]
+- A few pieces of the ship fall after you climb over them. This doesn't stop you. You keep climbing and reach the crow's nest of this rotting ship. The hole above the ship is within jumping reach. You take a leap of faith... and... you make it to the outside! Well done, traveller. You are free once more.\n
+^ \n
+^ <span class="action">(WELL DONE! Say anything to restart)</span> {topic=wins}
+
++ *
+- AHA! You must pick an option my fellow. You're in my chambers.
+- I ask of you nicely, pick an option. Time is limited...
+- You're stuck here. Do you not wish for freedom once more? 
+- Hm. Please pick an option, chap.
+- Much awaits you, chap. Pick an option!
+- Did you happen to create an error? I'll forgive you a few times...
+- Time waits for no one... I'd pick an option if I were you...
+
+< topic
+
+> topic pirateshipenter
+
++ [*] fix [*]
+- You remember all the times your DIY skills have come in a clutch and give fixing the lifeboat a go. It works! HUZZAH! You push it into the moat, and see an exit up ahead. You had also crafted an oar to manoeuvre the boat. You keep sailing, and manage to exit the cave. Freedom is yours!\n
+^ \n
+^ <span class="action">(WELL DONE! Say anything to restart)</span> {topic=wins}
+
++ [*] loot [*]
+- After cracking open the treasure chest, you see tons forgotten gold and precious gems... or so you thought. "Hands off! That teasure is mine!", an armed goblin stabs right through you with a blade. You bleed out and die in front of the chest.\n
+^ \n
+^ <span class="action">(Say anything to restart)</span> {topic=died}
+
++ *
+- AHA! You must pick an option my fellow. You're in my chambers.
+- I ask of you nicely, pick an option. Time is limited...
+- You're stuck here. Do you not wish for freedom once more? 
+- Hm. Please pick an option, chap.
+- Much awaits you, chap. Pick an option!
+- Did you happen to create an error? I'll forgive you a few times...
+- Time waits for no one... I'd pick an option if I were you...
+
+< topic

@@ -1,0 +1,54 @@
++ *
+- <set count=0> ping <set reply=<star>>{topic=ping} 
+
+> topic ping
+
++ *
+- <set count=0> <star>!
+
++ ping
+- <add count=1><span style="margin-right: 85%; display: block;animation-name:bounce">pong</span><get count>{weight=1}
+- <add count=1><span style="margin-right: 80%; display: block; bounce;">...pong!</span><get count>{weight=1}
+- <add count=1><span style="margin-right: 75%; display: block;animation-name: bounce;">pong!</span><get count>{weight=1}
+- <add count=1><span style="margin-right: 70%; display: block;animation-name: bounce;">pong?</span><get count>{weight=1}
+- <add count=1><span style="margin-right: 65%; display: block;animation-name: bounce;">pong</span><get count>{weight=1}
+- <add count=1><span style="margin-right: 60%; display: block;animation-name: bounce;">pong!</span><get count>{weight=1}
+- <add count=1><span style="margin-left: 85%; display: block;animation-name: bounce;">pong</span><get count>{weight=1}
+- <add count=1><span style="margin-left: 80%; display: block;animation-name: bounce;">...pong!</span><get count>{weight=1}
+- <add count=1><span style="margin-left: 75%; display: block;animation-name: bounce;">pong!</span><get count>{weight=1}
+- <add count=1><span style="margin-left: 70%; display: block;animation-name: bounce;">pong?</span><get count>{weight=1}
+- <add count=1><span style="margin-left: 65%; display: block;animation-name: bounce;">pong</span><get count>{weight=1}
+- <add count=1><span style="margin-left: 60%; display: block;animation-name: bounce;">pong!</span><get count>{weight=1}
+
+
++ [*]pong[*]
+- ping {topic=pong}
+
+< topic 
+
+
+
+
+> topic pong
+
+
+
++ pong
++ *
+- <set count=0> <star>!
+
+- <add count=1><span style="margin-left: 89%; display: block;">ping</span>
+- <add count=1><span style="margin-left: 85%; display: block;">ping</span>
+- <add count=1><span style="margin-left: 80%; display: block;">ping</span>
+- <add count=1><span style="margin-left: 75%; display: block;">ping!</span>
+- <add count=1><span style="margin-left: 70%; display: block;">ping</span>
+- <add count=1><span style="margin-left: 65%; display: block;">ping!</span>
+- <add count=1><span style="margin-left: 60%; display: block;">ping!</span>
+- <add count=1><span style="margin-left: 50%; display: block;">ping</span> 
+
++ [*]ping[*]
+- pong {topic=ping}
+
+< topic
+
+

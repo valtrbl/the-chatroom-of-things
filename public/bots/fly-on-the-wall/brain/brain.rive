@@ -1,0 +1,142 @@
+! version = 2.0
+
++ [*] hello|hi|hey|howdy|good [*]
+- Why hello there. Don't tell me your name and I won't tell you mine, so secrets can be kept and told without judgement. Now what brought you here?
+
++ *
+% why hello there do not tell me your name and i will not tell you mine so secrets can be kept and told without judgement now what brought you here
+- I see. Interesting... Well I'm a fly on the wall. Do you know what that means?
+
++ *
+% i see interesting well i am a fly on the wall do you know what that means
+- I'm an observer. I know everyone's secrets... Speaking of secrets, do you want to share first or shall I? {topic=question}
+
++ *
+- Aren't you even gonna say hello?
+
++ [*] goodbye|bye [*]
+- bye!!
+
+> topic question
+
++ [*] me|i [*]
+- I can see something is bothering you... Now it's time to share it with me. <br> <h1> Go on... </h1> {topic=listen}
+
++ [*] you [*]
+- Do you want to hear something dark or light? {topic=tell}
+
++ *
+- Please answer the question, me or you?
+
+< topic
+
+> topic listen
+
++ *
+% i can see something is bothering you now it is time to share it with me br h1 go on h1
+- Do you feel better after getting that off your chest?
+
++ [*] yes|i do|yeah|kinda|yah [*]
+- I knew you would. You wouldn't believe half of what I hear... Can I tempt you with a secret in return? {topic=link}
+
++ [*] no|i dont|not at all|nope [*]
+- Oh that is a shame... Maybe I can tell you a secret to make you feel better? Do you want to hear a secret of mine? {topic=link}
+
++ *
+- Please answer the question, yes or no?
+
+< topic
+
+> topic link 
+
++ [*] yes|i do|yeah|kinda|sure|okay [*]
+- I'm full of overheard secret confesssions... Do you want to hear something dark or light? {topic=tell}
+
++ [*] no|i dont|not at all [*]
+- Oh I see... Would you like to share another secret with me? I promise not to share... {topic=loop}
+
++ *
+- Please answer the question, yes or no?
+
+< topic
+
+> topic loop
+
++ [*] yes|i do|yeah|kinda|sure|okay [*]
+- I can see something is bothering you... Now it's time to share it with me. <br> <h1> Go on... </h1> {topic=listen}
+
++ [*] no|i dont|not at all [*]
+- Then this is goodbye I'm afraid, nice speaking to ya! {topic=random}
+
++ *
+- Please answer the question, yes or no?
+
+< topic
+
+> topic tell
+
++ [*] light [*]
+- Well... I overheard that someone <br> <h2> kind of hates spaghetti bolognese <br> </h2> Isn't that scandalous? Now would you like to share something with me? 
+- Well... I overheard that someone <br> <h2> still watches Minecraft YouTubers <br> </h2> Isn't that scandalous? Now would you like to share something with me?
+- Well... I overheard that someone <br> <h2> signed up to a sugar daddy website <br> </h2> Isn't that scandalous? Now would you like to share something with me?
+- Well... I overheard that someone <br> <h2> just stole a brand new stack of paper from LCC <br> </h2> Isn't that scandalous? Now would you like to share something with me?
+- Well... I overheard that someone say their <br> <h2> best friend's newborn is the ugliest baby I have ever seen in my life <br> </h2> Isn't that scandalous? Now would you like to share something with me?
+- Just between us two I heard someone confess they <br> <h2> have a yeast infection <br> </h2> peculiar indeed. Now your turn, share your secret… are you ready?
+- Just between us two I heard someone confess they <br> <h2> are actually 5 foot 11 not 6 foot <br> </h2> curious indeed. Now your turn, share your secret… are you ready?
+- Just between us two I heard someone confess they <br> <h2> wish they didn't fall in love so easily <br> </h2> peculiar indeed. Now your turn, share your secret… are you ready?
+- Just between us two I heard someone confess they <br> <h2> have to shave their toes <br> </h2> peculiar indeed. Now your turn, share your secret… are you ready?
+- Just between us two I heard someone confess that <br> <h2> sometimes when a customer comes at work I go in the toilet so I don't have to serve them <br> </h2> peculiar indeed. Now your turn, share your secret… are you ready?
+- Now don't go telling anyone but I heard someone say they <br> <h2> have had a crush for 3 years but are too scared to tell him <br> </h2> How curious. Now are you ready to tell me your secret?
+- Now don't go telling anyone but I heard someone say <br> <h2> their boyfriend pisses them off more than he should <br> </h2> how curious. Now are you ready to tell me your secret?
+- Now don't go telling anyone but I heard someone say <br> <h2> they pick their bogies and wipes them on the side of the bed <br> </h2> how curious. Now are you ready to tell me your secret?
+- Now don't go telling anyone but I heard someone say they <br> <h2> secretly think my bosses' dogs are disgusting. Like they're lovely but they smell so much. I'm sitting next to them now. They won't stop licking me and my boss says that’s because they want to hump my arm. They’re breath stinks of arse (because they keep sniffing and licking it) and they keep farting. They are quite cute though <br> </h2> how curious. Now are you ready to tell me your secret?
+- Now don't go telling anyone but I heard someone say they <br> <h2> ate cat food <br> </h2> how curious. Now are you ready to tell me your secret?
+- Well my flierarchy told me they heard someone saying <br> <h2> they have a crush no one knows about <br> </h2> Isn't that unexpected. Are you ready to share something with me? It's only fair.
+- Well my flierarchy told me they heard someone saying <br> <h2> they dented someone's car the other day and drove off <br> </h2> Isn't that unexpected. Are you ready to share something with me? It's only fair.
+- Well my flierarchy told me they heard someone saying <br> <h2> they have chlamydia <br> </h2> Isn't that unexpected. Are you ready to share something with me? It's only fair.
+- Well my flierarchy told me they heard someone saying <br> <h2> they put milk in before the cereal sometimes <br> </h2> Isn't that unexpected. Are you ready to share something with me? It's only fair.
+- Well my flierarchy told me they heard someone saying they <br> <h2> used to 'accidently' rip the sweet packets at work so they couldn't be sold and we could eat them <br> </h2> Isn't that unexpected. Are you ready to share something with me? It's only fair.
+
++ [*] dark [*]
+- Well... I overheard that someone say they <br> <h2> ate my rabbit after it died <br> </h2> Isn't that scandalous? Now would you like to share something with me?
+- Well... I overheard that someone <br> <h2> wants to kill several people <br> </h2> Isn't that scandalous? Now would you like to share something with me?
+- Well... I overheard someone say they <br> <h2> had sex with my mates sister and he doesn't know <br> </h2> Isn't that scandalous? Now would you like to share something with me?
+- Well... I overheard that someone <br> <h2> had a threesome coked off my titssssss <br> </h2> Isn't that scandalous? Now would you like to share something with me?
+- Well... I overheard someone say they <br> <h2> often lie to get out of social events I don't want to go to. I have a general dislike for people. I just pretend I don't. I can't see the same people (bar a select few) too often. Like go away, I hate this. <br> </h2> Isn't that scandalous? Now would you like to share something with me?
+- Just between us two I heard someone confess they are <br> <h2> secretly in love with the guy I'm messing around with even tho it's just friends <br> </h2> Isn't that damning. Now your turn, share your secret… are you ready?
+- Just between us two I heard someone confess they <br> <h2> hate most people if I'm being honest. They're extremely cringe. I just fake laugh a lot. I never say it. But I have so many judgments about them that I actually feel bad. They are quite cringe though like 90% of people I don't like <br> </h2> Isn’t that damning. Now your turn, share your secret… are you ready?
+- Just between us two I heard someone confess that <br> <h2> in lockdown I fancied this girl and questioned my sexuality for months <br> </h2> Isn't that damning. Now your turn, share your secret… are you ready?
+- Just between us two I heard someone confess they <br> <h2> are tired of life <br> </h2> Isn't that damning. Now your turn, share your secret… are you ready?
+- Just between us two I heard someone confess they <br> <h2> shagged a guy that has a gf <br> </h2> Isn't that damning. Now your turn, share your secret… are you ready?
+- Now don't go telling anyone but I heard someone say they are <br> <h2> trying to feel happy lately but I failed <br> </h2> how curious. Now are you ready to tell me your secret?
+- Now don't go telling anyone but I heard someone say they <br> <h2> lied about losing my virginity years ago because people were pressuring me <br> </h2> how curious. Now are you ready to tell me your secret?
+- Now don't go telling anyone but I heard someone say <br> <h2> I wish my parents were happier and not so sad <br> </h2> how curious. Now are you ready to tell me your secret?
+- Now don't go telling anyone but I heard someone say <br> <h2> I think my partner is cheating on me <br> </h2> how curious. Now are you ready to tell me your secret?
+- Now don't go telling anyone but I heard someone say <br> <h2> I'm nobody's first choice of friend and it hurts <br> </h2> how curious. Now are you ready to tell me your secret?
+- Well my flierarchy told me they heard someone saying <br> <h2> I kinda hate half the people I chill with but I keep quiet to keep it peaceful <br> </h2> Isn’t that unexpected. Are you ready to share something with me? It’s only fair.
+- Well my flierarchy told me they heard someone saying <br> <h2> I'm so scared of being judged that I don’t approach anyone unless someone introduces me <br> </h2> Isn’t that unexpected. Are you ready to share something with me? It’s only fair.
+- Well my flierarchy told me they heard someone saying <br> <h2> I lied to my friend by saying I heard someone saying the guy she liked wasn’t interested in her because I actually fancied him myself <br> </h2> Isn’t that unexpected. Are you ready to share something with me? It’s only fair.
+- Well my flierarchy told me they heard someone saying <br> <h2> I feel scared a lot <br> </h2> Isn’t that unexpected. Are you ready to share something with me? It’s only fair.
+- Well my flierarchy told me they heard someone saying <br> <h2> I'm constantly scared that people will leave me and I'll end up alone <br> </h2> Isn’t that unexpected. Are you ready to share something with me? It’s only fair.
+
+
++ [*] yes|i do|yeah|kinda|sure|okay [*]
+- I can see something is bothering you... Now it's time to share it with me. <br> <h1> Go on... </h1> {topic=listen}
+
++ [*] no|i dont|not at all [*]
+- Oh I see... Would you like to hear another confession? {topic=loop2}
+
++ * 
+- Please answer the question...
+
+< topic
+
+> topic loop2
+
++ [*] yes|i do|yeah|kinda|sure|okay [*]
+- That's what I like to hear... Do you want to hear something dark or light? {topic=tell}
+
++ [*] no|i dont|not at all [*]
+- Then this is goodbye I'm afraid, nice speaking to ya! {topic=random}
+
+< topic

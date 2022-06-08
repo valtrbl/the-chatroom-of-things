@@ -280,6 +280,34 @@
       "exists": true
     },
     {
+      "id": "daydreaming-dungeon",
+      "members": [""],
+      "name": "Daydreaming Dungeon",
+      "tagline": "",
+      "exists": true
+    },
+    {
+      "id": "fly-on-the-wall",
+      "members": [""],
+      "name": "Fly on the Wall",
+      "tagline": "",
+      "exists": true
+    },
+    {
+      "id": "kitty-gurlz",
+      "members": [""],
+      "name": "Kitty Gurlz",
+      "tagline": "",
+      "exists": true
+    },
+    {
+      "id": "ping-pong",
+      "members": ["Uni Pang"],
+      "name": "Ping Pong",
+      "tagline": "",
+      "exists": true
+    },
+    {
       "id": "6.1",
       "members": ["Lily McCardle"],
       "name": "Doorbot",
@@ -288,7 +316,7 @@
     },
     {
       "id": "6.2",
-      "members": ["Lily McCardle"],
+      "members": [""],
       "name": "Swipe Don't Skip",
       "tagline": "",
       "exists": true

@@ -1,0 +1,142 @@
+@font-face {
+  font-family: "something_wildregular";
+  src: url("fonts/somethingwild-regular-webfont.woff2") format("woff2"),
+    url("fonts/somethingwild-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  font-family: "something_wildregular";
+  margin: 0vw;
+  height: auto;
+}
+
+body {
+  background-image: url("Flymation.gif");
+  background-size: contain;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  background-position: center;
+  overflow: auto;
+}
+
+.cursor {
+  cursor: url("fly.png"), auto;
+}
+
+.title {
+  align-self: center;
+  font-size: 35pt;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.title h1 {
+  letter-spacing: 2px;
+  color: rgb(0, 0, 0);
+}
+
+.wrapper {
+  height: 85vh;
+}
+
+.chat {
+  font-size: 25pt;
+  background: rgb(255, 255, 255);
+  box-shadow: 20px 20px 0px rgb(189, 188, 188);
+  overflow: scroll;
+  flex-direction: column;
+  height: 80vh;
+  width: 60vh;
+  border-radius: 10pt;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 2.5vh;
+}
+
+.messages {
+  flex: 1 0 auto;
+}
+
+.messages div {
+  font-size: 25pt;
+  max-width: 75%;
+  width: fit-content;
+  display: block;
+  margin: 5px;
+  padding: 15px;
+  border-radius: 15px;
+  white-space: pre-line;
+}
+
+.messages div a {
+  color: white;
+}
+
+.messages div a:hover {
+  color: rgb(0, 0, 0);
+}
+
+.messages .bot {
+  font-size: 25pt;
+  text-align: left;
+  margin-left: 20px;
+  margin-right: auto;
+  background: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  box-shadow: 7px 7px 0px rgb(189, 188, 188);
+  margin-bottom: 10px;
+}
+
+.messages .self {
+  text-align: right;
+  margin-right: 20px;
+  margin-left: auto;
+  margin-bottom: 10px;
+  background: rgb(245, 238, 227);
+  box-shadow: 7px 7px 0px rgb(189, 188, 188);
+  color: rgb(0, 0, 0);
+}
+
+.actions {
+  flex-shrink: 0;
+  width: 100%;
+  position: sticky;
+  bottom: -3px;
+  padding: 10px 0px 20px;
+  background: white;
+  border-radius: 10pt;
+}
+
+.actions input {
+  height: 30px;
+  font-size: 20pt;
+  padding: 10pt 10pt 10pt 10pt;
+  display: block;
+  width: 100%;
+  outline: 0;
+  border-top: 0px;
+  border-right: 0px;
+  border-bottom: 2px solid rgb(255, 255, 255);
+  border-left: 0px;
+  border-radius: 10pt;
+}
+
+@media all and (min-width: 720px) {
+  .wrapper {
+    width: 60vh;
+    height: 80vh;
+    margin: 0 auto 2.5vh;
+  }
+}
+
+@media all and (min-width: 1280px) {
+  .wrapper {
+    width: 80vh;
+    margin: 0 auto 2.5vh;
+  }
+}
