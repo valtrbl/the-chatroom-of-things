@@ -13,7 +13,14 @@
 - Nice to meet you, <star1>!
 
 + *
-% hello what is your star sign
+- Babe you did not make sense at all 
+- I did not understand one word you said!
+- Sorry baby, could you please elaborate that for me
+- I'd probaby stop talking because I do not understand you at all
+- What is your star sign?
+
++ *
+% what is your star sign
 - <set starsign =<star>> Oh! You're a <get starsign>
 
 + what is my star sign
@@ -56,8 +63,6 @@
 
 
 
-
-
 + [*] tarot [*]
 - Would you like a tarot reading?{topic=tarot_reading}
 * <star> == yes => yes, I would like a tarot reading  
@@ -93,6 +98,8 @@
 
 + i hate you
 - If helps you sleep at night {topic=sorry}
+
+< topic
 
 > topic sorry
 
