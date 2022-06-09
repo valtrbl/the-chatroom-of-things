@@ -327,6 +327,13 @@
       "name": "Smart Recycling Bin",
       "tagline": "",
       "exists": true
+    },
+    {
+      "id": "6.4",
+      "members": ["Boryana Draganova"],
+      "name": "Outriders",
+      "tagline": "",
+      "exists": true
     }
   ]
 }
