@@ -29,29 +29,37 @@ body {
 .wrapper {
   height: 60vh;
   background: rgb(119, 156, 173);
-  -webkit-text-fill-color: rgb(121, 121, 121);
+  -webkit-text-fill-color: rgb(192, 190, 190);
   padding-top:10px;
   text-align: center;
-  background-image: url("border\ 3.jpg");
-  background-size: cover;
-  background-position: center;
-  
 }
 
 
 #wrapper {
   position: fixed;
-  left: 20vw;
+  left: 30vw;
   top: 10vh;
+  background-image: url("val\ border-01-01.jpg");
+  background-size: cover;
+  background-position: center;
 }
 
 #second {
   position:fixed;
+  left: 63vw;
+  bottom:2vh;
+  background-image: url("sauda\ border-03-03.jpg");
+  background-size: cover;
+  background-position: center;
 }
 
 #third {
   position:fixed;
-  left: 60vw;
+  right: 63vw;
+  bottom: 9vh;
+   background-image: url("isa\ border\ update.jpg");
+  background-size: cover;
+  background-position: center;
 }
 
 .popup {
@@ -64,23 +72,71 @@ body {
   width: 300px;
   height: auto;
   left: 70vw;
-  bottom: 20vh;
+  bottom: 10vh;
 }
 
 #spotify {
   position: fixed;
   width: 250px;
   height: auto;
-  left: 40vw;
-  bottom: 10vh;
+  left: 36vw;
+  bottom: 3vh;
 }
 
 #isa2 {
   position: fixed;
   width: 250px;
   height: auto;
-  left: 50vw;
-  bottom: 50vh;
+  left: 54vw;
+  bottom: 55vh;
+}
+
+#insta {
+  position: fixed;
+  width: 180px;
+  height: auto;
+  left: 10vw;
+  bottom: 12vh;
+}
+
+#insta2 {
+  position: fixed;
+  width: 160px;
+  height: auto;
+  left: 25vw;
+  bottom: 39vh;
+}
+
+#qrcode {
+  position: fixed;
+  width: 200px;
+  height: auto;
+  left: 40vw;
+  bottom: 40vh;
+}
+
+#watch {
+  position: fixed;
+  width: 230px;
+  height: auto;
+  left: 2vw;
+  bottom: 63vh;
+}
+
+#feet {
+  position: fixed;
+  width: 230px;
+  height: auto;
+  right: 5vw;
+  top: 5vh;
+}
+
+#music {
+  position: fixed;
+  width: 230px;
+  height: auto;
+  left: 3.5vw;
+  bottom: -9vh;
 }
 
 .chat {
@@ -184,7 +240,7 @@ input:focus {
   -webkit-text-fill-color: rgb(121, 121, 121);
   padding-top:10px;
   text-align: center;
-  background-image: url("spotify\ EXP\ 1.png");
+  background-image: url("sauda\ border-03.jpg");
   background-size: cover;
   background-position: left;
   

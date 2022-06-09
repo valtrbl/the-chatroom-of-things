@@ -23,6 +23,10 @@
 + [*] what [*] you [*] do [*]
 - My purpose is to provoke thought about modern interaction as communication continues to rely heavily on technology.
 
++ [*] how [*] help [*] me [*]
+- My purpose is to provoke thought about modern interaction as communication continues to rely heavily on technology.
+
+
 
 
 
@@ -258,8 +262,36 @@
 //- <span class="eliza-answer">       undefined</span>
 - <span class="bot-answer">         I don't know. Do you know?</span>
 
++ [*] how [*] weekend [*]
+- <span class="human-answer">       I was busy and it was tiring.</span>
+- <span class="human-answer">       I was busy doing some chores like washing dishes, vacuuming, doing laundry. I also babysit my friends’ children yesterday.</span>
+- <span class="human-answer">       I had a great weekend.</span>
 
 
++ [*] how often [*]
+- <span class="human-answer">       Sometimes. Not often.</span>
+
++ [*] what did you do [*]
+- <span class="human-answer">       I had dinner with my friends on Saturday and we played a board game together.</span>
+
++ [*] say [*] funny [*]
+- <span class="siri-answer">       The past, present, and future walk into a bar. It was tense.</span>
+
+
++ are you a robot
+- <span class="siri-answer">       Yes I am a robot, but I am a good one.</span>
+
++ whats up
+- <span class="human-answer">       The sky.</span>
+- <span class="human-answer">       Not much.</span>
+
+// + [*] good (morning|afternoon|evening) [*]
+// @ hello
+
+
+
++ (bye|goodbye)
+- Bye!
 
 //random topics
 + [*] food [*]
@@ -345,7 +377,9 @@
 
 
 
-- <span class="siri-answer">       </span>
++ [*] (*) or (*) [*]
+- I prefer <star1>
+- I prefer <star2>
 
 
 
@@ -543,8 +577,11 @@
 @ [*] what [*]
 
 //because
-+ because you should be [*]
-- Maybe it is you that should be <star>.
++ [*] you should be (*)
+- Maybe it is you that should be <star2>.
+
++ you should (*)
+- maybe you should <star>
 
 //specific catching answers
 
@@ -589,6 +626,12 @@
 + *
 - I'm not sure I understand.
 - <span class="sir-answer">       Hmm, I don't have an answer for that. Is there something else I can help with?</span>
+- Why don't you ask me how I am?
+- Ask me if I am a cat or dog person.
+- Ask me about the meaning of life.
+- Let's talk about food!
+- Ask what made me smile today.
+- Ask where I would like to be in five years.
 
 // - Why?                                                  {weight=40}
 // - In what way?                                          {weight=40}

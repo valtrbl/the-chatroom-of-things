@@ -1,0 +1,105 @@
+! version = 2.0
+
++ hello
+- Hey Gorgeous, My name is Miss Genie🔮. I'm here to help you!
+^ <img src="./Untitled-1.png"> \n\n
+
++ how are you  
+- Girl, I'm good, what about you?
+- I'm good, gorgeous. You?
+- I'm fine, thanks for asking!
+
++ my name is *
+- Nice to meet you, <star1>!
+
++ *
+% hello what is your star sign
+- <set starsign =<star>> Oh! You're a <get starsign>
+
++ what is my star sign
+- <get starsign>
+
++ what does my star sign mean
+* <get starsign> == taurus => You're a taurus! Very money-driven💸💸!! but boy you're good damn stubborn 😒 
+* <get starsign> == aries  => Aries! You guys are forever angry, be happy for once lol! 
+* <get starsign> == gemini => Gemini YIKES!! You fake and two face. You can't be trusted at all but love ya! 
+* <get starsign> == cancer => Umm Cancers...🙄 not my favourite but your sign is a water sign and you're overly emotional! it's not cute 😕
+* <get starsign> == leo    => You're a Leo! JEALOUSSSS!! They are fiercely proud and confident! Girl you better slay ! 😍😍 
+* <get starsign> == virgo  => Ouu 👀! Beyonce is a virgo so that's a compliment 😉 You guys are perfectionist! Everything has to be set accurately relax Girl
+* <get starsign> == libra  => You're a Libra 😶 mmh you guys have attatchment issues! It's okay to be single 
+* <get starsign> == scorpio => SCORPIO RUN 🏃‍♀️🏃! Most hated star sign. I'm sorry I just had to put it out there lol ! Y'all also got bad trust issues 
+* <get starsign> == sagittarius => Sagittariusssss♐️ You claimed to be a loyal friend but really and truly you're fake
+* <get starsign> == capricorn => You're the master of insults and in a weird way, you guys are proud of it. Very cold-hearted! 💔
+* <get starsign> == aquarius => Aquarius 🙄 I'm confused are you a water sign or air sign ? Y'all think you're always right!
+* <get starsign> == pisces => Same as Cancers overly emotional 🙄 but very bossy and creative!
+- I don't know
+
++ i dont care
+- Leave the chat then 
+- Babygirl you can happily leave.
+
++ i would like to know more about my star sign
+* <get starsign> == aries => Aries baby! you need a lot of validation and can be attention seekers 😭😭
+* <get starsign> == taurus => You're too lazy to be consistent about their goals. It's not cute!
+* <get starsign> == gemini => You're too indecisive, impulsive, unreliable, and nosy. I can go on and on 🙄
+* <get starsign> == cancer => Very possessive. Feel very sorry for your boyfriend or girlfriend.
+* <get starsign> == leo => Ego is skyhigh! Don't take critism that well and will do whatever it takes to safeguard their ego.
+* <get starsign> == virgo => Tightly wounded baby! Have some fun babe! YOLO!!
+* <get starsign> == libra => Shallow asf! Librans are known to have a weakness for beautiful people. 
+^ While it is said, "Don't judge the book by it's cover," You overlook this fact.
+* <get starsign> == scorpio => Selfish. That's it 
+* <get starsign> == sagittarius => You can be very problematic. Very careless and judgemental.
+* <get starsign> == capricorn => Ruthless man! you dont businesss 😂
+* <get starsign> == aquarius => Very calm, collective star sign but as soon as you're angry 
+^ I wouldn't want to be around. 
+* <get starsign> == pisces => Very submissive.
+
+
+
+
+
++ [*] tarot [*]
+- Would you like a tarot reading?{topic=tarot_reading}
+* <star> == yes => yes, I would like a tarot reading  
+
+> topic tarot_reading
++ *
+% would you like a tarot reading
+* <star> == yes => Love, friendship or future?
+- Your loss!
+
++ *
+% love friendship or future
+* <star> ==> love       => I feel for you!😫❤️ but it's going to get better! You're knight shining armour is coming🧜‍♂️
+* <star> ==> friendship => Boy! here we go again you're going to be blinded by your friend bs 🙄 stop complaining to your other friends and just cut them off. Very easy!
+* <star> ==> future     => Big boy tings! 💸💸💸 You're in the right path but i can sense you're going to struggle to get there. Good luck!
+- That wasn't an option!
+
++ my name is *
+- Nice to meet you <star>
+- Nice meeting you girl <star>
+
++ thank you
+- Girl, you good
+- Your welcome, gorgeous
+- No problem
+- No worries!
+
++ *
+- Babe you did not make sense at all 
+- I did not understand one word you said!
+- Sorry baby, could you please elaborate that for me
+- I'd probaby stop talking because I do not understand you at all
+
++ i hate you
+- If helps you sleep at night {topic=sorry}
+
+> topic sorry
+
++ [*] sorry [*]
+- OK, I forgive you 😀 {topic=random}
+
++ *
+- Nope! Not until you say sorry...
+
+< topic

@@ -1,9 +1,10 @@
 <html>
   <head>
-    <title>crazy ad bot!</title>
+    <title>Swipe Don't Skip</title>
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
+
     <div class="title">
       <h1></h1>
     </div>
@@ -18,83 +19,146 @@
       </div>
     </div>
 
+    <div>
+      <audio autoplay loop src="Chatbotsong.mp3"></audio>
+    </div>
+
+    <div>
     <div id="second" class="wrapper">
       <span>_</span>
-      <div class="chat">
-        <iframe src="sauda-project" style="width: 100%; height: 100%"></iframe>
+      <div class="chat" >
+        <iframe src="saudas project" style="width: 100%; height: 100%"></iframe>
       </div>
     </div>
 
     <div id="third" class="wrapper">
       <span>_</span>
-      <div class="chat">
-        <iframe src="isa-project" style="width: 100%; height: 100%"></iframe>
+      <div class="chat" >
+        <iframe src="isa project2" style="width: 100%; height: 100%"></iframe>
       </div>
     </div>
+   
+    <img id="spotify" class="popup" src="SPOTIFY 2-02.jpg">
+    <img id="isa1" class="popup" src="isa ad 1.png">
+    <img id="isa2" class="popup" src="isa ad 2.png">
+    <img id="insta" class="popup" src="insta ad rep.jpg">
+    <img id="insta2" class="popup" src="insta_reply rep.jpg">
+    <img id="qrcode" class="popup" src="insta ad rep-01.jpg">
+    <img id="watch" class="popup" src="watch-01.jpg">
+    <img id="feet" class="popup" src="feetpopup.jpg">
+    <img id="music" class="popup" src="music.jpg">
 
-    <img id="spotify" class="popup" src="spotify edit-02.jpg" />
-    <img id="isa1" class="popup" src="isa ad 1.png" />
-    <img id="isa2" class="popup" src="isa ad 2.png" />
+  
+
 
     <!-- Scripts from here-->
-    <script
-      src="https://unpkg.com/rivescript@latest/dist/rivescript.min.js"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
-      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"
-      integrity="sha512-uto9mlQzrs59VwILcLiRYeLKPPbS/bT71da/OEBYEwcdNUk8jYIy+D176RYoop1Da+f9mvkYrmj5MCLZWEtQuA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
+    <script src="https://unpkg.com/rivescript@latest/dist/rivescript.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js" integrity="sha512-uto9mlQzrs59VwILcLiRYeLKPPbS/bT71da/OEBYEwcdNUk8jYIy+D176RYoop1Da+f9mvkYrmj5MCLZWEtQuA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="./script.js"></script>
-    <script>
-      $(function () {
-        $("#second").draggable();
-      });
+    <script> 
+     $( function() {
+        $( "#second" ).draggable();
+      } );
 
-      $(function () {
-        $("#wrapper").draggable();
-      });
+      $( function() {
+        $( "#wrapper" ).draggable();
+      } );
 
-      $(function () {
-        $("#third").draggable();
-      });
+      $( function() {
+        $( "#third" ).draggable();
+      } );
 
-      $(function () {
-        $("#spotify").draggable();
-      });
+      $( function() {
+        $( "#spotify" ).draggable();
+      } );
 
-      $(function () {
-        $("#isa1").draggable();
-      });
+      $( function() {
+        $( "#isa1" ).draggable();
+      } );
 
-      $(function () {
-        $("#isa2").draggable();
-      });
+      $( function() {
+        $( "#isa2" ).draggable();
+      } );
 
-      $(document).ready(function () {
-        setTimeout(function () {
+      $( function() {
+        $( "#insta" ).draggable();
+      } );
+
+      $( function() {
+        $( "#insta2" ).draggable();
+      } );
+
+      $( function() {
+        $( "#qrcode" ).draggable();
+      } );
+
+      $( function() {
+        $( "#watch" ).draggable();
+      } );
+
+      $( function() {
+        $( "#feet" ).draggable();
+      } );
+
+      $( function() {
+        $( "#music" ).draggable();
+      } );
+
+
+
+      $(document).ready(function() {
+        setTimeout(function() {
           $("#isa2").show();
+        }, 56000);
+      });
+
+      $(document).ready(function() {
+        setTimeout(function() {
+          $("#qrcode").show();
+        }, 6000);
+      });
+
+      $(document).ready(function() {
+        setTimeout(function() {
+          $("#isa1").show();
+        }, 40000);
+      });
+
+      $(document).ready(function() {
+        setTimeout(function() {
+          $("#spotify").show();
         }, 20000);
       });
 
-      $(document).ready(function () {
-        setTimeout(function () {
-          $("#isa1").show();
-        }, 5000);
+      $(document).ready(function() {
+        setTimeout(function() {
+          $("#insta").show();
+        }, 95000);
       });
 
-      $(document).ready(function () {
-        setTimeout(function () {
-          $("#spotify").show();
-        }, 7000);
+      $(document).ready(function() {
+        setTimeout(function() {
+          $("#insta2").show();
+        }, 115000);
+      });
+
+      $(document).ready(function() {
+        setTimeout(function() {
+          $("#feet").show();
+        }, 135000);
+      });
+
+      $(document).ready(function() {
+        setTimeout(function() {
+          $("#watch").show();
+        }, 150000);
+      });
+
+      $(document).ready(function() {
+        setTimeout(function() {
+          $("#music").show();
+        }, 75000);
       });
     </script>
   </body>
