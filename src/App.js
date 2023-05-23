@@ -39,7 +39,7 @@ const BotListView = ({ bot }) => {
             alt={`Icon for group ${bot.id}`}
             onError={addDefaultIcon}
           />
-          <p>{bot.tagline.length > 0 ? bot.tagline : bot.name}</p>
+          <p className="font-$ocr">{bot.tagline.length > 0 ? bot.tagline : bot.name}</p>
         </a>
       ) : (
         <div
@@ -52,7 +52,7 @@ const BotListView = ({ bot }) => {
             alt={`Icon for group ${bot.id}`}
             onError={addDefaultIcon}
           />
-          <p>{bot.tagline.length > 0 ? bot.tagline : bot.name}</p>
+          <p className="font-$ocr">{bot.tagline.length > 0 ? bot.tagline : bot.name}</p>
         </div>
       )}
     </>
@@ -67,7 +67,7 @@ const BotIndexView = ({ bot }) => (
       alt={`Icon for group ${bot.id}`}
       className="h-28 w-40 bg-gray-50 rounded-md object-scale-down"
     />
-    <p>{bot.id}</p>
+    <p className="font-$ocr">{bot.id}</p>
   </div>
 );
 
@@ -173,11 +173,10 @@ const App = () => {
                       {bots?.length > 0 &&
                         bots.map((bot, index) => (
                           <div
-                            className="md:flex w-full px-6 space-y-2 py-4"
+                            className="md:flex w-full px-6 space-y-2 pt-4 pb-8 border-b-2"
                             key={index}
                             bot={bot}
                           >
-                            <p className="w-24 mr-10">{bot.id}</p>
                             <p className=" w-72 mr-10">{bot.name || "––"}</p>
                             <p className="space-x-8">
                               {bot.members.map((member, index) => (
@@ -202,7 +201,7 @@ const App = () => {
               <p>Choose a chatbot to talk to...</p>
             </div>
           </div>
-          <div className="relative flex overflow-x-hidden bg-$cyan text-white h-96 items-center">
+          <div className="relative flex overflow-x-hidden bg-$cyan text-white h-24 items-center">
             <div className="animate-marquee whitespace-nowrap">
               <span className="text-lg">
                 The Chatroom of Things is an imitation of a chatroom exploring

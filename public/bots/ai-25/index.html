@@ -1,0 +1,41 @@
+<html>
+  <head>
+    <title>ai-25</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <div id="overlay">
+    <img src="AI-25 Glasses.png" alt="Overlay Image">
+  </div>
+  <body class="cursor" onclick="play()">
+    <audio id="audio" loop>
+      <source src="AI-25bgm.mp3" type="audio/mpeg" />
+      <source src="AI-25bgm.ogg" type="audio/ogg" />
+      <p>
+        Your browser doesn't support HTML5 audio. Here is a
+        <a href="AI-25bgm.mp3">link to the audio</a> instead.
+      </p>
+    </audio>
+    <div class="title">
+      <h1>ai-25</h1>
+    </div>
+    <div class="wrapper">
+      <div id="chat" class="chat">
+        <div id="messages" class="messages"></div>
+        <form class="actions">
+          <input type="text" placeholder="Press ↵ to send..." />
+        </form>
+      </div>
+    </div>
+    <script
+      src="https://unpkg.com/rivescript@latest/dist/rivescript.min.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./script.js"></script>
+    <script>
+      function play() {
+        var audio = document.getElementById("audio");
+        audio.play ();
+      }
+    </script>
+  </body>
+</html>

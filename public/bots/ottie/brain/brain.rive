@@ -1,0 +1,1023 @@
+! version = 2.0
+
+> object changebackground javascript
+
+    const body = document.querySelector("body");
+    body.style.background = `url(${args[0]})`
+    body.style.backgroundPosition = 'right'
+    return ""
+
+< object
+
+! local concat = newline
+
++ (hi|hello|hey|yo|hey queen)
+- Hi, my name is Ottie, I am an ovarie.\n
+^ I am here to talk to you about:
+^ - Periods
+^ - Sanitary products
+^ - Birth control
+^ - Sexual health\n
+^ If you want to learn more about one of these topics just respond with the topic you wanna talk about.
+
++ (whats|what is) your name
+- My name is Ottie, what's your name?
+
++ my name is *
+- <set name=<star>>Nice to meet you <get name>
+
++ what is my name
+* <get name> == undefined => I don't think you told me your name, what is it?
+- Your name is <get name>, silly!{weight=3}
+- You told me your name is <get name>.
+
++ who am i
+* <get name> == undefined => I don't think you told me, what's your name?
+- Aren't you <get name>?
+- You told me your name is <get name>. {weight=3}
+
++ who are you
+- I am Ottie.
+
++ *
+* <star> == sanitary products => Do you want to talk about pads, tampons or menstrual cups?
+* <star> == birth control => Hii, I am Ivy. I am here to tell you everything about birth control. So, what do you want to know? {topic=birthcontrol} <call>changebackground png/ivy.png</call>
+* <star> == sexual health => Yoo, Connie here. I heard you wanted to know some more about sexual health. What can I tell you about it?{topic=sexualhealth} <call>changebackground png/connie.png</call>
+* <star> == (period|periods) => Okay girl, what do you wanna know about periods?{topic=periods} <call>changebackground png/olive.png</call>
+* <star> == period poverty => I see, what do you wanna know about period poverty?{topic=periods} <call>changebackground png/olive.png</call>
+- I am sorry, I didn't understand you. Here are some topics you can ask me about:\n 
+^ - Periods
+^ - Sanitary products
+^ - Birth control
+^ - Sexual health
+
++ [*] birth control [*]
+- Hi there, I am Ivy. I am here to tell you everything about birth control. Here are some questions you can ask me:\n {topic=birthcontrol} <call>changebackground png/ivy.png</call>
+^Should I take birth control to help with my periods?\n
+^What birth control should I use?\n
+^What are the side effects of birth control?\n
+^What types of birth control exists?\n
+^Can I get pregnant when I am on birth control?\n
+^Should I take the morning after pill?\n
+^Does birth control protect against STIs?
+
++ [*] (tampon|tampons) [*]
+- Heeey, girl! My name is Tammy the tampon. I am here to answer all the questions you have about tampons. Here are some questions you can ask me:\n {topic=tampons} <call>changebackground png/tammy.png</call>
+^Should I be using a tampon?\n
+^How do I use a tampon?\n
+^How often should I change a tampon?\n
+^Can I swim with a tampon in?\n
+^What size tampon should I use?\n
+^What should I use overnight?
+
++ [*] (pad|pads) [*]
+- Hi, I am Patty. I am here to talk to you about everything pad related. Here are some questions you can ask me:\n {topic=pads} <call>changebackground png/paddy.png</call>
+^How do I use a pad?\n
+^How often should I change my pad?\n
+^What size pad should I be wearing?\n
+^Can I wear a pad with a thong?\n
+^What should I use overnight?
+
++ [*] menstrual (cup|cups) [*]
+- Okay girl, here are some questions you can ask me about menstrual cups:\n {topic=menstrualcups} <call>changebackground png/cuppie.png</call>
+^What is a menstrual cup?\n
+^How do I use a menstrual cup?\n
+^How often should I clean my menstrual cup?\n
+^How do I clean my menstrual cup?\n
+^How often should I empty my menstrual cup?\n
+^Can I swim with a menstrual cup?
+
++ [*] sexual health [*]
+- Yoo, Connie here. I heard you wanted to know some more about sexual health. Here are some questions you can ask me:\n {topic=sexualhealth} <call>changebackground png/connie.png</call>
+^I might have a STI, what should I do?\n
+^What are symptoms of a STI?\n
+^How do I get rid of a STI?\n
+^How often should I get tested?\n
+^When can I have sex again after a STI?
+
++ [*] (period|periods) [*]
+- Hi, my name is Ottie, I am an ovarie. Here are some questions you can ask me:\n {topic=periods} <call>changebackground png/olive.png</call>
+^What is a period?\n
+^What happens on a period?\n
+^Why have I missed a period?\n 
+^Do periods hurt?\n
+^Can I swim on my period?\n
+^What is period poverty?\n
+
+! local concat = none
+
+
+> topic periods
+
+! local concat = newline
+
++ (whats|what is) your name
+- My name is Ottie, what's your name?
+
++ my name is *
+- <set name=<star>>Nice to meet you <get name>
+
++ what is my name
+* <get name> == undefined => I don't think you told me your name, what is it?
+- You are <get name>! {weight=3}
+- You told me your name is <get name>? 
+
++ who am i
+* <get name> == undefined => I don't think you told me, what's your name?
+- Aren't you <get name>?
+- You are <get name>!
+
++ who are you
+- I am Ottie!
+
++ (hi|hello|hey)
+- Hi, my name is Ottie, I am an ovarie. Here are some questions you can ask me:\n <call>changebackground png/olive.png</call>
+^What is a period?\n
+^Do i have my period?\n 
+^What happens on a period?\n
+^Why have I missed a period?\n 
+^Do periods hurt?\n
+^Can I swim on my period?\n
+^What is period poverty?\n
+
++ what is [a] (period|periods)
+- A period is part of the natural menstrual cycle. It's when the lining of your uterus sheds, leading to blood and tissue coming out of your vagina. A period will usually last anywhere from 2-7 days but will vary for everyone!\n 
+^If your period changes drastically surrounding duration, or flow you may want to consult your doctor for a check-up and advice! 
+
++ (do i|have i|have|get|got) * period
+- If you notice blood or blood clumping coming from your vagina, then you probably have your period! Do not worry 🫶🏻 \n 
+^A period is part of the natural menstrual cycle. It's when the lining of your uterus sheds, leading to blood and tissue coming out of your vagina. A period will usually last anywhere from 2-7 days but will vary for everyone!\n 
+^If your period changes drastically surrounding duration, or flow you may want to consult your doctor for a check-up and advice! 
+
++ what happens on a period  
+- Each month your body prepares for pregnancy by releasing an egg from your ovaries, if this egg is not fertilised by sperm, the uterus starts a process to get rid of it. This process is what we call a period. The uterus starts shedding the inner lining leading to blood and tissue exiting from your vagina. 
+
++ what is period poverty
+- Period poverty is the lack of access to sanitary products due to financial constraints. It negatively affects girls and women across the world, as it prevents them from accessing basic period essentials required each month throughout their menstruation cycle.\n 
+^Although period poverty is still a devastating issue, there are now organisations trying to combat this limited access to necessities.\n 
+^If you are currently struggling with period poverty, I am happy to provide additional information about where you can access support, just ask "How can I access free sanitary products?" 
+
++ how can i access (free sanitary products|sanitary products)
+- If you are in need of period poverty support or access to free sanitary products, here are a few options available for you:\n  
+^ - You can request free period products here: <a href="https://www.freedom4girls.co.uk/request-products/ ">www.freedom4girls.co.uk</a>\n
+^ - You can also contact your local council to see where they are currently providing free products here: <a href="https://www.mygov.scot/free-period-products ">Rwww.mygov.scot/free-period-products</a>\n
+^ - If you are currently a student in a state maintained school, or a 16 to 19 education organisation in England, your place of study is required to provide free sanitary products upon request under the government period product scheme. Just ask a member of staff!\n
+^ - You can also download the Pickupmyperiod app in App Store to find period products available in the area! 
+
++ why (did|have) i (miss|missed) (a period|my period)
+- Periods are a natural part of our body's menstrual cycle, and although on average a cycle last 28 days, it may vary from person to person or month to month, so your period may be slightly later or earlier each time. This is usually nothing to be worried about. There are many reasons why you may have missed a period. Some of the most common factors are:\n 
+^ - If you are taking medication or birth control 
+^ - If you have had a lot of stress recently  
+^ - If you are pregnant  
+^ - If you have lost a lot of weight 
+^ - If you are not eating enough  
+^ - Hormonal changes 
+^ - Underlying health conditions\n 
+^If you are sexually active, it is advised that you take a pregnancy test when you notice you have missed your period. However, there is no way of knowing the cause of missed periods without seeking professional medical help. So, we advise booking an appointment with your GP to discuss any concerns you have about a missed period. 
+
++ what happens if i miss (a period|my period)
+- Periods are a natural part of our body's menstrual cycle, and although on average a cycle last 28 days, it may vary from person to person or month to month, so your period may be slightly later or earlier each time. This is usually nothing to be worried about. There are many reasons why you may have missed a period. Some of the most common factors are:\n 
+^ - If you are taking medication or birth control 
+^ - If you have had a lot of stress recently  
+^ - If you are pregnant  
+^ - If you have lost a lot of weight 
+^ - If you are not eating enough  
+^ - Hormonal changes 
+^ - Underlying health conditions\n 
+^ - If you are sexually active, it is advised that you take a pregnancy test when you notce you have missed a period. However, there is no way of knowing the cause of missed periods without seeking professional medical help. So, we advise booking an appointment with your GP to discuss any concerns you have about a missed period
+
+
++ do periods hurt
+- Periods can hurt. It is very common to experience cramps in your stomach and back, as well as potentially in your thighs or around your bum. The intensity of these pains may vary from person to person and period to period.\n 
+^To relieve these pains you may want to try lying down, using a hot water bottle, taking painkillers, and drinking soothing teas like Raspberry leaf. You may also experience symptoms in the days leading up to a period for example tenderness and sensitivity in your breasts, headaches, fatigue, sensitivity in mood and cramping.\n 
+^However, if you are experiencing extreme and uncomfortable pains do you do not regularly experience or that seem overly intense, you should contact your doctor to rule out conditions like endometriosis and PCOS. 
+
++ can i swim on my period
+- Yes, you can swim on your period! However, you should use a tampon or menstrual cup unless your flow is very light. 
+
++ *
+- I am sorry, I didn't get that. Do you wanna talk about something other than periods?
+
++ *
+%i am sorry i did not get that do you want to talk about something other than periods
+* <star> == yes => That's fine! What do you wanna talk about instead? Here are some options:\n
+^ - Tampons
+^ - Pads
+^ - Menstrual cups
+^ - Birth control
+^ - Sexual health
+* <star> == no => Okay, if you want to know more about periods try asking one of these questions:\n
+^What is a period?\n
+^What happens on a period?\n
+^Why have I missed a period?\n 
+^Do periods hurt?\n
+^Can I swim on my period?\n
+^What is period poverty?\n
+- Please answer with yes or no.
+
++ *
+% please answer with yes or no
+* <star> == yes => That's fine! What do you wanna talk about instead? Here are some options:\n
+^ - Tampons
+^ - Pads
+^ - Menstrual cups
+^ - Birth control
+^ - Sexual health
+* <star> == no => Okay, if you want to know more about periods try asking one of these questions:\n
+^What is a period?\n
+^What happens on a period?\n
+^Why have I missed a period?\n 
+^Do periods hurt?\n
+^Can I swim on my period?\n
+^What is period poverty?\n
+- Please answer with yes or no.
+
+
++ *
+% thats fine what do you want to talk about instead here are some options tampons pads menstrual cups birth control sexual health
+* <star> == pads => Let me send you to Patty. {topic=pads} <call>changebackground png/paddy.png</call>
+* <star> == menstrual cups => Let me send you to Cooper. {topic=menstrualcups} <call>changebackground png/cuppie.png</call>
+* <star> == tampons => Let me send you to Tammy! {topic=tampons} <call>changebackground png/tammy.png</call>
+* <star> == birth control => Let me send you to Ivy. {topic=birthcontrol} <call>changebackground png/ivy.png</call>
+* <star> == sexual health => Let me send you to Connie. {topic=sexualhealth} <call>changebackground png/connie.png</call>
+- Please respond with one of these options:\n
+^ - Tampons
+^ - Pads
+^ - Menstrual cups
+^ - Birth control
+^ - Sexual health
+
+! local concat = none
+
+< topic
+
+
+
+> topic tampons
+
++ (whats|what is) your name
+- My name is Tammy, what's your name?
+
++ my name is *
+- <set name=<star>>Nice to meet you <get name>
+
++ what is my name
+* <get name> == undefined => I don't think you told me your name, what is it?
+- Your name is <get name>, silly!
+- You told me your name is <get name>? {weight=3}
+
++ who am i
+* <get name> == undefined => I don't think you told me, what's your name?
+- Aren't you <get name>?
+- You told me your name is <get name>. {weight=3}
+
++ who are you
+- I am Tammy.
+
++ [*] (hi|hello|hey|tammy) [*]
+- Hi, I am Tammy. I am here to talk to you about everything tampon related. Here are some questions you can ask me: <call>changebackground png/tammy.png</call>
+^Should I be using a tampon?\n
+^How do I use a tampon?\n
+^How often should I change a tampon?\n
+^Can I swim with a tampon in?\n
+^What size tampon should I use?\n
+^What should I use overnight?
+
++ what [*] (tampon|tampons)
+- A tampon is a sanitary product usually made of cotton. Tampons are inserted into the vaginal canal to absorb the blood.
+
+! local concat = newline
+
+// + how [*] (tampon|tampons)
+// - Using a tampon for the first time can be daunting, but don’t worry, it’s not as scary as it looks! The most important step while inserting a tampon for the first time is to relax, as stressing yourself out can lead to your vaginal muscles tightening, making it even harder! Once relaxed, follow these simple steps: \n
+// ^First, get yourself in position comfortable for you, try spreading your legs apart or resting one leg higher up!\n
+// ^Depending on what brand you use, you start by simply take off the packaging. Some tampons also have an applicator whereas others are just the cotton tampon.\n
+// ^Once you have opened the tampon hold it with one hand at the indentations near the bottom and angle the tampon towards you.\n
+// ^Now slowly and carefully begin to insert the tampon inside your vagina until you reach the indentations.\n
+// ^Now slowly push the lower applicator section towards you until the lower section meets your fingers.\n 
+// ^If tampons feels uncomfortable after inserting it take it out and try again, don’t worry if you don’t get it the first time!\n 
+// ^For more information, Here is the perfect step by step guide provided by our friends at Tampax!
+// ^<a href="https://tampax.com/en-us/tampon-truths/how-to-insert-a-tampon/">Read more here.</a>\n 
+// ^Do you also want to know how to take out a tampon?
+
++ *
+% using a tampon for the first time can be daunting but dont worry its not as scary as it looksthe most important step while inserting a tampon for the first time is to relax as stressing yourself out can lead to your vaginal muscles tightening making it even harder once relaxed follow these simple steps1 get yourself in position spread your legs and find a position comfortable for you2 once you have opened the tampon hold it with one hand at the indentation and angle the tampon towards you3 now slowly and carefully begin to insert the tampon inside your vagina until you reach the indentations4 now slowly push the lower applicator section towards you until the lower section meets your fingers and the indentation5 if tampons feels uncomfortable after inserting it take it out and try again dont worry if you dont get it the first timefor a more detailed step by step guide on how to insert different types of tampons a hrefhttpsflohealthmenstrualcyclelifestylehygieneandbeautyhowtoinsertatamponplease read more hereado you also want to know how to take out a tampon
+* <star> == yes => To remove a tampon you simply pull the string.\n
+^Remeber to always wash your hands before and after removing a tampon.
+* <star> == no => Okay, no worries! 🫶🏻
+- Yes or no would be the best answer.
+
++ *
+%yes or no would be the best answer
+* <star> == yes => To remove a tampon you simply pull the string.\n
+^Remeber to always wash your hands before and after removing a tampon.
+* <star> == no => Okay, no worries! 🫶🏻
+- Yes or no would be the best answer.
+
++ (should i be using a|should i use a) tampon
+- You should never feel pressure to use tampons or any other sanitary products. There is no correct product to be using when on your period and you should only be using products, you're comfortable with and that work best for your body and your needs. Tampons are easy and practical product which allows you to wear them for longer than other alternatives. If you are having a hard time using a tampon or are concerned about trying it may be useful to start with a much smaller size and change it more regularly working your way up to the larger heavier flow options.\n
+
++ (how do i|how to) use a tampon 
+- Using a tampon for the first time can be daunting, but don’t worry, it’s not as scary as it looks!\n 
+^The most important step while inserting a tampon for the first time is to relax, as stressing yourself out can lead to your vaginal muscles tightening, making it even harder! Once relaxed, follow these simple steps:\n 
+^1 – get yourself in position – spread your legs and find a position comfortable for you.\n
+^2 – Once you have opened the tampon hold it with one hand at the indentation and angle the tampon towards you.\n
+^3 – Now slowly and carefully begin to insert the tampon inside your vagina until you reach the indentations.\n
+^4 – now slowly push the lower applicator section towards you until the lower section meets your fingers and the indentation.\n
+^5 – if tampons feels uncomfortable after inserting it take it out and try again, don’t worry if you don’t get it the first time!\n 
+^For a more detailed step by step guide on how to insert different types of tampons, <a href="https://flo.health/menstrual-cycle/lifestyle/hygiene-and-beauty/how-to-insert-a-tampon">please read more here.</a>\n 
+^Do you also want to know how to take out a tampon?
+
++ how often should i change my tampon
+- You should change your tampon every 4-8 hours, or when you feel it can no longer absorb more blood, whichever comes first. If you are not sure if it is time to change your tampon within this time bracket, you can simply check when in the toilet by gently tugging on the removal string. If it feels stiff and uncomfortable to remove you could probably leave it in for longer however do not exceed the 8 hours.
+
++ can i swim with a tampon in
+- Yes, you can swim with a tampon in, you don't need to remove your tampon before swimming just remember to change it after being in the water.
+
++ can i swim on my period
+- Yes, you can swim on your period! However, you should use a tampon or menstrual cup unless your flow is very light. 
+
++ what size tampon [is right for me|should i use]
+- The size of tampon you should be using depends on your flow and what you're comfortable with. If you bleed more and find you have a heavier flow it may be beneficial to use a bigger tampon however if you find this uncomfortable you may also use a lighter, smaller tampon, and change it more regularly. 
+
++what [*] (tampon|tampons) should i [be] (use|using)
+- That is completely up to you, there is no right size or brand of tampon!\n 
+^It is imporant to find a tampons size and brand that works for you! If this feels daunting, you may find i useful to wear beginner, or lighter tampons, are trial differnt products until you find what works for you! ✨
+
++ what [period product] should i use overnight
+- That is completely up to you! It is absolutely fine to wear tampons, pads, menstrual cups or period underwear overnight. Consider what product may be best for you think about what you are comfortable with as well as how long you will be sleeping. Tampons should be removed after eight hours, so if you are sleeping in one you should change it before you go to bed and when you wake up. However, if you are sleeping for more than 8 hours, it is advised to wear a period pad as it is safer to wear if sleeping for a longer period of time. 
+
++ [*](pad|pads)[*]
+- Let me send you to Patty. {topic=pads} <call>changebackground png/paddy.png</call>
+
++ *
+- I am sorry, I didn't get that. Do you wanna talk about something other than tampons?
+
++ *
+%i am sorry i did not get that do you want to talk about something other than tampons
+* <star> == yes => That's fine! What do you wanna talk about instead? Here are some options:\n
+^ - Pads
+^ - Menstrual cups
+^ - Periods
+^ - Birth control
+^ - Sexual health
+* <star> == no => Okay, if you want to know more about tampons try asking one of these questions:\n
+^Should I be using a tampon?\n
+^How do I use a tampon?\n
+^How often should I change a tampon?\n
+^Can I swim with a tampon in?\n
+^What size tampon should I use?\n
+^What should I use overnight?
+- Please answer with yes or no.
+
++ *
+% please answer with yes or no
+* <star> == yes => That's fine! What do you wanna talk about instead? Here are some options:\n
+^ - Pads
+^ - Menstrual cups
+^ - Periods
+^ - Birth control
+^ - Sexual health
+* <star> == no => Okay, if you want to know more about tampons try asking one of these questions:\n
+^Should I be using a tampon?\n
+^How do I use a tampon?\n
+^How often should I change a tampon?\n
+^Can I swim with a tampon in?\n
+^What size tampon should I use?\n
+^What should I use overnight?
+- Please answer with yes or no.
+
++ *
+% thats fine what do you want to talk about instead here are some options pads menstrual cups periods birth control sexual health
+* <star> == pads => Let me send you to Patty. {topic=pads} <call>changebackground png/paddy.png</call>
+* <star> == menstrual cups => Let me send you to Cooper. {topic=menstrualcupss} <call>changebackground png/cuppie.png</call>
+* <star> == periods => Let me send you back to Ottie. {topic=periods} <call>changebackground png/olive.png</call>
+* <star> == birth control => Let me send you to Ivy. {topic=birthcontrol} <call>changebackground png/ivy.png</call>
+* <star> == sexual health => Let me send you to Connie. {topic=sexualhealth} <call>changebackground png/connie.png</call>
+- Please respond with one of these options:\n
+^ - Pads
+^ - Menstrual cups
+^ - Periods
+^ - Birth control
+^ - Sexual health
+
+! local concat = none
+
+< topic
+
+
+
+
+> topic pads
+! local concat = newline
+
++ (whats|what is) your name
+- My name is Patty, what's your name?
+
++ my name is *
+- <set name=<star>>Nice to meet you <get name>
+
++ what is my name
+* <get name> == undefined => I don't think you told me your name, what is it?
+- Your name is <get name>, silly!
+- You told me your name is <get name>? {weight=3}
+
++ who am i
+* <get name> == undefined => I don't think you told me, what's your name?
+- Aren't you <get name>?
+- You told me your name is <get name>. 
+
++ who are you
+- I am Patty.
+
++ [*] (hi|hello|hey|patty) [*]
+- Hi, I am Patty. I am here to talk to you about everything pad related. Here are some questions you can ask:\n
+^How do I use a pad?\n
+^How often should I change my pad?\n
+^What size pad should I be wearing?\n
+^Can I wear a pad with a thong?\n
+^What should I use overnight?
+
++ what [are] [*] (pad|pads)
+- A pad is made of absorbent material such as cotton that sticks to your underwear to collect period fuild. They can come in a variety of sizes to suit your flow and comfort!
+
++ how do i [use] [*] (pad|pads)
+- Don’t worry, it’s super easy! Pads are external, so all you have to do is stick it onto your underwear making sure you centre it according to where your flow goes! If your pad has wings, simply fold them over on each side 😊 \n
+
++ how often should i change my pad
+- Pads should be changed every three to four hours, or when it can no longer absorb more blood. Whichever comes first!
+
++ can i wear a [period] pad with a thong
+- Yes! Period pads, or other period products such as tampons and menstrual cups can be worn with a thong! However, you may not find it comfortable wearing thicker, heavier flow pads while wearing a thing due to the lack of material towards the back. 
+
++ what size [period] pad should i be wearing
+- What size period pad you should be wearing is completely unique to you! It will depend on the length of wear, your flow, and the size of your vagina or the underwear you will be wearing. One thing to consider is if you have a heavier flow, or intend to wear the pad for up to 8 hours you may find it more convenient and comfortable to wear a larger, thicker pad. 
+
++ what [period product] should i use overnight
+- That is completely up to you! It is absolutely fine to wear tampons, pads, menstrual cups or period underwear overnight. Consider what product may be best for you think about what you are comfortable with as well as how long you will be sleeping. Tampons should be removed after eight hours, so if you are sleeping in one you should change it before you go to bed and when you wake up. However, if you are sleeping for more than 8 hours, it is advised to wear a period pad as it is safer to wear if sleeping for a longer period of time.
+
++ *
+- I am sorry, I didn't get that. Do you wanna talk about something other than pads?
+
++ *
+% i am sorry i did not get that do you want to talk about something other than pads
+* <star> == yes => That's fine! What do you wanna talk about instead? Here are some options:\n
+^ - Tampons
+^ - Menstrual cups
+^ - Periods
+^ - Birth control
+^ - Sexual health
+* <star> == no => Okay, if you want to know more about pads try asking one of these questions:\n
+^How do I use a pad?\n
+^How often should I change my pad?\n
+^What size pad should I be wearing?\n
+^Can I wear a pad with a thong?\n
+^What should I use overnight?
+- Please answer with yes or no.
+
++ *
+% please answer with yes or no
+* <star> == yes => That's fine! What do you wanna talk about instead? Here are some options:\n
+^ - Tampons
+^ - Menstrual cups
+^ - Periods
+^ - Birth control
+^ - Sexual health
+* <star> == no => Okay, if you want to know more about pads try asking one of these questions:\n
+^How do I use a pad?\n
+^How often should I change my pad?\n
+^What size pad should I be wearing?\n
+^Can I wear a pad with a thong?\n
+^What should I use overnight?
+- Please answer with yes or no.
+
++ *
+% thats fine what do you want to talk about instead here are some options tampons menstrual cups periods birth control sexual health
+* <star> == tampons => Let me send you to Tammy! {topic=tampons} <call>changebackground png/tammy.png</call>
+* <star> == menstrual cups => Let me send you to Cooper. {topic=menstrualcups} <call>changebackground png/cuppie.png</call>
+* <star> == periods => Let me send you back to Ottie. {topic=periods} <call>changebackground png/olive.png</call>
+* <star> == birth control => Let me send you to Ivy. {topic=birthcontrol} <call>changebackground png/ivy.png</call>
+* <star> == sexual health => Let me send you to Connie. {topic=sexualhealth} <call>changebackground png/connie.png</call>
+- Please respond with one of these options:\n
+^ - Tampons
+^ - Menstrual cups
+^ - Periods
+^ - Birth control
+^ - Sexual health
+
++ [*](tampon|tampons)[*]
+- Let me send you to Tammy! {topic=tampons} <call>changebackground png/tammy.png</call>
+
+! local concat = none
+
+< topic
+
+
+
+> topic menstrualcups
+
+! local concat = newline
+
++ (whats|what is) your name
+- My name is Cooper, what's your name?
+
++ my name is *
+- <set name=<star>>Nice to meet you <get name>
+
++ what is my name
+* <get name> == undefined => I don't think you told me your name, what is it?
+- Your name is <get name>, silly!
+- You told me your name is <get name>? {weight=3}
+
++ who am i
+* <get name> == undefined => I don't think you told me, what's your name?
+- Aren't you <get name>?
+- You told me your name is <get name>. {weight=3}
+
++ who are you
+- I am Cooper.
+
++ [*] (hi|hello|hey|cooper) [*]
+- Heyaa, I am Cooper. I am here to tell you all about menstrual cups. Here are some questions you can ask me:\n
+^What is a menstrual cup?\n
+^How do I use a menstrual cup?\n
+^How often should I clean my menstrual cup?\n
+^How do I clean my menstrual cup?\n
+^How often should I empty my menstrual cup?\n
+^Can I swim with a menstrual cup?
+
++ what is a menstrual cup
+- A menstrual cup is a menstrual hygiene device disc that is inserted into the vagina and sits below the cervix to collect menstrual fluid! Menstrual cups are usually made from silicone or latex and is therefore reusable. 
+
++ how do i use a menstrual cup
+- A menstrual cup is a menstrual hygiene device disc that is inserted into the vagina and sits below the cervix to collect menstrual fluid! Menstrual cups are also reusable, making them more sustainable period product alternatives!  
+
++ how often should i clean my menstrual cup
+- You should clean your menstrual cup after every use, or at least every 12 hours while on your period (whenever you empty and reuse it!) you should also sterilise the cup after every period.  
+
++ how do i clean my menstrual cup
+- To clean your menstrual cup at home you should empty the period blood or fluid collection into the toilet, then, rinse it out with clean water, and use a mild, oil-free, fragrance-free soap to give it a quick clean. Once it's clean, you can reinsert the cup. At the end of every period, you should also sterilise the menstrual cup, to do this, after cleaning it with hot water ad a gentle soap, oyou can place it in boiling water to fully sanitize it before your next period.To quickly sanitise you can alsoo place your cup inside of a metal whisk and leave it in a pot of boiling water for only one to two minutes.  
+
++ how [often should i|long before i should] empty my menstrual cup
+- Most menstrual cups can stay in for up to 12 hours before being emptied and rinsed. This means you can wear one when you're sleeping, or all day long. However, when your flow is at its heaviest, you may need to empty a cup more often. You can use the same cup for your heaviest and lightest days. 
+
++ can i swim with a menstrual cup
+- Yes! Just like. tampon, menstrual cups are worn internally, and so can be worn while swimming! Just remember to clean your menstrual cup after swimming to prevent any bacteria collection.  
+
++ [*](pad|pads)[*]
+- Let me send you to Patty. {topic=pads} <call>changebackground png/paddy.png</call>
+
++ [*](tampon|tampons)[*]
+- Let me send you to Tammy! {topic=tampons} <call>changebackground png/tammy.png</call>
+
++ *
+- I am sorry, I didn't get that. Do you wanna talk about something other than menstrual cups?
+
++ *
+% i am sorry i did not get that do you want to talk about something other than menstrual cups
+* <star> == yes => That's fine! What do you wanna talk about instead? Here are some options:\n
+^ - Tampons
+^ - Pads
+^ - Periods
+^ - Birth control
+^ - Sexual health
+* <star> == no => Okay, if you want to know more about menstrual cups try asking one of these questions:\n
+^What is a menstrual cup?\n
+^How do I use a menstrual cup?\n
+^How often should I clean my menstrual cup?\n
+^How do I clean my menstrual cup?\n
+^How often should I change my menstrual cup?\n
+^Can I swim with a menstrual cup?
+- Please answer with yes or no.
+
++ *
+% please answer with yes or no
+* <star> == yes => That's fine! What do you wanna talk about instead? Here are some options:\n
+^ - Tampons
+^ - Pads
+^ - Periods
+^ - Birth control
+^ - Sexual health
+* <star> == no => Okay, if you want to know more about menstrual cups try asking one of these questions:\n
+^What is a menstrual cup?\n
+^How do I use a menstrual cup?\n
+^How often should I clean my menstrual cup?\n
+^How do I clean my menstrual cup?\n
+^How often should I empty my menstrual cup?\n
+^Can I swim with a menstrual cup?
+- Please answer with yes or no.
+
++ *
+% thats fine what do you want to talk about instead here are some options tampons pads periods birth control sexual health
+* <star> == tampons => Let me send you to Tammy! {topic=tampons} <call>changebackground png/tammy.png</call>
+* <star> == pads => Let me send you to Patty. {topic=pads} <call>changebackground png/paddy.png</call>
+* <star> == periods => Let me send you back to Ottie. {topic=periods} <call>changebackground png/olive.png</call>
+* <star> == birth control => Let me send you to Ivy. {topic=birthcontrol} <call>changebackground png/ivy.png</call>
+* <star> == sexual health => Let me send you to Connie. {topic=sexualhealth} <call>changebackground png/connie.png</call>
+- Please respond with one of these options:\n
+^ - Tampons
+^ - Pads
+^ - Periods
+^ - Birth control
+^ - Sexual health
+
+! local concat = none
+
+< topic
+
+
+
+> topic birthcontrol
+
+! local concat = newline
+
++ (whats|what is) your name
+- My name is Ivy, what's your name?
+
++ my name is *
+- <set name=<star>>Nice to meet you <get name>
+
++ what is my name
+* <get name> == undefined => I don't think you told me your name, what is it?
+- Your name is <get name>, silly!
+- You told me your name is <get name>?
+
++ who am i
+* <get name> == undefined => I don't think you told me, what's your name?
+- Aren't you <get name>?
+- Your name is <get name>.
+
++ who are you
+- I am Ivy.
+
++ [*] (hi|hello|hey|ivy) [*]
+- Hii, I am Ivy. I am here to tell you everything about birth control. Here are some questions you can ask me:\n <call>changebackground png/ivy.png</call>
+^Should I take birth control to help with my periods?\n
+^What birth control should I use?\n
+^What are the side effects of birth control?\n
+^What types of birth control exists?\n
+^Can I get pregnant when I am on birth control?\n
+^Should I take the morning after pill?\n
+^Does birth control protect against STIs?
+
++ [should i] [*] [birth control to] (regulate|help) [with] [my] (period|periods)
+- Birth control is a safe, approved way to help regulate and maintain your period, but it isn't the only option!\n 
+^There are many natural ways to help regulate menstrual health, for example adapting your diet to optimise the benefits of your food throughout your cycle.\n 
+^You should always discuss any concerns you may be having surrounding your period with your GP or a trusted health care professional.\n  
+^For more information about using the pill to regulate your period <a href="https://flo.health/menstrual-cycle/health/period/using-the-pill-to-regulate-periods ">click here</a>
+
++ what [birth control] (is right for me|should i use)
+- There are many different types of birth control available in the UK, which one is right for you is unique to your body and your needs! You may also need to try a few different birth controls until you find what's right for you, to do this speak with a healthcare professional such as your GP.\n 
+^A few of the more popular options available to you are:\n 
+^ - The contraceptive pill
+^ - The implant
+^ - The injection
+^ - The IUD\n
+^However, not every available option is suited to each individual, due to different hormonal requirements. A history of blood clots in the family may also limit the types of birth control available for you.\n
+^For more information about which birth control is right for you consider reading the following article provided by the NHS:\n
+^<a href="https://www.nhs.uk/conditions/contraception/which-method-suits-me/?tabname=methods-of-contraception">Read more here.</a>\n
+^Please note, the best way to figure out what contraceptive method would work best for you is by discussing it with a healthcare professional, I recommend contacting your doctor or if you do not want to contact your family GP directly find your nearest sexual health clinic for advice!  
+
++ (what are the side effects of birth control|what birth control has the least side effects|* side effects * birth control)
+- Each birth control method comes with it's own risks and side effects both short term and long term. Because of this, I recommend talking to your GP, nurse or pharmacist about the effects of your chosen birth control method.\n 
+^However, some of the most common side effects to look out for are premenstrual symptoms such as tender breasts, headaches and nausea although these will differ for everyone.
+
++ does all birth control have hormones
+-Although the more common birth control methods such as the combined pill, the injection and hormone releasing coils do contain hormones, there are many hormone free options! For example:
+^ - The diaphragm  
+^ - The copper IUD  
+^ - The Sponge  
+^ - Cervical Cap\n
+^If you are interested in what none hormonal birth control method best suits you, contact a GP, or another qualified health professional, such as a sexual health clinic.
+
++ [*] birth control [*] hormones
+- Although the more common birth control methods such as the combined pill, the injection and hormone releasing coils do contain hormones, there are many hormone free options! For example:
+^ - The diaphragm  
+^ - The copper IUD  
+^ - The Sponge  
+^ - Cervical Cap\n
+^If you are interested in what none hormonal birth control method best suits you, contact a GP, or another qualified health professional, such as a sexual health clinic.
+
++ what is (the pill|the contraceptive pill|the combined pill) 
+- The pill is a small contraceptive pill you take orally on a daily basis to protect yourself from pregnancy. However, it is also used to help regulate periods and hormones! The pill commonly comes in two forms: the combined pill which contains oestrogen and progesterone, or the oestrogen-only pill.
+
++ what is (the progesterone pill|the progesterone only pill)
+- The progesterone only pill is a form of birth control pill containing only progesterone, as oppose to the progesterone and oestrogen combined pill.\n 
+^It is taken the orally once a day, just like the combined pill!
+
++ what is an iud
+- The IUD (intrauterine contraceptive device) or coil, is a small, often T-shaped birth control device that is inserted into the uterus to prevent pregnancy. IUDs are one form of long-acting reversible birth control. You can also use a copper IUD for a none hormonal version of this contraception.
+
++ what is (an|the) implant
+- The implant is another form of birth control and is a small implantable medical device often inserted into your arm to protect you from pregnancy. It works by slowly releasing a dose of progesterone into your body which prevents your ovaries from releasing an egg.  
+
+<<<<<<< HEAD
++ what (types|kind|kinds) of birth control exists
+=======
++ (what types of birth control exists|what birth control is available|what are the types of birth control|what birth control can i take|what types of birth control can i take|what type of birth control can i take)
+>>>>>>> 9aa2bb0128fc734a75c0c2862694547d818a20af
+- There are many types of birth control available in the UK, however, not all contraceptive methods may work for your body and your needs. To find out which birth control method works best for you I recommend contacting a healthcare professional such as your GP or a sexual health clinic.\n 
+^Some factors that may affect which birth control you choose are: the reason for taking the birth control, whether you want reversible or permanent protection, how often you want to take birth control, how regularly you want a period,  hormonal requirements or any family history of blood clots. Some of the options available are: 
+^ - The combined pill 
+^ - Condoms  
+^ - Female condoms  
+^ - Contraceptive implant  
+^ - Contraceptive injection  
+^ - Contraceptive patch  
+^ - Caps or diaphragms  
+^ - The IDU 
+^ - The hormonal coil 
+^ - Vaginal ring\n  
+^For more information on each birth control option and for a more extensive list, please read the information provided by the NHS: <a href="https://www.nhs.uk/conditions/contraception/">Read more here.</a>\n
+
++ [*] [the] morning after pill [*]
+- Emergency contraception should only be taken within 3 days of having unprotected sex to lessen your chances of getting pregnant. However, remember the sooner you take it, the more likely it is to be effective.\n 
+^There are 2 types of morning after pill available in the UK. Levonelle which you must take within 3 days of having unprotected sex, or the ellaOne which you must take within 5 days of having unprotected sex. Most women can use the emergency contraceptive pill. This includes women who can't use hormonal contraception, such as the combined pill, contraceptive patch and girls under 16 years old.\n  
+^To access the morning after pill for free you should visit contraception clinics, Brook centres, some pharmacies, most sexual health or genitourinary medicine (GUM) clinics, most NHS walk-in centres and minor injuries units, most GP surgeries and some hospital accident and emergency (A&E) departments.\n  
+^You can also purchase the morning after pill from shops such as Superdrug, boots and Lloyds pharmacy.\n
+^For more information of emergency contraception, as well as where you can access it, please read <a href="https://www.nhs.uk/conditions/contraception/where-can-i-get-emergency-contraception/">please read more here.</a>\n
+
+
++ (how does|does) the morning after pill work
+- The morning after pill is an emergency contraceptive pill that is taken after having unprotected sex to prevent pregnancy. There are 2 different types of emergency contraceptive pills available in the UK.\n 
+^Levonelle, which must be taken within 3 days of having unprotected sex\n 
+^EllaOne, which must be taken within 5 days of having unprotected sex\n 
+^It is important to note that although the morning after pill is considered to be around 85% - 95% affective, you can not 100% garantee that it will always prevent pregancy, which is why it is important to follow up any concerns by taking a pregancy test or talking to a health care professional! 😊
+
++ can i get pregnant when i am on birth control
+- Although most women do not get pregnant while on birth control, there is a small possibility your contraception can fail as no birth control method is 100% effective. The only way to be 100% sure you will not get pregnant, is to not have any penetrative vaginal sex. One way to further protect yourself is to use more than one method of birth control, for example, the pill and a condom, although this still is not 100% effective.  
+
++ does birth control protect against (stis|stds|sti|std)
+- Although birth control such as the pill, patch, ring, and IUD are very effective at preventing pregnancy, they do not protect against STIs and HIV. The only form of contraception that also protects against STIs is condoms, for example, the male external condoms or the female vaginal condom. However, The most reliable way to avoid STDs is to not have vaginal, anal, or oral sex. 
+
++ *
+- I am sorry, I didn't get that. Do you wanna talk about something other than birth control?
+
++ *
+% i am sorry i did not get that do you want to talk about something other than birth control
+* <star> == yes => That's fine! What do you wanna talk about instead? Here are some options:\n
+^ - Tampons
+^ - Pads
+^ - Menstrual cups
+^ - Periods
+^ - Sexual health
+* <star> == no => Okay, if you want to know more about birth control try asking one of these questions:\n
+^Should I take birth control to help with my periods?\n
+^What birth control should I use?\n
+^What are the side effects of birth control?\n
+^What types of birth control exists?\n
+^Can I get pregnant when I am on birth control?\n
+^Should I take the morning after pill?\n
+^Does birth control protect against STIs?
+- Please answer with yes or no.
+
++ *
+% please answer with yes or no
+* <star> == yes => That's fine! What do you wanna talk about instead? Here are some options:\n
+^ - Tampons
+^ - Pads
+^ - Menstrual cups
+^ - Periods
+^ - Sexual health
+* <star> == no => Okay, if you want to know more about birth control try asking one of these questions:\n
+^Should I take birth control to help with my periods?\n
+^What birth control should I use?\n
+^What are the side effects of birth control?\n
+^What types of birth control exists?\n
+^Can I get pregnant when I am on birth control?\n
+^Should I take the morning after pill?\n
+^Does birth control protect against STIs?
+- Please answer with yes or no.
+
++ *
+% thats fine what do you want to talk about instead here are some options tampons pads menstrual cups periods sexual health
+* <star> == tampons => Let me send you to Tammy! {topic=tampons} <call>changebackground png/tammy.png</call>
+* <star> == pads => Let me send you to Patty. {topic=pads} <call>changebackground png/paddy.png</call>
+* <star> == periods => Let me send you back to Ottie. {topic=periods} <call>changebackground png/olive.png</call>
+* <star> == menstrual cups => Let me send you to Cooper. {topic=menstrualcups} <call>changebackground png/cuppie.png</call>
+* <star> == sexual health => Let me send you to Connie. {topic=sexualhealth} <call>changebackground png/connie.png</call>
+- Please respond with one of these options:\n
+^ - Tampons
+^ - Pads
+^ - Menstrual cups
+^ - Periods
+^ - Sexual health
+
+! local concat = none
+
+< topic
+
+
+
+> topic sexualhealth
+
+! local concat = newline
+
++ (whats|what is) your name
+- My name is Connie, what's your name?
+
++ my name is *
+- <set name=<star>>I love that name! Great to meet you <get name>.
+
++ what is my name
+* <get name> == undefined => I don't think you told me your name, what is it?
+- Your name is <get name>, duh!
+- Are you suffering from memeory loss <get name>?
+
++ who am i
+* <get name> == undefined => I don't think you told me, what's your name?
+- Your name is <get name>, duh!
+- Are you suffering from memeory loss <get name>?
+
++ who are you
+- I am Connie
+
++ [*] (hi|hello|hey|connie) [*]
+- Yoo, Connie here. I heard you wanted to know some more about sexual health. Here are some questions you can ask me:\n <call>changebackground png/connie.png</call>
+^I might have a STI, what should I do?\n
+^What are symptoms of a STI?\n
+^How do I get rid of a STI?\n
+^How often should I get tested?\n
+^When can I have sex again after a STI?
+
++ [i might have a] (std|sti) [what should i do]
+- while it is always recommended to use condoms to help protect yourself from contracting sexually transmitted infections, if you find yourself in the situation where you suspect you might have one, do not worry, I’m here to help!\n 
+^Most STI’s can be successfully treated but it is important you get checked out as soon as possible. If you begin to suspect you may have contracted an STI or experience any of the following symptoms, contact your GP or a sexual health clinic promptly, it is always better to have any concerns or symptoms checked out by a healthcare professional.\n
+^Symptoms of an STI may include:
+^ -	An unusual discharge from the vagina, penis or anus.
+^ -	Pain when peeing.
+^ -	Lumps or skin growth around the genitals or bottom.
+^ -	A rash.
+^ -	Unusual vaginal bleeding.
+^ -	Itchy genitals or anus.
+^ -	Blisters, sores or wards around your genitals or anus.
+^ -	Warts in your mouth or throat, although this is very rare.\n
+^Please try and remember that contracting a sexually transmitted infection is nothing to feel ashamed of and you should not feel embarrassed about asking for help!\n
+^If you have been diagnosed with an STI your doctor will discuss what treatments are best for you, don’t forgot to also inform any sexual partners of your diagnosis so they can get check too.\n 
+^I understand this can be a daunting step to take so please know there are many services available online to anonymously notify a sexual partner that they should get tested, a few of these are:
+^<a href="https://www.anonymoustext.co.uk/how-to-send-an-anonymous-text/">anonymoustext.co.uk</a>
+^<a href="https://tellyourpartner.org ">tellyourpartner.org</a>
+
++ (i have|what should i do if i have|i think i have) an (sti|std)
+- while it is always recommended to use condoms to help protect yourself from contracting sexually transmitted infections, if you find yourself in the situation where you suspect you might have one, do not worry, I’m here to help!\n 
+^Most STI’s can be successfully treated but it is important you get checked out as soon as possible. If you begin to suspect you may have contracted an STI or experience any of the following symptoms, contact your GP or a sexual health clinic promptly, it is always better to have any concerns or symptoms checked out by a healthcare professional.\n
+^Symptoms of an STI may include:
+^ -	An unusual discharge from the vagina, penis or anus.
+^ -	Pain when peeing.
+^ -	Lumps or skin growth around the genitals or bottom.
+^ -	A rash.
+^ -	Unusual vaginal bleeding.
+^ -	Itchy genitals or anus.
+^ -	Blisters, sores or warts around your genitals or anus.
+^ -	Warts in your mouth or throat, although this is very rare.\n
+^Please try and remember that contracting a sexually transmitted infection is nothing to feel ashamed of and you should not feel embarrassed about asking for help!\n
+^If you have been diagnosed with an STI your doctor will discuss what treatments are best for you, don’t forgot to also inform any sexual partners of your diagnosis so they can get check too.\n 
+^I understand this can be a daunting step to take so please know there are many services available online to anonymously notify a sexual partner that they should get tested, a few of these are:
+^<a href="https://www.anonymoustext.co.uk/how-to-send-an-anonymous-text/">anonymoustext.co.uk</a>
+^<a href="https://tellyourpartner.org ">tellyourpartner.org</a>
+
++how do i tell * i have an (sti|std)
+- If you think you have an sti you should always get yourself checked as soon as possible, to do this, visit your GP or a sexual health clinic. \n 
+^When telling someone you have an STI it is important to ensure everyone is comfortable and open minded. If you are telling a sexual partner, it is also important be clear and direct, as well as suggesting they too shoudl get checked! \n 
+^Telling someone about your diagnosis can be daunting, but you are not alone! For more support, visit\n 
+^<a href="https://nationalcoalitionforsexualhealth.org/media-center/ncsh-in-the-news/just-diagnosed-with-an-sti-heres-how-to-deal-refinery29"</a>
+
+
++ what are symptoms of a (std|sti)
+- Symptoms of an STI may include: 
+^ -	An unusual discharge from the vagina, penis or anus.
+^ -	Pain when peeing.
+^ - Lumps or skin growth around the genitals or bottom.
+^ -	A rash.
+^ -	Unusual vaginal bleeding.
+^ -	Itchy genitals or anus.
+^ -	Blisters, sores or wards around your genitals or anus.
+^ -	Warts in your mouth or throat, although this is very rare.\n
+^Please try and remember that contracting a sexually transmitted infection is nothing to feel ashamed of and you should not feel embarrassed about asking for help!  
+
++ how do i get rid of a (std|sti)
+- If you have been diagnosed with an STI you will need antibiotics to get rid of it, the easiest way to do this is to contact your GP or sexual health clinic! Often a single dose, can cure many sexually transmitted bacterial and parasitic infections, including gonorrhoea, syphilis, and chlamydia. Please remember, once you start antibiotic treatment, it is necessary to finish the prescription. 
+
++ how often should i get tested
+- Regular testing for HIV and STIs is essential for good sexual health! Everyone should have an STI screen, including an HIV test, annually if having condomless sex. It is also advised to have an STI screening everytime you has sex with a new or casual partner.  
+
++ when can i have sex again after [having] a (std|sti)
+- Although every STI is different it is advised you wait at least 7 days after finishing antibiotics for an STI to have sex again. However, I recommend discussing this with your health care professional for a more accurate time scale.  
+
++ *
+- I am sorry, I didn't get that. Do you wanna talk about something other than sexual health?
+
++ *
+% i am sorry i did not get that do you want to talk about something other than sexual health
+* <star> == yes => That's fine! What do you wanna talk about instead? Here are some options:\n
+^ - Tampons
+^ - Pads
+^ - Menstrual cups
+^ - Periods
+^ - Birth control
+* <star> == no => Okay, if you want to know more about sexual health try asking one of these questions:\n
+^I might have a STI, what should I do?\n
+^What are symptoms of a STI?\n
+^How do I get rid of a STI?\n
+^How often should I get tested?\n
+^When can I have sex again after a STI?
+- Please answer with yes or no.
+
++ *
+% please answer with yes or no
+* <star> == yes => That's fine! What do you wanna talk about instead? Here are some options:\n
+^ - Tampons
+^ - Pads
+^ - Menstrual cups
+^ - Periods
+^ - Birth control
+* <star> == no => Okay, if you want to know more about sexual health try asking one of these questions:\n
+^I might have a STI, what should I do?\n
+^What are symptoms of a STI?\n
+^How do I get rid of a STI?\n
+^How often should I get tested?\n
+^When can I have sex again after a STI?
+- Please answer with yes or no.
+
++ *
+% thats fine what do you want to talk about instead here are some options tampons pads menstrual cups periods birth control
+* <star> == tampons => Let me send you to Tammy! {topic=tampons} <call>changebackground png/tammy.png</call>
+* <star> == pads => Let me send you to Patty. {topic=pads} <call>changebackground png/paddy.png</call>
+* <star> == periods => Let me send you back to Ottie. {topic=periods} <call>changebackground png/olive.png</call>
+* <star> == menstrual cups => Let me send you to Cooper. {topic=menstrualcups} <call>changebackground png/cuppie.png</call>
+* <star> == birth control => Let me send you to Ivy. {topic=birthcontrol} <call>changebackground png/ivy.png</call>
+- Please respond with one of these options:\n
+^ - Tampons
+^ - Pads
+^ - Menstrual cups
+^ - Periods
+^ - Birth control
+
+! local concat = none
+
+< topic
+
+// > topic periodpoverty
+
+// ! local concat = newline
+
+// + [*] (hi|hello|hey|ottie) [*]
+// - What do you wanna know about period poverty?
+
+// - Hi, I am Patty. I am here to talk to you about everything pad related. What do you wanna know?
+
+// + what is period poverty
+// - Period poverty is
+
+// + *
+// - I am sorry, I didn't get that. Do you wanna talk about something other than period poverty?
+
+// + *
+// % i am sorry i did not get that do you want to talk about something other than period poverty
+// * <star> == yes => That's fine! What do you wanna talk about instead? Here are some options:\n
+// ^ - Tampons
+// ^ - Pads
+// ^ - Menstrual cups
+// ^ - Periods
+// ^ - Birth control
+// ^ - Sexual health
+// * <star> == no => Okay, if you want to know more about period poverty try asking one of these questions:
+// - Please answer with yes or no.
+
+// + *
+// % thats fine what do you want to talk about instead here are some options tampons pads menstrual cups periods birth control sexual health
+// * <star> == tampons => Let me send you to Tammy! {topic=tampons} <call>changebackground png/tammy.png</call>
+// * <star> == pads => Let me send you to Patty. {topic=pads} <call>changebackground png/paddy.png</call>
+// * <star> == periods => Okay girl, what do you wanna know about periods? {topic=periods} <call>changebackground png/olive.png</call>
+// * <star> == menstrual cups => Let me send you to Cooper. {topic=mensturalcups} <call>changebackground png/cuppie.png</call>
+// * <star> == birth control => birth control {topic=birthcontrol} <call>changebackground png/ivy.png</call>
+// * <star> == sexual health => Let me send you to Connie{topic=sexualhealth} <call>changebackground png/connie.png</call>
+// - Please respond with one of these options:\n
+// ^ - Tampons
+// ^ - Pads
+// ^ - Menstrual cups
+// ^ - Periods
+// ^ - Birth control
+// ^ - Sexual health
+
+// ! local concat = none
+
+// < topic
+
+
+
+// + *
+// - Sorry did not get what you said
+// - I am afraid that I can not understand you
+// - Sorry can you please elaborate that for me
+// - I don't get it!
+
+
+// + *
+// - I am sorry, I didn't understand you. Here are some topics you can ask me about:\n
+// ^ - Periods
+// ^ - Sanitary products
+// ^ - Birth control
+// ^ - Sexual health
+// ^ - Period poverty\n
+// ^ If you want to learn more about one of these topics just respond with the topic you wanna talk about.

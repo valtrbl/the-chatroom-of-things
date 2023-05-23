@@ -1,0 +1,243 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;800&display=swap");
+
+@font-face {
+  font-family: 'Minecraft';
+  src: url('Minecraft.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Early Gameboy';
+  src: url('Early GameBoy.ttf') format('truetype');
+}
+
+@font-face {
+  font-family:'Mage';
+  src: url('DiaryOfAn8BitMage-lYDD.ttf') format('truetype');
+}
+
+#backgroundButton {
+  position: fixed;
+  top: 40px;
+  right: 60px;
+  cursor: pointer;
+}
+
+
+#video-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
+  display: flex;
+  background: rgba(0,0,0,0.8);
+}
+
+#my-video {
+  width: 100%;
+}
+
+#website-container {
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+
+#website-container.visible {
+  opacity: 1;
+}
+
+.bot{
+  font-family: "Mage";
+  font-size: 9.5pt;
+  margin: 0;
+  width: 0;
+  display: inline-block;
+  box-sizing: content-box;
+}
+
+
+* {
+  font-family: "Minecraft", regular;
+  font-size: 11.2pt;
+  margin: 0;
+  box-sizing: border-box;
+  color: #85ad8bc9;
+  
+  
+}
+
+
+#aButton {
+  width: 60;
+  height: 60;
+  position: absolute;
+  top: 680px;
+  left: 900px;
+  right: 0px;
+  background-color: transparent;
+  border: none;
+}
+
+#aButton:hover {
+  cursor: pointer;
+}
+
+#bButton {
+  width: 100;
+  height: 100;
+  position: absolute;
+  top: 700px;
+  left: 545px;
+  right: 0px;
+  background-color: transparent;
+  border: none;
+}
+
+#bButton:hover {
+  cursor: pointer;
+}
+
+#dPad {
+  width: 60;
+  height: 60;
+  position: absolute;
+  top: 710px;
+  left: 824px;
+  right: 0px;
+  background-color: transparent;
+  border: none;
+}
+
+#dPad:hover {
+  cursor: pointer;
+}
+
+
+
+
+body{
+  background-image: url(https://cdn.discordapp.com/attachments/1024618908512174130/1109305900184899675/COMBO-PURPLE-BG.gif);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 100vh;
+  padding:0;
+  margin:0;
+  transition: background-image 2s ease;
+}
+
+
+.wrapper {
+  height: 90vh;
+}
+
+.chat {
+  background: #d8f7d700;
+  overflow: auto;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 50px 20px 0px 10px;
+}
+
+::-webkit-scrollbar {
+  width: 0.1em;
+  background-color: transparent;
+}
+
+.scrollable-content {
+  padding-right: 0.1em;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: transparent;
+}
+
+.messages {
+  flex: 1 0 auto;
+}
+
+.messages div {
+  max-width: 60%;
+  width: fit-content;
+  display: block;
+  margin: 5px;
+  padding: 1px;
+  border-radius: 1px;
+  white-space: pre-line;
+}
+
+.messages div a {
+  color: #bdffc900;
+}
+
+.messages div a:hover {
+  color: green;
+}
+
+
+
+
+.messages .bot {
+  text-align: left;
+  margin-left: 10px;
+  margin-top: 30px;
+  color: #1f594a;
+  display: display-box;
+}
+
+
+.messages .self {
+  text-align: right;
+  margin-right: 10px;
+  margin-left: auto;
+  color: #6ca66c;
+}
+
+.actions {
+  font-family: "Early Gameboy", regular;
+  font-size: 6.5pt;
+  flex-shrink: 0;
+  width: 100%;
+  position: sticky;
+  bottom: 0px;
+  padding: 0px 0px 0px;
+  background: #d8f7d700;
+  color: #597c57c9;
+}
+
+.actions input {
+  height: -1px; 
+  display: block;
+  background: #d8f7d700;
+  width: 100%;
+  outline: 0;
+  border-top: 0px;
+  border-right: 0px;
+  border-bottom: 2px solid #19654c16;
+  border-left: 0px;
+}
+
+input:focus {
+  border-bottom: 2px solid #c0d7bf00;
+}
+
+@media all and (min-width: 720px) {
+  .wrapper {
+    height: 29.4vh;
+    margin: 0 auto 2.5vh;
+  }
+}
+
+@media all and (min-width: 1280px) {
+  .wrapper {
+    width: 25vw;
+  }
+  .title {
+    height: 32.4vh;
+  }
+}
+

@@ -1,72 +1,44 @@
 {
   "data": [
     {
-      "id": "musebot",
-      "members": ["Justin Lin", "Zetong Chen"],
-      "name": "Musebot",
+      "id": "80sbot",
+      "members": ["Rahmone Myers", "Ellouise Lagunzad"],
+      "name": "80SBOT",
       "tagline": "",
       "exists": true
     },
     {
-      "id": "tamagotchu",
-      "members": ["Eddie Cranmer", "Kwesi Roberts-Sackey"],
-      "name": "Tamagotchu",
+      "id": "ai-25",
+      "members": ["Yuri Wang", "Shangda Li", "Tian Gan", "Shiyang Tan"],
+      "name": "AI-25",
       "tagline": "",
       "exists": true
     },
     {
-      "id": "daydreaming-dungeon",
-      "members": [""],
-      "name": "Daydreaming Dungeon",
+      "id": "just-my-cup-of-tea",
+      "members": ["Theo Willitts", "Alexandra Schwarz"],
+      "name": "Just My Cup of Tea",
       "tagline": "",
       "exists": true
     },
     {
-      "id": "fly-on-the-wall",
-      "members": [""],
-      "name": "Fly on the Wall",
+      "id": "ottie",
+      "members": ["Nikita Basra", "Mia Miller", "Sara Naess"],
+      "name": "Ottie",
       "tagline": "",
       "exists": true
     },
     {
-      "id": "kitty-gurlz",
-      "members": [""],
-      "name": "Kitty Gurlz",
+      "id": "honest-sofa",
+      "members": ["Ruben Cook", "Delia Logigan"],
+      "name": "Honest Sofa",
       "tagline": "",
       "exists": true
     },
     {
-      "id": "ping-pong",
-      "members": ["Uni Pang"],
-      "name": "Ping Pong",
-      "tagline": "",
-      "exists": true
-    },
-    {
-      "id": "6.1",
-      "members": ["Lily McCardle"],
-      "name": "Doorbot",
-      "tagline": "",
-      "exists": true
-    },
-    {
-      "id": "6.2",
-      "members": [""],
-      "name": "Swipe Don't Skip",
-      "tagline": "",
-      "exists": true
-    },
-    {
-      "id": "6.3",
-      "members": [""],
-      "name": "Smart Recycling Bin",
-      "tagline": "",
-      "exists": true
-    },
-    {
-      "id": "6.4",
-      "members": ["Boryana Draganova"],
-      "name": "Outriders",
+      "id": "toothbrushes",
+      "members": ["Zuzana Tuncelová", "Ilham Abdulahi"],
+      "name": "Toothbrushes",
       "tagline": "",
       "exists": true
     }
