@@ -41,6 +41,20 @@
       "name": "Toothbrushes",
       "tagline": "",
       "exists": true
+    },
+    {
+      "id": "henry-hoover",
+      "members": ["Emma Qiu", "Chien-Fei Wang"],
+      "name": "Henry the Hoover",
+      "tagline": "",
+      "exists": true
+    },
+    {
+      "id": "pillow-bot",
+      "members": ["Wiktoria Ploskonka", "Abbie Brown", "Kaja Manka"],
+      "name": "Pillow Bot",
+      "tagline": "",
+      "exists": true
     }
   ]
 }

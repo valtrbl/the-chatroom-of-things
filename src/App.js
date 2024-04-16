@@ -114,7 +114,7 @@ const App = () => {
 
   useEffect(() => {
     const fetchTerms = () => {
-      fetch("data.json", {
+      fetch("history.json", {
         headers: {
           "Content-Type": "application/json",
           Accept: "application/json",
@@ -197,11 +197,8 @@ const App = () => {
                 )}
               </div>
             </div>
-            <div className="bg-white p-8 border-t border-$cyan">
-              <p>Choose a chatbot to talk to...</p>
-            </div>
           </div>
-          <div className="relative flex overflow-x-hidden bg-$cyan text-white h-24 items-center">
+          <div className="relative flex overflow-x-hidden bg-$cyan h-60 py-4 text-white items-center">
             <div className="animate-marquee whitespace-nowrap">
               <span className="text-lg">
                 The Chatroom of Things is an imitation of a chatroom exploring

@@ -1,340 +1,395 @@
 {
-    "data": [
-      {
-        "id": "1.1",
-        "members": [
-          "Oliwia Marciniak",
-          "Zsofia Mayer",
-          "Hyein Kim",
-          "Chiara Arrigo"
-        ],
-        "name": "ABANDONED",
-        "tagline": "Let's talk about the environment!",
-        "exists": true
-      },
-      {
-        "id": "1.2",
-        "members": [
-          "Martin Boniszewski",
-          "Naiwen Zhang",
-          "Georgia Canning",
-          "Katie Cray"
-        ],
-        "name": "Oven",
-        "tagline": "Let's cook!",
-        "exists": true
-      },
-      {
-        "id": "1.3",
-        "members": [
-          "Lili Frech",
-          "Lishu Fang",
-          "Kirsti Restall",
-          "Bozhidara Padarska"
-        ],
-        "name": "A supportive mirror",
-        "tagline": "",
-        "exists": true
-      },
-      {
-        "id": "1.4",
-        "members": ["Harry Hayllar", "Narmeen Wasim", "Abigail Auld"],
-        "name": "Grumpy old bin",
-        "tagline": "If you had to watch a bunch of hairless apes destroy the planet, you would be grumpy too.",
-        "exists": true
-      },
-      {
-        "id": "1.5",
-        "members": [
-          "Gabe Merezeanu",
-          "Jasmine Range",
-          "Lewis Preston",
-          "Sidra Nabeel"
-        ],
-        "name": "TherapyBot",
-        "tagline": "Tell me about your problems and we’ll find a solution together! (Note: not a licensed therapist xoxo)",
-        "exists": true
-      },
-      {
-        "id": "1.6",
-        "members": ["George O’byrne", "Kit Wear", "Miles Hickson"],
-        "name": "Staircase outside Camberwell College",
-        "tagline": "",
-        "exists": false
-      },
-      {
-        "id": "2.2",
-        "members": [
-          "Bingxuan Wang",
-          "Kuba Wieczorek",
-          "Otis Harding-Hill",
-          "Sonny Auty"
-        ],
-        "name": "Millennium Bot",
-        "tagline": "",
-        "exists": true
-      },
-      {
-        "id": "2.3",
-        "members": [
-          "Priddy Ebert Rossiter",
-          "David Parker",
-          "Qasim Hanid",
-          "Alex Warnsing"
-        ],
-        "name": "Lost Toy",
-        "tagline": "",
-        "exists": false
-      },
-      {
-        "id": "2.4",
-        "members": [
-          "Nikolaos Sourmpi",
-          "Yusen Guo",
-          "Amy Foster",
-          "Orsi Varga-Aggod"
-        ],
-        "name": "Venus of Willendorf",
-        "tagline": "",
-        "exists": true
-      },
-      {
-        "id": "2.5",
-        "members": [
-          "Olivia Barber",
-          "Alice Goodliffe",
-          "Jelly Sia",
-          "Natasha Husain"
-        ],
-        "name": "The Temperamental Traffic Light",
-        "tagline": "First things first. Have you ever jaywalked?",
-        "exists": true
-      },
-      {
-        "id": "2.6",
-        "members": [
-          "Jasper Morrison",
-          "Aster Li",
-          "Katie Bridgman",
-          "Audrey Wan"
-        ],
-        "name": "Fortune Teller",
-        "tagline": "",
-        "exists": true
-      },
-      {
-        "id": "3.1",
-        "members": [
-          "Carla Castell",
-          "Pier Luigi Zappala",
-          "Manon Galez",
-          "Ashley Lo"
-        ],
-        "name": "Waiter",
-        "tagline": "",
-        "exists": true
-      },
-      {
-        "id": "3.2",
-        "members": [
-          "Norman Banks",
-          "Carol Valencia Ramirez",
-          "Cameron Mckenna",
-          "Robin Filbee"
-        ],
-        "name": " A Magic 8-ball",
-        "tagline": "",
-        "exists": false
-      },
-      {
-        "id": "3.3",
-        "members": ["Jacob Cornford", "Joe Anderson", "Laura Ruddock"],
-        "name": "Hair Clippers",
-        "tagline": "",
-        "exists": false
-      },
-      {
-        "id": "3.4",
-        "members": ["Thomas Firmin", "Denisa Gaspar", "Faye Clark"],
-        "name": "Magic Mirror",
-        "tagline": "Hi, I’m mirror how can I help you today?",
-        "exists": true
-      },
-      {
-        "id": "3.5",
-        "members": [
-          "Leo Priestley",
-          "Max Thomas",
-          "Yujing Wang",
-          "Jubilee Egbueri"
-        ],
-        "name": "Coin",
-        "tagline": "With the emergence of different forms of payment, the 'coin', an old form of payment, has gradually faded out of people's vision, but it carries a lot of history. Learn about coins through dialogue.",
-        "exists": true
-      },
-      {
-        "id": "3.6",
-        "members": [
-          "Kai Whitfield",
-          "Owen Price",
-          "Xiangyue Deng",
-          "Tanjuma Hussain"
-        ],
-        "name": "Kettle",
-        "tagline": "",
-        "exists": true
-      },
-      {
-        "id": "4.1",
-        "members": [
-          "Kinara Pegorini",
-          "Molly Shenstone",
-          "Cieszymir Bylina",
-          "Zhiying Chen"
-        ],
-        "name": "A megaphone",
-        "tagline": "Hello, I'm the Megaphone! I would like to tell you about my awsome riot adventures 😎",
-        "exists": true
-      },
-      {
-        "id": "4.2",
-        "members": [
-          "Suky Spray",
-          "Andreas Philippou",
-          "Ollie Ashcroft",
-          "Adam Ben Tekaya"
-        ],
-        "name": "Weather Window",
-        "tagline": "",
-        "exists": true
-      },
-      {
-        "id": "4.3",
-        "members": [
-          "Eilidh Nicoll",
-          "Ines Vieira Morgado Calau Pina",
-          "Matthew Newman-Grainger",
-          "Daria Cichewicz"
-        ],
-        "name": "Woke mirror",
-        "tagline": "",
-        "exists": false
-      },
-      {
-        "id": "4.4",
-        "members": [
-          "Isabelle Hendry",
-          "Lucas Weir",
-          "Charlotte Randall",
-          "Archie Anderson"
-        ],
-        "name": "Compass",
-        "tagline": "",
-        "exists": true
-      },
-      {
-        "id": "4.5",
-        "members": [
-          "Niamh Hunt",
-          "Jiajing Li",
-          "Vanina Gencheva",
-          "Shantel Leghari"
-        ],
-        "name": "Coin Bot",
-        "tagline": "My mental self is here; tethered to this chatroom. My physical self is probably down the side of a sofa somewhere.",
-        "exists": true
-      },
-      {
-        "id": "4.6",
-        "members": ["Janusan Gunarajah", "Karim Newble", "Alexandra Mckinney"],
-        "name": "TrashBot",
-        "tagline": "I'm Trash Bot, your favourite digitised trash bin! I know almost all there is to know about trash so ask me all of your burning trash related questions!",
-        "exists": true
-      },
-      {
-        "id": "4.7",
-        "members": ["Amy Crozier", "Jennifer Kleiner", "Ilaria Montalto"],
-        "name": "Bench",
-        "tagline": "",
-        "exists": true
-      },
-      {
-        "id": "5.1",
-        "members": ["Minna Leatham"],
-        "name": "Nostalgic Vinyl",
-        "tagline": "",
-        "exists": true
-      },
-      {
-        "id": "musebot",
-        "members": ["Justin Lin", "Zetong Chen"],
-        "name": "Musebot",
-        "tagline": "",
-        "exists": true
-      },
-      {
-        "id": "tamagotchu",
-        "members": ["Eddie Cranmer", "Kwesi Roberts-Sackey"],
-        "name": "Tamagotchu",
-        "tagline": "",
-        "exists": true
-      },
-      {
-        "id": "daydreaming-dungeon",
-        "members": [""],
-        "name": "Daydreaming Dungeon",
-        "tagline": "",
-        "exists": true
-      },
-      {
-        "id": "fly-on-the-wall",
-        "members": [""],
-        "name": "Fly on the Wall",
-        "tagline": "",
-        "exists": true
-      },
-      {
-        "id": "kitty-gurlz",
-        "members": [""],
-        "name": "Kitty Gurlz",
-        "tagline": "",
-        "exists": true
-      },
-      {
-        "id": "ping-pong",
-        "members": ["Uni Pang"],
-        "name": "Ping Pong",
-        "tagline": "",
-        "exists": true
-      },
-      {
-        "id": "6.1",
-        "members": ["Lily McCardle"],
-        "name": "Doorbot",
-        "tagline": "",
-        "exists": true
-      },
-      {
-        "id": "6.2",
-        "members": [""],
-        "name": "Swipe Don't Skip",
-        "tagline": "",
-        "exists": true
-      },
-      {
-        "id": "6.3",
-        "members": [""],
-        "name": "Smart Recycling Bin",
-        "tagline": "",
-        "exists": true
-      },
-      {
-        "id": "6.4",
-        "members": ["Boryana Draganova"],
-        "name": "Outriders",
-        "tagline": "",
-        "exists": true
-      }
-    ]
-  }
-  
+  "data": [
+    {
+      "id": "1.1",
+      "members": [
+        "Oliwia Marciniak",
+        "Zsofia Mayer",
+        "Hyein Kim",
+        "Chiara Arrigo"
+      ],
+      "name": "ABANDONED",
+      "tagline": "Let's talk about the environment!",
+      "exists": true
+    },
+    {
+      "id": "1.2",
+      "members": [
+        "Martin Boniszewski",
+        "Naiwen Zhang",
+        "Georgia Canning",
+        "Katie Cray"
+      ],
+      "name": "Oven",
+      "tagline": "Let's cook!",
+      "exists": true
+    },
+    {
+      "id": "1.3",
+      "members": [
+        "Lili Frech",
+        "Lishu Fang",
+        "Kirsti Restall",
+        "Bozhidara Padarska"
+      ],
+      "name": "A supportive mirror",
+      "tagline": "",
+      "exists": true
+    },
+    {
+      "id": "1.4",
+      "members": ["Harry Hayllar", "Narmeen Wasim", "Abigail Auld"],
+      "name": "Grumpy old bin",
+      "tagline": "If you had to watch a bunch of hairless apes destroy the planet, you would be grumpy too.",
+      "exists": true
+    },
+    {
+      "id": "1.5",
+      "members": [
+        "Gabe Merezeanu",
+        "Jasmine Range",
+        "Lewis Preston",
+        "Sidra Nabeel"
+      ],
+      "name": "TherapyBot",
+      "tagline": "Tell me about your problems and we’ll find a solution together! (Note: not a licensed therapist xoxo)",
+      "exists": true
+    },
+    {
+      "id": "1.6",
+      "members": ["George O’byrne", "Kit Wear", "Miles Hickson"],
+      "name": "Staircase outside Camberwell College",
+      "tagline": "",
+      "exists": false
+    },
+    {
+      "id": "2.2",
+      "members": [
+        "Bingxuan Wang",
+        "Kuba Wieczorek",
+        "Otis Harding-Hill",
+        "Sonny Auty"
+      ],
+      "name": "Millennium Bot",
+      "tagline": "",
+      "exists": true
+    },
+    {
+      "id": "2.3",
+      "members": [
+        "Priddy Ebert Rossiter",
+        "David Parker",
+        "Qasim Hanid",
+        "Alex Warnsing"
+      ],
+      "name": "Lost Toy",
+      "tagline": "",
+      "exists": false
+    },
+    {
+      "id": "2.4",
+      "members": [
+        "Nikolaos Sourmpi",
+        "Yusen Guo",
+        "Amy Foster",
+        "Orsi Varga-Aggod"
+      ],
+      "name": "Venus of Willendorf",
+      "tagline": "",
+      "exists": true
+    },
+    {
+      "id": "2.5",
+      "members": [
+        "Olivia Barber",
+        "Alice Goodliffe",
+        "Jelly Sia",
+        "Natasha Husain"
+      ],
+      "name": "The Temperamental Traffic Light",
+      "tagline": "First things first. Have you ever jaywalked?",
+      "exists": true
+    },
+    {
+      "id": "2.6",
+      "members": [
+        "Jasper Morrison",
+        "Aster Li",
+        "Katie Bridgman",
+        "Audrey Wan"
+      ],
+      "name": "Fortune Teller",
+      "tagline": "",
+      "exists": true
+    },
+    {
+      "id": "3.1",
+      "members": [
+        "Carla Castell",
+        "Pier Luigi Zappala",
+        "Manon Galez",
+        "Ashley Lo"
+      ],
+      "name": "Waiter",
+      "tagline": "",
+      "exists": true
+    },
+    {
+      "id": "3.2",
+      "members": [
+        "Norman Banks",
+        "Carol Valencia Ramirez",
+        "Cameron Mckenna",
+        "Robin Filbee"
+      ],
+      "name": " A Magic 8-ball",
+      "tagline": "",
+      "exists": false
+    },
+    {
+      "id": "3.3",
+      "members": ["Jacob Cornford", "Joe Anderson", "Laura Ruddock"],
+      "name": "Hair Clippers",
+      "tagline": "",
+      "exists": false
+    },
+    {
+      "id": "3.4",
+      "members": ["Thomas Firmin", "Denisa Gaspar", "Faye Clark"],
+      "name": "Magic Mirror",
+      "tagline": "Hi, I’m mirror how can I help you today?",
+      "exists": true
+    },
+    {
+      "id": "3.5",
+      "members": [
+        "Leo Priestley",
+        "Max Thomas",
+        "Yujing Wang",
+        "Jubilee Egbueri"
+      ],
+      "name": "Coin",
+      "tagline": "With the emergence of different forms of payment, the 'coin', an old form of payment, has gradually faded out of people's vision, but it carries a lot of history. Learn about coins through dialogue.",
+      "exists": true
+    },
+    {
+      "id": "3.6",
+      "members": [
+        "Kai Whitfield",
+        "Owen Price",
+        "Xiangyue Deng",
+        "Tanjuma Hussain"
+      ],
+      "name": "Kettle",
+      "tagline": "",
+      "exists": true
+    },
+    {
+      "id": "4.1",
+      "members": [
+        "Kinara Pegorini",
+        "Molly Shenstone",
+        "Cieszymir Bylina",
+        "Zhiying Chen"
+      ],
+      "name": "A megaphone",
+      "tagline": "Hello, I'm the Megaphone! I would like to tell you about my awsome riot adventures 😎",
+      "exists": true
+    },
+    {
+      "id": "4.2",
+      "members": [
+        "Suky Spray",
+        "Andreas Philippou",
+        "Ollie Ashcroft",
+        "Adam Ben Tekaya"
+      ],
+      "name": "Weather Window",
+      "tagline": "",
+      "exists": true
+    },
+    {
+      "id": "4.3",
+      "members": [
+        "Eilidh Nicoll",
+        "Ines Vieira Morgado Calau Pina",
+        "Matthew Newman-Grainger",
+        "Daria Cichewicz"
+      ],
+      "name": "Woke mirror",
+      "tagline": "",
+      "exists": false
+    },
+    {
+      "id": "4.4",
+      "members": [
+        "Isabelle Hendry",
+        "Lucas Weir",
+        "Charlotte Randall",
+        "Archie Anderson"
+      ],
+      "name": "Compass",
+      "tagline": "",
+      "exists": true
+    },
+    {
+      "id": "4.5",
+      "members": [
+        "Niamh Hunt",
+        "Jiajing Li",
+        "Vanina Gencheva",
+        "Shantel Leghari"
+      ],
+      "name": "Coin Bot",
+      "tagline": "My mental self is here; tethered to this chatroom. My physical self is probably down the side of a sofa somewhere.",
+      "exists": true
+    },
+    {
+      "id": "4.6",
+      "members": ["Janusan Gunarajah", "Karim Newble", "Alexandra Mckinney"],
+      "name": "TrashBot",
+      "tagline": "I'm Trash Bot, your favourite digitised trash bin! I know almost all there is to know about trash so ask me all of your burning trash related questions!",
+      "exists": true
+    },
+    {
+      "id": "4.7",
+      "members": ["Amy Crozier", "Jennifer Kleiner", "Ilaria Montalto"],
+      "name": "Bench",
+      "tagline": "",
+      "exists": true
+    },
+    {
+      "id": "5.1",
+      "members": ["Minna Leatham"],
+      "name": "Nostalgic Vinyl",
+      "tagline": "",
+      "exists": true
+    },
+    {
+      "id": "musebot",
+      "members": ["Justin Lin", "Zetong Chen"],
+      "name": "Musebot",
+      "tagline": "",
+      "exists": true
+    },
+    {
+      "id": "tamagotchu",
+      "members": ["Eddie Cranmer", "Kwesi Roberts-Sackey"],
+      "name": "Tamagotchu",
+      "tagline": "",
+      "exists": true
+    },
+    {
+      "id": "daydreaming-dungeon",
+      "members": [""],
+      "name": "Daydreaming Dungeon",
+      "tagline": "",
+      "exists": true
+    },
+    {
+      "id": "fly-on-the-wall",
+      "members": [""],
+      "name": "Fly on the Wall",
+      "tagline": "",
+      "exists": true
+    },
+    {
+      "id": "kitty-gurlz",
+      "members": [""],
+      "name": "Kitty Gurlz",
+      "tagline": "",
+      "exists": true
+    },
+    {
+      "id": "ping-pong",
+      "members": ["Uni Pang"],
+      "name": "Ping Pong",
+      "tagline": "",
+      "exists": true
+    },
+    {
+      "id": "6.1",
+      "members": ["Lily McCardle"],
+      "name": "Doorbot",
+      "tagline": "",
+      "exists": true
+    },
+    {
+      "id": "6.2",
+      "members": [""],
+      "name": "Swipe Don't Skip",
+      "tagline": "",
+      "exists": true
+    },
+    {
+      "id": "6.3",
+      "members": [""],
+      "name": "Smart Recycling Bin",
+      "tagline": "",
+      "exists": true
+    },
+    {
+      "id": "6.4",
+      "members": ["Boryana Draganova"],
+      "name": "Outriders",
+      "tagline": "",
+      "exists": true
+    },
+    {
+      "id": "80sbot",
+      "members": ["Rahmone Myers", "Ellouise Lagunzad"],
+      "name": "80SBOT",
+      "tagline": "",
+      "exists": true
+    },
+    {
+      "id": "ai-25",
+      "members": ["Yuri Wang", "Shangda Li", "Tian Gan", "Shiyang Tan"],
+      "name": "AI-25",
+      "tagline": "",
+      "exists": true
+    },
+    {
+      "id": "just-my-cup-of-tea",
+      "members": ["Theo Willitts", "Alexandra Schwarz"],
+      "name": "Just My Cup of Tea",
+      "tagline": "",
+      "exists": true
+    },
+    {
+      "id": "ottie",
+      "members": ["Nikita Basra", "Mia Miller", "Sara Naess"],
+      "name": "Ottie",
+      "tagline": "",
+      "exists": true
+    },
+    {
+      "id": "honest-sofa",
+      "members": ["Ruben Cook", "Delia Logigan"],
+      "name": "Honest Sofa",
+      "tagline": "",
+      "exists": true
+    },
+    {
+      "id": "toothbrushes",
+      "members": ["Zuzana Tuncelová", "Ilham Abdulahi"],
+      "name": "Toothbrushes",
+      "tagline": "",
+      "exists": true
+    },
+    {
+      "id": "henry-hoover",
+      "members": ["Emma Qiu", "Chien-Fei Wang"],
+      "name": "Henry the Hoover",
+      "tagline": "",
+      "exists": true
+    },
+    {
+      "id": "pillow-bot",
+      "members": ["Wiktoria Ploskonka", "Abbie Brown", "Kaja Manka"],
+      "name": "Pillow Bot",
+      "tagline": "",
+      "exists": true
+    }
+  ]
+}

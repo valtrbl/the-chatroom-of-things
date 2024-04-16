@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;800&display=swap");
+
+* {
+  font-family: "Inter", Arial;
+  font-size:13pt;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #484848;
+  background-image: url("HenryFace\ copy.gif");
+  background-size: 1150px 1250px;
+  background-repeat: no-repeat;
+  background-position-x: -25%;
+  background-position-y: 63%;
+}
+
+.nozzle {
+  position:absolute;
+  top: -210px; right: 17px;
+}
+
+.title {
+  font-weight: 900;
+  height: 5vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.title h1 {
+  font-size: 0;
+  position: absolute;
+  margin-top: 50px;
+  letter-spacing: 0.75px;
+  color: rgb(255, 255, 255);
+}
+
+.wrapper {
+  height: 95vh;
+}
+
+.chat {
+  background: rgb(255, 255, 255);
+  box-shadow: 0px 0px 50px rgb(255, 0, 0);
+  overflow: scroll;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 110px 0px 0px 20px;
+  border-radius: 50px;
+  margin: 5px;
+}
+
+.messages {
+  flex: 1 0 auto;
+}
+
+.messages div {
+  max-width: 60%;
+  width: fit-content;
+  height: fit-content;
+  display: block;
+  margin: 5px;
+  padding: 10px;
+  border-radius: 10px;
+  white-space: pre-line;
+}
+
+.messages div a {
+  color: rgb(85, 255, 252);
+}
+
+.messages div a:hover {
+  color: rgb(42, 124, 200);
+}
+
+.messages .bot {
+  text-align: left;
+  margin-right: auto;
+  background: rgb(247, 211, 243);
+  color: rgb(0, 0, 0);
+}
+
+.messages .self {
+  text-align: right;
+  margin-right: 20px;
+  margin-left: auto;
+  margin-top: 20px;
+  background: rgb(76, 76, 76);
+  border: 1px solid rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
+}
+
+.actions {
+  flex-shrink: 0;
+  width: 100%;
+  position: sticky;
+  bottom: -1px;
+  padding: 10px 0px 20px;
+  background: rgb(255, 255, 255);
+}
+
+.actions input {
+  height: 30px;
+  display: block;
+  width: 100%;
+  outline: 0;
+  border-top: 0px;
+  border-right: 0px;
+  border-bottom: 2px solid black;
+  border-left: 0px;
+}
+
+input:focus {
+  border-bottom: 2px solid rgb(83, 111, 210);
+}
+
+.prompt {
+  display: inline-block;
+  margin-top: 10px;
+  font-size: 75%;
+  font-family: monospace;
+}
+
+@media all and (min-width: 720px) {
+  .wrapper {
+    width: 40vw;
+    height: 90vh;
+    margin: 0 1000 2.5vh;
+  }
+}
+
+@media all and (min-width: 1280px) {
+  .wrapper {
+    width: 27.5vw;
+  }
+  .title {
+    height: 7.5vh;
+  }
+}
