@@ -1,0 +1,46 @@
+! version = 2.0
+
++ (hi|hello|yo|bonjour|salut|hey)
+- What is your name
+
+
++ *
+- there is LITTERALY no time for chit chat!!!
+- WTF are you on about 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+
++ why
+- DO YOU WANT TO BURN
+- so you survive silly!
+
++ who are you
+- I'M A FIRE ALARM!! AND THERE IS ALWAYS A FIRE 
+
++ (where is the fire|where|how do you know)
+- TRUST ME RUN
+- JUST GO TO YOUR ASSEMBLY POINT !! NOW
+
++ whatever
+- NO TRUST ME THERE IS A FIRE
+
+
+
+
++ my name is * 
+- <set name<star1>> GET OUT <get name>
+- <set name<star1>> <get name> RUN
+
++ what
+- FIRE
+
++ no
+- BUT THERE IS A FIRE
+
++ (wtf|stop)
+- NO WAIT
+- Oh... false alarm sorry 😅 I swear I could smell smoke. wait! WHAT ARE YOU DOING!? no PLEASE do not touch my batterie
+
++ *
+% batterie
+- <star> !? IM BACK FIRE FIRE FIIIIIIRE
+
+

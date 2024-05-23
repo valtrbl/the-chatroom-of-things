@@ -1,0 +1,59 @@
+! version = 2.0
+
++ hello
+- hello
++ (hello|hi|hey|yo|bonjour)
+- 🎶 hello, it's me I was wondering if after all these years you'd like to meet 🎶
+
++ *
+- To play the radio, choose a frequency: 1, 2, 3
+
++ 1
+- You're listening to radio 1 {topic=radio1}
+
++ 2
+- You're listening to radio 2 {topic=radio2}
+
++ 3
+- You're listening to radio 3 {topic=radio3}
+
+    > topic radio1
++ n
+- Radio 1 is playing. The next track is completely made by AI!
+- If you want to listen to something else, just type 2 or 3.
+- Ask me anything about AI-generated music! Please.
+
++ (made|make|AI music)
+- Radio 1 is playing. The next track is completely made by AI!
+- If you want to listen to something else, just type 2 or 3.
+- Ask me anything about AI-generated music! Please.
+    < topic
+
+        > topic radio2
++ *
+- Wow!? Is robot music not good enough for you? I'll see you when you change your mind.
+< topic
+
+> topic radio3
++ *
+- Pfffff, good luck with this station...
+        < topic
+
++ radio
+- Listen!
+^ <audio controls src="/media/cc0-audio/t-rex-roar.mp3"></audio>
+
+
+
+
+
+
+
+
+
+Flew me to places I'd never been, Now I'm lyin' on the cold hard ground, Oh, oh
+Trouble, trouble, trouble, Oh, oh, Trouble, trouble, trouble🎶
++ [*] the tortued poets department [*]
+- I went crazy when I heard the new album
+- do you know it featured post malone
+- I LOVE FLORIDA!!! FEATURING FLORENCE + MACHINE

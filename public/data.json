@@ -1,60 +1,47 @@
 {
   "data": [
     {
-      "id": "80sbot",
-      "members": ["Rahmone Myers", "Ellouise Lagunzad"],
-      "name": "80SBOT",
+      "id": "orion",
+      "members": ["Meme Nabi", "Zach Masiliunas"],
+      "name": "Orion",
       "tagline": "",
       "exists": true
     },
     {
-      "id": "ai-25",
-      "members": ["Yuri Wang", "Shangda Li", "Tian Gan", "Shiyang Tan"],
-      "name": "AI-25",
+      "id": "bomb",
+      "members": ["Kissane Calonge-Peralta", "Dominic Stala", "Sahand Shiwani", "Josh Maningding"],
+      "name": "Bomb Bot",
       "tagline": "",
       "exists": true
     },
     {
-      "id": "just-my-cup-of-tea",
-      "members": ["Theo Willitts", "Alexandra Schwarz"],
-      "name": "Just My Cup of Tea",
+      "id": "radio",
+      "members": ["Emma Chausse"],
+      "name": "Radio Chat",
       "tagline": "",
       "exists": true
     },
     {
-      "id": "ottie",
-      "members": ["Nikita Basra", "Mia Miller", "Sara Naess"],
-      "name": "Ottie",
+      "id": "where-are-you-going",
+      "members": [""],
+      "name": "Where are you going?",
       "tagline": "",
       "exists": true
     },
     {
-      "id": "honest-sofa",
-      "members": ["Ruben Cook", "Delia Logigan"],
-      "name": "Honest Sofa",
+      "id": "mystery-bot",
+      "members": [""],
+      "name": "?",
       "tagline": "",
       "exists": true
     },
     {
-      "id": "toothbrushes",
-      "members": ["Zuzana Tuncelová", "Ilham Abdulahi"],
-      "name": "Toothbrushes",
-      "tagline": "",
-      "exists": true
-    },
-    {
-      "id": "henry-hoover",
-      "members": ["Emma Qiu", "Chien-Fei Wang"],
-      "name": "Henry the Hoover",
-      "tagline": "",
-      "exists": true
-    },
-    {
-      "id": "pillow-bot",
-      "members": ["Wiktoria Ploskonka", "Abbie Brown", "Kaja Manka"],
-      "name": "Pillow Bot",
+      "id": "rams-bot",
+      "members": ["Ellis Gardner", "Gus Gumery"],
+      "name": "rams-bot",
       "tagline": "",
       "exists": true
     }
+  
   ]
 }

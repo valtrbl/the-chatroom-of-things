@@ -1,0 +1,7 @@
+! version = 2.0
+
++ (hi|hello|yo|hey)
+- Hello what is your namE?
+
++ my name is *
+- <set name <star>> hi <get name>

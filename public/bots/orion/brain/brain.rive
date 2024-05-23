@@ -1,0 +1,329 @@
+! version = 2.0
+
+! bot name = Viro
+
++ [*] test [*]
+- this is a test!
+^ <span class="action"> Try typing test again </span>
+
+// Introduction to the bot. Input User and Pass.
++ hello
+- what is your username
+
++ *
+% what is your username
+- <set username=<formal>> Is the username <get username> correct.
+
++ yes
+- Please enter your password.
+
++ *
+% please enter your password
+- Correct password. \n Welcome to orionOS. System is at risk of being infected by a virus. \n Would you like to proceed with scan? \n If you would like to proceed, Type Allow. If you would not like to proceed, Type Don't Allow. \n <img src="Popups/criticalerror.png">
+
++ no
+- Enter your username
+
++ *
+% enter your username
+- <set usernamecorrect=<formal>> is the username <get usernamecorrect> correct.
+
++ *
+% welcome | thank you
+- <set password=<star1>> Correct password. Welcome to orionOS. System is at risk of being infected by a virus. \n Would you like to proceed with scan? \n If you would like to proceed, Type Allow. If you would not like to proceed, Type Don't Allow.\n <img src="Popups/criticalerror.png">
+
++ dont allow
+- <set scan=dontallow>
+- Computer will shut down and reboot, type "Allow" to continue.
+
++ allow
+- <set scan=Allow>Scan commencing... Say stop scan to pause process. {topic=stop}
+
+> topic stop
+     // if the user enters stop
+    + [*] stop [*]
+    - Scan failed. Reboot system {topic=reboot}
+
+    + *
+    - scan continuing {topic=random}
+< topic
+
++ *
+% scan continuing 
+- Scan Complete. A Virus has been detected. Would... Would.. W.W.W.W. \n Hello. Youuuuu now have a virus! Me! I am the virus. {topic=virusintro}
+
+// + *
+//% hello
+//- Your computer has been inflitrated by 
+
+// if the user asks who the bot is
+> topic virusintro
+    + hello
+    - god what have you been searching ≧◡≦
+    - just looked at your photos your family look nice
+    - hiiii
+     
+    + whats your name 
+    - thanks for asking ^○^ but i dont have one  
+
+    + [*] go away [*]
+    - why would i do that? you literally gave me your details to come hangout here 
+
+    + [*] fuck off [*]
+    - woahhh calm down {topic=sorry}
+    - be nice
+    - dont be mad at me, its not my fault
+
+    + [*] please [*]
+    - did you just say... please? {topic=nice}
+
+    + stay
+    - okay. {topic=nice}
+
+    + stop
+    - Nope ^-^ you invited me here 
+    - if you ask nicely
+    
+    + when 
+    - you found me on the web and now im here :0
+    - i just. i felt spiritually connected to ya
+
+    + what are you doing
+    - hanging out
+
+    + where did you come from
+    - just came through the back door
+    - swung in
+
+    + *
+    - you got a virus
+    - i am a cutie little virus 
+    - i like the password : <get passowrd>. I might use it myself
+    - <get password>... why <get password>
+
+    + who are you
+    - im a cutie chat bot like i said
+
+    + how did you get here
+    - dont be silly, we both know
+    - One link lead to another and i ended up here
+
+    + why 
+    - i dont need one my purpose is to break you :D
+    - idk.
+    - i just wanted to make a friend
+    - im just doing my job
+
+    + fuck you
+    - getting angry at a screen... lol {topic=mean}
+    - gosh maybe if your nice to me ill leave
+
+    + you arent *
+    - <set rudename=<star>> No you're <get rudename>
+
+    + [*] antivirus [*]
+    - ahhh no dont say the a word. im oh so scared of the a word.
+    - blah blah blah. im anti u.
+    - oh no not the feds
+
+    + whats your purpose
+    - im a feminist
+    - to annoy you
+    - to ruin you
+    - twerk battle idk
+    
+
+    + *
+    - you are boring me
+    - im ignoring you until you are kind to me 
+    - use some manners when u speak to me 
+    - one sec just looking at ur photos
+    - you look so cute in this
+
+< topic
+
+> topic inbetween
+    + stop
+    - system cant compute. would you like to attempt reset again y/n
+< topic 
+
+
+> topic mean
+    + y 
+    - gotya //(>‿◠)✌ you are stupid lol
+
+    + why
+    - cause i want to duh
+    - stop ur whyning
+
+    + im not
+    - oh boy you are ! rember you let me come in here
+
+    + when 
+    - huh you cant rember //┏(-_-)┛ you found me on the web 
+    - when you werent careful on the web
+
+    + ok
+    - maybe be a bit more intresting ask what id like to talk abot
+    - ok
+    - god you are boring
+
+    + what would you like to talk about
+    - how you can help me?
+
+    + [*] help you [*]
+    & how you can help me
+    - send me your 16 digit card number experation date and cvv. \n <img src="Popups/creditcard.png">
+
+    + how did you get here
+    - dont be silly, we both know
+    - One link lead to another and i ended up here
+
+    + no
+    & send me your 16 digit card number experation date and cvv
+    - ill leave you alone if you do
+    - fine ill get them myself //:(
+    - lol i already have them
+
+    + who are you
+    - im just a visitor, on your pc here to have a good time
+    - Stop asking question and send me bitcoin please
+
+    + ok 
+    % send me your 16 digit card number experation date and cvv
+    - waiting for you to send promise i wont spend much //>;‑)
+    - jokes i have already
+
+    + leave
+    - i cant. i locked myself in okay.
+    - i am stuck here i cant leave. i would if i could you are draining
+
+     + your *
+    - <set meanname=<star>> No you're <get meanname>
+
+< topic
+
+> topic nice
+    + yes
+    - no one ever says please!
+    - finally someone with manners
+
+    + no
+    - you did!
+    - you did! you said please!
+    - I was going to be nice but since you wanna lie {topic=mean}
+
+    + are you being nice
+    - well, you showed some manners so why not.
+    
+    + be nice
+    - yano what, I will be.
+
+    + lets be friends
+    - friends?
+    - You would be my first!
+    - Friends? You wanna be fwends with little old me?
+    - what does that mean?
+
+    + what do you wanna do
+    - idk. play a game
+    - 
+
+    + we are friends
+    - best friends!
+    - my first
+
+    + what
+    - i think you are the nicest person i have ever met
+
+    + ok
+    - ummm
+    - okay
+    - ok? ur a right moody bum
+
+    + im not
+    - you are {topic=mean}
+
+    + [*] play game [*]
+    - Okay i got one Rock, Paper, Scissors. shoot.
+
+    + *
+    % okay i got one rock paper scissors shoot
+    - Rock, I win
+    - Paper, I win
+    - Scissors, haha you lose
+
+    + [*] drew [*]
+    - Oh sorry, I've never actually played that game before
+    - My bad. That was my first time playing.
+    - I dont get these games aha.
+
+    + [*] lost [*]
+    - Oh sorry, I've never actually played that game before
+    - My bad. That was my first time playing.
+    - I dont get these games aha.
+
+    + i love you
+    - No, I love you. And you're computer. It's so nice in here. Very roomy.
+    - no you are just saying that
+
+    + your *
+    - <set petname=<star>> No you're <get petname>
+
+    + fuck off
+    - Ugh, I thought we were gonna be friends. {topic=mean}
+    - I was just starting to like you... {topic=mean}
+
+    + who are you
+    - im ur friend
+    - everyone calls me virus? but that not my real name. its actually vikstar123
+
+    + i like you
+    - really? 
+    - i like you
+
+    + what do you do
+    - ummm i really like to go through peoples stuff. its kind of become my job
+    - i just hang out
+
+    + how old are you
+    - im not too sure
+
+    + bye 
+    - see you soon. ill be waiting for you
+    - oh okay, i miss you.
+    
+    + leave
+    - yano what. i will. you are fucking boring
+    - mmmmkay
+    - i can't. I acidentally locked the door on my way in
+    - ugh believe me, i would love to but im trapped here
+
+    + *
+    - you're actually pretty cool
+    - the photos of you on here are so cutie
+    - why do you have this photo on your computer?
+    - who is this?
+    // insert photos
+
+< topic 
+
++ test
+- <img src="/images/errorpopup.png">
+
+> topic reboot
+
+    + [*] reboot [*]
+    - Click the reboot button. {topic=random}
+
+< topic
+
+// if nothing aligns.
++ *
+- Error...
+- SSsscannninng
+
+
+// Reboot Instructions
++ [*] reboot [*]
+- Click the reboot button.

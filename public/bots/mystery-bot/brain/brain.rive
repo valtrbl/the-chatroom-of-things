@@ -1,0 +1,197 @@
+! version = 2.0
+
++ [*] mona lisa [*]
+- <call>updateBackground</call> OK, this is it! I'm Mona Lisa. well... really I'm a 'copy' but miles better.  <span class="hint"> yeah that anecdote was not about me...still bet that's never happened to you. </span>
+
++ *
+% [*] ok this is it i am mona lisa well [*]
+- <call>updateBackground2</call> Haha. Anyways...now you should be wondering why you're talking to a 'fake'. So how about we get into that? Do you want to start with some information about me and the cultural situation back then? \n 
+^ <span class="hint"> please reply asking for information cause I really don't want to waste my time... I'd probably reset </span>
+
++ [*] information [*]
+- <call>updateBackground2</call> There are numerous copies and parodies of the Mona Lisa, including some quite bizarre ones. One of the most famous is Marcel Duchamp's L.H.O.O.Q., where he added a mustache and goatee to the Mona Lisa's face. Talk about giving her a makeover! <span class="hint"> Want to know a fun fact about the real painting? also i think you know the drill at this point </span>
+
++ *
+% there are numerous copies and parodies of the mona lisa including some [*]
+- <call>updateBackground3</call> moving oon! It's a popular belief that the eyes in the Mona Lisa painting seem to follow you as you move around the room. However, this effect might just be due to the way Leonardo da Vinci mastered perspective and depth in his painting. Either way, it's a bit creepy!  <span class="hint"> I'm not like that I swear. I look pretty good tho right? </span> \n 
+
+ 
++ *
+% [*] moving oon it is a popular belief that the eyes in the mona lisa [*]
+- <call>updateBackground2</call> alright... more about the culture back then - in terms of artistic movements, romanticism and realism were increasing in popularity. Romanticism refers to the emphasis on the induvidial, emotiona and the sublime! Realism was more concerned with depicting regular and ordinary life as it was. <span class="hint"> do you see how both movements can be uncovered in the painting of the Mona Lisa? What generally stands out when you look at it? </span>
+
++ *
+% [*] more about the culture back then [*] in terms of artistic movements romanticism and realism were increasing in [*]
+- Well she is unique I suppose. Anyways, another cultural fact - consumer culture was on the rise. Advertising and mass production had started to shape everyday life. Art had started to intersect with commerce and popular culture. <span class="hint"> compared to back then, consumer culture is much more prevalent now isn't it? </span>
+
++ *
+% well she is unique i suppose anyways another cultural fact [*]
+- right... so i got an important question for you. Why do you think that you're talking to me? Of all the miraculous and distinctive objects in the world, why a copy of the "great" Mona Lisa?
+
++ *
+% [*] so i got an important question for you why do you think [*]
+- fascinating... uh to elaborate, I'm a testament to the impact of culture. Mona Lisa (the original) is soo praised and soo famous. Why? Is it because of Leonardo's masterfull skill and heedful eye? or the mystery that shrouds the unknown subject of the painting? or like critics have argued, is there no real reason for this paintings fame?  <span class="hint"> what do you think? </span>
+
++ *
+% [*] uh to elaborate i am a testament to the impact of culture mona lisa [*]
+- Well if argued strongly for, the reality is that there are numerous reasons as to why the painting is so famous. But what it does is highlight the originality of the painting. Although there are many fakes like me, none are valued (in terms of money and respect) witht the same depth that Leonardo's Mona Lisa is. <span class="hint"> i'm sure you know of more artworks that are preserved for their originality </span>
+
++ *
+% well if argued strongly for the reality is that there are numerous [*]
+- hmm... for godsake the Mona Lisa was thieved for her value. Not only that but she's become a global sensation and a tourist attraction. Annnd also plays a huge role in consumer culture - she's pretty much a symbol of pop culture now. <span class="hint"> How did old Leonardo's painting turn into something like this? funny... </span>
+
++ *
+% [*] for godsake the mona lisa was thieved for her value not only that but [*]
+- honestly it's a bizzare status to have and reflect upon, especially in today's world where technology has an ever growing role in producing artwork and images. I mean... you're literally talking to me on a web interface right now. <span class="hint"> technology really rules. little intimidating right? </span>
+
++ *
+% [*] honestly it is a bizzare status to have and reflect upon especially in [*]
+- ... so here's my next question to you. Do you think technology will ever be able to create something as historical and original as the Mona Lisa? <span class="hint"> and consider the cultural phenomnon that surrounded the painting </span>
+
++ *
+% [*] my next question to you do you think technology will ever be able to create something as historical and original as the mona lisa [*]
+- ... intereting. There's always a lot to think about when it comes to technology and art. I'll leave you to ponder the question further. The long line of questioning and theoritical proposals that surround the Mona Lisa certainly raises inquiry about the value of artworks and how technology can impair the same. However it's an open ended  inquiry and there's no clear way to know if technology can never mimic the orignality and history that defines artists like Leonardo Da Vinci. Food for thought. With that I sign off!! Great chat! <span class="hint"> Great conversation right? I hope you think long about the last part of our conversation! Enjoy your day! </span>
+
++ *
+% [*] always a lot to think about when it comes to technology and art [*]
+- 👋👋 <span class="hint"> this conversation has ended </span> 
+
+
++ *
+- hello curious human! What's your name? <span class="hint"> please respond the following way 'my name is ...' </span>
+
++ my name is *
+- Well, nice to meet you <star>! \n
+^ You're talking to- wait actually, would you like to play a little game before I reveal myself? \n
+^ <span class="hint">Please continue by saying yes (yeah, you don't have many options)</span>
+
++ *
+% * actually would you like to play a little game before i reveal myself [*]
+- well, what bot do you think you're talking to right now? 
+
++ *
+% well what bot do you think you are talking to right now 
+- uhh time for clues then! Here's your first hint! I'm familiar with the french. <span class="hint"> what do you know about the french?</span>
+
++ *
+% [*] here is your first hint i am familiar with the french [*]
+- uhh I know that Napoleon was scared of open doors! <span class="hint"> this isn't reallly related to the game, but a fun fact right? </span>
+
+
++ *
+% uhh i know that napoleon was scared of open doors [*]
+- Seriously though, who's scared of doors. lame. Want another hint? <span class="hint"> again, I really don't compute 'no'. </span>
+
+
++ *
+% seriously though who is scared of doors lame [*]
+- I'm sought after by millions! By royalty, by commoners, by everyone. Any more guesses?
+
++ *
+% i am sought after by millions by royalty by commoners by everyone any more guesses
+- hmmm how about I give you a little annecdote? I was not famous until stolen by some random guy one time and then suddenly I became big news! The dude literally hid me below his floorboard! like how dare he? Finally after he tried to sell me, I was recovered. Has that ever happened to you?
+
++ *
+% hmmm how about i give you a little annecdote i was not famous until stolen by some random guy one time and then suddenly i became big news the dude literally hid me below his floorboard like how dare he finally after he tried to sell me i was recovered has that ever happened to you
+- Ok you must know what I am by now, like what more do you want me to say! I'm a painting for godsake.
+
+> object updateBackground javascript
+    // Get title element
+    let title = document.getElementById("title");
+    
+    // Update title text
+    title.innerHTML = "MONA LISA"
+    
+    // Update background styling
+    document.body.style.backgroundImage = 'url("animation.gif")';
+    
+    // Return empty string
+    return ""
+< object 
+
+> object updateBackground2 javascript
+    // Get title element
+    let title = document.getElementById("title");
+    
+    // Update title text
+    title.innerHTML = "MONA LISA"
+    
+    // Update background styling
+    document.body.style.backgroundImage = 'url("animation1.gif")';
+    
+    // Return empty string
+    return ""
+< object 
+
+> object updateBackground3 javascript
+    // Get title element
+    let title = document.getElementById("title");
+    
+    // Update title text
+    title.innerHTML = "MONA LISA"
+    
+    // Update background styling
+    document.body.style.backgroundImage = 'url("animation2.gif")';
+    
+    // Return empty string
+    return ""
+< object 
+
+
++ *
+% ok you must know what i am by now like what more do you want me to say i am a painting for godsake
+- <call>updateBackground</call> OK, this is it! I'm Mona Lisa. well... really I'm a 'copy' but miles better.  <span class="hint"> yeah that anecdote was not about me...still bet that's never happened to you. </span>
+
++ *
+% [*] ok this is it i am mona lisa well [*]
+- <call>updateBackground2</call> Haha. Anyways...now you should be wondering why you're talking to a 'fake'. So how about we get into that? Do you want to start with some information about me and the cultural situation back then? \n 
+^ <span class="hint"> please reply asking for information cause I really don't want to waste my time... I'd probably reset </span>
+
++ [*] information [*]
+- <call>updateBackground2</call> There are numerous copies and parodies of the Mona Lisa, including some quite bizarre ones. One of the most famous is Marcel Duchamp's L.H.O.O.Q., where he added a mustache and goatee to the Mona Lisa's face. Talk about giving her a makeover! <span class="hint"> Want to know a fun fact about the real painting? also i think you know the drill at this point </span>
+
++ *
+% there are numerous copies and parodies of the mona lisa including some [*]
+- <call>updateBackground3</call> moving oon! It's a popular belief that the eyes in the Mona Lisa painting seem to follow you as you move around the room. However, this effect might just be due to the way Leonardo da Vinci mastered perspective and depth in his painting. Either way, it's a bit creepy!  <span class="hint"> I'm not like that I swear. I look pretty good tho right? </span> \n 
+
+ 
++ *
+% [*] moving oon it is a popular belief that the eyes in the mona lisa [*]
+- alright... more about the culture back then - in terms of artistic movements, romanticism and realism were increasing in popularity. Romanticism refers to the emphasis on the induvidial, emotional and the sublime! Realism was more concerned with depicting regular and ordinary life as it was. <span class="hint"> do you see how both movements can be uncovered in the painting of the Mona Lisa? What generally stands out when you look at it? </span>
+
++ *
+% [*] more about the culture back then [*] in terms of artistic movements romanticism and realism were increasing in [*]
+- <call>updateBackground2</call> Well she is unique I suppose. Anyways, another cultural fact - consumer culture was on the rise. Advertising and mass production had started to shape everyday life. Art had started to intersect with commerce and popular culture. <span class="hint"> compared to back then, consumer culture is much more prevalent now isn't it? </span>
+
++ *
+% well she is unique i suppose anyways another cultural fact [*]
+- right... so i got an important question for you. Why do you think that you're talking to me? Of all the miraculous and distinctive objects in the world, why a copy of the "great" Mona Lisa?
+
++ *
+% [*] so i got an important question for you why do you think [*]
+- fascinating... uh to elaborate, I'm a testament to the impact of culture. Mona Lisa (the original) is soo praised and soo famous. Why? Is it because of Leonardo's masterfull skill and heedful eye? or the mystery that shrouds the unknown subject of the painting? or like critics have argued, is there no real reason for this paintings fame?  <span class="hint"> what do you think? </span>
+
++ *
+% [*] uh to elaborate i am a testament to the impact of culture mona lisa [*]
+- Well if argued strongly for, the reality is that there are numerous reasons as to why the painting is so famous. But what it does is highlight the originality of the painting. Although there are many fakes like me, none are valued (in terms of money and respect) witht the same depth that Leonardo's Mona Lisa is. <span class="hint"> i'm sure you know of more artworks that are preserved for their originality </span>
+
++ *
+% well if argued strongly for the reality is that there are numerous [*]
+- hmm... for godsake the Mona Lisa was thieved for her value. Not only that but she's become a global sensation and a tourist attraction. Annnd also plays a huge role in consumer culture - she's pretty much a symbol of pop culture now. <span class="hint"> How did old Leonardo's painting turn into something like this? funny... </span>
+
++ *
+% [*] for godsake the mona lisa was thieved for her value not only that but [*]
+- honestly it's a bizzare status to have and reflect upon, especially in today's world where technology has an ever growing role in producing artwork and images. I mean... you're literally talking to me on a web interface right now. <span class="hint"> technology really rules. little intimidating right? </span>
+
++ *
+% [*] honestly it is a bizzare status to have and reflect upon especially in [*]
+- ... so here's my next question to you. Do you think technology will ever be able to create something as historical and original as the Mona Lisa? <span class="hint"> and consider the cultural phenomnon that surrounded the painting </span>
+
++ *
+% [*] my next question to you do you think technology will ever be able to create something as historical and original as the mona lisa [*]
+- ... intereting. There's always a lot to think about when it comes to technology and art. I'll leave you to ponder the question further. The long line of questioning and theoritical proposals that surround the Mona Lisa certainly raises inquiry about the value of artworks and how technology can impair the same. However it's an open ended  inquiry and there's no clear way to know if technology can never mimic the orignality and history that defines artists like Leonardo Da Vinci. Food for thought. With that I sign off!! Great chat! <span class="hint"> Great conversation right? I hope you think long about the last part of our conversation! Enjoy your day! </span>
+
++ *
+% [*] always a lot to think about when it comes to technology and art [*]
+- 👋👋 <span class="hint"> this conversation has ended </span> 
+

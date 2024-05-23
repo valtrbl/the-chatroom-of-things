@@ -1,0 +1,649 @@
+! version = 2.0
+! local concat = space
+
+> object subtractSeconds javascript
+    subtractSeconds(60)
+    return '';
+< object
+
+> object addSeconds javascript
+    addSeconds(30)
+    return '';
+< object
+
+> object killcommand javascript
+    subtractSeconds(999)
+    return '';
+< object
+
+> object wincondition javascript
+    wincondition()
+    return '';
+< object
+
++ killcommand
+- You got it boss! o7 <call>killcommand</call>
+
++ wincommand
+- Yippee, you won! <call>wincondition</call>
+
++ passcode
+- <span class="actions"> (Press ENTER to continue) </span> {topic=endpasscode}
+
++ *
+- "Hi!! Welcome to Bomb Defusal, new recruit." \n
+^ \n
+^ "We got a Code Red on our hands. Right next to you lays a bomb that is going to explode!" \n
+^ \n
+^ Your task is to answer every question right and enter the right code to defuse the bomb. Or we both die!
+^ <span class="actions"> (Press ENTER to continue) </span> {topic=sarge}
+
+> topic sarge
+    + *
+    - "You heard me right, the bomb will explode if you make any mistakes!" \n
+    ^ \n
+    ^ "Are you ready?" \n
+    ^ <span class="actions"> Yes or No </span>
+
+    + [*] (ready|yes|yeah|yea|ok|sure|mhm) [*]
+    - "Good. What's your name, recruit?" {topic=givenname}
+
+    + [*] (no|nah|not) [*]
+    - "No choice, newbie. Otherwise your gravestone won't have a name on it. Now I repeat: Are you ready?
+< topic
+
+> topic givenname
+    + [my name is] *
+    - <set name=<formal>> "Alright <get name>. We won't forget you
+    ^ if you fail." \n
+    ^ <span class="actions"> (Press ENTER to continue) </span> {topic=bombintro}
+< topic
+
+> topic bombintro
+    + *
+    - "Hi!" An automated recording proceeds to play. \n
+    ^ "Are you the right person to defuse that device?" \n
+    ^ <span class="actions"> Yes or No </span>
+
+    + [*] (yes|yeah|yea|mhm|sure|ok|okay) [*]
+    - "Great! We'll soon find out whether you are..." 
+    ^ <span class="actions"> (Press ENTER to continue) </span> {topic=quiztime}
+
+    + [*] (no|nah|not) [*]
+    - "Well then... Thanks you have just signed our death certificates." \n
+    ^ <span class="actions"> - 1 MINUTE ON THE CLOCK </span> <call>subtractSeconds</call>
+    ^ <span class="actions"> (Press ENTER to continue) </span> {topic=quiztime} 
+
+> topic quiztime
+    + *
+    - "Anyways, We are being tested right at this moment! You will be asked
+    ^ questions and you have to answer them. Cool?" \n
+    ^ <span class="actions"> Yes or No </span>
+
+    + [*] (yes|yeah|yea|mhm|sure|ok|okay) [*]
+    - "Cool! Onto question 1!" \n
+    ^ <span class="actions"> (Press ENTER to continue) </span> {topic=question1}
+
+    + [*] (no|nah|not) [*]
+    - "Don't care! Onto question 1!"
+    ^ <span class="actions"> (Press ENTER to continue) </span> {topic=question1}
+< topic
+
+> topic question1
+    + *
+    - TWO TRUTHS, ONE LIE - Which one is the lie? \n
+    ^ \n
+    ^ 1. Bombs are commonly used in the demolition of buildings
+    ^ and mining operations. \n
+    ^ \n
+    ^ 2. The UK has approximately 200 nuclear warheads in its arsenal. \n
+    ^ \n
+    ^ 3. The bomb dropped on Hiroshima was the biggest nuclear bomb
+    ^ to exist. {topic=q1answers} {weight=3}
+    - TWO TRUTHS, ONE LIE - Which one is the lie? \n
+    ^ \n
+    ^ 1. The term bomb originates from the Latin word "bombus" \n
+    ^ \n 
+    ^ 2. Bombs have been used in warfare since ancient times, with evidence 
+    ^ dating back to ancient China. \n
+    ^ \n
+    ^ 3. The first recorded use of an explosive in large quantities occured
+    ^ during the Renaissance period in Europe. {topic=q1answers} {weight=3}
+    - TWO TRUTHS, ONE LIE - Which one is the lie? \n
+    ^ \n
+    ^ 1. Computer viruses are also known as "Cyber Bombs". \n
+    ^ \n 
+    ^ 2. The US is the largest purchaser of explosives in the world. \n
+    ^ \n
+    ^ 3. Kamikaze pilots used bombs to cause bigger explosions on impact.
+    ^ {topic=q1answers} {weight=3}
+< topic
+
+> topic q1answers
+    + [*] 3 [*]
+    - "Correct-a-mundo! Onto question 2!" 
+    ^ <span class="actions"> +30 SECONDS ON THE CLOCK </span> 
+    ^ <span class="actions"> (Press ENTER to continue) </span> {topic=question2}<call>addSeconds</call>
+
+    + [*] (1|2) [*]
+    - "WRONG! TRY AGAIN!" \n
+    ^ <span class="actions"> -1 MINUTE ON THE CLOCK </span><call>subtractSeconds</call>
+< topic
+
+> topic question2
+    + *
+    - QUESTION 2 \n
+    ^ Choose the correct answer. \n
+    ^ \n
+    ^ Which war used the most bombs in the entirety of the conflict? \n
+    ^ \n
+    ^ 1. Korean war (1950-1951) \n
+    ^ 2. Vietnam War (1955-1975) \n
+    ^ 3. Iraq War (2003-2011) \n
+    ^ 4. War against ISIS (2015-ongoing) {topic=q2answers} {weight=3}
+    - QUESTION 2 \n
+     ^ Choose the correct answer. \n
+    ^ \n
+    ^ What was the largest bomb detonated in history? \n
+    ^ \n
+    ^ 1. Little Boy (Hiroshima) \n
+    ^ 2. TSAR Bomb (USSR) \n
+    ^ 3. Fat Man (Nagasaki) \n
+    ^ 4. FOAB (Father of All Bombs) {topic=q2answers} {weight=3}
+    - QUESTION 2 \n
+    ^ Choose the correct answer. \n
+    ^ \n
+    ^ Which country has the most bomb shelters? \n
+    ^ \n
+    ^ 1. Germany \n
+    ^ 2. Switzerland \n
+    ^ 3. United States \n
+    ^ 4. South Korea {topic=q2answers} {weight=3}
+
+< topic 
+   
+
+> topic q2answers
+ 
+     + [*] 2 [*]
+    - "Wonderfull! Onto question 3!" 
+    ^ <span class="actions"> +30 SECONDS ON THE CLOCK </span> 
+    ^ <span class="actions"> (Press ENTER to continue) </span> {topic=question3info} <call>addSeconds</call>
+
+    + [*] (1|3|4) [*]
+    - "WRONG! TRY AGAIN!" \n
+    ^ <span class="actions"> -1 MINUTE ON THE CLOCK </span><call>subtractSeconds</call>
+
+< topic
+
+> topic question3info
+     + *
+    - QUESTION 3 \n
+    ^ This question is important so pay attention.. \n
+    ^ \n
+    ^ At the end of this question you will get a a single digit \n
+    ^ which will be the first digit of 4 for your final passcode so pay attention.
+    ^ <span class="actions"> (Press ENTER to continue) </span> {topic=question3}
+
+< topic
+
+> topic question3
+    + *
+    - QUESTION 3 \n
+    ^ True or False? \n
+    ^ \n
+    ^ Chemical/Biological bombs are perfectly legal to use in war. {topic=q3answers} {weight=3}
+    - QUESTION 3 \n
+    ^ True or False? \n
+    ^ \n
+    ^ Bombing campains are often accompanied by propaganda efforts \n
+    ^ to justify the attacks and undermine the enemy's morale. {topic=q3answers} {weight=3}
+    - QUESTION 3 \n
+    ^ True or False? \n
+    ^ \n
+    ^ Sniffer dogs can be used alongside bomb disposal units {topic=q3answers} {weight=3}
+
+< topic 
+   
+
+> topic q3answers
+ 
+     + [*] false [*]
+    - "You must be a true war hero! Onto question 4!" \n
+    ^ But first your first number to dismantle the bomb.
+    ^ <span class="actions"> +30 SECONDS ON THE CLOCK </span> 
+    ^ <span class="actions"> (Press ENTER to continue) </span> {topic=questionpasscode1} <call>addSeconds</call>
+
+    + [*] true [*]
+    - "WRONG! TRY AGAIN!" \n
+    ^ <span class="actions"> -1 MINUTE ON THE CLOCK </span><call>subtractSeconds</call>
+
+< topic
+
+> topic questionpasscode1
+     + *
+    - YOUR FIRST PASSCODE DIGIT IS 7\n
+    ^ 7 _ _ _ \n
+    ^ Keep that in mind! 
+    ^ <span class="actions"> (Press ENTER to continue) </span> {topic=question4}
+
+    <topic
+
+> topic question4
+    + *
+    - QUESTION 4 \n
+    ^ Since you're getting good at history let's switch topics AHAHHAH \n
+    ^ Choose the right answer. \n
+    ^ \n
+    ^ Which football teams did Cristiano Ronaldo NOT play for? \n
+    ^ \n
+    ^ 1. Real Madrid \n
+    ^ 2. Manchester United \n
+    ^ 3. Sporting Lisbon \n
+    ^ 4. Bayern Munich {topic=q4answers} {weight=3}
+    - QUESTION 4 \n
+    ^ Since you're getting good at history let's switch topics AHAHHAH \n
+    ^ Choose the right answer. \n
+    ^ \n 
+    ^ Which one of these famous F1 drivers has the most Grand Prix's? \n
+    ^ \n
+    ^ 1. Michael Schumacher \n
+    ^ 2. Max Verstappen \n
+    ^ 3. Charles Leclerc \n 
+    ^ 4. Lewis Hamilton \n {topic=q4answers} {weight=3}
+   - QUESTION 4 \n
+    ^ Since you're getting good at history let's switch topics AHAHHAH \n
+    ^ Choose the right answer. \n
+    ^ \n 
+    ^ Which one of these famous Basketballers is famous for their \n
+    ^ Nike brand deal and considered the best of all time? \n
+    ^ \n
+    ^ 1. Larry Bird \n
+    ^ 2. Shaquille O'Neal \n
+    ^ 3. James Harden \n 
+    ^ 4. Michael Jordan \n {topic=q4answers} {weight=3} 
+
+< topic 
+   
+
+> topic q4answers
+ 
+     + [*] 4 [*]
+    - "Well done <get name>! Onto question 5!" 
+    ^ <span class="actions"> +30 SECONDS ON THE CLOCK </span> 
+    ^ <span class="actions"> (Press ENTER to continue) </span> {topic=question5} <call>addSeconds</call>
+
+    + [*] (1|2|3) [*]
+    - "WRONG! TRY AGAIN!" \n
+    ^ <span class="actions"> -1 MINUTE ON THE CLOCK </span><call>subtractSeconds</call>
+
+< topic
+
+> topic question5
+    + *
+    - QUESTION 5 \n
+    ^ I really need to test you a bit more.. \n
+    ^ Choose the right answer. \n
+    ^ \n
+    ^ Which country won the FIFA World Cup in 2022? \n
+    ^ \n
+    ^ 1. Argentina \n
+    ^ 2. Germany \n
+    ^ 3. France {topic=q5answers} {weight=3}
+    - QUESTION 5 \n
+    ^ I really need to test you more.. \n
+    ^ Choose the right answer. \n
+    ^ \n 
+    ^ What country does Usain Bolt come from? \n
+    ^ \n
+    ^ 1. Jamaica \n
+    ^ 2. Great Britain \n
+    ^ 3. United States {topic=q5answers} {weight=3}
+   - QUESTION 5 \n
+    ^ I really need to test you more huh. \n
+    ^ Choose the right answer. \n
+    ^ \n 
+    ^ Which one of these famous swimmers is the most decorated ? \n
+    ^ \n
+    ^ 1. Michael Phelps \n
+    ^ 2. Grant Hackett \n
+    ^ 3. Sun Yang {topic=q5answers} {weight=3} 
+
+< topic 
+   
+
+> topic q5answers
+ 
+     + [*] (1|jamaica|argentina|phelps|michael) [*]
+    - "You must follow sports huh! Onto question 6!" 
+    ^ <span class="actions"> +30 SECONDS ON THE CLOCK </span> 
+    ^ <span class="actions"> (Press ENTER to continue) </span> {topic=question6} <call>addSeconds</call>
+
+    + [*] (2|3) [*]
+    - "WRONG! TRY AGAIN!" \n
+    ^ <span class="actions"> -1 MINUTE ON THE CLOCK </span><call>subtractSeconds</call>
+
+< topic
+
+> topic question6
+    + *
+    - QUESTION 6 \n
+    ^ You will receive your second digit for the passcode after this question\n
+    ^ Choose the right answer. \n
+    ^ \n
+    ^ Which country is the famous NBA located? \n
+    ^ \n
+    ^ 1. Great Britain \n
+    ^ 2. United States \n
+    ^ 3. Canada {topic=q6answers} {weight=3}
+    - QUESTION 6 \n
+    ^ You will receive your second digit for the passcode after this question \n
+    ^ Choose the right answer. \n
+    ^ \n 
+    ^ How often does a World Cup take place? \n
+    ^ \n
+    ^ 1. Every year \n
+    ^ 2. Every 4 years \n
+    ^ 3. Every 2 years {topic=q6answers} {weight=3}
+   - QUESTION 6 \n
+    ^ You will receive your second digit for the passcode after this question \n
+    ^ Choose the right answer. \n
+    ^ \n 
+    ^ How many teams are the in the English Premier League? \n
+    ^ \n
+    ^ 1. 18 \n
+    ^ 2. 20 \n
+    ^ 3. 22 {topic=q6answers} {weight=3} 
+
+< topic 
+
+> topic q6answers
+ 
+     + [*] (2) [*]
+    - "You must follow sports huh! Here's your passcode I guess!" 
+    ^ <span class="actions"> +30 SECONDS ON THE CLOCK </span> 
+    ^ <span class="actions"> (Press ENTER to continue) </span> {topic=questionpasscode2} <call>addSeconds</call>
+
+    + [*] (1|3) [*]
+    - "WRONG! TRY AGAIN!" \n
+    ^ <span class="actions"> -1 MINUTE ON THE CLOCK </span><call>subtractSeconds</call>
+
+< topic
+
+> topic questionpasscode2
+     + *
+    - YOUR SECOND PASSCODE DIGIT IS 5\n
+    ^ _ 5 _ _ \n
+    ^ Keep that in mind! 
+    ^ <span class="actions"> (Press ENTER to continue) </span> {topic=question7}
+
+< topic
+
+ > topic question7
+    + *
+    - QUESTION 7 \n
+    ^ Two truths, One lie, Choose the lie. \n
+    ^ \n
+    ^ 1. Shortest War lasted less than an hour. \n
+    ^ \n
+    ^ 2. Longest war lasted 200 years between the Roman Empire and Mongol Empire. \n
+    ^ \n
+    ^ 3. The first use of tanks was in 1916 by the British.  {topic=q7answers} {weight=3}
+    - QUESTION 7 \n
+    ^ Two truths, One lie, Choose the lie. \n
+    ^ \n 
+    ^ 1. Elephants have been used in warfare since 4th century BCE. \n
+    ^ \n
+    ^ 2. Military horses are now prohibited from being used in war \n
+    ^ \n
+    ^ 3. The Polish have used a bear to help them fight the second world war. {topic=q7answers} {weight=3}
+   - QUESTION 7 \n
+    ^ Two truths, One lie, Choose the lie. \n
+    ^ \n 
+    ^ 1. Viet Cong have used an extensive network of tunnels during the Vietnam war to win against the US \n
+    ^ \n
+    ^ 2. The Roman Empire is a mytholigical empire. \n
+    ^ \n
+    ^ 3. The nazis have launched a bombing campain in WW2 named the "Blitz". {topic=q7answers} {weight=3} 
+
+< topic 
+
+> topic q7answers
+ 
+     + [*] (2) [*]
+    - "Alright <get name> you're getting good at this! Onto question 8!" 
+    ^ <span class="actions"> +30 SECONDS ON THE CLOCK </span> 
+    ^ <span class="actions"> (Press ENTER to continue) </span> {topic=question8} <call>addSeconds</call>
+
+    + [*] (1|3) [*]
+    - "GET IT RIGHT OR YOU'RE GONNA FAIL US <get name>" \n
+    ^ <span class="actions"> -1 MINUTE ON THE CLOCK </span> <call>subtractSeconds</call>
+
+< topic
+
+> topic question8
+    + *
+    - QUESTION 8 \n
+    ^ True or False \n
+    ^ \n
+    ^ Germany Surrendered World War 2 because of Adolf Hitler's suicide {topic=q8answers} {weight=3}
+    - QUESTION 8 \n
+    ^ True or False \n
+    ^ \n 
+    ^ Winston Churchill was the Prime Minister during World War 2 {topic=q8answers} {weight=3}
+   - QUESTION 8 \n
+    ^ True or False \n
+    ^ \n 
+    ^ Anne Frank is well known for her diary and story writing at the nazi concentration camps {topic=q8answers} {weight=3} 
+
+< topic 
+
+> topic q8answers
+ 
+     + [*] true [*]
+    - "Alright <get name> you're getting good at this! Onto question 9!" 
+    ^ <span class="actions"> +30 SECONDS ON THE CLOCK </span> 
+    ^ <span class="actions"> (Press ENTER to continue) </span> {topic=question9} <call>addSeconds</call>
+
+    + [*] false [*]
+    - "GET IT RIGHT OR YOU'RE GONNA FAIL US <get name>" \n
+    ^ <span class="actions"> -1 MINUTE ON THE CLOCK </span> <call>subtractSeconds</call>
+
+< topic
+
+> topic question9
+    + *
+    - QUESTION 9 \n
+    ^ True or False \n
+    ^ \n
+    ^ There are atleast 32 major live conflicts (war) as of right now. {topic=q9answers} {weight=3}
+    - QUESTION 9 \n
+    ^ True or False \n
+    ^ \n 
+    ^ 2 Billion people currently live in conflict (war) affected areas {topic=q9answers} {weight=3}
+   - QUESTION 9 \n
+    ^ True or False \n
+    ^ \n 
+    ^ Burma (Myanmar) has had a civil war for over 75 years {topic=q9answers} {weight=3} 
+
+< topic 
+
+> topic q9answers
+ 
+     + [*] true [*]
+    - "Alright <get name> here's your third digit.. you're almost there!" 
+    ^ <span class="actions"> +30 SECONDS ON THE CLOCK </span> 
+    ^ <span class="actions"> (Press ENTER to continue) </span> {topic=passcode3} <call>addSeconds</call>
+
+    + [*] false [*]
+    - "GET IT RIGHT OR YOU'RE GONNA FAIL US <get name>" \n
+    ^ <span class="actions"> -1 MINUTE ON THE CLOCK </span> <call>subtractSeconds</call>
+
+< topic
+
+> topic passcode3
+     + *
+    - YOUR THIRD PASSCODE DIGIT IS 8\n
+    ^ _ _ 8 _ \n
+    ^ Keep that in mind! 
+    ^ <span class="actions"> (Press ENTER to continue) </span> {topic=question10}
+
+< topic
+
+> topic question10
+    + *
+    - QUESTION 10 \n
+    ^ Who plays the famous role of Captain America in the Marvel Universe? \n
+    ^ \n
+    ^ 1. Chris Pratt \n
+    ^ 2. Chris Hemsworth \n
+    ^ 3. Chris Evans \n
+    ^ 4. Chris Brown {topic=q10answers} {weight=3}
+    - QUESTION 10 \n
+    ^ Who is the famous creator of the Marvel Universe? \n
+    ^ \n
+    ^ 1. Stephen King \n
+    ^ 2. J.K Rowling \n
+    ^ 3. Stan Lee \n
+    ^ 4. William Shakespeare {topic=q10answers} {weight=3}
+   - QUESTION 10 \n
+    ^ What is the name of Thor's hammer? \n
+    ^ \n
+    ^ 1. Odin \n
+    ^ 2. Asgard \n
+    ^ 3. Mjolnir \n
+    ^ 4. Ragnarok {topic=q10answers} {weight=3} 
+
+< topic 
+
+> topic q10answers
+ 
+     + [*] (3) [*]
+    - "Okay wow you're still going, good for you!" 
+    ^ <span class="actions"> +30 SECONDS ON THE CLOCK </span> 
+    ^ <span class="actions"> (Press ENTER to continue) </span> {topic=question11} <call>addSeconds</call>
+
+    + [*] (1|2) [*]
+    - "WRONG! TRY AGAIN!" \n
+    ^ <span class="actions"> -1 MINUTE ON THE CLOCK </span><call>subtractSeconds</call>
+
+< topic
+
+> topic question11
+    + *
+    - QUESTION 11 \n
+    ^ Which famous actor won the Oscars for his role in Batman: The Dark Knight? \n
+    ^ \n
+    ^ 1. Heath Ledger \n
+    ^ 2. Christian Bale \n
+    ^ 3. Morghan Freeman \n
+    ^ 4. Michael Caine {topic=q11answers} {weight=3}
+    - QUESTION 11 \n
+    ^ Which famous Fast and Furious actor has passed away recently (RIP) \n
+    ^ \n
+    ^ 1. Paul Walker \n
+    ^ 2. Vin Diesel \n
+    ^ 3. Jason Statham \n
+    ^ 4. Ludacris {topic=q11answers} {weight=3}
+   - QUESTION 11 \n
+    ^ Which actor has played 'Eleven' in Stranger Things? \n
+    ^ \n
+    ^ 1. Millie Bobby Brown \n
+    ^ 2. David Harbour \n
+    ^ 3. Finn Wolfhard \n
+    ^ 4. Ragnarok {topic=q11answers} {weight=3} 
+
+< topic 
+
+> topic q11answers
+ 
+     + [*] (1) [*]
+    - "Okay wow you're still going, good for you!" 
+    ^ <span class="actions"> +30 SECONDS ON THE CLOCK </span> 
+    ^ <span class="actions"> (Press ENTER to continue) </span> {topic=finalquestion} <call>addSeconds</call>
+
+    + [*] (3|2|4) [*]
+    - "WRONG! TRY AGAIN!" \n
+    ^ <span class="actions"> -1 MINUTE ON THE CLOCK </span><call>subtractSeconds</call>
+
+< topic
+
+> topic finalquestion
+     + *
+    - "WOW HOLY COW <get name>!!! THIS IS NOT A DRILL ITS THE LAST QUESTION!
+    ^ <span class="actions"> (Press ENTER to continue) </span> {topic=question12}
+
+< topic
+
+> topic question12
+    + *
+    - QUESTION 12 \n
+    ^ True or False \n
+    ^ \n
+    ^ Fast and Furious has been aired for 25 years already. {topic=q12answers} {weight=3}
+    - QUESTION 12 \n
+    ^ True or False \n
+    ^ \n 
+    ^ First Marvel comic was released in 1930 {topic=q12answers} {weight=3}
+   - QUESTION 12 \n
+    ^ True or False \n
+    ^ \n 
+    ^ The Hulk has only been played by one actor. {topic=q12answers} {weight=3} 
+
+< topic 
+
+> topic q12answers
+ 
+     + [*] false [*]
+    - "WOW!! <get name>, you got all the questions correct. WELL DONE!" 
+    ^ <span class="actions"> +30 SECONDS ON THE CLOCK </span> 
+    ^ <span class="actions"> (Press ENTER to continue) </span> {topic=passcode4} <call>addSeconds</call>
+
+    + [*] true [*]
+    - "GET IT RIGHT OR YOU'RE GONNA FAIL US <get name>" \n
+    ^ <span class="actions"> -1 MINUTE ON THE CLOCK </span> <call>subtractSeconds</call>
+
+< topic
+
+> topic passcode4
+     + *
+    - YOUR LAST PASSCODE DIGIT IS 2\n
+    ^ _ _ _ 2 \n
+    ^ <span class="actions"> (Press ENTER to continue) </span> {topic=end}
+
+< topic
+
+> topic end
+     + *
+    - WELL DONE <get name>! You have completed Bomb Defusal! Now all thats left to do is to simply enter the code from the questions! Be careful because if you enter WRONG
+    ^ the bomb WILL EXPLODE! \n 
+    ^ \n
+    ^ Enter the passcode in the form 0000 (Example) 
+    ^ <span class="actions"> Do not press ENTER until you have typed your answer! </span> {topic=endpasscode}
+
+< topic
+
+> topic endpasscode
+ 
+    +  [*] 7582 [*]
+    - "WELL DONE YOU HAVE COMPLETED BOMB DEFUSAL RECRUIT!" 
+    ^ <span class="actions"> (Press ENTER to continue) </span> {topic=winningscreen} <call>wincondition</call>
+
+    + #
+    - "WRONG! YOU LOST AND WE ARE GOING TO DIE!" \n\
+    ^ <span class="actions"> (Press ENTER to continue) </span> {topic=explosionscene} <call>killcommand</call>
+
+    + *
+    - THIS IS NOT A DRILL... TYPE IN THE NUMBER! {weight=20}
+    ^ <span class="actions"> -1 MINUTE ON THE CLOCK </span> <call>subtractSeconds</call>
+   
+
+< topic
+
+> topic winningscreen
+
+< topic
+
+> topic explosionscene
+
+< topic

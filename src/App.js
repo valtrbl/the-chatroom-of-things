@@ -114,7 +114,7 @@ const App = () => {
 
   useEffect(() => {
     const fetchTerms = () => {
-      fetch("history.json", {
+      fetch("data.json", {
         headers: {
           "Content-Type": "application/json",
           Accept: "application/json",
