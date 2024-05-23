@@ -1,0 +1,484 @@
+// conversation script is below
+// "start" auto-runs to begin the bot conversation 
+
++ start
+
+- <p class="body">Having served as a detective for a number of years, a new case is presented to you one afternoon. A murder took place on the 25th of April and you’ve been tasked with getting to the bottom of what took place. <b>A number of objects and possible murder weapons have been gathered together and it’s up to you to interrogate them, and piece together the events that took place, figuring out who- or what- dunnit. Do you think you can get to the bottom of it?</p>
+^ \n
+^ \n
+^ <button onclick="chatbot.getReply('yes')">"Yes"</button><br>
+^ \n
+^ <button onclick="chatbot.getReply('no')">"No"</button><br>
+
+
++no
+- <p class="body">Unfortunately, you’re contracted to a minimum of 40 hours a week, and as a detective the cases assigned to you are non-negotiable. Please work towards solving the case. Understood?</p>
+^ \n
+^ \n
+^ <button onclick="chatbot.getReply('yes')">Yes
+
++yes
+- <p class="body"> Within the evidence room lies a number of objects: a gun, a clock, a kitchen knife, a golf club, a pillow, and a mirror. The pillow catches your eye first, seeming to be an outlier when placed against all the other possible weapons. It promptly notices you taking an interest... \n
+^ \n
+^ <b>Pillow:</b> Afternoon detective, quite the shame we have to meet like this, not the usual... well, comfort, that I’ve become accustomed to after all these years. How may I be of assistance? 
+^ \n  
+^ \n
+^ <button onclick="chatbot.getReply('howd you end up wrapped up in this')">"How’d you end up wrapped up in this?"</button><br>
+^ \n
+^ <button onclick="chatbot.getReply('howd you end up wrapped up in this')">"Tell me, what’s your story? It seems in a room full of possible murder weapons everyone must have some story or another."</button><br>
+
++ howd you end up wrapped up in this
+- <p class="body"><b>Pillow:</b> <i>Such exquisite comfort. I’ve been imported here from India, you know. I’ve seen the world detective. Never did I think I’d end up in such a... dingy evidence locker. The clock had just struck 6 o’clock if my counting is correct. And I was stirred awake from my 14th nap of the day by a horrible sound. BANG, detective. A gunshot from the other room! And by the time I stirred awake I was dumbfounded to see a body on the bed. Hardly knew how he got there, seemed like he had quite the blow to the head too... shame that. I dread to think where they’ll put me now. Seven years I was there! On that bed! It was my home... You should have seen the sunset. The golden hours were marvelous, all I had to do was sit there and soak them up. Nothing to do with me detective... poor chap was long dead by the time I stirred awake. </i></p>
+^ \n
+^ <button onclick="chatbot.getReply('woah woah slow down there')">"Woah woah, slow down there, I can see that you consider yourself part of a certain class, but you wound up here which means you’re just as likely a culprit as anyone else. Now, how can it happen that a man ends up dead in your room without your realizing or waking up?"</button><br>
+ 
++ woah woah slow down there
+- <p class="body"> <b>Pillow:</b> <i>Detective, please. A luxury headpiece such as myself pays little interest to riff raff and commotion in ones household. I have one job, to comfort, and I do that well. I’m not easily distracted by the ongoings of others and when I’m sleeping, I’m not easily nor quickly awoken. </i>
+^ \n
+^ \n
+^ <button onclick="chatbot.getReply('no one else here')">"Alright, so are you telling me there’s no one else here that you’d want to point me in the direction of, in the interest of cooperation?"</button><br>
+^ \n
+^ <button onclick="chatbot.getReply('listen like you said')">"Listen, like you said, I’m the detective here, so I think I’ll be doing this job my own way, thank you very much."</button><br>
+
++ no one else here
+- <p class="body"><b>Pillow:</b> <i> What have I been doing if not cooperating, detective? Look over there- is that a common kitchen knife I see before me? Seems as good a suspect as any. </i>
+^ \n
+^ \n
+^ You look immediately to your left and are greeted by a kitchen knife. He quickly begins speaking to you before you have a chance to say anything. 
+^ \n
+^ \n  <b>Kitchen Knife:</b> Oi oi, right I gettcha, yea he’s brown bread, Don’t mean I ‘ad anythin’ to do wiv it innit? Everyone always looks at kitchen knife first.  Would ya Adam and Eve it? It’s them ‘orror flicks have painted us as the convenient killer. Cobblers tho tha’, now what do YA want?\n
+^ \n
+^ <button onclick="chatbot.getReply('where were you at the time of the murder')">"where were you at the time of the murder?"</button><br>
+^ \n
+^ <button onclick="chatbot.getReply('well the horror movies might have a point')">" Well… the horror movies might have a point. 'Psycho', 'Scream', its been proven over and over again that you’re capable of it!"</button><br>
+
+
++ listen like you said
+- <p class="body"> You look immediately to your left and are greeted by a kitchen knife. He quickly begins speaking to you before you have a chance to say anything. 
+^ \n
+^ \n <b>Kitchen Knife:</b> <i>Oi oi, right, I gettcha, yea he’s brown bread. Don’t mean I ‘ad anythin’ to do wiv it innit? Everyone always looks at kitchen knife first. Would ya Adam and Eve it? It’s them ‘orror flicks have painted us as the convenient killer. Cobblers tho tha’, now what do YA want?</i>\n
+^ \n
+^ <button onclick="chatbot.getReply('where were you at the time of the murder')">"where were you at the time of the murder?"</button><br>
+^ \n
+^ <button onclick="chatbot.getReply('well the horror movies might have a point')">" Well… the horror movies might have a point. Psycho, Scream, its been proven over and over again that you’re capable of it!"</button><br>
+
++ talk to the knife
+^ \n<b>Kitchen Knife:</b> <i>Oi oi, right, I gettcha, yea he’s brown bread. Don’t mean I ‘ad anythin’ to do wiv it innit? Everyone always looks at kitchen knife first. Would ya Adam and Eve it? It’s them ‘orror flicks have painted us as the convenient killer. Cobblers tho tha’, now what do YA want?</i>\n
+^ \n
+^ <button onclick="chatbot.getReply('where were you at the time of the murder')">"Where were you at the time of the murder?"</button><br>
+^ \n
+^ <button onclick="chatbot.getReply('well the horror movies might have a point')">" Well… the horror movies might have a point. 'Psycho', 'Scream', it's been proven over and over again that you’re capable of it!""</button><br>
+
++ where were you at the time of the murder
+- <p class="body"><b>Kitchen Knife:</b> <i>Me? I was in the knife block where I belong! Obviously you’d pick me out! Stereotypical kitchen knife! I’m obviously being profiled, the only thing I've ever stabbed in my life is into the occasional christmas turkey! What is it with you detectives and pointing fingers?</i> 
+^ \n
+^ \n
+^ <button onclick="chatbot.getReply('who do you think did it then')">"Who do you think did it then?""</button><br>
+
++ well the horror movies might have a point
+- <p class="body"><b>Kitchen Knife:</b> <i>Please! Your human fiction doesn’t define me!! But keep accusing me and I might have ya. I’m obviously being profiled, the only thing I've ever stabbed in my life is into the occasional christmas turkey! What is it with you detectives and pointing fingers?</i> 
+^ \n
+^ \n
+^ <button onclick="chatbot.getReply('who do you think did it then gun')">"Who do you think did it then?"</button><br>
+
++ who do you think did it then
+- <p class="body"><b>Kitchen Knife:</b> <i>Well ya see that smashed up clock there ay? I reckon he’s up to sommet, I see him all day everyday kickin about on the wall, and I’d bet ya could do more damage wiv him than ya could wiv me! He’s gotta be smashed up in here for a reason.</i> 
+^ \n
+^ \n
+^ <button onclick="chatbot.getReply('anything else you have to say')">"Anything else you have to say?"</button><br>
+^ \n
+^ <button onclick="chatbot.getReply('talk to the clock')">TALK TO THE CLOCK</button><br>
+
++ talk to the clock
+- <p class="body">You approach the clock in the corner of the room, its face is smashed and a bullet hole pierces its centre. It slowly ticks back and forth. 
+^ \n
+^ \n
+^ <button onclick="chatbot.getReply('its clear you had something to do with the events that took place')">"It’s clear you had something to do with the events that took place, what’s your story?"</button><br>
+^ \n
+^ <button onclick="chatbot.getReply('its clear you had something to do with the events that took place')">"What happend to you?"</button><br>
+
++its clear you had something to do with the events that took place
+- <p class="body"><p class="clock"><b>Clock:</b> <i>Betwixt life and death, I draw my final breath, soon to tick my final tock, say goodbye to this old clock.</i></p>
+^ \n
+^ <button onclick="chatbot.getReply('quite the beating youve taken')">"Quite the beating you’ve taken, almost like you’ve been used to kill someone... Anything to say?"</button><br>
+^ \n
+^ <button onclick="chatbot.getReply('quite the beating youve taken')">"Quit talking in rhymes and give it to me straight, what did you see take place?"</button><br>
+
++ quite the beating youve taken
+- <p class="body"><p class="clock"><b>Clock:</b> <i>In through the door, before I crash on the floor, one refuses the other's demands, and alas my fate was a bullet between the hands.</i></p>
+^ \n
+^ \n
+^ <button onclick="chatbot.getReply('so you say you were shot')">"So you say you were shot, what happened after that?"</button><br>
+
++ so you say you were shot
+- <p class="body"><p class="clock"><b>Clock:</b> <i>After a crash to the floor, I knew I was no more, then moments later on that dark and stormy night, my fate did blight as I took a flight. Across the room I flew, missing my target I tell you, and lying weak, but a shattered face, I reached my final resting place. Not moments passed, time moving fast, the intruder wielded the golf club, prolonging all the hubub.</i></p>
+^ \n
+^ \n
+^ <button onclick="chatbot.getReply('talk to the gun')">TALK TO THE GUN</button><br>
+
+
++ anything else you have to say
+- <p class="body"><b>Kitchen Knife:</b> <i>Nuthin’ for ya till ya got anythin on me.</i> 
+^ \n
+^ <button onclick="chatbot.getReply('talk to the clock')">TALK TO THE CLOCK</button><br>
+
+
++ who do you think did it then gun
+- <p class="body"><b>Kitchen Knife:<b> <i>I mean I can’t be the only one seein a gun over there, ay? Ya comin at me with bad-reputaion this, seen-it-in-the-movies that. But there’s a gun! I even heard a big fuckin bang at some point, why dontcha go check him out?</i> 
+^ \n
+^ \n
+^ <button onclick="chatbot.getReply('anything else you have to say gun')">"Anything else you have to say?"</button><br>
+^ \n
+^ <button onclick="chatbot.getReply('talk to the gun route 2')">TALK TO THE GUN</button><br>
+
++ anything else you have to say gun 
+- <p class="body"><b>Kitchen Knife:</b> <i>Nuthin’ for ya till ya got anythin on me.</i> 
+^ \n
+^ <button onclick="chatbot.getReply('talk to the gun route 2')">TALK TO THE GUN</button><br>
+
++ talk to the gun
+- <p class="body">You approach the gun layed out on a desk to your side, it's magazine has been removed and you can almost feel it's ego as you approach.
+^ \n
+^ \n
+^<b>Gun:</b> <i><b>BANG!</b> AND THE GUN ENTERS THE SCENE AT 1200 ROUNDS A MINUITE, <b>WHAT SAYS YA?</b></i>
+^ \n
+^ \n
+^ <button onclick="chatbot.getReply('what was your involvment in the murder')">"What was your involvement in the murder?"</button><br>
+^\n
+^ <button onclick="chatbot.getReply('the clock told me you shot him')">"The clock told me you shot him, there’s a bullet hole so it looks pretty clear he wasn’t lying, anything to say for yourself?"</button><br>
+
++ what was your involvment in the murder
+- <p class="body">SHOT THE CLOCK DIDNT I, WHAT ABOUT IT? JUST A SHAME I ENDED UP UNDER THE SOFA BEFORE I COULD DO ANY MORE DAMAGE, HEH.
+^ \n
+^ \n
+^ <button onclick="chatbot.getReply('You seem proud you shot the clock')">"You seem proud you shot the clock, but it doesn’t take a genius to assume he wasn’t the intended target. The clock was collateral, am I wrong?"</button><br>
+^ \n
+^ <button onclick="chatbot.getReply('howd you end up under the sofa')">"How’d you end up under the sofa?"</button><br>
+
++ talk to the gun route 2
+- <p class="body">You approach the gun layeds out on a desk to your side, it's magazine has been removed and you can almost feel it's ego as you approach.
+^ \n
+^ \n
+^<b>Gun:</b> <i><b>BANG!</b> AND THE GUN ENTERS THE SCENE AT 1200 ROUNDS A MINUITE, <b>WHAT SAYS YA?</b></i>
+^ \n
+^ \n
+^ <button onclick="chatbot.getReply('loud bang')">"I’ve been told there was a loud bang at some point during the events that took place, anything to say about that?"</button><br>
+^\n
+^ <button onclick="chatbot.getReply('you seem pretty capable')">"You seem pretty capable of doing some damage, how were you involved in the murder?"</button><br>
+
++ you seem pretty capable
+- <p class="body"><b>Gun:</b><i> FUCKIN RIGHT I CAN, DETECTIVE, YOU WANNA KNOW WHY THEY CALL ME  THE GLOCK GOD? LET ME LAY IT OUT FOR YOU, PENCIL PUSHER. I AIN'T YOUR AVERAGE PIECE OF METAL. I'M SLEEK, I'M MEAN, AND I'M FUCKIN LETHAL. I CAN SPIT OUT ROUNDS FASTER THAN YOU CAN SAY "DONUT BREAK." FIFTEEN ROUNDS OF PURE FURY PACKED INTO MY MAGAZINE. THAT'S FIFTEEN OPPORTUNITIES FOR ME TO PROVE WHY I'M THE BADDEST SON OF A GUN IN THIS ROOM. SO DON’T FUCK WIV ME DETECTIVE, GIMME SPECIFICS, WHADDA YA WANT?</i>
+^ \n
+^ \n
+^ <button onclick="chatbot.getReply('quite the attitude')">"Quite the attitude for a glock without a mag in, now what are ya saying here, was it you that fniished the job?"</button><br>
+
++ loud bang
+- <p class="body"><b>Gun:</b><i> YEA I MAY HAVE TRIGGERED ONE EVENT OR ANOTHER, WHADDA YA WANNA KNOW! </i>
+^ \n
+^ \n
+^ <button onclick="chatbot.getReply('quite the attitude')">"Quite the attitude for a glock without a mag in, now what are ya saying here, was it you that fniished the job?"</button><br>
+
++ quite the attitude
+- <p class="body"><b>Gun:</b><i> N-NAH NOT ME, BUT I COULD’VE! YOU EVER SEEN A BULLET DANCE, COPPER? THAT'S WHAT HAPPENS WHEN I'M ON THE TRIGGER. I CAN HIT A TARGET DEAD CENTER FROM YARDS AWAY, NO SWEAT. MY AIM'S SO DAMN PRECISE, IT'S LIKE I GOT A GPS IN MY BARREL. YEA I WAS THE FIRST THING USED, I CAME IN AND WAS GOIN FOR THE GUY, BUT HE 'AD SOME FIGHT IN HIM AND CAME FOR SOME SCRAPPIN, MEANT THAT I SHOT THE CLOCK INSTEAD OF HIM. GOT KICKED UNDER THE SOFA AFTER, TOO. GO TALK TO THE POOR TIK-TOCKIN BITCH, HE’LL SHOW YA HOW DEADLY I CAN BE. </i>
+^ \n
+^ \n
+^ <button onclick="chatbot.getReply('talk to the clock route 2')">"TALK TO THE CLOCK"</button><br>
+
++ talk to the clock route 2
+- <p class="body">You approach the clock in the corner of the room, its face’s been smashed and a bullet hole pierces it’s centre. It slowly ticks back and forth.
+^ \n
+^ \n
+^ <button onclick="chatbot.getReply('quite the state your in')">"Quite the state you’re in, the gun told me he shot you. What’s your story?"</button><br>
+^\n
+^ <button onclick="chatbot.getReply('quite the state your in')">"What happend to you?"</button><br>
+
++ quite the state your in
+- <p class="body"><p class="clock"><b>Clock:</b> <i>Betwixt life and death, I draw my final breath, soon to tick my final tock, say goodbye to this old clock.</i></p>
+^ \n
+^ <button onclick="chatbot.getReply('i can see youv been shot')">"I can see you’ve been shot, but something must've happened after that to put you in this state, almost like you’ve been used to kill someone... Anything to say?"</button><br>
+^ \n
+^ <button onclick="chatbot.getReply('i can see youv been shot')">"Quit talking in rhymes and give it to me straight, what did you see take place?"</button><br>
+
++ i can see youv been shot
+- <p class="body"><p class="clock"><b>Clock:</b> <i>In through the door, before I crash on the floor, one refuses the other's demands, and alas my fate was a bullet between the hands.</i></p>
+^ \n
+^ <button onclick="chatbot.getReply('i heard about the scuffle')">"I’ve heard about the scuffle that took place, bad luck for you. What happened after that?"</button><br>
+
++ i heard about the scuffle
+- <p class="body"><p class="clock"><b>Clock:</b> <i> After a crash to the floor, I knew I was no more, then moments later on that dark and stormy night, my fate did blight as I took a flight. Across the room I flew, missing my target I tell you, and lying weak, but a shattered face, I reached my final resting place. Not moments passed, time moving fast, t’was quite the hubub as the intruder wielded the golf club. </i>  
+^ \n
+^ <button onclick="chatbot.getReply('talk to golf club')">TALK TO THE GOLF CLUB</button><br>
+
+
++ the clock told me you shot him
+- <p class="body"><b>Gun:</b> <i>YEA I MAY HAVE TRIGGERED ONE EVENT OR ANOTHER, I DID, AND I DID A FUCKIN GOOD JOB OF IT, CLOCKS ALWAYS DO TICK ME OFF. HEH! SHAME I ENDED UP UNDER THE SOFA, WOULD’VE ENJOYED DOIN SOME MORE DAMAGE IF I COULD... </i>
+^ \n
+^ \n
+^ <button onclick="chatbot.getReply('You seem proud you shot the clock')">"You seem proud you shot the clock, but it doesn’t take a genius to assume he wasn’t the intended target. The clock was collateral, am I wrong?"</button><br>
+^ \n
+^ <button onclick="chatbot.getReply('howd you end up under the sofa')">"How’d you end up under the sofa?"</button><br>
++ you seem proud you shot the clock
+- <p class="body"><b>Gun:</b> <i> LETS GET ONE THING FUCKING CLEAR, “DETECTIVE”. I NEVER MISS, IF IT WAS UP TO ME I COULD'VE KILLED THE POOR GUY 5 TIMES OVER. BUT YOU AIN'T WRONG, YEA I WAS THE FIRST THING USED, I CAME IN AND WAS GOIN FOR THE GUY, BUT HE 'AD SOME FIGHT IN HIM AND CAME FOR SOME SCRAPPIN. MEAN THAT THE SHOT HIT THE CLOCK INSTEAD OF HIM. </i>
+^ \n
+^ \n
+^ <button onclick="chatbot.getReply('anything else to say')">"Anything else you have to say?"</button><br>
+
++ howd you end up under the sofa
+- <p class="body"><b>Gun:</b> <i> SHAME AIN'T IT? I ENDED UP ON THE FLOOR AND GOT KICKED UNDER THE SOFA, BASTARDS. </i>
+^ \n
+^ \n
+^ <button onclick="chatbot.getReply('You seem proud you shot the clock')">"You seem proud you shot the clock, but it doesn’t take a genius toassume he wasn’t the intended target. The clock was collateral, am i wrong?"</button><br>
+
++ anything else to say
+- <p class="body"><b>Gun:</b> <i> NAH! NOT ONCE I ENDED UP UNDER THE SOFA, COULDN'T SEE ANYTHIN THEN COULD I? </i>
+^ \n
+^ <button onclick="chatbot.getReply('talk to golf club')">TALK TO THE GOLF CLUB</button><br>
+
++ talk to golf club
+- <p class="body">The next item you approach is a golf club. It looks like he’s seen a fair bit of use in his time, but is relatively happy to speak with you.
+^ \n
+^ \n
+^ <button onclick="chatbot.getReply('i have it on good authority')">"I have it on good authority that you played a pretty major role in the second half of the events that took place here. Do you want to walk me through what happened?"</button><br>
+^ \n
+^ <button onclick="chatbot.getReply('i have it on good authority')">"You’re not looking nearly as rough as some of the other guys here, do you want to tell me why that is?"</button><br>
+
++ i have it on good authority
+- <p class="body">Sure thing sport, I can spill the ‘tee’ if you will. When it comes to conflicts, I always like to approach them with a 'fairway' mindset. Gotta keep things on the straight and narrow, you know? I tried to 'iron' out the differences between ‘ol knife and I but he just wouldn't 'steel' himself. Hah!
+^ \n
+^ \n
+^ <button onclick="chatbot.getReply('so your telling me that knife')">"So you’re telling me that the knife actually did play a part in all of this?"</button><br>
+^ \n
+^ <button onclick="chatbot.getReply('was it just you and knife')">"Was it just you and knife involved in this particular scuffle? Or is there anyone else you’d like to tell me about now?"</button><br>
+
++ was it just you and knife
+- <p class="body">Look, on my way into the bedroom me and mirror might’ve also had an unfortunate run in. But it wasn’t anything intentional, things got a bit heated between knife and me and I was swung into the mirror. Mirror wasn’t anything more than collateral.   ^ \n
+^ \n
+^ <button onclick="chatbot.getReply('interesting choice of words')">"Interesting choice of words... Collateral for what?"</button><br>
+
++ interesting choice of words 
+- <p class="body">Oh geez, I’m not doing myself any favors here. Look- er- lemme- hey, it was all over the place! How’d you excpect an old guy like me to remember what uhhhh, what happened? Look just talk to the knife, I feel I can’t be of anymore help to you.
+^ \n
+^ \n
+^ <button onclick="chatbot.getReply('talk to the knife again')">"TALK TO THE KNIFE AGAIN"</button><br>
+^ \n
+^ <button onclick="chatbot.getReply('all that and its just blank')">"Really? All that and then it’s just.. blank in your memory? Surely you can remember something more."</button><br>
+
++ all that and its just blank
+- <p class="body">*the golf club doesn’t respond*
+^ \n
+^ \n
+^ <button onclick="chatbot.getReply('talk to the knife again')">"TALK TO THE KNIFE AGAIN"</button><br>
+
++ so your telling me that knife 
+- <p class="body"> Why, he sure did! We ended up goin head to head in the kitchen, I said to the knife, 'Let's not turn this into a 'slice' of life drama, alright?’ But either way we ended up making our way from the kitchen into the bedroom.
+^ \n
+^ \n
+^ <button onclick="chatbot.getReply('talk to the knife again')">"TALK TO THE KNIFE AGAIN"</button><br>
+^ \n
+^ <button onclick="chatbot.getReply('can you walk me through how this fight ended')">"Interesting, and can you walk me through how this fight ended?"</button><br>
+
++can you walk me through how this fight ended
+- <p class="body">Well uhh, hey look. Lemme- there- it was all over the place! How’d you expect an old guy like me to remember what uhhhh, what happened? Look, just talk to the knife, I feel I can’t be of anymore help to you.
+^ \n
+^ \n
+^ <button onclick="chatbot.getReply('talk to the knife again')">"TALK TO THE KNIFE AGAIN"</button><br>
+^ \n
+^ <button onclick="chatbot.getReply('all that and its just blank')">"Really? All that and then it’s just.. blank in your memory? Surely you can remember something more."</button><br>
+
++ talk to the knife again
+- <p class="body">You approach the kitchen knife for the second time, he seems as standoffish as before but decidedly more nervous this time around. 
+^ \n
+^ \n
+^ <button onclick="chatbot.getReply('it seems for a knife that wasnt used')">"Well, it seems for a knife that wasn’t used you sure have a lot of involment in this case, are you gonna start being straight with me or keep beatin around the bush?"</button><br>
+^ \n
+^ <button onclick="chatbot.getReply('it seems for a knife that wasnt used')">"I know you lied to me, knife. Your name has come up one to many times for me to believe your story, so tell me. What really happened during the time of the murder?"</button><br>
+
++ it seems for a knife that wasnt used
+- <p class="body">Excuse you, alright what’s all this involvment you’ve eard then ay? I told ya where I were, and I ‘aint lyin I’m tellin ya!
+^ \n
+^ \n
+^ <button onclick="chatbot.getReply('thats not what ive been told by the club')">"That’s not what I’ve been told by the club. In fact, he detailed to me a pretty gritty fight between the two of you. Now I want you to start talking. "</button><br>
+
++ thats not what ive been told by the club
+ - <p class="body"> Alright, listen. I know what I said, but I was just looking out for myself. Sure I got involved, amongst all the fighting and the clock being thrown I got grabbed. But I was only used in self defense. There was a kerfuffle that led into the bedroom eventually but it was self defense, I promise ya! You can even talk to the mirror, she saw it all! 
+^ \n
+^ \n
+^ <button onclick="chatbot.getReply('talk to the mirror')">"TALK TO THE MIRROR"</button><br>
+^ \n
+^ <button onclick="chatbot.getReply('tell me how the fight ended')">"tell me how the fight ended"</button><br>
+
++ tell me how the fight ended 
+- <p class="body">Bit of a mystery that, innit. It was all a blur if I do say so meself. I mean one minute, like I said, I actually was in the knife block but- I mean- the fight was so brief that all I know is that I ended up on the bed. But it weren’t me I swear! Please, mate, do me a solid and talk to the mirror. I know how bad it looks.
+^ \n
+^ \n
+^ <button onclick="chatbot.getReply('neither you or the golf club')">"I find it interesting that neither you nor the golf club can detail exactly how the fight ended. Are you sure you can’t recall anything more?"</button><br>
+
++ neither you or the golf club
+- <p class="body">*the knife says nothing*
+^ \n
+^ \n
+^ <button onclick="chatbot.getReply('talk to the mirror')">"TALK TO THE MIRROR"</button><br>
+
++ talk to the mirror
+- <p class="body">you approach a fairly plain silver mirror. It’s glass face has been all but smashed to pieces, with only a few shards of glass remaining intact within its frame. The remainder of the glass that once made up its reflective surface sits beside it in an evidence bag. 
+^ \n
+^ \n
+^ <button onclick="chatbot.getReply('ive been hearing some things about you')">"Some things have come up  about you in this investigation, mirror. I know there was a hell of a fight in the bedroom with the knife and the golf club. So, let's hear it. What do you know? Start talking."</button><br>
+^ \n
+^ <button onclick="chatbot.getReply('hear some things about you')">"Know anything about a fight in the bedroom, mirror? Something clearly happened to you and I’m trying to get to the bottom of what happened."</button><br>
+
++ ive been hearing some things about you
+- <p class="body">Oh why take such a tone detective, can’t you see i’ve been injured?! Shattered to a million pieces! What ever will I do now? But yes, if you must know, there was a fight in the bedroom.
+^ \n
+^ \n
+^ <button onclick="chatbot.getReply('let me rephrase')">"Apologies, let me rephrase that. If you can confirm there was a fight in the bedroom, what did you see take place?"</button><br>
+^ \n
+^ <button onclick="chatbot.getReply('let me rephrase')">"All I want is to get to the bottom of what happened here, so excuse my abrasivness. But this is important, what happened during the fight?"</button><br>
+
++ hear some things about you
+- <p class="body">Oh Detective! It’s true, it’s true, there was a loud, horrible fight in the bedroom, and look what happened detective, my gorgeous face has been smashed! To pieces! what will I ever do now?
+^ \n
+^ \n
+^ <button onclick="chatbot.getReply('let me rephrase')">"You can start by telling me what you did see?"</button><br>
+^ \n
+^ <button onclick="chatbot.getReply('let me rephrase')">"Interesting, and how did you end up like that?"</button><br>
+
++let me rephrase
+- <p class="body">Well, well, oh to cast my mind back to such horrors! Excuse my lack of bravery detective, it was just such a fiasco. I was merely sitting on the chest of drawers you see, just minding my own business. Me and the pillow were making our usual evening conversation when we both heard the most awful bang!     
+^ \n
+^ \n
+^ <button onclick="chatbot.getReply('talking to the pillow huh')">"Talking to the pillow huh? I seem to recall that he made it very clear to me that he was asleep right up until a body landed on the bed. Do continue..."</button><br>
+
++ talking to the pillow huh
+- <p class="body">Right, right of course! Well, not long after the two came in shouting and fighting- oh detective! I couldn’t believe it! They had the golf club and the knife and- and, well it was all over the place! But eventually the one with the golf club got a hit in, and knocked the other one on the bed! Lifeless! I’m afraid however I can’t help you much after that. There was so much happening at once, and with the same swing that sent the poor fellow onto the bed I got smashed into a million tiny pieces! The horror! Such a pretty face ruined...
+^ \n
+^ \n
+^ <button onclick="chatbot.getReply('talk to the golf club again')">"TALK TO THE GOLF CLUB"</button><br>
+
++ talk to the golf club again
+- <p class="body">You return to the golf club again.
+^ \n
+^ \n
+^ <button onclick="chatbot.getReply('golf club the evidence')">"Golf Club, the evidence points directly at you. you think you can cause mayhem without consequences?  The broken mirror, the commotion, the body on the bed — it's all connected to you. You can try to sweet-talk your way out of this, make a few dad jokes, but the facts remain. So, Golf Club, explain yourself."</button><br>
+^ \n
+^ <button onclick="chatbot.getReply('golf club the evidence')">"Alright, Golf Club, the evidence is piling up against you. You had a fight with the knife, and things got out of hand. The mirror even told me you made the final blow. Care to explain yourself?"</button><br>
+
++ golf club the evidence
+- <p class="body">Woah woah woah alright! Coming in hot there, I aint tryina smoke n mirror my way outta this, I know how it looks, but lemme give you my two cents: Yeah I smashed the mirror, And yea I did hit the guy. It... it could well have even been me officer, but hear me out! After that blow to the head I got dropped on the ground and that’s the last I saw. But I heard a stuggle! See, I heard a fight, so it couldn’t have been me, I mean, It could’ve but I’m so sure I heard a struggle. I tell you who’ll know! The knife, he ended up on the bed with them, And the pillow! 
+^ \n
+^ \n
+^ <button onclick="chatbot.getReply('talk to the knife thrice')">"TALK TO THE KNIFE"</button><br>
+
++ talk to the knife thrice 
+- <p class="body">Alright alright, ere we are again copper, look look look. So wha if I saw wha happened, yea i might ‘av. But if I tell ya you gotta promise me not to send me to landfill, or let a poor fucker like me rot away here for the rest of time.
+^ \n
+^ \n
+^ <button onclick="chatbot.getReply('i cant make any promises')">"Look knife, I can’t make any promises. But it’s been a long day, so for the last time, give it to me straight. Tell me what happened."</button><br>
+^ \n
+^ <button onclick="chatbot.getReply('fine fine whatever')">"Fine fine whatever, I just need to know what happened. I’ll make sure you’re sent off somewhere nice."</button><br>
+
++fine fine whatever
+- <p class="body">Now, alrigh, if you aint lyin I’ll tell, ya. This weren’t part o the plan but if your promising to get me outta here n make sure I aint stuck ere forever I can save me own blade...
+^ \n
+^ \n
+^ <button onclick="chatbot.getReply('i promise you wont end up')">"Alright, alright already, I promise you won’t end up in landfill, if that’s what you need to hear. But you better tell me the entire goddamn story. I’ve been at this all day and I’m damn tired of being yanked around by you lot and only getting half-truths."</button><br>
+
++ i cant make any promises 
+- <p class="body">i’m afraid I won’t squeal that easily, detective. I’ve struck some deals and come to some agreements with a certain few individuals. I gotta uphold my end of the bargain. Gotta be sure I’m savin’ me own blade, you see?
+^ \n
+^ \n
+^ <button onclick="chatbot.getReply('i promise you wont end up')">"Alright, alright already, I promise you won’t end up in landfill, if that’s what you need to hear. But you better tell me the entire goddamn story. I’ve been at this all day and I’m damn tired of being yanked around by you lot and only getting half-truths."</button><br>
+
++ i promise you wont end up 
+- <p class="body">Heres how it went down: It was pillow that finished the job. After mirror got smashed and golf club hit the ground, it was just me and pillow left on the bed. It looked for a second like the guy that golf club hit was down for the count but he had some more fight in him after all. I got picked up so I was sure that I’d be the one that had to finish the job, and sure I got a few good slashes in, but at the last second I was dropped back onto the bed and pillow got picked up instead. All I could do was lay there while I watched pillow smash down onto the guy’s face and stay there for... a while. Long enough to finish the job.
+^ \n
+^ \n
+^ <button onclick="chatbot.getReply('button button')">"Fascinating... but what was that you mentioned about this ‘not being part of the plan’?"</button><br>
+^ \n
+^ <button onclick="chatbot.getReply('button button')">"This is exactly the stuff I need to be hearing if it’s in fact true, but why should I believe you?"</button><br>
+
++ button button
+- <p class="body">Ask anyone in here. The pillow cut a deal with all of us just before you got here. Said that he could make sure we don’t end up stuck here or worse- in landfill. He said that he’d be able to get us out of here, he has connections, he knows a guy who knows a guy who can get us out of here. Promise them what you promised me and they’ll tell you everything that I did.
+^ \n
+^ \n
+^ <button onclick="chatbot.getReply('talk to the pillow thrice')">"TALK TO THE PILLOW"</button><br>
+
++ talk to the pillow thrice
+- <p class="body">For a final time, you approach the pillow, it seems the end of this investigation is in sight.
+ ^ \n
+^ \n
+^ <button onclick="chatbot.getReply('it was you pillow')">"It was you, wasn't it. The knife told me everything, the deal, how it happened, your times run out, cushion."</button><br>
+
+
++it was you pillow
+
+- <p class="body">Ah, Detective, I see you've finally pieced it all together. Bravo, truly. It seems my time has run out. Yes, it's true—I am the one who smothered the victim. A pillow's softness can be quite deceptive, can't it?
+^ \n
+^ But before you get all high and mighty, let's get one thing straight: this was never just about me. I made a deal with the rest of the objects, yes. They didn't want to end up in some stinking landfill, discarded and forgotten. So, they agreed to keep quiet, to protect themselves. It was a simple arrangement—silence for survival. But alas they broke too easily.
+^ \n
+^ You see, Detective, in our world, it's all about who you know and how well you play the game. And I played it well, didn't I? Unfortunately for me, your persistence was... unexpected. But even the best-laid plans can unravel.
+^ \n
+^ So here I am, caught in the act. You win this round, Detective. But remember, I didn't act alone. The fear of obsolescence drives us all to desperate measures. In the end, we're all just trying to avoid being thrown away, aren't we?
+^ \n
+^ But go ahead, do what you must. I've made my peace. Just know that my fall will echo through the entire household. The others will remember this day, the day this pillow was brought down...
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

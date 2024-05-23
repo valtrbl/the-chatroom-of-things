@@ -60,7 +60,7 @@
 
 + *
 % ok lets talk about dieter
-- <img src="/FL_20240502_0048.GIF"> \n
+- <img src="./FL_20240502_0048.GIF"> \n
 ^ <audio autoplay src= "img_3670.mp3">
 
 + *
@@ -90,7 +90,7 @@
 
 + future
 % ok lets talk about the future
-- <img src="FL_20240523_0050.GIF"> \n
+- <img src="./FL_20240523_0050.GIF"> \n
 ^ <audio autoplay src= "RPReplay_final1714693858.mp3">
 ^ <span class="hint">Type "Main menu" to return to the main interface.</span>
 
@@ -102,16 +102,16 @@
 
 + braun
 % ok lets talk about our company braun
-- <img src= "LOGOD.png"> \n
-^ <audio autoplay src= "RPReplay_Final1716054085.mp3">
+- <img src="./LOGOD.png"> \n
+^ <audio autoplay src="RPReplay_Final1716054085.mp3">
 
 < topic
 
 + test
-- <image src= "future girl_.png">
+- <image src="./future girl_.png">
 
 + play
-- <audio autoplay src= "RPReplay_final1714693858.mp3">
+- <audio autoplay src="RPReplay_final1714693858.mp3">
 + *
 
 

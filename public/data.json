@@ -41,7 +41,20 @@
       "name": "rams-bot",
       "tagline": "",
       "exists": true
+    },
+    {
+      "id": "the-wellness-cafe",
+      "members": ["Aubrey Borschke", "Ayla Soofi"],
+      "name": "The Wellness Cafe",
+      "tagline": "",
+      "exists": true
+    },
+    {
+      "id": "murder-bot",
+      "members": ["Francesca Fanelli", "Will Court"],
+      "name": "Murder Bot",
+      "tagline": "",
+      "exists": true
     }
-  
   ]
 }

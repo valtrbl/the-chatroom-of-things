@@ -1,0 +1,230 @@
+  #circle{ 
+  width: 200px;
+  height: 200px;
+  background: #399168;
+  margin: auto;
+}
+
+body {
+  background-image: url(1x8blljgoilb1.gif);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: Verdana,Arial,Helvetica,sans-serif;
+  font-size: large;
+  color: #399168;
+  padding: 0;
+  margin: 0;
+  line-height: 1.7em;
+}
+
+button {
+  background-color: #9bceb462;
+  padding: 10px;
+  outline: none;
+  border: 0px solid rgba(0,0,0,.3);
+  border-radius: 5px;
+  font-family: italic;
+  color: #ffffff;
+  font-size: 20px;
+  box-shadow:
+  0 0 13px rgba(238, 255, 249, 0.185);
+}
+
+.wrapper {
+  max-width: 450px;
+  height: 100vh;
+  box-sizing: border-box;
+  margin: 10px auto 20px;
+  padding: 0;
+  background-color: rgba(255, 255, 255, 0);
+  display: flex;
+  flex-direction: column;
+  border-left: 1px solid rgba(255, 255, 255, 0);
+  border-right: 1px solid rgba(255, 255, 255, 0);
+}
+
+form {
+  flex: 5;
+  display: block;
+  padding: 15px;
+}
+.text-box {
+  font-size: 16px;
+  display: flex;
+  width: 100%;
+}
+input#message {
+  padding-left: 11px;
+  padding-right: 9px;
+  font-size: 16px;
+  height: 27px;
+  display: block;
+  flex: 10;
+  outline: none;
+  margin: 0 10px 0 0;
+  box-sizing: border-box;
+  border: 1px solid #aaa;
+  border-radius: 13px;
+}
+
+.imgmain {
+  border: 5px solid #BDBF66;
+  display: block;
+  margin-left: 0px ;
+  margin-right: auto;
+  width: 450px;
+  height: 2800px;
+  opacity: 25%;
+  position: fixed;
+  bottom: 1200px;
+  top: 0px;
+}
+
+.donotcross {
+  display: block;
+  margin-left: 0px ;
+  width: 450px;
+  margin-right: auto;
+  opacity: 70%;
+  position: fixed;
+  bottom: 1200px;
+  top: 0px;
+}
+
+
+html, body {margin: 0; height: 100%; overflow: hidden}
+
+input.send-button {
+  display: block;
+  background-color: rgba(255,255,255,.6);
+  flex: 1;
+  border: 1px solid rgba(0,0,0,.2);
+  height: 27px;
+  box-sizing: border-box;
+  font-size: 16px;
+  line-height: 25px;
+  padding: 0;
+  border-radius: 13px;
+}
+
+div#dialogue {
+  overflow-x: none;
+  overflow-y: auto;
+  display: block;
+  flex: 95;
+  box-sizing: border-box;
+  width: 200%;
+  padding: 15px;
+}
+
+.bot-row, .user-row {
+  padding: 1px 0 10px 0;
+  display: block;
+  position: relative;
+}
+.user-row {
+  text-align: right;
+}
+
+.user, .bot {
+  font-size: 16px;
+  padding: 5px 8px;
+  margin: 1px;
+  border-radius: 12px;
+  display: inline-block;
+  position: relative;
+}
+.bot {
+  margin-right: 50px;
+  background-color: rgb(14, 13, 10,.85);
+  padding: 20px;
+  outline: solid;
+  outline-color: #BDBF66;
+  border-bottom-left-radius: 0;
+}
+.user {
+  margin-left: 50px;
+  color: white;
+  background-color: #3b3; 
+  border-bottom-right-radius: 0;
+
+}
+@font-face {
+  font-family: myFirstFont;
+  src: url(RemboyRegular.ttf);
+}
+
+.clock {
+  font-family: myFirstFont;
+  font-size: 25px;
+}
+
+.clock {
+  color: #399168;
+  text-shadow:
+    0 0 10px rgba(0, 255, 170, 0.253),
+    0 0 10px rgba(0, 255, 170, 0.281),
+    0 0 5px rgba(0, 255, 170, 0.253);
+}
+
+@font-face {
+  font-family: body;
+  src: url(BODYBOOTLEG.ttf);
+}
+
+
+.body {
+  font-family: body;
+  font-size: 20px;
+}
+
+.body {
+  color: #399168;
+  text-shadow:
+    0 0 10px rgba(0, 255, 170, 0.253),
+    0 0 10px rgba(0, 255, 170, 0.281),
+    0 0 5px rgba(0, 255, 170, 0.253);
+}
+
+@font-face {
+  font-family: italic;
+  src: url(ITALIC-FIXED.ttf);
+}
+
+
+.italic {
+  font-family: italic;
+  font-size: 25px;
+}
+
+.italic {
+  color: #399168;
+  text-shadow:
+    0 0 10px rgba(0, 255, 170, 0.253),
+    0 0 10px rgba(0, 255, 170, 0.281),
+    0 0 5px rgba(0, 255, 170, 0.253);
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #BDBF66;
+  border-radius: 10px;
+}
+
+
+
+
+
+
